@@ -115,7 +115,7 @@
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
                     <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <span id="current-date-badge">3 Sep 2026</span>
+                    <span id="current-date-badge">4 Sep 2026</span>
                 </div>
             </div>
         </div>
@@ -139,7 +139,8 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-09-03" selected>03/09/2026 (Hoy)</option>
+                        <option value="2026-09-04" selected>04/09/2026 (Hoy)</option>
+                        <option value="2026-09-03">03/09/2026</option>
                         <option value="2026-09-02">02/09/2026</option>
                         <option value="2026-09-01">01/09/2026</option>
                         <option value="2026-08-28">28/08/2026</option>
@@ -291,6 +292,219 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+        "2026-09-04": {
+    "sector": [
+        {
+            "id": "sec-57",
+            "network": "X",
+            "networkBadge": "bg-slate-900 text-white",
+            "hashtag": "#Minería #Talento #Industria",
+            "title": "El talento técnico regional gana visibilidad en una cadena productiva estratégica",
+            "quote": "La participación de profesionales mendocinos en Argentina Mining Norte 2026 puso en valor capacidades vinculadas con la minería y sus proveedores.",
+            "action": "Seguir proveedores y empresas regionales por su potencial de inversión y empleo.",
+            "source": {
+                "name": "Hebe Casado (@hebesil) — X",
+                "link": "https://x.com/hebesil/status/2095471673126302072",
+                "date": "3 Sep 2026 — relevada el 4 Sep"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "Medio",
+                "variation": "Enlace directo y fecha real informada"
+            }
+        },
+        {
+            "id": "sec-58",
+            "network": "LinkedIn",
+            "networkBadge": "bg-uipba-navy text-white",
+            "hashtag": "#Automotriz #Proveedores #Calidad",
+            "title": "La calidad de proveedores se consolida como condición de competitividad automotriz",
+            "quote": "La gestión de problemas, la trazabilidad y las acciones permanentes son claves para responder ante exigencias industriales.",
+            "action": "Impulsar formación técnica para proveedores bonaerenses.",
+            "source": {
+                "name": "Edgenet Data Technologies — LinkedIn",
+                "link": "https://es.linkedin.com/posts/edgenet-data-tecnologies_necesitamos-m%C3%A1s-capacidad-busquemos-al-activity-7495346208698392576-7fjC",
+                "date": "2 Sep 2026 — relevada el 4 Sep"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "Medio",
+                "variation": "Enlace directo y fecha real informada"
+            }
+        },
+        {
+            "id": "sec-59",
+            "network": "Instagram",
+            "networkBadge": "bg-pink-600 text-white",
+            "hashtag": "#IndustriaArgentina #Producción #Manufactura",
+            "title": "La evolución manufacturera vuelve a poner el nivel de actividad en el centro del debate",
+            "quote": "Un informe sobre la producción manufacturera advierte sobre el desempeño industrial del primer semestre y su impacto sobre empresas y empleo.",
+            "action": "Contrastar los indicadores con la situación bonaerense.",
+            "source": {
+                "name": "Informe CEPA — Instagram",
+                "link": "https://www.instagram.com/p/DcxOJw2Cj2m/",
+                "date": "3 Sep 2026 — relevada el 4 Sep"
+            },
+            "metrics": {
+                "temp": 5,
+                "volume": "Alto",
+                "variation": "Enlace directo y fecha real informada"
+            }
+        },
+        {
+            "id": "sec-60",
+            "network": "Facebook",
+            "networkBadge": "bg-blue-700 text-white",
+            "hashtag": "#DíaDeLaIndustria #PyMEs #Producción",
+            "title": "Las PyMEs industriales reclaman condiciones para sostener producción y empleo",
+            "quote": "El mensaje reconoce a quienes transforman, producen y generan trabajo, y destaca los desafíos del entramado pyme.",
+            "action": "Incorporar las demandas pyme a la agenda de competitividad.",
+            "source": {
+                "name": "CAME — Facebook",
+                "link": "https://www.facebook.com/redcame/posts/-en-el-d%C3%ADadelaindustria-celebramos-a-quienes-d%C3%ADa-a-d%C3%ADa-transforman-esfuerzo-en-d/1509088514582418/",
+                "date": "2 Sep 2026 — relevada el 4 Sep"
+            },
+            "metrics": {
+                "temp": 5,
+                "volume": "Alto",
+                "variation": "Enlace directo y fecha real informada"
+            }
+        }
+    ],
+    "calle": [
+        {
+            "id": "calle-45",
+            "region": "general",
+            "riskLevel": "Alerta Climática",
+            "badgeClass": "badge-alert-high",
+            "topicNumber": "Tema #1 en Agenda PBA",
+            "title": "1. El frío extremo y los vientos activan alertas para este viernes",
+            "streetTalk": "El SMN emitió alertas amarillas por frío extremo y vientos con posibles interrupciones de actividades durante el 4 de septiembre.",
+            "connection": [
+                "Riesgo de demoras en traslados y operaciones",
+                "Prevención para trabajadores expuestos"
+            ],
+            "uipbaPosition": "Mantener seguimiento por sus efectos sobre movilidad y logística.",
+            "source": {
+                "name": "LA NACION",
+                "link": "https://www.lanacion.com.ar/sociedad/hay-alerta-amarilla-por-vientos-y-frio-extremo-para-este-viernes-4-de-septiembre-las-provincias-nid04092026/",
+                "date": "4 Sep 2026"
+            },
+            "metrics": {
+                "temp": 5,
+                "volume": "Alto",
+                "variation": "Alerta vigente"
+            }
+        },
+        {
+            "id": "calle-46",
+            "region": "la-plata",
+            "riskLevel": "Agenda Cultural",
+            "badgeClass": "badge-alert-info",
+            "topicNumber": "Tema #2 en Agenda PBA",
+            "title": "2. El Festival Internacional de Cine moviliza La Plata y más de 60 municipios",
+            "streetTalk": "La cuarta edición del FICPBA se desarrolla del 2 al 9 de septiembre con competencias, funciones y más de 100 pantallas bonaerenses.",
+            "connection": [],
+            "uipbaPosition": "Registrar su aporte a las industrias culturales y la actividad territorial.",
+            "source": {
+                "name": "Instituto Cultural PBA",
+                "link": "https://institutocultural.gba.gob.ar/ficpba",
+                "date": "Agenda vigente el 4 Sep 2026"
+            },
+            "metrics": {
+                "temp": 3,
+                "volume": "Medio-Alto",
+                "variation": "Actividad en curso"
+            }
+        },
+        {
+            "id": "calle-47",
+            "region": "general",
+            "riskLevel": "Impacto en Bolsillo",
+            "badgeClass": "badge-alert-medium",
+            "topicNumber": "Tema #3 en Agenda PBA",
+            "title": "3. El aumento del transporte modifica el costo cotidiano de viajar en el GBA",
+            "streetTalk": "La actualización tarifaria de septiembre alcanza servicios urbanos y suburbanos del Gran Buenos Aires.",
+            "connection": [
+                "Mayor costo de traslado para trabajadores",
+                "Impacto indirecto sobre empresas del AMBA"
+            ],
+            "uipbaPosition": "Seguir el efecto sobre movilidad laboral y costos.",
+            "source": {
+                "name": "Ministerio de Transporte PBA",
+                "link": "https://www.gba.gob.ar/transporte/noticias/actualizaci%C3%B3n_tarifaria_septiembre_2026",
+                "date": "27 Aug 2026 — vigente en septiembre"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "Alto",
+                "variation": "Tarifas vigentes"
+            }
+        }
+    ],
+    "clipping": [
+        {
+            "id": "clip-68",
+            "category": "regional",
+            "scopeTag": "Regional • LA NACION",
+            "badgeClass": "badge-alert-high",
+            "badgeText": "CLIMA",
+            "title": "Alerta amarilla por vientos y frío extremo durante el viernes",
+            "summary": "El SMN advirtió sobre fenómenos con capacidad de daño e interrupciones momentáneas.",
+            "impact": "Puede afectar traslados, logística y tareas operativas.",
+            "source": {
+                "name": "LA NACION",
+                "link": "https://www.lanacion.com.ar/sociedad/hay-alerta-amarilla-por-vientos-y-frio-extremo-para-este-viernes-4-de-septiembre-las-provincias-nid04092026/",
+                "date": "4 Sep 2026"
+            },
+            "metrics": {
+                "temp": 5,
+                "volume": "Medio-Alto",
+                "variation": "Nota publicada hoy"
+            }
+        },
+        {
+            "id": "clip-69",
+            "category": "nacional",
+            "scopeTag": "Nacional • Clarín",
+            "badgeClass": "badge-alert-medium",
+            "badgeText": "TIPO DE CAMBIO",
+            "title": "El euro cotiza a $1.700 para la compra y $1.800 para la venta",
+            "summary": "La referencia diaria del Banco Nación incide en costos y decisiones comerciales.",
+            "impact": "Relevante para industrias con compromisos en moneda extranjera.",
+            "source": {
+                "name": "Clarín",
+                "link": "https://www.clarin.com/economia/euro-hoy-precio-y-a-cuanto-cotiza-este-viernes-4-de-septiembre-de-2026_0_Qu2QVp3Pdr.html",
+                "date": "4 Sep 2026"
+            },
+            "metrics": {
+                "temp": 3,
+                "volume": "Medio-Alto",
+                "variation": "Nota publicada hoy"
+            }
+        },
+        {
+            "id": "clip-70",
+            "category": "nacional",
+            "scopeTag": "Nacional • Infobae",
+            "badgeClass": "badge-alert-medium",
+            "badgeText": "EMPLEO",
+            "title": "El Día de la Secretaria reconoce tareas centrales de organización y gestión",
+            "summary": "La fecha pone en valor funciones administrativas presentes en empresas e instituciones.",
+            "impact": "Oportunidad de reconocimiento institucional a perfiles clave.",
+            "source": {
+                "name": "Infobae",
+                "link": "https://www.infobae.com/sociedad/2026/09/04/dia-de-la-secretaria-por-que-se-celebra-el-4-de-septiembre-y-frases-para-enviar-por-whatsapp/",
+                "date": "4 Sep 2026"
+            },
+            "metrics": {
+                "temp": 2,
+                "volume": "Medio-Alto",
+                "variation": "Nota publicada hoy"
+            }
+        }
+    ]
+},
         "2026-09-03": {
                     "sector": [
                                 {
@@ -2967,7 +3181,7 @@
 
         // Inicialización al cargar la página
         window.onload = function() {
-            renderDashboard("2026-09-03");
+            renderDashboard("2026-09-04");
         };
     </script>
 </body>
