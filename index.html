@@ -139,7 +139,8 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-09-07" selected>07/09/2026 (Hoy)</option>\n                        <option value="2026-09-05">05/09/2026</option>
+                        <option value="2026-09-08" selected>08/09/2026 (Hoy)</option>
+                        <option value="2026-09-07">07/09/2026</option>\n                        <option value="2026-09-05">05/09/2026</option>
                         <option value="2026-09-04">04/09/2026</option>
                         <option value="2026-09-03">03/09/2026</option>
                         <option value="2026-09-02">02/09/2026</option>
@@ -293,6 +294,216 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+        "2026-09-08": {
+            "sector": [
+                {
+                    "id": "sec-65",
+                    "network": "X",
+                    "networkBadge": "bg-slate-900 text-white",
+                    "hashtag": "#IndustriaArgentina #Producción #PolíticaIndustrial",
+                    "title": "La ausencia de una estrategia industrial vuelve a tensionar el debate productivo",
+                    "quote": "La publicación cuestiona que la industria argentina no ocupe un lugar prioritario en la estrategia económica nacional y reclama discutir una política productiva explícita.",
+                    "action": "Abrir una agenda de propuestas concretas sobre competitividad, inversión, empleo y articulación público-privada para la industria bonaerense.",
+                    "source": {
+                        "name": "Fernando A. Iglesias (@FerIglesias) — X",
+                        "link": "https://x.com/i/status/2096525246610251835",
+                        "date": "6 Sep 2026 · publicación verificable más reciente al corte del 8 Sep"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Medio",
+                        "variation": "Post específico y fecha real informada"
+                    }
+                },
+                {
+                    "id": "sec-66",
+                    "network": "LinkedIn",
+                    "networkBadge": "bg-uipba-navy text-white",
+                    "hashtag": "#Energía #ProveedoresIndustriales #Inversión",
+                    "title": "Los proyectos energéticos abren oportunidades para proveedores industriales",
+                    "quote": "La Comisión de Energía de ADIMRA reunió a empresas con Pampa Energía para conocer necesidades de abastecimiento y preparar productos, estándares de calidad y capacidades para futuros proyectos.",
+                    "action": "Mapear empresas bonaerenses con potencial proveedor y acompañar su adecuación técnica y comercial a las demandas del sector energético.",
+                    "source": {
+                        "name": "ADIMRA — LinkedIn",
+                        "link": "https://es.linkedin.com/posts/adimra_la-comisi%C3%B3n-de-energ%C3%ADa-de-adimra-organiz%C3%B3-activity-7496883912045101056-zCJC",
+                        "date": "22 Ago 2026 · publicación verificable más reciente encontrada al corte del 8 Sep"
+                    },
+                    "metrics": {
+                        "temp": 3,
+                        "volume": "Medio",
+                        "variation": "Enlace individual y fecha real verificados"
+                    }
+                },
+                {
+                    "id": "sec-67",
+                    "network": "Instagram",
+                    "networkBadge": "bg-pink-600 text-white",
+                    "hashtag": "#IndustriaArgentina #Producción #Empleo",
+                    "title": "La producción nacional se plantea como base de inversión, empleo y futuro",
+                    "quote": "El mensaje por el Día de la Industria reivindica a quienes producen, invierten y generan trabajo, y convoca a sostener una agenda común de desarrollo industrial.",
+                    "action": "Amplificar testimonios de industriales bonaerenses y vincular el mensaje institucional con casos concretos de inversión y empleo.",
+                    "source": {
+                        "name": "Unión Industrial Argentina (@uiaoficial) — Instagram",
+                        "link": "https://www.instagram.com/reel/DcyFEscAJN8/",
+                        "date": "2 Sep 2026 · publicación verificable más reciente encontrada al corte del 8 Sep"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Alto",
+                        "variation": "Reel específico; fecha real informada"
+                    }
+                },
+                {
+                    "id": "sec-68",
+                    "network": "Facebook",
+                    "networkBadge": "bg-blue-700 text-white",
+                    "hashtag": "#Avellaneda #IndustriaNacional #Trabajo",
+                    "title": "La identidad industrial local se asocia con producción y trabajo nacional",
+                    "quote": "La pieza de la Municipalidad de Avellaneda presenta a la ciudad como territorio de industria, empleo y producción, y llama a recuperar una Argentina apoyada en trabajo nacional.",
+                    "action": "Relevar experiencias industriales municipales que conecten empleo local, proveedores y defensa de la producción bonaerense.",
+                    "source": {
+                        "name": "Municipalidad de Avellaneda — Facebook",
+                        "link": "https://www.facebook.com/municipalidad.avellaneda/videos/-avellaneda-es-industria-avellaneda-es-trabajo-avellaneda-es-producci%C3%B3ntenemos-u/2311898692998187/",
+                        "date": "Fecha no expuesta por el índice público · relevada el 8 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Medio",
+                        "variation": "Video individual verificable; sin fecha pública acreditable"
+                    }
+                }
+            ],
+            "calle": [
+                {
+                    "id": "calle-51",
+                    "region": "conurbano-sur",
+                    "riskLevel": "Alerta de Servicios",
+                    "badgeClass": "badge-alert-high",
+                    "topicNumber": "Tema #1 en Agenda PBA",
+                    "title": "1. Villa Fiorito busca reducir apagones con generación solar barrial",
+                    "streetTalk": "El Parque Solar Diego Armando Maradona inyecta energía a la red de Villa Fiorito mediante 134 paneles. La iniciativa apunta a estabilizar el suministro en un barrio de unos 60.000 habitantes con cortes, picos de tensión y conexiones precarias.",
+                    "connection": [
+                        "La continuidad eléctrica condiciona hogares, comercios y unidades productivas del conurbano sur"
+                    ],
+                    "uipbaPosition": "Impulsar infraestructura energética resiliente y esquemas replicables para barrios y corredores productivos vulnerables.",
+                    "source": {
+                        "name": "El País — 7 Sep 2026",
+                        "link": "https://elpais.com/america-futura/2026-09-07/un-parque-solar-para-evitar-apagones-en-el-barrio-que-vio-nacer-a-maradona.html"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Servicio eléctrico y transición energética"
+                    }
+                },
+                {
+                    "id": "calle-52",
+                    "region": "general",
+                    "riskLevel": "Alerta de Transporte",
+                    "badgeClass": "badge-alert-high",
+                    "topicNumber": "Tema #2 en Agenda PBA",
+                    "title": "2. El conflicto por los colectivos del AMBA mantiene en alerta a los usuarios",
+                    "streetTalk": "La discusión por la transferencia de fondos nacionales volvió a poner el foco en la continuidad del transporte automotor metropolitano y en el riesgo de medidas que afecten los viajes cotidianos.",
+                    "connection": [
+                        "La incertidumbre sobre los colectivos impacta en trabajadores, estudiantes y actividad comercial del conurbano"
+                    ],
+                    "uipbaPosition": "Seguir la continuidad del servicio y promover previsibilidad para los traslados laborales y la logística urbana.",
+                    "source": {
+                        "name": "A24 — Facebook, relevado 7 Sep 2026",
+                        "link": "https://www.facebook.com/A24com/videos/-conflicto-por-los-colectivos-en-amba-el-gobierno-se-comprometi%C3%B3-a-transferir-fo/1999379474329509/"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Conflicto metropolitano en seguimiento"
+                    }
+                },
+                {
+                    "id": "calle-53",
+                    "region": "general",
+                    "riskLevel": "Alerta Climática",
+                    "badgeClass": "badge-alert-medium",
+                    "topicNumber": "Tema #3 en Agenda PBA",
+                    "title": "3. El frío extremo activa una alerta amarilla en la Provincia y el AMBA",
+                    "streetTalk": "El Servicio Meteorológico Nacional advirtió por temperaturas cercanas a 0 °C y posibles efectos sobre la salud, especialmente en niños, mayores y personas con enfermedades crónicas.",
+                    "connection": [
+                        "Las bajas temperaturas presionan la demanda energética, la movilidad temprana y las condiciones de trabajo al aire libre"
+                    ],
+                    "uipbaPosition": "Difundir medidas preventivas y revisar protocolos laborales, energéticos y de traslado ante jornadas de frío intenso.",
+                    "source": {
+                        "name": "La Nación — 7 Sep 2026",
+                        "link": "https://www.lanacion.com.ar/sociedad/hay-alerta-amarilla-por-frio-extremo-vientos-y-zonda-para-este-lunes-7-de-septiembre-las-provincias-nid06092026/"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Alto",
+                        "variation": "Alerta oficial con impacto cotidiano"
+                    }
+                }
+            ],
+            "clipping": [
+                {
+                    "id": "clip-75",
+                    "category": "regional",
+                    "scopeTag": "regional",
+                    "badgeClass": "bg-blue-100 text-blue-800",
+                    "badgeText": "Regional PBA",
+                    "title": "Bahía Blanca se posiciona como posible nodo para centros de datos",
+                    "summary": "Reuters informó que una zona franca bahiense desarrolla un parque tecnológico y que Pampa Energía acordó proveer 30 MW para una primera etapa, mientras las definiciones de inversión continúan pendientes.",
+                    "impact": "La oportunidad combina demanda energética, infraestructura digital, construcción y nuevos proveedores industriales.",
+                    "source": {
+                        "name": "Reuters",
+                        "link": "https://www.reuters.com/business/energy/tech-companies-look-argentinas-windswept-patagonia-build-massive-data-centers-2026-09-07/",
+                        "date": "7 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Alto",
+                        "variation": "Inversión y tecnología"
+                    }
+                },
+                {
+                    "id": "clip-76",
+                    "category": "regional",
+                    "scopeTag": "regional",
+                    "badgeClass": "bg-blue-100 text-blue-800",
+                    "badgeText": "Regional PBA",
+                    "title": "Chivilcoy reclama infraestructura, reforma impositiva y valor agregado en origen",
+                    "summary": "En la Exposición Rural local se planteó una política productiva con enfoque federal, mejoras en caminos, conectividad y energía, y condiciones tributarias que favorezcan inversión y empleo.",
+                    "impact": "La agenda interpela directamente a las cadenas agroindustriales y a la competitividad del interior bonaerense.",
+                    "source": {
+                        "name": "Capital24",
+                        "link": "https://capital24.com.ar/contenido/15325/villarruel-inauguro-la-exposicion-rural-de-chivilcoy-y-pidio-una-politica-produc",
+                        "date": "7 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Medio",
+                        "variation": "Producción regional"
+                    }
+                },
+                {
+                    "id": "clip-77",
+                    "category": "nacional",
+                    "scopeTag": "nacional",
+                    "badgeClass": "bg-slate-100 text-slate-800",
+                    "badgeText": "Nacional",
+                    "title": "Las ventas minoristas PyME retroceden y el consumo se concentra en ofertas",
+                    "summary": "Un relevamiento de CAME registró una caída mensual de 2,7% en agosto y una baja acumulada de 2,4% en 2026, junto con menor disposición de los comercios a invertir.",
+                    "impact": "La debilidad de la demanda afecta caja, inversión y empleo en comercios y pequeñas empresas.",
+                    "source": {
+                        "name": "Capital24",
+                        "link": "https://capital24.com.ar/contenido/15304/el-comercio-volvio-a-caer-en-agosto-salarios-atrasados-y-consumidores-que-compra",
+                        "date": "7 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Consumo y PyMEs"
+                    }
+                }
+            ]
+        },
         "2026-09-07": {
             "sector": [
                 {"id":"sec-61","network":"X","networkBadge":"bg-slate-900 text-white","hashtag":"#IndustriaArgentina #Producción #Empleo","title":"La pérdida de empleo industrial vuelve al centro de la conversación","quote":"La publicación señala que la industria argentina perdió 90.000 puestos de trabajo asalariados registrados desde agosto de 2023 y pone el foco en el impacto laboral de la contracción fabril.","action":"Contrastar la evolución del empleo industrial bonaerense y relevar los sectores con mayores pérdidas de puestos formales.","source":{"name":"Somos Cítrica (@somoscitrica) — X","link":"https://x.com/somoscitrica/status/2096690147005960277","date":"6 Sep 2026"},"metrics":{"temp":5,"volume":"Alto","variation":"Post específico y fecha verificados"}},
@@ -3234,7 +3445,7 @@
 
         // Inicialización al cargar la página
         window.onload = function() {
-            renderDashboard("2026-09-07");
+            renderDashboard("2026-09-08");
         };
     </script>
 </body>
