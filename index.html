@@ -115,7 +115,7 @@
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
                     <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <span id="current-date-badge">5 Sep 2026</span>
+                    <span id="current-date-badge">09/09/2026</span>
                 </div>
             </div>
         </div>
@@ -139,7 +139,8 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-09-08" selected>08/09/2026 (Hoy)</option>
+                        <option value="2026-09-09" selected>09/09/2026 (Hoy)</option>
+                        <option value="2026-09-08">08/09/2026</option>
                         <option value="2026-09-07">07/09/2026</option>\n                        <option value="2026-09-05">05/09/2026</option>
                         <option value="2026-09-04">04/09/2026</option>
                         <option value="2026-09-03">03/09/2026</option>
@@ -169,22 +170,22 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             <div class="p-2 rounded-xl bg-slate-50 border border-slate-100">
                 <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Tema Top #1</span>
-                <span class="text-xs font-bold text-uipba-navy truncate block mt-0.5">La industria vuelve a poner producción, inversión, empleo y competitividad en el centro de la agenda</span>
+                <span class="text-xs font-bold text-uipba-navy truncate block mt-0.5">Cooperación PyME, cadenas de valor y caída de la actividad productiva</span>
             </div>
             <div class="p-2 rounded-xl bg-slate-50 border border-slate-100">
                 <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Temperatura Promedio</span>
                 <span class="text-xs font-extrabold text-amber-600 flex items-center justify-center space-x-1 mt-0.5">
-                    <span>4.6 / 5.0</span>
+                    <span>4.4 / 5.0</span>
                     <span>🔥🔥🔥🔥</span>
                 </span>
             </div>
             <div class="p-2 rounded-xl bg-slate-50 border border-slate-100">
                 <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Volumen Relativo</span>
-                <span class="text-xs font-bold text-emerald-600 block mt-0.5">📈 Alto (industria, exportaciones, paro de transporte y clima)</span>
+                <span class="text-xs font-bold text-emerald-600 block mt-0.5">📈 Alto (PyMEs, industria, construcción y agenda bonaerense)</span>
             </div>
             <div class="p-2 rounded-xl bg-slate-50 border border-slate-100">
                 <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Alertas de Impacto</span>
-                <span class="text-xs font-bold text-red-600 block mt-0.5">2 Críticas (seguridad / transporte) + 1 contexto (alerta climática)</span>
+                <span class="text-xs font-bold text-red-600 block mt-0.5">2 Críticas (actividad / seguridad) + 2 territoriales (salud / infraestructura)</span>
             </div>
         </div>
     </section>
@@ -286,7 +287,7 @@
 
             <!-- Nota Metodológica Obligatoria -->
             <div class="pt-3 border-t border-slate-100 text-[10px] text-slate-400 leading-relaxed text-center italic">
-                <strong>Nota metodológica:</strong> Relevamiento asistido por Inteligencia Artificial sobre fuentes públicas, prensa económica y canales digitales bonaerenses. El módulo Sector Industrial cita cuentas y posteos reales verificados individualmente (no un rastreo automatizado de cada red social); cuando no se confirma una voz real ese día, la red se omite en vez de completarse con contenido de prensa. Este reporte sintetiza patrones de conversación cualitativos e indicadores de tracción relativa; no constituye una medición censal, una encuesta estadística tradicional, ni una herramienta de social listening exhaustiva.
+                <strong>Nota metodológica:</strong> Relevamiento asistido por Inteligencia Artificial sobre fuentes públicas, prensa económica y canales digitales bonaerenses. El módulo Sector Industrial cita cuentas y posteos reales verificados individualmente (no un rastreo automatizado exhaustivo); cuando una red no expone un post fechado dentro del período, se incorpora la publicación individual verificable más reciente y se informa expresamente su fecha real o la falta de fecha pública. Este reporte sintetiza patrones de conversación cualitativos e indicadores de tracción relativa; no constituye una medición censal ni una encuesta estadística tradicional.
             </div>
         </div>
     </footer>
@@ -294,6 +295,216 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+        "2026-09-09": {
+            "sector": [
+                {
+                    "id": "sec-69",
+                    "network": "X",
+                    "networkBadge": "bg-slate-900 text-white",
+                    "hashtag": "#Industria #PyMEs #Producción #FederalismoProductivo",
+                    "title": "La defensa de la industria regional se vincula con empleo y desarrollo federal",
+                    "quote": "El mensaje acompaña la apertura de la Casa de la Industria en Salta y plantea que sostener la producción local requiere articulación entre provincias, empresas y entidades industriales.",
+                    "action": "Reforzar el intercambio con cámaras provinciales y detectar agendas comunes sobre competitividad, inversión y empleo industrial.",
+                    "source": {
+                        "name": "Gustavo Sáenz (@GustavoSaenzOK) — X",
+                        "link": "https://x.com/GustavoSaenzOK/status/2097279303503266057",
+                        "date": "8 Sep 2026 · 04:02"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Alto",
+                        "variation": "1,3 mil visualizaciones al relevamiento"
+                    }
+                },
+                {
+                    "id": "sec-70",
+                    "network": "LinkedIn",
+                    "networkBadge": "bg-uipba-navy text-white",
+                    "hashtag": "#Industria #PyMEs #Internacionalización #CadenasDeValor",
+                    "title": "La cooperación con Italia busca convertir intercambio en integración productiva",
+                    "quote": "La UIA destacó que el Foro PyMEs Italia–América Latina reunió a más de 800 industriales y generó más de 300 reuniones B2B para promover internacionalización y nuevas oportunidades de negocios.",
+                    "action": "Identificar empresas bonaerenses con potencial para integrarse a cadenas ítalo-argentinas y acompañar los contactos surgidos del Foro.",
+                    "source": {
+                        "name": "UIA — LinkedIn",
+                        "link": "https://es.linkedin.com/posts/union-industrial-argentina_industria-pymes-uia-activity-7503104096665505792-vylO",
+                        "date": "8 Sep 2026 · publicación fechada por el índice público"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Más de 800 industriales y 300 reuniones B2B"
+                    }
+                },
+                {
+                    "id": "sec-71",
+                    "network": "Instagram",
+                    "networkBadge": "bg-pink-600 text-white",
+                    "hashtag": "#ForoPyMEs #Inversión #Industria #CadenasDeValor",
+                    "title": "Energía e inversión ordenan la conversación sobre nuevas cadenas de valor",
+                    "quote": "La convocatoria al Foro PyMEs Italia–América Latina presenta la energía, la cooperación productiva y los negocios internacionales como ejes para ampliar oportunidades de las empresas.",
+                    "action": "Relevar conclusiones del encuentro y traducirlas en oportunidades concretas para proveedores industriales bonaerenses.",
+                    "source": {
+                        "name": "ADIMRA — Instagram",
+                        "link": "https://www.instagram.com/reel/DdAO7uuRdCz/",
+                        "date": "Fecha no expuesta por el índice público · relevada el 9 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Medio-Alto",
+                        "variation": "Reel individual verificable; fecha pública no acreditable"
+                    }
+                },
+                {
+                    "id": "sec-72",
+                    "network": "Facebook",
+                    "networkBadge": "bg-blue-700 text-white",
+                    "hashtag": "#PyMEs #Gestión #Innovación #Comercio",
+                    "title": "La reinvención del negocio aparece como respuesta al cambio de mercado",
+                    "quote": "La Cámara Argentina de Comercio y Servicios propone revisar estrategias y capacidades empresariales para que las PyMEs puedan adaptarse y sostener su crecimiento.",
+                    "action": "Acercar herramientas de gestión, transformación digital y revisión comercial a las PyMEs industriales que enfrentan menor demanda.",
+                    "source": {
+                        "name": "Cámara Argentina de Comercio y Servicios — Facebook",
+                        "link": "https://www.facebook.com/CACteinforma/posts/c%C3%B3mo-reinventar-tu-negocio-para-seguir-creciendoen-el-encuentro-pymes-2026-organ/1560067709494858/",
+                        "date": "Fecha no expuesta por el índice público · relevada el 9 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 3,
+                        "volume": "Medio",
+                        "variation": "Post individual verificable; fecha pública no acreditable"
+                    }
+                }
+            ],
+            "calle": [
+                {
+                    "id": "calle-54",
+                    "region": "conurbano-sur",
+                    "riskLevel": "Alerta de Seguridad",
+                    "badgeClass": "badge-alert-high",
+                    "topicNumber": "Tema #1 en Agenda PBA",
+                    "title": "1. Un circuito delictivo entre Lanús, Avellaneda y Lomas vuelve a inquietar al Conurbano",
+                    "streetTalk": "La detención de dos acusados por un robo en Lanús permitió reconstruir un recorrido que incluyó un vehículo sustraído en Avellaneda y movimientos en distintos distritos del sur bonaerense.",
+                    "connection": [
+                        "La circulación del delito entre municipios afecta la seguridad de vecinos, trabajadores y corredores comerciales"
+                    ],
+                    "uipbaPosition": "Promover coordinación intermunicipal y prevención focalizada en accesos, corredores laborales y zonas productivas.",
+                    "source": {
+                        "name": "InfoRegión — 8 Sep 2026",
+                        "link": "https://www.inforegion.com.ar/2026/09/08/inseguridad-en-el-conurbano-el-circuito-que-incluye-a-tres-distritos/"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Caso con alcance en tres municipios"
+                    }
+                },
+                {
+                    "id": "calle-55",
+                    "region": "general",
+                    "riskLevel": "Alerta de Salud",
+                    "badgeClass": "badge-alert-high",
+                    "topicNumber": "Tema #2 en Agenda PBA",
+                    "title": "2. La Provincia amplía la respuesta territorial ante la crisis de salud mental",
+                    "streetTalk": "El nuevo plan provincial extenderá a 24 horas el 0800 de Salud Mental, incorporará más de 100 profesionales y sumará herramientas de prevención y acompañamiento para municipios, escuelas y hospitales.",
+                    "connection": [
+                        "La salud mental atraviesa familias, ámbitos laborales, escuelas y servicios públicos en los 135 municipios"
+                    ],
+                    "uipbaPosition": "Difundir los canales de atención y promover herramientas preventivas de bienestar y acompañamiento en los lugares de trabajo.",
+                    "source": {
+                        "name": "Gobierno de la Provincia de Buenos Aires — 8 Sep 2026",
+                        "link": "https://www.gba.gob.ar/comunicacion_publica/gacetillas/kicillof_present%C3%B3_el_plan_provincial_para_fortalecer_la_prevenci%C3%B3n_y"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "0800 permanente y más de 100 incorporaciones"
+                    }
+                },
+                {
+                    "id": "calle-56",
+                    "region": "la-plata",
+                    "riskLevel": "Alerta de Infraestructura",
+                    "badgeClass": "badge-alert-medium",
+                    "topicNumber": "Tema #3 en Agenda PBA",
+                    "title": "3. Vecinos de Los Hornos reclaman obras por calles que se inundan con cada lluvia",
+                    "streetTalk": "Habitantes de la zona de 69 entre 156 y 157 denuncian que la acumulación de agua vuelve intransitables las calles y que el problema persiste desde hace años pese a reclamos reiterados.",
+                    "connection": [
+                        "Los anegamientos dificultan traslados cotidianos, acceso de servicios y circulación de trabajadores y comercios"
+                    ],
+                    "uipbaPosition": "Incorporar los puntos críticos de drenaje y transitabilidad a la agenda de infraestructura urbana y productiva local.",
+                    "source": {
+                        "name": "Periódico Sin Límites — 8 Sep 2026",
+                        "link": "https://periodicosinlimites.com.ar/todo-abandonado-vecinos-de-69-entre-156-y-157-reclaman-soluciones-por-calles-inundadas/"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Medio-Alto",
+                        "variation": "Reclamo vecinal sostenido en Los Hornos"
+                    }
+                }
+            ],
+            "clipping": [
+                {
+                    "id": "clip-78",
+                    "category": "nacional",
+                    "scopeTag": "Nacional • Canal 26",
+                    "badgeClass": "badge-alert-high",
+                    "badgeText": "ACTIVIDAD PRODUCTIVA",
+                    "title": "Industria y construcción retrocedieron con fuerza durante julio",
+                    "summary": "Los datos difundidos por el INDEC mostraron una baja mensual de 5% en la industria y de 4,6% en la construcción; doce de las dieciséis ramas fabriles cayeron en la comparación interanual.",
+                    "impact": "La contracción alcanza producción, proveedores, empleo y demanda de insumos, con efectos directos sobre el entramado bonaerense.",
+                    "source": {
+                        "name": "Canal 26",
+                        "link": "https://www.canal26.com/economia/2026/09/08/se-desplomo-la-actividad-la-industria-cayo-49-y-la-construccion-se-freno-en-julio-2026-segun-el-indec/",
+                        "date": "8 Sep 2026 · 20:07"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Industria -5% mensual; construcción -4,6%"
+                    }
+                },
+                {
+                    "id": "clip-79",
+                    "category": "nacional",
+                    "scopeTag": "Nacional • Noticias Argentinas",
+                    "badgeClass": "badge-alert-info",
+                    "badgeText": "INTEGRACIÓN PYME",
+                    "title": "Gobernadores impulsan la integración de PyMEs a energía, minería y cadenas internacionales",
+                    "summary": "En el Foro PyMEs Italia–América Latina, mandatarios provinciales plantearon articular empresas locales con Vaca Muerta, minería y alianzas productivas internacionales; el encuentro informó más de 800 ruedas de negocios.",
+                    "impact": "La agenda abre oportunidades para metalúrgicas, proveedores tecnológicos y empresas bonaerenses que busquen integrarse a proyectos de escala.",
+                    "source": {
+                        "name": "Noticias Argentinas",
+                        "link": "https://noticiasargentinas.com/economia/seis-gobernadores-promovieron-la-integracion-de-pymes-metalurgicas-al-nuevo-esquema-productivo-de-la-argentina_a6aa0234b584d5d710fe5b00d",
+                        "date": "8 Sep 2026 · 12:13"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Alto",
+                        "variation": "Más de 800 ruedas de negocios informadas"
+                    }
+                },
+                {
+                    "id": "clip-80",
+                    "category": "nacional",
+                    "scopeTag": "Nacional • Reuters",
+                    "badgeClass": "badge-alert-medium",
+                    "badgeText": "ENERGÍA Y SOBERANÍA",
+                    "title": "Argentina presentó una denuncia penal por la explotación petrolera en Malvinas",
+                    "summary": "El Gobierno inició acciones contra Navitas Petroleum y sus ejecutivos por operar sin autorización argentina en la cuenca norte de las islas, donde el proyecto Sea Lion prevé producción desde 2028.",
+                    "impact": "El conflicto puede afectar inversiones, servicios petroleros, cadenas de proveedores y la estrategia energética del Atlántico Sur.",
+                    "source": {
+                        "name": "Reuters",
+                        "link": "https://www.reuters.com/world/americas/argentina-file-criminal-charges-against-navitas-petroleum-over-falklands-2026-09-08/",
+                        "date": "8 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Alto",
+                        "variation": "Escalada legal sobre proyecto petrolero"
+                    }
+                }
+            ]
+        },
         "2026-09-08": {
             "sector": [
                 {
@@ -3445,7 +3656,7 @@
 
         // Inicialización al cargar la página
         window.onload = function() {
-            renderDashboard("2026-09-08");
+            renderDashboard("2026-09-09");
         };
     </script>
 </body>
