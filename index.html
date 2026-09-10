@@ -115,7 +115,7 @@
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
                     <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <span id="current-date-badge">09/09/2026</span>
+                    <span id="current-date-badge">10/09/2026</span>
                 </div>
             </div>
         </div>
@@ -128,7 +128,7 @@
                     </button>
                     <button onclick="switchTab('tab-calle')" id="btn-tab-calle" class="tab-btn text-slate-600 hover:bg-slate-200 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider flex items-center whitespace-nowrap">
                         <span>2. La Calle Bonaerense</span>
-                        <span class="ml-2 bg-amber-500 text-white text-[9px] px-1.5 py-0.5 rounded-full font-black">4 Alertas</span>
+                        <span class="ml-2 bg-amber-500 text-white text-[9px] px-1.5 py-0.5 rounded-full font-black">3 Alertas</span>
                     </button>
                     <button onclick="switchTab('tab-clipping')" id="btn-tab-clipping" class="tab-btn text-slate-600 hover:bg-slate-200 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider flex items-center whitespace-nowrap">
                         <span>3. Clipping de Medios en Redes</span>
@@ -139,7 +139,8 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-09-09" selected>09/09/2026 (Hoy)</option>
+                        <option value="2026-09-10" selected>10/09/2026 (Hoy)</option>
+                        <option value="2026-09-09">09/09/2026</option>
                         <option value="2026-09-08">08/09/2026</option>
                         <option value="2026-09-07">07/09/2026</option>\n                        <option value="2026-09-05">05/09/2026</option>
                         <option value="2026-09-04">04/09/2026</option>
@@ -170,22 +171,22 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             <div class="p-2 rounded-xl bg-slate-50 border border-slate-100">
                 <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Tema Top #1</span>
-                <span class="text-xs font-bold text-uipba-navy truncate block mt-0.5">Cooperación PyME, cadenas de valor y caída de la actividad productiva</span>
+                <span class="text-xs font-bold text-uipba-navy truncate block mt-0.5">Puertos bonaerenses, actividad industrial y empleo</span>
             </div>
             <div class="p-2 rounded-xl bg-slate-50 border border-slate-100">
                 <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Temperatura Promedio</span>
                 <span class="text-xs font-extrabold text-amber-600 flex items-center justify-center space-x-1 mt-0.5">
-                    <span>4.4 / 5.0</span>
+                    <span>4.5 / 5.0</span>
                     <span>🔥🔥🔥🔥</span>
                 </span>
             </div>
             <div class="p-2 rounded-xl bg-slate-50 border border-slate-100">
                 <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Volumen Relativo</span>
-                <span class="text-xs font-bold text-emerald-600 block mt-0.5">📈 Alto (PyMEs, industria, construcción y agenda bonaerense)</span>
+                <span class="text-xs font-bold text-emerald-600 block mt-0.5">📈 Alto (puertos, actividad, empleo y agenda bonaerense)</span>
             </div>
             <div class="p-2 rounded-xl bg-slate-50 border border-slate-100">
                 <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Alertas de Impacto</span>
-                <span class="text-xs font-bold text-red-600 block mt-0.5">2 Críticas (actividad / seguridad) + 2 territoriales (salud / infraestructura)</span>
+                <span class="text-xs font-bold text-red-600 block mt-0.5">2 Críticas (actividad / seguridad) + 1 territorial (infraestructura)</span>
             </div>
         </div>
     </section>
@@ -295,6 +296,216 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+        "2026-09-10": {
+            "sector": [
+                {
+                    "id": "sec-73",
+                    "network": "X",
+                    "networkBadge": "bg-slate-900 text-white",
+                    "hashtag": "#Puertos #Trabajo #Producción #Logística",
+                    "title": "La articulación portuaria bonaerense se consolida como agenda estratégica",
+                    "quote": "La primera reunión del Consejo Portuario Bonaerense reunió al Gobierno provincial y representantes de todos los sectores vinculados con una actividad clave para la producción, el empleo y el comercio exterior.",
+                    "action": "Acercar a UIPBA a la mesa portuaria para representar necesidades de logística, conectividad y competitividad de las industrias bonaerenses.",
+                    "source": {
+                        "name": "Ministerio de Trabajo PBA (@TrabajoPBA) — X",
+                        "link": "https://x.com/TrabajoPBA/status/2097651582896656573",
+                        "date": "9 Sep 2026 · fecha visible en X"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Medio-Alto",
+                        "variation": "189 visualizaciones al relevamiento"
+                    }
+                },
+                {
+                    "id": "sec-74",
+                    "network": "LinkedIn",
+                    "networkBadge": "bg-uipba-navy text-white",
+                    "hashtag": "#Industria #PyMEs #Internacionalización #CadenasDeValor",
+                    "title": "La integración productiva internacional sigue en el centro de la agenda PyME",
+                    "quote": "La UIA destacó el alcance del Foro PyMEs Italia–América Latina y las reuniones B2B como una vía concreta para internacionalizar empresas e integrarlas en nuevas cadenas de valor.",
+                    "action": "Identificar socios y oportunidades surgidas del Foro para empresas industriales bonaerenses con potencial exportador.",
+                    "source": {
+                        "name": "UIA — LinkedIn",
+                        "link": "https://es.linkedin.com/posts/union-industrial-argentina_industria-pymes-uia-activity-7503104096665505792-vylO",
+                        "date": "8 Sep 2026 · publicación más reciente verificable"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Alto",
+                        "variation": "Excepción: no se halló post verificable del 9 Sep"
+                    }
+                },
+                {
+                    "id": "sec-75",
+                    "network": "Instagram",
+                    "networkBadge": "bg-pink-600 text-white",
+                    "hashtag": "#IndustriaArgentina #Innovación #Producción #Federalismo",
+                    "title": "El futuro productivo se debate desde una mirada federal",
+                    "quote": "La convocatoria de la Federación Industrial de Santa Fe propone reunir al ecosistema industrial para conversar sobre competitividad, innovación y desarrollo productivo con alcance federal.",
+                    "action": "Seguir los ejes del encuentro y detectar coincidencias para una agenda común entre cámaras industriales provinciales.",
+                    "source": {
+                        "name": "Federación Industrial de Santa Fe — Instagram",
+                        "link": "https://www.instagram.com/reel/DXFnwRzj9Ep/",
+                        "date": "Fecha no expuesta por el índice público · relevada el 10 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 3,
+                        "volume": "Medio",
+                        "variation": "Reel individual verificable; fecha pública no acreditable"
+                    }
+                },
+                {
+                    "id": "sec-76",
+                    "network": "Facebook",
+                    "networkBadge": "bg-blue-700 text-white",
+                    "hashtag": "#Industria #Competitividad #Impuestos #Empleo",
+                    "title": "La industria reclama condiciones equivalentes para competir",
+                    "quote": "La conversación impulsada desde la UIA vincula competitividad con presión impositiva, costos sistémicos y necesidad de sostener producción y empleo en el país.",
+                    "action": "Sistematizar los principales costos que afectan a socios bonaerenses y aportar evidencia a la agenda nacional de competitividad.",
+                    "source": {
+                        "name": "Día de la Industria Argentina — Facebook",
+                        "link": "https://www.facebook.com/100063493153665/posts/d%C3%ADa-de-la-industria-argentina-habl%C3%B3-el-vicepresidente-de-la-uia/1721123703347385/",
+                        "date": "Fecha no expuesta por el índice público · relevada el 10 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Medio-Alto",
+                        "variation": "Post individual verificable; fecha pública no acreditable"
+                    }
+                }
+            ],
+            "calle": [
+                {
+                    "id": "calle-57",
+                    "region": "conurbano-oeste",
+                    "riskLevel": "Alerta de Seguridad",
+                    "badgeClass": "badge-alert-high",
+                    "topicNumber": "Tema #1 en Agenda PBA",
+                    "title": "1. El asesinato de un joven en José C. Paz profundiza el reclamo por seguridad",
+                    "streetTalk": "Familiares, amigos y vecinos reclamaron justicia por David Ojeda Vázquez, de 22 años, asesinado por la espalda durante el robo de su moto cuando regresaba del gimnasio.",
+                    "connection": [
+                        "El hecho vuelve a poner el foco en la seguridad de trabajadores y jóvenes durante sus traslados cotidianos en el Conurbano."
+                    ],
+                    "uipbaPosition": "Promover prevención focalizada y coordinación operativa en corredores de movilidad laboral y comercial.",
+                    "source": {
+                        "name": "LA NACION — 9 Sep 2026",
+                        "link": "https://www.lanacion.com.ar/seguridad/quien-era-david-ojeda-vazquez-el-joven-motociclista-de-22-anos-asesinado-por-la-espalda-en-jose-c-nid09092026/"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Reclamo vecinal y familiar por justicia"
+                    }
+                },
+                {
+                    "id": "calle-58",
+                    "region": "conurbano-oeste",
+                    "riskLevel": "Alerta Vial",
+                    "badgeClass": "badge-alert-high",
+                    "topicNumber": "Tema #2 en Agenda PBA",
+                    "title": "2. Un control en Riccheri detectó alcoholemia de 2,56 g/L y múltiples infracciones",
+                    "streetTalk": "La ANSV detuvo en el kilómetro 15 a un conductor que circulaba tomando cerveza, sin seguro, revisión técnica, cinturón ni identificación del vehículo; fue inhabilitado y afronta una multa millonaria.",
+                    "connection": [
+                        "La seguridad vial en los principales accesos metropolitanos afecta a trabajadores, transportistas y logística diaria."
+                    ],
+                    "uipbaPosition": "Reforzar campañas de alcohol cero y conducción responsable en empresas, parques industriales y corredores logísticos.",
+                    "source": {
+                        "name": "LA NACION — 9 Sep 2026",
+                        "link": "https://www.lanacion.com.ar/sociedad/un-conductor-manejaba-tomando-cerveza-tenia-256-de-alcohol-en-sangre-autopista-riccheri-nid09092026/"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "2,56 g/L y más de $5,5 millones de multa"
+                    }
+                },
+                {
+                    "id": "calle-59",
+                    "region": "conurbano-norte",
+                    "riskLevel": "Infraestructura Urbana",
+                    "badgeClass": "badge-alert-info",
+                    "topicNumber": "Tema #3 en Agenda PBA",
+                    "title": "3. Avanza la recuperación del Arroyo Güemes en General San Martín",
+                    "streetTalk": "Cinco empresas se presentaron a la licitación de una obra integral en Loma Hermosa que prevé calles, puentes, veredas drenantes, iluminación y espacios recreativos para unas 20.000 personas.",
+                    "connection": [
+                        "La intervención puede mejorar conectividad, drenaje, seguridad y calidad del entorno urbano donde circulan vecinos y trabajadores."
+                    ],
+                    "uipbaPosition": "Acompañar el seguimiento de la obra y promover criterios de infraestructura resiliente en municipios industriales.",
+                    "source": {
+                        "name": "Gobierno de la Provincia de Buenos Aires — 9 Sep 2026",
+                        "link": "https://www.gba.gob.ar/habitat/noticias/recuperaci%C3%B3n_del_arroyo_g%C3%BCemes_5_empresas_se_presentaron_la_licitaci%C3%B3n"
+                    },
+                    "metrics": {
+                        "temp": 3,
+                        "volume": "Medio-Alto",
+                        "variation": "5 ofertas; alcance estimado de 20.000 personas"
+                    }
+                }
+            ],
+            "clipping": [
+                {
+                    "id": "clip-81",
+                    "category": "nacional",
+                    "scopeTag": "Nacional • El País",
+                    "badgeClass": "badge-alert-high",
+                    "badgeText": "ACTIVIDAD Y EMPLEO",
+                    "title": "Industria y construcción profundizan su retroceso y presionan sobre el empleo",
+                    "summary": "La producción manufacturera cayó 5% mensual en julio y la construcción 4,6%; ambos sectores concentran cerca de una cuarta parte del empleo asalariado privado registrado.",
+                    "impact": "El deterioro afecta de manera directa a plantas, proveedores, empleo y demanda interna del entramado bonaerense.",
+                    "source": {
+                        "name": "El País",
+                        "link": "https://elpais.com/argentina/2026-09-09/la-industria-y-la-construccion-se-hunden-en-argentina-y-tensionan-el-modelo-de-milei.html",
+                        "date": "9 Sep 2026 · 23:43 CEST"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Industria -5% mensual; construcción -4,6%"
+                    }
+                },
+                {
+                    "id": "clip-82",
+                    "category": "nacional",
+                    "scopeTag": "Nacional • Associated Press",
+                    "badgeClass": "badge-alert-high",
+                    "badgeText": "DEUDA DE HOGARES",
+                    "title": "El endeudamiento juvenil expone la presión del costo de vida y el empleo",
+                    "summary": "AP relevó que casi la mitad de la población mantiene deudas y que los menores de 25 años registran la mayor mora, mientras crecen los préstamos para cubrir alimentos, transporte y estudio.",
+                    "impact": "La fragilidad del consumo y de los ingresos anticipa menor demanda para PyMEs y mayor tensión social en el AMBA.",
+                    "source": {
+                        "name": "Associated Press",
+                        "link": "https://apnews.com/article/argentina-javier-milei-debt-economic-libertarian-market-reforms-1b8e2859a012b7c3fa50981c78764b4b",
+                        "date": "9 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Mora de 37,6% entre menores de 25 años"
+                    }
+                },
+                {
+                    "id": "clip-83",
+                    "category": "regional",
+                    "scopeTag": "Regional PBA • LA NACION",
+                    "badgeClass": "badge-alert-medium",
+                    "badgeText": "CAMINOS RURALES",
+                    "title": "La Justicia ordenó reparar en 60 días un acceso rural en Colón",
+                    "summary": "Un fallo obliga al municipio bonaerense de Colón a acondicionar el camino hacia el establecimiento La Querencia tras años de litigio por su estado y transitabilidad.",
+                    "impact": "El precedente refuerza el reclamo por infraestructura rural adecuada para producción, transporte de mercadería y acceso a establecimientos.",
+                    "source": {
+                        "name": "LA NACION",
+                        "link": "https://www.lanacion.com.ar/economia/campo/cercano-a-cristina-y-maximo-quien-es-waldemar-giordano-el-intendente-de-la-campora-que-debera-nid08092026/",
+                        "date": "9 Sep 2026 · 07:44"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Medio-Alto",
+                        "variation": "Plazo judicial de 60 días"
+                    }
+                }
+            ]
+        },
         "2026-09-09": {
             "sector": [
                 {
@@ -3656,7 +3867,7 @@
 
         // Inicialización al cargar la página
         window.onload = function() {
-            renderDashboard("2026-09-09");
+            renderDashboard("2026-09-10");
         };
     </script>
 </body>
