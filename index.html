@@ -115,7 +115,7 @@
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
                     <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <span id="current-date-badge">10/09/2026</span>
+                    <span id="current-date-badge">11/09/2026</span>
                 </div>
             </div>
         </div>
@@ -139,7 +139,8 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-09-10" selected>10/09/2026 (Hoy)</option>
+                        <option value="2026-09-11" selected>11/09/2026 (Hoy)</option>
+                        <option value="2026-09-10">10/09/2026</option>
                         <option value="2026-09-09">09/09/2026</option>
                         <option value="2026-09-08">08/09/2026</option>
                         <option value="2026-09-07">07/09/2026</option>\n                        <option value="2026-09-05">05/09/2026</option>
@@ -171,7 +172,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             <div class="p-2 rounded-xl bg-slate-50 border border-slate-100">
                 <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Tema Top #1</span>
-                <span class="text-xs font-bold text-uipba-navy truncate block mt-0.5">Puertos bonaerenses, actividad industrial y empleo</span>
+                <span class="text-xs font-bold text-uipba-navy truncate block mt-0.5">Industria, empleo e infraestructura bonaerense</span>
             </div>
             <div class="p-2 rounded-xl bg-slate-50 border border-slate-100">
                 <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Temperatura Promedio</span>
@@ -182,11 +183,11 @@
             </div>
             <div class="p-2 rounded-xl bg-slate-50 border border-slate-100">
                 <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Volumen Relativo</span>
-                <span class="text-xs font-bold text-emerald-600 block mt-0.5">📈 Alto (puertos, actividad, empleo y agenda bonaerense)</span>
+                <span class="text-xs font-bold text-emerald-600 block mt-0.5">📈 Alto (industria, empleo, seguridad y obras)</span>
             </div>
             <div class="p-2 rounded-xl bg-slate-50 border border-slate-100">
                 <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Alertas de Impacto</span>
-                <span class="text-xs font-bold text-red-600 block mt-0.5">2 Críticas (actividad / seguridad) + 1 territorial (infraestructura)</span>
+                <span class="text-xs font-bold text-red-600 block mt-0.5">2 Críticas (actividad / empleo) + 2 territoriales (seguridad / infraestructura)</span>
             </div>
         </div>
     </section>
@@ -296,6 +297,216 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+        "2026-09-11": {
+            "sector": [
+                {
+                    "id": "sec-77",
+                    "network": "X",
+                    "networkBadge": "bg-slate-900 text-white",
+                    "hashtag": "#Puertos #Trabajo #Producción #Logística",
+                    "title": "La coordinación portuaria mantiene en agenda la competitividad productiva",
+                    "quote": "El Consejo Portuario Bonaerense reunió a autoridades y actores de una actividad decisiva para la producción, el empleo y el comercio exterior provincial.",
+                    "action": "Canalizar necesidades de conectividad, costos y operación logística de los socios industriales ante la mesa portuaria.",
+                    "source": {
+                        "name": "Ministerio de Trabajo PBA (@TrabajoPBA) — X",
+                        "link": "https://x.com/TrabajoPBA/status/2097651582896656573",
+                        "date": "9 Sep 2026 · publicación más reciente verificable"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Medio-Alto",
+                        "variation": "Excepción: no se halló post verificable del 10 Sep"
+                    }
+                },
+                {
+                    "id": "sec-78",
+                    "network": "LinkedIn",
+                    "networkBadge": "bg-uipba-navy text-white",
+                    "hashtag": "#Industria #PyMEs #CadenasDeValor #Exportación",
+                    "title": "Las PyMEs buscan integrarse a cadenas de valor internacionales",
+                    "quote": "El intercambio empresarial entre Italia y América Latina puso el foco en alianzas, reuniones B2B e internacionalización para ampliar mercados.",
+                    "action": "Detectar oportunidades concretas del Foro para empresas bonaerenses con capacidad de integrarse a cadenas exportadoras.",
+                    "source": {
+                        "name": "UIA — LinkedIn",
+                        "link": "https://es.linkedin.com/posts/union-industrial-argentina_industria-pymes-uia-activity-7503104096665505792-vylO",
+                        "date": "8 Sep 2026 · publicación más reciente verificable"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Alto",
+                        "variation": "Excepción: no se halló post verificable del 10 Sep"
+                    }
+                },
+                {
+                    "id": "sec-79",
+                    "network": "Instagram",
+                    "networkBadge": "bg-pink-600 text-white",
+                    "hashtag": "#FATE #Industria #Empleo #Producción",
+                    "title": "El cierre de FATE concentra la preocupación por empleo y capacidad productiva",
+                    "quote": "La conversación cuestiona el cierre de una fábrica emblemática y vincula la pérdida de puestos de trabajo con el retroceso de la industria nacional.",
+                    "action": "Relevar el impacto sobre proveedores y trabajadores bonaerenses y consolidar evidencia sectorial para la agenda de UIPBA.",
+                    "source": {
+                        "name": "Carlos Heller (@heller_carlos) — Instagram",
+                        "link": "https://www.instagram.com/reel/DdHpgn1SKce/",
+                        "date": "10 Sep 2026 · fecha visible en el índice público"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Publicación del período analizado"
+                    }
+                },
+                {
+                    "id": "sec-80",
+                    "network": "Facebook",
+                    "networkBadge": "bg-blue-700 text-white",
+                    "hashtag": "#PyMEs #Empleo #Producción #IndustriaNacional",
+                    "title": "El cierre de PyMEs se traduce en pérdida de producción y trabajo",
+                    "quote": "El debate pone el foco en el efecto acumulado del cierre de empresas pequeñas y medianas sobre el empleo, las familias y el futuro productivo.",
+                    "action": "Contrastar el diagnóstico con datos de socios y cámaras territoriales para identificar sectores y municipios más afectados.",
+                    "source": {
+                        "name": "Fernando Gray — Facebook",
+                        "link": "https://www.facebook.com/fernandograyok/videos/el-cierre-de-m%C3%A1s-de-45000-pymes-en-la-argentina-significa-p%C3%A9rdida-de-empleo-de-p/706078912461630/",
+                        "date": "Fecha no expuesta por el índice público · relevada el 11 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Video individual verificable; fecha pública no acreditable"
+                    }
+                }
+            ],
+            "calle": [
+                {
+                    "id": "calle-60",
+                    "region": "conurbano-sur",
+                    "riskLevel": "Seguridad y Salud",
+                    "badgeClass": "badge-alert-high",
+                    "topicNumber": "Tema #1 en Agenda PBA",
+                    "title": "1. Ezeiza refuerza seguridad y respuesta ante emergencias",
+                    "streetTalk": "En Tristán Suárez se inauguró una subcomisaría y el municipio incorporó dos ambulancias de alta complejidad para un centro de emergencias que funcionará las 24 horas.",
+                    "connection": [
+                        "El nuevo puesto mejora prevención, control vehicular y respuesta sanitaria en un acceso clave del distrito."
+                    ],
+                    "uipbaPosition": "Promover coordinación entre municipios, parques industriales y servicios de emergencia en corredores productivos.",
+                    "source": {
+                        "name": "Gobierno de la Provincia de Buenos Aires — 10 Sep 2026",
+                        "link": "https://www.gba.gob.ar/comunicacion_publica/gacetillas/kicillof_y_granados_inauguraron_infraestructura_para_reforzar_la"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Medio-Alto",
+                        "variation": "Subcomisaría y 2 ambulancias nuevas"
+                    }
+                },
+                {
+                    "id": "calle-61",
+                    "region": "conurbano-sur",
+                    "riskLevel": "Infraestructura Urbana",
+                    "badgeClass": "badge-alert-info",
+                    "topicNumber": "Tema #2 en Agenda PBA",
+                    "title": "2. Ezpeleta Oeste inicia la pavimentación de 37 cuadras",
+                    "streetTalk": "Vecinos de Villa Nueva Argentina y Villa Augusta destacaron que el asfalto facilitará el ingreso de ambulancias, colectivos y recolección, además de mejorar la circulación cotidiana.",
+                    "connection": [
+                        "La obra incluye drenaje y conexiones que mejoran accesibilidad, servicios y movilidad hacia trabajo, escuelas y centros de salud."
+                    ],
+                    "uipbaPosition": "Acompañar obras municipales que mejoren conectividad y resiliencia en zonas con actividad comercial y productiva.",
+                    "source": {
+                        "name": "La Noticia Sur — 10 Sep 2026",
+                        "link": "https://lanoticiasur.com.ar/quilmes-avanza-la-obra-de-pavimentacion-en-ezpeleta-oeste/"
+                    },
+                    "metrics": {
+                        "temp": 3,
+                        "volume": "Medio-Alto",
+                        "variation": "37 cuadras; pavimento y sistema hidráulico"
+                    }
+                },
+                {
+                    "id": "calle-62",
+                    "region": "conurbano-sur",
+                    "riskLevel": "Conectividad Intermunicipal",
+                    "badgeClass": "badge-alert-medium",
+                    "topicNumber": "Tema #3 en Agenda PBA",
+                    "title": "3. Brown y Lomas proyectan mejoras en una arteria común",
+                    "streetTalk": "Los municipios acordaron una agenda conjunta para intervenir la vía que conecta ambos distritos, un reclamo ligado al tránsito y a la calidad de los desplazamientos diarios.",
+                    "connection": [
+                        "La coordinación intermunicipal puede reducir demoras y mejorar la circulación de vecinos, trabajadores y transporte comercial."
+                    ],
+                    "uipbaPosition": "Impulsar criterios metropolitanos para obras que atraviesan más de un municipio y sostienen la movilidad productiva.",
+                    "source": {
+                        "name": "La Noticia Sur — 10 Sep 2026",
+                        "link": "https://lanoticiasur.com.ar/brown-lomas-ambos-municipios-proyectan-obras-y-mejoras-en-la-arteria-que-conecta-ambos-distritos/"
+                    },
+                    "metrics": {
+                        "temp": 3,
+                        "volume": "Medio",
+                        "variation": "Agenda de obras entre 2 municipios"
+                    }
+                }
+            ],
+            "clipping": [
+                {
+                    "id": "clip-84",
+                    "category": "nacional",
+                    "scopeTag": "Nacional • Folha / AFP",
+                    "badgeClass": "badge-alert-high",
+                    "badgeText": "CRISIS INDUSTRIAL",
+                    "title": "La apertura comercial profundiza la presión sobre fábricas y empleo",
+                    "summary": "Un relevamiento sobre la industria argentina expone unas 90.000 pérdidas de empleo, casi 30.000 cierres de empresas y una caída manufacturera mensual del 5% entre junio y julio.",
+                    "impact": "La combinación de importaciones, crédito caro, impuestos y consumo débil afecta directamente al entramado industrial bonaerense.",
+                    "source": {
+                        "name": "Folha de S.Paulo / AFP",
+                        "link": "https://www1.folha.uol.com.br/mercado/2026/09/industria-argentina-sofre-com-abertura-comercial-de-milei.shtml",
+                        "date": "10 Sep 2026 · 14:22 BRT"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Industria -5% mensual; ~90.000 empleos"
+                    }
+                },
+                {
+                    "id": "clip-85",
+                    "category": "nacional",
+                    "scopeTag": "Nacional • Financial Times",
+                    "badgeClass": "badge-alert-high",
+                    "badgeText": "MODELO PRODUCTIVO",
+                    "title": "El giro hacia energía y minería reabre el debate sobre el futuro manufacturero",
+                    "summary": "Financial Times analizó el cambio hacia una economía más abierta y exportadora, con cierres fabriles y pérdida de empleo como contracara de la apuesta por energía, minería y agro.",
+                    "impact": "La discusión exige una estrategia para que la transformación exportadora preserve proveedores, empleo y capacidades industriales locales.",
+                    "source": {
+                        "name": "Financial Times",
+                        "link": "https://www.ft.com/content/75b94026-82a1-449a-acf2-f04dcec55d81",
+                        "date": "10 Sep 2026 · 04:00 UTC"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Debate internacional sobre apertura y cierres"
+                    }
+                },
+                {
+                    "id": "clip-86",
+                    "category": "regional",
+                    "scopeTag": "Regional PBA • El País",
+                    "badgeClass": "badge-alert-medium",
+                    "badgeText": "DERECHOS LABORALES",
+                    "title": "Comienza en La Plata un juicio por el secuestro de trabajadores de Molinos",
+                    "summary": "Un exjefe de personal será juzgado por su presunta participación en el secuestro y desaparición de tres empleados de una planta del sur bonaerense durante la última dictadura.",
+                    "impact": "El proceso vuelve a poner en agenda la responsabilidad empresarial, la memoria laboral y los estándares institucionales del sector privado.",
+                    "source": {
+                        "name": "El País Argentina",
+                        "link": "https://elpais.com/argentina/2026-09-10/argentina-lleva-a-juicio-a-un-exjefe-de-personal-acusado-de-entregar-obreros-a-los-represores-de-la-dictadura.html",
+                        "date": "10 Sep 2026 · 11:30 CEST"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Medio-Alto",
+                        "variation": "Juicio en el Tribunal Oral Federal N.º 2 de La Plata"
+                    }
+                }
+            ]
+        },
         "2026-09-10": {
             "sector": [
                 {
@@ -3867,7 +4078,7 @@
 
         // Inicialización al cargar la página
         window.onload = function() {
-            renderDashboard("2026-09-10");
+            renderDashboard("2026-09-11");
         };
     </script>
 </body>
