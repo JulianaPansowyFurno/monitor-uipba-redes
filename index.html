@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UIPBA • Monitor Integral de Inteligencia Social y Medios</title>
+    <meta name="description" content="Monitor diario de agenda industrial, social bonaerense y medios elaborado por UIPBA para sus socios.">
+    <title>Monitor diario UIPBA | Agenda industrial y bonaerense</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
@@ -87,6 +88,53 @@
             section { display: block !important; page-break-after: always; }
             .dashboard-card { page-break-inside: avoid; border: 1px solid #cbd5e1 !important; box-shadow: none !important; }
         }
+
+        /* Presentación institucional para socios */
+        :root { --ink:#10243e; --muted:#5d6d7e; --surface:#fff; --soft:#f3f7fb; --line:#dce6ef; }
+        body { background:radial-gradient(circle at 100% 0%,rgba(18,187,255,.08),transparent 30rem),#f4f7fa; }
+        header { box-shadow:0 1px 0 rgba(13,68,146,.04); }
+        .report-context { position:relative; overflow:hidden; color:#fff; background:linear-gradient(120deg,#0D4492 0%,#075fb0 64%,#0089E7 100%); }
+        .report-context::after { content:""; position:absolute; width:22rem; height:22rem; right:-8rem; top:-12rem; border:1px solid rgba(255,255,255,.18); border-radius:50%; box-shadow:0 0 0 3rem rgba(255,255,255,.035),0 0 0 7rem rgba(255,255,255,.025); }
+        .report-context-inner { position:relative; z-index:1; }
+        .report-kicker { display:inline-flex; align-items:center; gap:.5rem; color:#dff4ff; font-size:.75rem; font-weight:700; letter-spacing:.09em; text-transform:uppercase; }
+        .report-kicker::before { content:""; width:.5rem; height:.5rem; border-radius:50%; background:#1ED58E; box-shadow:0 0 0 .25rem rgba(30,213,142,.18); }
+        .report-date-card { min-width:15rem; padding:1rem 1.1rem; border:1px solid rgba(255,255,255,.22); border-radius:1rem; background:rgba(255,255,255,.12); backdrop-filter:blur(8px); }
+        .report-date-card span { display:block; }
+        .report-date-label { color:#dff4ff; font-size:.72rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+        .report-date-value { margin-top:.2rem; font-size:1.1rem; font-weight:700; text-transform:capitalize; }
+        .report-date-note { margin-top:.55rem; color:#dbeafe; font-size:.75rem; line-height:1.45; }
+        .section-guide { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.75rem; margin-top:1.25rem; }
+        .section-guide-item { padding:.75rem .85rem; border:1px solid rgba(255,255,255,.16); border-radius:.85rem; background:rgba(255,255,255,.1); }
+        .section-guide-item strong { display:block; font-size:.82rem; }
+        .section-guide-item span { display:block; margin-top:.2rem; color:#dbeafe; font-size:.72rem; line-height:1.4; }
+        .dashboard-card { border-color:var(--line); border-radius:1.15rem; background:var(--surface); box-shadow:0 4px 18px rgba(13,68,146,.055); }
+        .dashboard-card:hover { box-shadow:0 16px 40px rgba(13,68,146,.1); }
+        .card-eyebrow { display:block; margin-bottom:.4rem; color:#8a5b00; font-size:.68rem; font-style:normal; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+        .source-row { display:flex; align-items:center; justify-content:space-between; gap:.9rem; margin-top:.75rem; padding:.8rem; border:1px solid var(--line); border-radius:.85rem; background:var(--soft); color:var(--muted); font-size:.72rem; }
+        .source-meta { min-width:0; flex:1; }
+        .source-label { display:block; margin-bottom:.35rem; color:#60758a; font-size:.66rem; font-weight:700; letter-spacing:.07em; text-transform:uppercase; }
+        .source-link { display:inline-flex; max-width:100%; align-items:center; gap:.55rem; color:#0D4492; text-decoration:none; }
+        .source-name { overflow:hidden; font-weight:700; text-overflow:ellipsis; white-space:nowrap; }
+        .source-cta { display:inline-flex; flex:none; align-items:center; justify-content:center; min-height:2.1rem; padding:.45rem .72rem; border:1px solid #0D4492; border-radius:.65rem; background:#0D4492; color:#fff; font-size:.7rem; font-weight:700; transition:.2s ease; }
+        .source-link:hover .source-cta,.source-link:focus-visible .source-cta { background:#0089E7; border-color:#0089E7; transform:translateY(-1px); }
+        .source-link:focus-visible { outline:3px solid rgba(0,137,231,.25); outline-offset:3px; border-radius:.7rem; }
+        .source-unavailable { color:#718096; font-weight:600; }
+        .source-date { flex:none; text-align:right; line-height:1.45; }
+        .intensity { display:inline-flex; align-items:center; padding:.2rem .45rem; border-radius:999px; background:#eef5fb; color:#264a6f; font-weight:700; }
+        @media (max-width:767px) {
+            .section-guide { grid-template-columns:1fr; }
+            .report-date-card { min-width:0; width:100%; }
+            .source-row,.source-link { align-items:stretch; flex-direction:column; }
+            .source-name { white-space:normal; }
+            .source-cta { width:100%; }
+            .source-date { text-align:left; }
+        }
+        @media print {
+            .report-context { background:#fff!important; color:#10243e!important; border-bottom:2px solid #0D4492; }
+            .report-context * { color:#10243e!important; }
+            .source-cta { background:#fff!important; color:#0D4492!important; }
+        }
+
     </style>
 </head>
 <body class="min-h-screen flex flex-col">
@@ -102,15 +150,15 @@
                     <span class="text-[9px] sm:text-[10px] font-normal text-uipba-navy tracking-wide leading-tight uppercase">PROVINCIA DE BUENOS AIRES</span>
                 </div>
                 <div class="hidden lg:block border-l border-slate-300 pl-3.5">
-                    <span class="text-xs font-bold text-slate-700 block leading-none">Monitor de Inteligencia Social y Medios</span>
-                    <span class="text-[9px] text-uipba-blue font-semibold uppercase tracking-wider">Tablero de Control Diario • Gestión Gentile</span>
+                    <span class="text-xs font-bold text-slate-700 block leading-none">Monitor diario de agenda industrial y bonaerense</span>
+                    <span class="text-[9px] text-uipba-blue font-semibold uppercase tracking-wider">Síntesis informativa para socios</span>
                 </div>
             </div>
 
             <div class="flex items-center space-x-3">
                 <button onclick="exportToPDF()" class="bg-uipba-navy hover:bg-slate-900 text-white text-xs font-bold px-3.5 py-2 rounded-xl shadow-sm flex items-center space-x-2 transition-all">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                    <span class="hidden sm:inline">Exportar PDF Ejecutivo</span>
+                    <span class="hidden sm:inline">Descargar informe</span>
                     <span class="sm:hidden">PDF</span>
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
@@ -124,14 +172,13 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between py-2 overflow-x-auto custom-scrollbar">
                 <div class="flex space-x-2">
                     <button onclick="switchTab('tab-sector')" id="btn-tab-sector" class="tab-btn active px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider flex items-center whitespace-nowrap">
-                        <span>1. Sector Industrial</span>
+                        <span>Sector industrial</span>
                     </button>
                     <button onclick="switchTab('tab-calle')" id="btn-tab-calle" class="tab-btn text-slate-600 hover:bg-slate-200 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider flex items-center whitespace-nowrap">
-                        <span>2. La Calle Bonaerense</span>
-                        <span class="ml-2 bg-amber-500 text-white text-[9px] px-1.5 py-0.5 rounded-full font-black">3 Alertas</span>
+                        <span>Agenda bonaerense</span>
                     </button>
                     <button onclick="switchTab('tab-clipping')" id="btn-tab-clipping" class="tab-btn text-slate-600 hover:bg-slate-200 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider flex items-center whitespace-nowrap">
-                        <span>3. Clipping de Medios en Redes</span>
+                        <span>Clipping de medios</span>
                     </button>
                 </div>
 
@@ -168,26 +215,25 @@
         </div>
     </header>
 
-    <section class="bg-white border-b border-slate-200 py-3 shadow-inner">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-            <div class="p-2 rounded-xl bg-slate-50 border border-slate-100">
-                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Tema Top #1</span>
-                <span class="text-xs font-bold text-uipba-navy truncate block mt-0.5">Industria, empleo e infraestructura bonaerense</span>
+
+    <section class="report-context">
+        <div class="report-context-inner max-w-7xl mx-auto px-4 sm:px-6 py-6">
+            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5">
+                <div class="max-w-3xl">
+                    <span class="report-kicker">Informe diario para socios</span>
+                    <h1 class="text-2xl sm:text-3xl font-bold mt-2 leading-tight">La agenda industrial y bonaerense, en un solo lugar</h1>
+                    <p class="text-sm text-blue-100 mt-2 leading-relaxed">Una síntesis clara de las conversaciones del sector, los temas sociales de la Provincia y las noticias que pueden incidir en la actividad productiva.</p>
+                </div>
+                <div class="report-date-card" aria-label="Período del informe">
+                    <span class="report-date-label">Período analizado</span>
+                    <span id="analyzed-date" class="report-date-value">—</span>
+                    <span class="report-date-note">El informe publicado a las 10:00 releva el día calendario anterior.</span>
+                </div>
             </div>
-            <div class="p-2 rounded-xl bg-slate-50 border border-slate-100">
-                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Temperatura Promedio</span>
-                <span class="text-xs font-extrabold text-amber-600 flex items-center justify-center space-x-1 mt-0.5">
-                    <span>4.5 / 5.0</span>
-                    <span>🔥🔥🔥🔥</span>
-                </span>
-            </div>
-            <div class="p-2 rounded-xl bg-slate-50 border border-slate-100">
-                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Volumen Relativo</span>
-                <span class="text-xs font-bold text-emerald-600 block mt-0.5">📈 Alto (industria, empleo, seguridad y obras)</span>
-            </div>
-            <div class="p-2 rounded-xl bg-slate-50 border border-slate-100">
-                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Alertas de Impacto</span>
-                <span class="text-xs font-bold text-red-600 block mt-0.5">2 Críticas (actividad / empleo) + 2 territoriales (seguridad / infraestructura)</span>
+            <div class="section-guide" aria-label="Contenido del monitor">
+                <div class="section-guide-item"><strong>Sector industrial</strong><span>Voces y publicaciones verificadas de empresas, cámaras y referentes.</span></div>
+                <div class="section-guide-item"><strong>Agenda bonaerense</strong><span>Temas sociales relevantes para comprender el contexto provincial.</span></div>
+                <div class="section-guide-item"><strong>Clipping de medios</strong><span>Noticias seleccionadas con acceso directo a la fuente original.</span></div>
             </div>
         </div>
     </section>
@@ -197,13 +243,9 @@
         <!-- TAB 1: SECTOR INDUSTRIAL -->
         <section id="tab-sector" class="space-y-6">
             <div class="max-w-3xl">
-                <span class="text-xs font-bold text-uipba-navy uppercase tracking-widest bg-blue-50 px-2.5 py-1 rounded-md border border-blue-200">Escucha del Sector</span>
-                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2">Termómetro del Sector Industrial Hoy</h2>
-                <p class="text-slate-600 text-sm mt-1 leading-relaxed">
-                    Voces reales y verificadas de industriales, dueños de pyme, trabajadores y entidades productivas en sus propias cuentas.
-                    El relevamiento diario incluye como mínimo una publicación directa de X, LinkedIn, Instagram y Facebook,
-                    siempre con enlace real y fecha informada sin convertir noticias periodísticas en posteos personales.
-                </p>
+                <span class="text-xs font-bold text-uipba-navy uppercase tracking-widest bg-blue-50 px-2.5 py-1 rounded-md border border-blue-200">Voces verificadas</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2">Qué está diciendo el sector industrial</h2>
+                <p class="text-slate-600 text-sm mt-1 leading-relaxed">Publicaciones y opiniones de actores reales del entramado productivo. Cada tarjeta identifica la red, la fecha y la fuente original para facilitar su verificación.</p>
             </div>
 
             <div id="container-sector" class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -215,13 +257,9 @@
         <section id="tab-calle" class="hidden space-y-6">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
                 <div class="max-w-2xl">
-                    <span class="text-xs font-extrabold text-amber-800 uppercase tracking-widest bg-amber-50 px-2.5 py-1 rounded-md border border-amber-200">El Termómetro Vecinal</span>
-                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2">La Calle Bonaerense</h2>
-                    <p class="text-slate-600 text-sm mt-1 leading-relaxed">
-                        De qué habla la sociedad en PBA: agenda cotidiana completa (inseguridad, tarifas, informalidad,
-                        trabas municipales, y lo que surja), tenga o no una conexión directa con la industria. Sirve
-                        para entender el ecosistema social donde opera UIPBA, no solo lo que la roza.
-                    </p>
+                    <span class="text-xs font-extrabold text-amber-800 uppercase tracking-widest bg-amber-50 px-2.5 py-1 rounded-md border border-amber-200">Contexto provincial</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2">Qué pasa en la Provincia</h2>
+                    <p class="text-slate-600 text-sm mt-1 leading-relaxed">Los principales temas de conversación social en la Provincia de Buenos Aires. Ayuda a interpretar el contexto en el que operan las empresas y las comunidades bonaerenses.</p>
                 </div>
 
                 <div class="flex items-center space-x-2 text-xs text-slate-500 font-medium">
@@ -250,10 +288,10 @@
         <section id="tab-clipping" class="hidden space-y-6">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
                 <div class="max-w-2xl">
-                    <span class="text-xs font-bold text-uipba-navy uppercase tracking-widest bg-blue-50 px-2.5 py-1 rounded-md border border-blue-200">Monitoreo Mediático</span>
-                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2">Clipping de Medios en Redes Sociales</h2>
+                    <span class="text-xs font-bold text-uipba-navy uppercase tracking-widest bg-blue-50 px-2.5 py-1 rounded-md border border-blue-200">Selección de medios</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2">Noticias para seguir</h2>
                     <p class="text-slate-600 text-sm mt-1 leading-relaxed">
-                        Noticias con mayor tracción en X, Facebook e Instagram publicadas por portales Nacionales, Regionales y Municipales.
+                        Noticias nacionales, regionales y locales relevantes para la actividad industrial, con enlace directo al medio que publicó la información.
                     </p>
                 </div>
 
@@ -282,7 +320,7 @@
                 <div class="flex items-center space-x-4">
                     <button onclick="exportToPDF()" class="bg-uipba-navy hover:bg-slate-900 text-white px-4 py-2 rounded-xl text-xs font-bold transition-colors flex items-center space-x-2 shadow-md">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012 0h5.586a2 2 0 01.707.293l5.414 5.414a2 2 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                        <span>Descargar Reporte PDF Ejecutivo</span>
+                        <span>Descargar informe completo</span>
                     </button>
                 </div>
             </div>
@@ -3856,18 +3894,18 @@
         };
 
         function renderStars(temp) {
-            let stars = '';
-            for (let i = 0; i < 5; i++) {
-                stars += i < temp ? '🔥' : '⚪';
-            }
-            return stars;
+            const safeTemp = Math.max(0, Math.min(5, Number(temp) || 0));
+            return `<span class="intensity" aria-label="Relevancia ${safeTemp} sobre 5">${safeTemp}/5</span>`;
         }
 
-        function linkedSource(source) {
+        function linkedSource(source, actionLabel = 'Ver publicación') {
             const hasLink = source.link && source.link !== '#';
             const name = escapeHtml(source.name);
-            if (!hasLink) return name;
-            return `<a href="${source.link}" target="_blank" rel="noopener noreferrer" class="underline decoration-dotted hover:text-uipba-blue hover:decoration-solid">${name}</a>`;
+            if (!hasLink) return `<span class="source-unavailable">${name} · enlace no disponible</span>`;
+            return `<a href="${source.link}" target="_blank" rel="noopener noreferrer" class="source-link" aria-label="${actionLabel}: ${name}">
+                <span class="source-name">${name}</span>
+                <span class="source-cta">${actionLabel} <span aria-hidden="true">↗</span></span>
+            </a>`;
         }
 
         function escapeHtml(str) {
@@ -3891,7 +3929,7 @@
                                 <span class="text-slate-500">${item.hashtag}</span>
                             </div>
                             <div class="flex items-center space-x-3 text-slate-600">
-                                <span title="Temperatura (1-5)">Temp: ${renderStars(item.metrics.temp)}</span>
+                                <span title="Temperatura (1-5)">Relevancia: ${renderStars(item.metrics.temp)}</span>
                                 <span class="bg-slate-100 px-2 py-0.5 rounded text-slate-700">${item.metrics.volume}</span>
                             </div>
                         </div>
@@ -3899,21 +3937,22 @@
                         <h3 class="text-lg font-bold text-slate-900 mb-2">${item.title}</h3>
                         
                         <div class="bg-amber-50/80 border-l-4 border-amber-500 p-3.5 rounded-r-xl mb-4 text-xs text-amber-950 italic">
-                            "${item.quote}"
+                            <span class="card-eyebrow">Qué se dijo</span>
+                            “${item.quote}”
                         </div>
                     </div>
 
                     <div>
                         <!-- Acción Sugerida UIPBA -->
                         <div class="pt-3 border-t border-slate-100 mb-3">
-                            <span class="text-[9px] font-bold uppercase text-uipba-blue tracking-wider">Acción UIPBA Sugerida (Gestión Gentile):</span>
+                            <span class="text-[9px] font-bold uppercase text-uipba-blue tracking-wider">Por qué importa para UIPBA</span>
                             <p class="text-xs text-slate-800 font-semibold mt-0.5">${item.action}</p>
                         </div>
 
                         <!-- Fuente Obligatoria (Claude Suggestion) -->
-                        <div class="flex justify-between items-center text-[10px] text-slate-400 bg-slate-50 p-2 rounded-lg border border-slate-100">
-                            <span>📌 <strong>Fuente:</strong> ${linkedSource(item.source)}</span>
-                            <span>📅 ${item.source.date} | <span class="text-emerald-600 font-bold">${item.metrics.variation}</span></span>
+                        <div class="source-row">
+                            <div class="source-meta"><span class="source-label">Fuente verificada</span>${linkedSource(item.source, "Ver publicación")}</div>
+                            <span class="source-date">${item.source.date}<br><span class="text-emerald-600 font-bold">${item.metrics.variation}</span></span>
                         </div>
                     </div>
                 </div>
@@ -3934,14 +3973,14 @@
 
                         <h3 class="text-lg font-bold text-slate-900 mb-2">${item.title}</h3>
                         <p class="text-xs text-slate-600 mb-4 leading-relaxed">
-                            <strong>Lo que habla la gente:</strong> ${item.streetTalk}
+                            <strong>Qué está pasando:</strong> ${item.streetTalk}
                         </p>
 
                         ${item.connection && item.connection.length ? `
                         <div class="bg-slate-50 border border-slate-200 p-3.5 rounded-xl space-y-2 mb-4">
                             <div class="flex items-center space-x-2 text-uipba-navy text-xs font-bold">
                                 <span class="w-2 h-2 bg-uipba-navy rounded-full"></span>
-                                <span>Conexión y Alerta Industrial:</span>
+                                <span>Impacto para el sector productivo</span>
                             </div>
                             <ul class="text-xs text-slate-700 space-y-1 pl-4 list-disc font-medium">
                                 ${item.connection.map(c => `<li>${c}</li>`).join('')}
@@ -3956,14 +3995,14 @@
 
                     <div>
                         <div class="pt-3 border-t border-slate-100 flex justify-between items-center text-xs mb-3">
-                            <span class="font-bold text-slate-500">Postura UIPBA:</span>
+                            <span class="font-bold text-slate-500">Lectura para UIPBA:</span>
                             <span class="font-bold text-uipba-navy text-right">${item.uipbaPosition}</span>
                         </div>
 
                         <!-- Fuente Obligatoria -->
-                        <div class="flex justify-between items-center text-[10px] text-slate-400 bg-slate-50 p-2 rounded-lg border border-slate-100">
-                            <span>📌 <strong>Fuente:</strong> ${linkedSource(item.source)}</span>
-                            <span>📅 ${item.source.date} | <span class="text-emerald-600 font-bold">${item.metrics.variation}</span></span>
+                        <div class="source-row">
+                            <div class="source-meta"><span class="source-label">Fuente verificada</span>${linkedSource(item.source, "Ver publicación")}</div>
+                            <span class="source-date">${item.source.date}<br><span class="text-emerald-600 font-bold">${item.metrics.variation}</span></span>
                         </div>
                     </div>
                 </div>
@@ -3984,14 +4023,14 @@
 
                     <div>
                         <div class="bg-slate-50 p-3 rounded-xl border border-slate-100 text-xs mb-3">
-                            <span class="font-bold text-uipba-navy block mb-0.5">Impacto UIPBA:</span>
+                            <span class="font-bold text-uipba-navy block mb-0.5">Por qué importa para UIPBA</span>
                             <p class="text-slate-700 font-medium">${item.impact}</p>
                         </div>
 
                         <!-- Fuente e Índices -->
-                        <div class="flex justify-between items-center text-[10px] text-slate-400 border-t border-slate-100 pt-2">
-                            <span>📌 ${linkedSource(item.source)}</span>
-                            <span class="font-bold text-slate-600">${renderStars(item.metrics.temp)}</span>
+                        <div class="source-row">
+                            <div class="source-meta"><span class="source-label">Fuente original</span>${linkedSource(item.source, "Leer noticia")}</div>
+                            <span class="source-date">Relevancia ${renderStars(item.metrics.temp)}<br>${item.source.date}</span>
                         </div>
                     </div>
                 </div>
@@ -4046,8 +4085,23 @@
             });
         }
 
+        function formatDate(dateVal) {
+            return new Intl.DateTimeFormat('es-AR', { day:'2-digit', month:'long', year:'numeric', timeZone:'UTC' }).format(new Date(dateVal + 'T12:00:00Z'));
+        }
+
+        function initDateSelector() {
+            const selector = document.getElementById('date-selector');
+            const dates = Object.keys(DASHBOARD_DATA).sort().reverse();
+            selector.innerHTML = dates.map((date, index) =>
+                `<option value="${date}">${formatDate(date)}${index === 0 ? ' · último informe' : ''}</option>`
+            ).join('');
+            return dates[0];
+        }
+
         function loadDataForDate(dateVal) {
-            document.getElementById('current-date-badge').innerText = dateVal.split('-').reverse().join('/');
+            const formatted = formatDate(dateVal);
+            document.getElementById('current-date-badge').innerText = formatted;
+            document.getElementById('analyzed-date').innerText = formatted;
             renderDashboard(dateVal);
         }
 
@@ -4078,7 +4132,11 @@
 
         // Inicialización al cargar la página
         window.onload = function() {
-            renderDashboard("2026-09-11");
+            const latestDate = initDateSelector();
+            if (latestDate) {
+                document.getElementById('date-selector').value = latestDate;
+                loadDataForDate(latestDate);
+            }
         };
     </script>
 </body>
