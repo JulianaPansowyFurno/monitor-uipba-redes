@@ -163,7 +163,7 @@
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
                     <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <span id="current-date-badge">11/09/2026</span>
+                    <span id="current-date-badge">12/09/2026</span>
                 </div>
             </div>
         </div>
@@ -186,7 +186,8 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-09-11" selected>11/09/2026 (Hoy)</option>
+                        <option value="2026-09-12" selected>12/09/2026 (Hoy)</option>
+                        <option value="2026-09-11">11/09/2026</option>
                         <option value="2026-09-10">10/09/2026</option>
                         <option value="2026-09-09">09/09/2026</option>
                         <option value="2026-09-08">08/09/2026</option>
@@ -335,6 +336,216 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+        "2026-09-12": {
+            "sector": [
+                {
+                    "id": "sec-81",
+                    "network": "X",
+                    "networkBadge": "bg-slate-900 text-white",
+                    "hashtag": "#Puertos #Producción #Trabajo #Logística",
+                    "title": "La articulación portuaria mantiene en agenda producción, trabajo y soberanía logística",
+                    "quote": "El Consejo Portuario Bonaerense reunió a actores públicos y privados para coordinar una actividad estratégica para la producción provincial y el comercio exterior.",
+                    "action": "Sistematizar demandas de infraestructura, costos y conectividad de los socios para acercarlas a la agenda portuaria bonaerense.",
+                    "source": {
+                        "name": "Ministerio de Trabajo PBA (@TrabajoPBA) — X",
+                        "link": "https://x.com/TrabajoPBA/status/2097651582896656573",
+                        "date": "9 Sep 2026 · publicación más reciente verificable"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Medio-Alto",
+                        "variation": "Excepción: no se halló post verificable del 11 Sep"
+                    }
+                },
+                {
+                    "id": "sec-82",
+                    "network": "LinkedIn",
+                    "networkBadge": "bg-uipba-navy text-white",
+                    "hashtag": "#Energía #Tecnología #Inversión #VacaMuerta",
+                    "title": "La fractura eléctrica abre una nueva etapa de eficiencia e innovación energética",
+                    "quote": "La llegada al país del primer set de fractura 100% eléctrico, descargado en Terminal Zárate, instala una conversación sobre tecnología, productividad y reducción del impacto operativo.",
+                    "action": "Mapear capacidades de proveedores bonaerenses que puedan integrarse a la modernización tecnológica de la cadena energética.",
+                    "source": {
+                        "name": "YPF — LinkedIn",
+                        "link": "https://es.linkedin.com/posts/ypf-s-a-_un-nuevo-paso-concretado-para-la-modernizaci%C3%B3n-activity-7503168975028289536-9YX_",
+                        "date": "8 Sep 2026 · publicación más reciente verificable"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Alto",
+                        "variation": "Excepción: no se halló post verificable del 11 Sep"
+                    }
+                },
+                {
+                    "id": "sec-83",
+                    "network": "Instagram",
+                    "networkBadge": "bg-pink-600 text-white",
+                    "hashtag": "#FATE #Industria #Empleo #Producción",
+                    "title": "El cierre de FATE sostiene la preocupación por empleo y capacidad industrial",
+                    "quote": "La conversación vincula el cierre de una fábrica emblemática con la pérdida de puestos de trabajo, proveedores y conocimiento productivo acumulado.",
+                    "action": "Relevar el impacto territorial sobre trabajadores y empresas proveedoras para consolidar un diagnóstico industrial bonaerense.",
+                    "source": {
+                        "name": "Carlos Heller (@heller_carlos) — Instagram",
+                        "link": "https://www.instagram.com/reel/DdHpgn1SKce/",
+                        "date": "10 Sep 2026 · publicación más reciente verificable"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Excepción: no se halló post verificable del 11 Sep"
+                    }
+                },
+                {
+                    "id": "sec-84",
+                    "network": "Facebook",
+                    "networkBadge": "bg-blue-700 text-white",
+                    "hashtag": "#PyMEs #Empleo #Producción #IndustriaNacional",
+                    "title": "El cierre de PyMEs continúa asociado a pérdida de producción y trabajo",
+                    "quote": "El debate advierte que la desaparición de empresas pequeñas y medianas impacta sobre el empleo, el entramado local y las posibilidades de recuperación productiva.",
+                    "action": "Contrastar el diagnóstico con cámaras territoriales y socios para identificar sectores y municipios con mayor deterioro.",
+                    "source": {
+                        "name": "Fernando Gray — Facebook",
+                        "link": "https://www.facebook.com/fernandograyok/videos/el-cierre-de-m%C3%A1s-de-45000-pymes-en-la-argentina-significa-p%C3%A9rdida-de-empleo-de-p/706078912461630/",
+                        "date": "Fecha no expuesta por el índice público · relevada el 12 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Video individual verificable; fecha pública no acreditable"
+                    }
+                }
+            ],
+            "calle": [
+                {
+                    "id": "calle-63",
+                    "region": "conurbano-sur",
+                    "riskLevel": "Seguridad Escolar",
+                    "badgeClass": "badge-alert-high",
+                    "topicNumber": "Tema #1 en Agenda PBA",
+                    "title": "1. Una amenaza contra una escuela activa una investigación en Quilmes",
+                    "streetTalk": "Un adolescente de 15 años fue investigado después de que el FBI alertara sobre un plan de ataque elaborado con asistencia de inteligencia artificial; la PFA secuestró elementos tácticos en su domicilio.",
+                    "connection": [
+                        "El caso eleva la preocupación por la seguridad escolar, la detección temprana de amenazas digitales y la coordinación entre autoridades y comunidades educativas."
+                    ],
+                    "uipbaPosition": "Acompañar protocolos de prevención y respuesta que protejan a trabajadores, estudiantes y familias en los entornos educativos.",
+                    "source": {
+                        "name": "LA NACION — 11 Sep 2026, 11:58",
+                        "link": "https://www.lanacion.com.ar/seguridad/un-adolescente-planifico-con-inteligencia-artificial-sus-companeros-de-colegio-el-fbi-dio-aviso-y-lo-nid11092026/"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Intervención federal y judicial juvenil"
+                    }
+                },
+                {
+                    "id": "calle-64",
+                    "region": "conurbano-sur",
+                    "riskLevel": "Salud y Accesibilidad",
+                    "badgeClass": "badge-alert-info",
+                    "topicNumber": "Tema #2 en Agenda PBA",
+                    "title": "2. Brown mejora el acceso peatonal al Hospital Lucio Meléndez",
+                    "streetTalk": "El municipio construye una vereda de 77 metros con rampas entre el estacionamiento y la guardia del hospital provincial, para facilitar el ingreso y evitar barro y anegamientos en días de lluvia.",
+                    "connection": [
+                        "La intervención mejora la accesibilidad y seguridad cotidiana de pacientes, acompañantes y personal de salud."
+                    ],
+                    "uipbaPosition": "Promover infraestructura urbana accesible alrededor de hospitales y centros de atención que sostienen a las comunidades productivas.",
+                    "source": {
+                        "name": "La Noticia Sur — 11 Sep 2026",
+                        "link": "https://lanoticiasur.com.ar/brown-nuevas-veredas-y-accesos-al-hospital-provincial-lucio-melendez/"
+                    },
+                    "metrics": {
+                        "temp": 3,
+                        "volume": "Medio",
+                        "variation": "77 metros de vereda y nuevas rampas"
+                    }
+                },
+                {
+                    "id": "calle-65",
+                    "region": "conurbano-sur",
+                    "riskLevel": "Educación Pública",
+                    "badgeClass": "badge-alert-medium",
+                    "topicNumber": "Tema #3 en Agenda PBA",
+                    "title": "3. Avellaneda pone la inversión educativa en el centro de la agenda local",
+                    "streetTalk": "En el marco del Día de las Maestras y los Maestros, el municipio anunció medidas para la comunidad educativa y reafirmó la prioridad de sostener escuelas y condiciones de enseñanza.",
+                    "connection": [
+                        "La continuidad de políticas educativas locales incide sobre la inclusión, la formación y las oportunidades de jóvenes y familias del distrito."
+                    ],
+                    "uipbaPosition": "Fortalecer vínculos entre escuelas técnicas, formación profesional y empresas para ampliar trayectorias educativas y laborales.",
+                    "source": {
+                        "name": "La Noticia Sur — 11 Sep 2026",
+                        "link": "https://lanoticiasur.com.ar/en-avellaneda-la-educacion-siempre-es-y-sera-una-prioridad/"
+                    },
+                    "metrics": {
+                        "temp": 3,
+                        "volume": "Medio-Alto",
+                        "variation": "Anuncios para la comunidad educativa"
+                    }
+                }
+            ],
+            "clipping": [
+                {
+                    "id": "clip-87",
+                    "category": "nacional",
+                    "scopeTag": "Nacional • Logística",
+                    "badgeClass": "badge-alert-high",
+                    "badgeText": "COSTO LOGÍSTICO",
+                    "title": "La UIA propone ampliar el ferrocarril para reducir la dependencia del camión",
+                    "summary": "Argentina transporta por tren apenas el 4% de su carga y concentra el 88% en camiones; la propuesta industrial plantea renovar 3.000 kilómetros de vías y desarrollar nodos multimodales, puertos secos y mejores accesos portuarios.",
+                    "impact": "Una red ferroviaria más extensa puede bajar costos, ampliar el alcance exportador y mejorar la competitividad de plantas bonaerenses alejadas de los puertos.",
+                    "source": {
+                        "name": "DataPortuaria",
+                        "link": "https://dataportuaria.com/es/argentina/logistica/argentina-transporta-por-tren-el-4-de-su-carga-la-uia-propone-un-plan-para-revertirlo",
+                        "date": "11 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Tren 4%; camión 88%; plan de 3.000 km"
+                    }
+                },
+                {
+                    "id": "clip-88",
+                    "category": "nacional",
+                    "scopeTag": "Nacional • Energía y Finanzas",
+                    "badgeClass": "badge-alert-info",
+                    "badgeText": "INVERSIÓN",
+                    "title": "YPF obtiene US$1.200 millones en su mayor emisión internacional en once años",
+                    "summary": "La petrolera colocó deuda a nueve años con una tasa del 7,55% y recibió ofertas por unos US$2.200 millones, una señal de acceso al financiamiento para su plan de inversión.",
+                    "impact": "El fondeo puede acelerar proyectos energéticos y generar demanda para proveedores industriales, logísticos y tecnológicos de la Provincia.",
+                    "source": {
+                        "name": "DataPortuaria",
+                        "link": "https://dataportuaria.com/es/argentina/actualidad/ypf-coloco-us-1-200-millones-en-el-mercado-internacional-la-mayor-emision-argentina-en-11-anos",
+                        "date": "11 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Alto",
+                        "variation": "US$1.200 millones; demanda de US$2.200 millones"
+                    }
+                },
+                {
+                    "id": "clip-89",
+                    "category": "regional",
+                    "scopeTag": "Conurbano PBA • Seguridad",
+                    "badgeClass": "badge-alert-high",
+                    "badgeText": "SEGURIDAD",
+                    "title": "La inseguridad del Conurbano llega a la Legislatura bonaerense",
+                    "summary": "Tras homicidios, robos violentos y una balacera cerca de una escuela en El Palomar, legisladores opositores pidieron interpelar al ministro de Seguridad Javier Alonso para que informe las medidas adoptadas.",
+                    "impact": "La escalada del reclamo evidencia la presión social sobre prevención, patrullaje e información criminal en municipios donde también operan corredores productivos y comerciales.",
+                    "source": {
+                        "name": "LA NACION",
+                        "link": "https://www.lanacion.com.ar/seguridad/la-crisis-de-la-seguridad-la-libertad-avanza-impulsa-la-interpelacion-del-ministro-bonaerense-javier-nid11092026/",
+                        "date": "11 Sep 2026 · 17:44"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Pedido formal en Diputados y Senado provincial"
+                    }
+                }
+            ]
+        },
         "2026-09-11": {
             "sector": [
                 {
