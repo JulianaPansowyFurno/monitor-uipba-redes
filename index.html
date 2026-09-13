@@ -163,7 +163,7 @@
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
                     <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <span id="current-date-badge">12/09/2026</span>
+                    <span id="current-date-badge">13/09/2026</span>
                 </div>
             </div>
         </div>
@@ -186,7 +186,8 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-09-12" selected>12/09/2026 (Hoy)</option>
+                        <option value="2026-09-13" selected>13/09/2026 (Hoy)</option>
+                        <option value="2026-09-12">12/09/2026</option>
                         <option value="2026-09-11">11/09/2026</option>
                         <option value="2026-09-10">10/09/2026</option>
                         <option value="2026-09-09">09/09/2026</option>
@@ -336,6 +337,216 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+        "2026-09-13": {
+            "sector": [
+                {
+                    "id": "sec-85",
+                    "network": "X",
+                    "networkBadge": "bg-slate-900 text-white",
+                    "hashtag": "#Puertos #Producción #Trabajo #Logística",
+                    "title": "La coordinación portuaria sigue vinculada con competitividad, empleo y comercio exterior",
+                    "quote": "La conversación del Consejo Portuario Bonaerense destaca la necesidad de articular infraestructura, operación logística y trabajo para sostener la producción provincial.",
+                    "action": "Reunir prioridades de conectividad, costos y servicios de los socios para fortalecer su representación ante la agenda portuaria.",
+                    "source": {
+                        "name": "Ministerio de Trabajo PBA (@TrabajoPBA) — X",
+                        "link": "https://x.com/TrabajoPBA/status/2097651582896656573",
+                        "date": "9 Sep 2026 · publicación más reciente verificable"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Medio-Alto",
+                        "variation": "Excepción: no se halló post verificable del 12 Sep"
+                    }
+                },
+                {
+                    "id": "sec-86",
+                    "network": "LinkedIn",
+                    "networkBadge": "bg-uipba-navy text-white",
+                    "hashtag": "#Energía #Tecnología #Inversión #Proveedores",
+                    "title": "La electrificación de operaciones energéticas impulsa nuevas capacidades proveedoras",
+                    "quote": "La llegada a Terminal Zárate del primer set de fractura 100% eléctrico abre una agenda de eficiencia, innovación y demanda tecnológica para la cadena de valor.",
+                    "action": "Identificar empresas bonaerenses capaces de proveer ingeniería, mantenimiento, electrónica y logística para la modernización energética.",
+                    "source": {
+                        "name": "YPF — LinkedIn",
+                        "link": "https://es.linkedin.com/posts/ypf-s-a-_un-nuevo-paso-concretado-para-la-modernizaci%C3%B3n-activity-7503168975028289536-9YX_",
+                        "date": "8 Sep 2026 · publicación más reciente verificable"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Alto",
+                        "variation": "Excepción: no se halló post verificable del 12 Sep"
+                    }
+                },
+                {
+                    "id": "sec-87",
+                    "network": "Instagram",
+                    "networkBadge": "bg-pink-600 text-white",
+                    "hashtag": "#FATE #Industria #Empleo #CapacidadProductiva",
+                    "title": "La pérdida de una planta industrial mantiene abierto el debate sobre empleo y capacidades",
+                    "quote": "El cierre de FATE continúa funcionando como símbolo de la preocupación por los puestos de trabajo, los proveedores y el conocimiento productivo acumulado.",
+                    "action": "Documentar efectos territoriales y sectoriales para aportar evidencia concreta a la agenda de defensa de la producción bonaerense.",
+                    "source": {
+                        "name": "Carlos Heller (@heller_carlos) — Instagram",
+                        "link": "https://www.instagram.com/reel/DdHpgn1SKce/",
+                        "date": "10 Sep 2026 · publicación más reciente verificable"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Excepción: no se halló post verificable del 12 Sep"
+                    }
+                },
+                {
+                    "id": "sec-88",
+                    "network": "Facebook",
+                    "networkBadge": "bg-blue-700 text-white",
+                    "hashtag": "#PyMEs #Empleo #Producción #DesarrolloLocal",
+                    "title": "El cierre de PyMEs continúa planteado como un problema de empleo y desarrollo local",
+                    "quote": "La conversación relaciona la desaparición de pequeñas y medianas empresas con pérdida de trabajo, producción y oportunidades para las comunidades.",
+                    "action": "Contrastar el reclamo con cámaras territoriales y socios para detectar municipios y cadenas productivas con mayor deterioro.",
+                    "source": {
+                        "name": "Fernando Gray — Facebook",
+                        "link": "https://www.facebook.com/fernandograyok/videos/el-cierre-de-m%C3%A1s-de-45000-pymes-en-la-argentina-significa-p%C3%A9rdida-de-empleo-de-p/706078912461630/",
+                        "date": "Fecha no expuesta por el índice público · relevada el 13 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Video individual verificable; fecha pública no acreditable"
+                    }
+                }
+            ],
+            "calle": [
+                {
+                    "id": "calle-66",
+                    "region": "la-plata",
+                    "riskLevel": "Vivienda Estudiantil",
+                    "badgeClass": "badge-alert-info",
+                    "topicNumber": "Tema #1 en Agenda PBA",
+                    "title": "1. La UNLP abre el primer alquiler social universitario del país",
+                    "streetTalk": "El Barrio Estudiantil de la Universidad Nacional de La Plata abrirá en octubre la inscripción para un esquema de alquiler social destinado a estudiantes que necesitan sostener su cursada lejos de sus hogares.",
+                    "connection": [
+                        "La iniciativa pone en agenda el costo habitacional y la permanencia educativa de jóvenes que estudian en la capital bonaerense."
+                    ],
+                    "uipbaPosition": "Acompañar soluciones de vivienda y permanencia que amplíen el acceso a formación universitaria y técnica en la Provincia.",
+                    "source": {
+                        "name": "InfoCielo — 12 Sep 2026, 11:11",
+                        "link": "https://www.infocielo.com/la-plata/barrio-estudiantil-de-la-unlp-ya-hay-fecha-para-la-inscripcion-al-primer-alquiler-social-universitario-de-argentina"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Medio-Alto",
+                        "variation": "Inscripción prevista para octubre"
+                    }
+                },
+                {
+                    "id": "calle-67",
+                    "region": "la-plata",
+                    "riskLevel": "Seguridad e Infraestructura",
+                    "badgeClass": "badge-alert-high",
+                    "topicNumber": "Tema #2 en Agenda PBA",
+                    "title": "2. La clausura del Autódromo Mouras suspende la actividad del fin de semana",
+                    "streetTalk": "La Policía clausuró el circuito platense y dejó sin competencia a cuatro categorías, una medida que instaló dudas sobre las condiciones de seguridad e infraestructura del predio.",
+                    "connection": [
+                        "La suspensión afecta a equipos, trabajadores, proveedores y público que dependen de la actividad deportiva y comercial del autódromo."
+                    ],
+                    "uipbaPosition": "Promover controles preventivos y planes de adecuación que permitan sostener actividades con condiciones de seguridad verificables.",
+                    "source": {
+                        "name": "InfoPlatense — 12 Sep 2026",
+                        "link": "https://www.infoplatense.com.ar/la-policia-clausuro-el-autodromo-mouras-de-la-plata/"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Medio-Alto",
+                        "variation": "Cuatro categorías sin actividad"
+                    }
+                },
+                {
+                    "id": "calle-68",
+                    "region": "la-plata",
+                    "riskLevel": "Servicios Urbanos",
+                    "badgeClass": "badge-alert-medium",
+                    "topicNumber": "Tema #3 en Agenda PBA",
+                    "title": "3. Un operativo de gran porte renueva infraestructura de combustible en La Plata",
+                    "streetTalk": "Una grúa de gran porte instaló un nuevo tanque en la estación de servicio de 7 y 32, con un operativo especial que modificó la circulación en un nodo transitado de la ciudad.",
+                    "connection": [
+                        "La intervención combina renovación de infraestructura crítica, seguridad operativa y gestión del tránsito urbano."
+                    ],
+                    "uipbaPosition": "Impulsar coordinación temprana entre empresas y municipio para ejecutar obras privadas con seguridad y menor impacto sobre la movilidad.",
+                    "source": {
+                        "name": "InfoCielo — 12 Sep 2026",
+                        "link": "https://www.infocielo.com/la-plata/con-grua-de-gran-porte-instalan-nuevo-tanque-de-combustible-en-la-estacion-de-servicio-de-7-y-32"
+                    },
+                    "metrics": {
+                        "temp": 3,
+                        "volume": "Medio",
+                        "variation": "Renovación de tanque y operativo vial"
+                    }
+                }
+            ],
+            "clipping": [
+                {
+                    "id": "clip-90",
+                    "category": "nacional",
+                    "scopeTag": "Nacional • Industria Naval",
+                    "badgeClass": "badge-alert-high",
+                    "badgeText": "COMPETITIVIDAD",
+                    "title": "Los astilleros reclaman menor presión tributaria y financiamiento de largo plazo",
+                    "summary": "La Cámara de la Industria Naval Argentina pidió revisar el impacto de Ingresos Brutos, recuperar el fondo sectorial y fortalecer el leasing para que astilleros y PyMEs proveedoras puedan competir con la región.",
+                    "impact": "El planteo involucra directamente a Buenos Aires, donde se concentra buena parte de la construcción, reparación y provisión naval del país.",
+                    "source": {
+                        "name": "Comex Online",
+                        "link": "https://comexonline.com.ar/noticias/val/63658/dia-de-la-industria-naval-cina-reclama-condiciones-para-producir-y-competir.html",
+                        "date": "12 Sep 2026 · 19:36"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Ingresos Brutos, leasing y fondo sectorial"
+                    }
+                },
+                {
+                    "id": "clip-91",
+                    "category": "regional",
+                    "scopeTag": "Regional PBA • Tecnología Naval",
+                    "badgeClass": "badge-alert-info",
+                    "badgeText": "INNOVACIÓN",
+                    "title": "La ingeniería naval identifica oportunidades en digitalización, energía y especialización",
+                    "summary": "Un análisis del sector destaca el uso de simulación, automatización e inteligencia artificial y propone articular astilleros, universidades y empresas para desarrollar segmentos de mayor valor agregado.",
+                    "impact": "Astillero Río Santiago, Puerto Belgrano, Mar del Plata, Bahía Blanca, Dock Sud y Campana ubican a la Provincia en el centro de esa agenda tecnológica.",
+                    "source": {
+                        "name": "LA NACION — Opinión",
+                        "link": "https://www.lanacion.com.ar/opinion/industria-naval-mirar-el-futuro-para-recuperar-el-esplendor-del-pasado-nid12092026/",
+                        "date": "12 Sep 2026 · 00:05"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Medio-Alto",
+                        "variation": "Tecnología, universidades y empleo calificado"
+                    }
+                },
+                {
+                    "id": "clip-92",
+                    "category": "nacional",
+                    "scopeTag": "Nacional • Cadena Naval",
+                    "badgeClass": "badge-alert-medium",
+                    "badgeText": "CAPACIDAD PRODUCTIVA",
+                    "title": "La industria naval vuelve a medir cuánto trabajo puede retener dentro del país",
+                    "summary": "A 65 años del Plan Esteverena, el sector reúne astilleros, metalúrgicas, empresas eléctricas, electrónicas, mecánicas y servicios especializados, con demanda potencial de la Hidrovía, pesca, energía y comercio exterior.",
+                    "impact": "Las medidas bonaerenses para priorizar buques de bandera nacional y las mejoras de infraestructura abren oportunidades para construcción, reparación y proveedores locales.",
+                    "source": {
+                        "name": "Comex Online",
+                        "link": "https://comexonline.com.ar/noticias/val/63657/dia-de-la-industria-naval-argentina-una-actividad-estrategica-que-vuelve-a-mirar-hacia-el-futuro.html",
+                        "date": "12 Sep 2026 · 09:28"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Alto",
+                        "variation": "Red de astilleros y proveedores especializados"
+                    }
+                }
+            ]
+        },
         "2026-09-12": {
             "sector": [
                 {
