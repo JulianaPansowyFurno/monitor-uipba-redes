@@ -240,6 +240,11 @@
     render();
   }));
   selector.addEventListener("change",render);
+  const requestedWeek=new URLSearchParams(window.location.search).get("semana");
+  const requestedOption=[...selector.options].find(option=>option.value===requestedWeek);
+  const latestCompleted=[...selector.options].find(option=>!option.textContent.includes("En preparación"));
+  if(requestedOption){selector.value=requestedOption.value;}
+  else if(latestCompleted){selector.value=latestCompleted.value;}
   render();
 </script>
 </body>
