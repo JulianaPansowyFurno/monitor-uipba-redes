@@ -163,7 +163,7 @@
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
                     <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <span id="current-date-badge">13/09/2026</span>
+                    <span id="current-date-badge">14/09/2026</span>
                 </div>
             </div>
         </div>
@@ -186,7 +186,8 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-09-13" selected>13/09/2026 (Hoy)</option>
+                        <option value="2026-09-14" selected>14/09/2026 (Hoy)</option>
+                        <option value="2026-09-13">13/09/2026</option>
                         <option value="2026-09-12">12/09/2026</option>
                         <option value="2026-09-11">11/09/2026</option>
                         <option value="2026-09-10">10/09/2026</option>
@@ -337,6 +338,216 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+        "2026-09-14": {
+            "sector": [
+                {
+                    "id": "sec-89",
+                    "network": "X",
+                    "networkBadge": "bg-slate-900 text-white",
+                    "hashtag": "#Puertos #Logística #Producción #Trabajo",
+                    "title": "La agenda portuaria reclama coordinación entre logística, producción y empleo",
+                    "quote": "La conversación del Consejo Portuario Bonaerense mantiene en primer plano la articulación de infraestructura, operación y trabajo para sostener el comercio exterior provincial.",
+                    "action": "Ordenar demandas de conectividad, costos y servicios de los socios para llevarlas a la agenda portuaria bonaerense.",
+                    "source": {
+                        "name": "Ministerio de Trabajo PBA (@TrabajoPBA) — X",
+                        "link": "https://x.com/TrabajoPBA/status/2097651582896656573",
+                        "date": "9 Sep 2026 · publicación más reciente verificable"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Medio-Alto",
+                        "variation": "Excepción: no se halló post verificable del 13 Sep"
+                    }
+                },
+                {
+                    "id": "sec-90",
+                    "network": "LinkedIn",
+                    "networkBadge": "bg-uipba-navy text-white",
+                    "hashtag": "#Energía #Tecnología #Inversión #Proveedores",
+                    "title": "La modernización energética abre oportunidades para proveedores tecnológicos",
+                    "quote": "El ingreso por Terminal Zárate del primer set de fractura totalmente eléctrico instala una agenda de eficiencia, innovación y nuevas capacidades para la cadena de valor.",
+                    "action": "Identificar empresas bonaerenses con oferta de ingeniería, mantenimiento, electrónica y logística para la transformación energética.",
+                    "source": {
+                        "name": "YPF — LinkedIn",
+                        "link": "https://es.linkedin.com/posts/ypf-s-a-_un-nuevo-paso-concretado-para-la-modernizaci%C3%B3n-activity-7503168975028289536-9YX_",
+                        "date": "8 Sep 2026 · publicación más reciente verificable"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Alto",
+                        "variation": "Excepción: no se halló post verificable del 13 Sep"
+                    }
+                },
+                {
+                    "id": "sec-91",
+                    "network": "Instagram",
+                    "networkBadge": "bg-pink-600 text-white",
+                    "hashtag": "#FATE #Empleo #Industria #CapacidadProductiva",
+                    "title": "El cierre de una planta emblemática sigue concentrando la preocupación por el empleo",
+                    "quote": "El caso FATE continúa movilizando el debate sobre puestos de trabajo, proveedores y pérdida de capacidades productivas acumuladas en la Provincia.",
+                    "action": "Relevar efectos sobre trabajadores y empresas proveedoras para consolidar un diagnóstico territorial verificable.",
+                    "source": {
+                        "name": "Carlos Heller (@heller_carlos) — Instagram",
+                        "link": "https://www.instagram.com/reel/DdHpgn1SKce/",
+                        "date": "10 Sep 2026 · publicación más reciente verificable"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Excepción: no se halló post verificable del 13 Sep"
+                    }
+                },
+                {
+                    "id": "sec-92",
+                    "network": "Facebook",
+                    "networkBadge": "bg-blue-700 text-white",
+                    "hashtag": "#Industria #Empleo #PyMEs #TrabajoArgentino",
+                    "title": "La caída industrial refuerza el reclamo por empleo y continuidad fabril",
+                    "quote": "La conversación sindical advierte sobre el riesgo de pérdida de puestos de trabajo y establecimientos si no se recuperan demanda y producción.",
+                    "action": "Contrastar el planteo con cámaras y sindicatos territoriales para localizar cadenas y municipios con mayor exposición.",
+                    "source": {
+                        "name": "Camioneros BA — Facebook",
+                        "link": "https://www.facebook.com/CamionerosBA/posts/la-industria-argentina-en-ca%C3%ADda-estiman-que-se-perder%C3%A1n-105000-empleos-en-2026-e/1541185658049629/",
+                        "date": "Fecha no expuesta por el índice público · relevada el 14 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Post individual verificable; fecha pública no acreditable"
+                    }
+                }
+            ],
+            "calle": [
+                {
+                    "id": "calle-69",
+                    "region": "la-plata",
+                    "riskLevel": "Servicios Eléctricos",
+                    "badgeClass": "badge-alert-high",
+                    "topicNumber": "Tema #1 en Agenda PBA",
+                    "title": "1. Los cortes eléctricos alteran hogares, comercios y servicios esenciales",
+                    "streetTalk": "Vecinos y comerciantes de La Plata y localidades cercanas volvieron a señalar apagones recurrentes, cierres de locales, pérdida de mercadería y riesgos para personas electrodependientes.",
+                    "connection": [
+                        "La inestabilidad del suministro afecta la vida cotidiana, la actividad comercial, el alumbrado y la continuidad de clases en la Región Capital."
+                    ],
+                    "uipbaPosition": "Solicitar un plan verificable de inversión, mantenimiento y contingencia que priorice usuarios críticos y corredores comerciales.",
+                    "source": {
+                        "name": "El Día — 13 Sep 2026, 03:04",
+                        "link": "https://www.eldia.com/opinion/un-servicio-electrico-en-colapso-que-exige-respuestas-urgentes-en-la-region-opinion_1789279485/amp"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Reclamos de vecinos y comercios de La Plata y Región"
+                    }
+                },
+                {
+                    "id": "calle-70",
+                    "region": "conurbano-sur",
+                    "riskLevel": "Seguridad Vial",
+                    "badgeClass": "badge-alert-high",
+                    "topicNumber": "Tema #2 en Agenda PBA",
+                    "title": "2. Un colectivo fuera de recorrido se incrustó en una vivienda de Temperley",
+                    "streetTalk": "El conductor de la línea 527 murió tras impactar contra una casa en Caaguazú y Dinamarca; el vehículo, sin pasajeros, provocó daños importantes y vecinos relataron que se salvaron de milagro.",
+                    "connection": [
+                        "El episodio vuelve a poner bajo análisis la seguridad vial, los controles operativos y la protección de viviendas frente a siniestros urbanos."
+                    ],
+                    "uipbaPosition": "Acompañar la investigación y promover protocolos de seguridad y trazabilidad para vehículos de transporte fuera de servicio.",
+                    "source": {
+                        "name": "LA NACION — 13 Sep 2026, 10:05",
+                        "link": "https://www.lanacion.com.ar/seguridad/un-colectivero-murio-tras-estrellarse-contra-una-casa-en-temperley-nid13092026/"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Una víctima fatal y dos viviendas dañadas"
+                    }
+                },
+                {
+                    "id": "calle-71",
+                    "region": "general",
+                    "riskLevel": "Seguridad",
+                    "badgeClass": "badge-alert-high",
+                    "topicNumber": "Tema #3 en Agenda PBA",
+                    "title": "3. La Provincia registra al menos 364 robos por día",
+                    "streetTalk": "Un relevamiento sobre el primer semestre contabilizó cerca de 65.000 robos denunciados en territorio bonaerense y expuso la persistencia de la violencia callejera como preocupación cotidiana.",
+                    "connection": [
+                        "La frecuencia delictiva impacta sobre familias, trabajadores, comercios, logística y decisiones de circulación en toda la Provincia."
+                    ],
+                    "uipbaPosition": "Promover mesas territoriales de prevención con datos abiertos, mapas de riesgo y coordinación entre municipios, empresas y fuerzas de seguridad.",
+                    "source": {
+                        "name": "LA NACION — 13 Sep 2026",
+                        "link": "https://www.lanacion.com.ar/seguridad/adn-del-crimen-el-delito-golpea-364-veces-por-lo-menos-cada-dia-en-un-territorio-bonaerense-agobiado-nid13092026/"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Muy Alto",
+                        "variation": "Cerca de 65.000 robos denunciados en seis meses"
+                    }
+                }
+            ],
+            "clipping": [
+                {
+                    "id": "clip-93",
+                    "category": "nacional",
+                    "scopeTag": "Nacional • PyMEs y Empleo",
+                    "badgeClass": "badge-alert-high",
+                    "badgeText": "DEMANDA INTERNA",
+                    "title": "Las PyMEs reducen turnos y diversifican tareas para sostener el empleo",
+                    "summary": "La baja de ventas, los costos y la competencia importada llevan a firmas industriales a acortar jornadas, sumar servicios de reparación y buscar clientes fuera de su zona para proteger caja y dotaciones.",
+                    "impact": "El 70% de la producción pyme industrial depende del mercado interno; la retracción condiciona fábricas, proveedores y empleo bonaerense.",
+                    "source": {
+                        "name": "Infobae",
+                        "link": "https://www.infobae.com/economia/2026/09/13/con-ventas-debiles-costos-en-alza-y-menos-pedidos-las-pymes-ajustan-turnos-para-intentar-sostener-el-empleo/",
+                        "date": "13 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Muy Alto",
+                        "variation": "Producción pyme industrial: -3,8% interanual en julio"
+                    }
+                },
+                {
+                    "id": "clip-94",
+                    "category": "nacional",
+                    "scopeTag": "Nacional • Financiamiento PyME",
+                    "badgeClass": "badge-alert-info",
+                    "badgeText": "CAPITAL Y SUCESIÓN",
+                    "title": "Los search funds aparecen como alternativa para financiar y dar continuidad a PyMEs",
+                    "summary": "Con el crédito bancario limitado y muchas firmas sin sucesión preparada, inversores buscan adquirir y gestionar empresas consolidadas con potencial de crecimiento.",
+                    "impact": "El instrumento puede ampliar opciones de capital y continuidad para compañías bonaerenses, aunque depende de reglas estables y valuaciones sostenibles.",
+                    "source": {
+                        "name": "LA NACION",
+                        "link": "https://www.lanacion.com.ar/economia/que-son-los-search-funds-los-fondos-de-capital-privado-que-buscan-pymes-para-comprar-nid13092026/",
+                        "date": "13 Sep 2026 · 00:01"
+                    },
+                    "metrics": {
+                        "temp": 3,
+                        "volume": "Medio-Alto",
+                        "variation": "Crédito privado equivalente al 16% del PBI"
+                    }
+                },
+                {
+                    "id": "clip-95",
+                    "category": "nacional",
+                    "scopeTag": "Nacional • Actividad Industrial",
+                    "badgeClass": "badge-alert-high",
+                    "badgeText": "RIESGO FABRIL",
+                    "title": "Un informe proyecta riesgo de cierre para 3.300 fábricas durante 2026",
+                    "summary": "La estimación vincula menor demanda, mora empresarial y caída productiva con la posibilidad de nuevos cierres, después de una baja industrial mensual de 5% en julio.",
+                    "impact": "La advertencia exige seguimiento en la Provincia por su concentración manufacturera y el efecto sobre empleo, proveedores y municipios industriales.",
+                    "source": {
+                        "name": "Mundo Poder",
+                        "link": "https://www.mundopoder.com/2026/09/13/industria-en-alerta-podrian-cerrar-3-300-fabricas-este-ano",
+                        "date": "13 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Más de 1.500 industrias perdidas en el año según el informe"
+                    }
+                }
+            ]
+        },
         "2026-09-13": {
             "sector": [
                 {
