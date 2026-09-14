@@ -92,7 +92,7 @@
   <div class="toolbar">
     <div>
       <h2>Registro de menciones</h2>
-      <label for="weekSelector" style="display:block;margin-top:12px;font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em">Semana consultada</label>
+      <label for="weekSelector" style="display:block;margin-top:12px;font-size:12px;font-weight:800;color:var(--navy);text-transform:uppercase;letter-spacing:.09em">Historial de ediciones semanales</label>
       <select id="weekSelector" style="margin-top:7px;min-width:250px;padding:10px 12px;border:1px solid #cfc8bc;border-radius:10px;background:#fff;color:var(--navy);font:700 13px 'DM Sans'">
         <option value="2026-09-14">14 al 18 de septiembre de 2026 · En preparación</option>
         <option value="2026-09-07" selected>7 al 11 de septiembre de 2026 · Edición de muestra</option>
@@ -100,6 +100,7 @@
         <option value="2026-06-29">29 de junio al 3 de julio de 2026</option>
         <option value="2026-06-22">22 al 26 de junio de 2026</option>
       </select>
+      <span style="display:block;margin-top:7px;color:var(--muted);font-size:12px">Elegí una semana para consultar su registro completo. Las ediciones anteriores no se eliminan.</span>
     </div>
     <div class="filters" role="group" aria-label="Filtrar por alcance">
       <button class="filter active" data-filter="todos">Todas</button>
@@ -226,6 +227,9 @@
     document.getElementById("localCount").textContent=local;
     document.getElementById("heroPeriod").textContent=weekLabels[week].period;
     document.getElementById("heroStatus").textContent=weekLabels[week].status;
+    const editionUrl=new URL(window.location.href);
+    editionUrl.searchParams.set("semana",week);
+    window.history.replaceState({week},"",editionUrl);
     empty.style.display=total?"none":"block";
     document.getElementById("emptyTitle").textContent=week==="2026-09-14"?"Edición en preparación":"Sin menciones verificadas";
     document.getElementById("emptyText").textContent=week==="2026-09-14"
