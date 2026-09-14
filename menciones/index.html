@@ -71,7 +71,7 @@
         <h1>UIPBA en los medios</h1>
         <p>Dónde aparece la entidad, quién la menciona y en qué contexto. Cada registro fue comprobado en la fuente original y permite acceder directamente a la publicación.</p>
       </div>
-      <div class="edition"><small>Edición inicial</small><strong>Junio—septiembre 2026</strong><span>Actualizado el 14 de septiembre de 2026</span></div>
+      <div class="edition"><small>Edición semanal</small><strong id="heroPeriod">14—18 de septiembre de 2026</strong><span id="heroStatus">En preparación · publicación el viernes 18</span></div>
     </div>
   </section>
 </header>
@@ -83,14 +83,23 @@
   </section>
 
   <section class="metrics" aria-label="Resumen de menciones">
-    <div class="metric"><b id="totalCount">7</b><span>Menciones verificadas</span></div>
-    <div class="metric"><b>4</b><span>Medios nacionales</span></div>
-    <div class="metric"><b>1</b><span>Medio provincial</span></div>
-    <div class="metric"><b>2</b><span>Medios locales</span></div>
+    <div class="metric"><b id="totalCount">0</b><span>Menciones verificadas</span></div>
+    <div class="metric"><b id="nationalCount">0</b><span>Medios nacionales</span></div>
+    <div class="metric"><b id="provincialCount">0</b><span>Medios provinciales</span></div>
+    <div class="metric"><b id="localCount">0</b><span>Medios locales</span></div>
   </section>
 
   <div class="toolbar">
-    <h2>Registro de menciones</h2>
+    <div>
+      <h2>Registro de menciones</h2>
+      <label for="weekSelector" style="display:block;margin-top:12px;font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em">Semana consultada</label>
+      <select id="weekSelector" style="margin-top:7px;min-width:250px;padding:10px 12px;border:1px solid #cfc8bc;border-radius:10px;background:#fff;color:var(--navy);font:700 13px 'DM Sans'">
+        <option value="2026-09-14">14 al 18 de septiembre de 2026 · En preparación</option>
+        <option value="2026-08-24">24 al 28 de agosto de 2026</option>
+        <option value="2026-06-29">29 de junio al 3 de julio de 2026</option>
+        <option value="2026-06-22">22 al 26 de junio de 2026</option>
+      </select>
+    </div>
     <div class="filters" role="group" aria-label="Filtrar por alcance">
       <button class="filter active" data-filter="todos">Todas</button>
       <button class="filter" data-filter="nacional">Nacionales</button>
@@ -142,7 +151,7 @@
       <div class="context"><div><small>Contexto</small><p>UIPBA aparece como organizadora de una iniciativa de innovación tecnológica y sustentable para estudiantes de escuelas técnicas.</p></div><a class="source" target="_blank" rel="noopener noreferrer" href="https://www.diarioderivera.com.ar/2026/07/01/la-union-industrial-lanzo-un-concurso-para-que-estudiantes-bonaerenses-desarrollen-proyectos-tecnologicos-e-innovadores/"><span>Ver fuente original</span><span>↗</span></a></div>
     </article>
   </section>
-  <div class="empty" id="emptyState">No hay menciones verificadas para este filtro.</div>
+  <div class="empty" id="emptyState" style="display:block"><strong id="emptyTitle" style="display:block;color:var(--navy);font-family:Lora,serif;font-size:22px;margin-bottom:8px">Edición en preparación</strong><span id="emptyText">Esta edición reunirá exclusivamente las menciones publicadas entre el lunes 14 y el viernes 18 de septiembre.</span></div>
 </main>
 
 <footer><div class="wrap footer-row"><div class="mark">UIPBA</div><div class="note">Documento de seguimiento institucional. La clasificación por alcance describe la cobertura del medio. Los fragmentos se incluyen únicamente para identificar y verificar la mención.</div><div>uipba.org.ar</div></div></footer>
@@ -151,15 +160,61 @@
   const buttons=[...document.querySelectorAll(".filter")];
   const cards=[...document.querySelectorAll(".mention")];
   const empty=document.getElementById("emptyState");
+  const selector=document.getElementById("weekSelector");
+  let activeScope="todos";
+
+  const weekLabels={
+    "2026-09-14":{period:"14—18 de septiembre de 2026",status:"En preparación · publicación el viernes 18"},
+    "2026-08-24":{period:"24—28 de agosto de 2026",status:"Edición histórica"},
+    "2026-06-29":{period:"29 de junio—3 de julio de 2026",status:"Edición histórica"},
+    "2026-06-22":{period:"22—26 de junio de 2026",status:"Edición histórica"}
+  };
+
+  function mondayFor(dateText){
+    const d=new Date(dateText+"T12:00:00");
+    const day=d.getDay();
+    const diff=day===0?-6:1-day;
+    d.setDate(d.getDate()+diff);
+    return d.toISOString().slice(0,10);
+  }
+
+  function render(){
+    const week=selector.value;
+    let total=0,national=0,provincial=0,local=0;
+    cards.forEach(card=>{
+      const date=card.querySelector("time").getAttribute("datetime");
+      const sameWeek=mondayFor(date)===week;
+      const sameScope=activeScope==="todos"||card.dataset.scope===activeScope;
+      const show=sameWeek&&sameScope;
+      card.style.display=show?"grid":"none";
+      if(show){
+        total++;
+        if(card.dataset.scope==="nacional") national++;
+        if(card.dataset.scope==="provincial") provincial++;
+        if(card.dataset.scope==="local") local++;
+      }
+    });
+    document.getElementById("totalCount").textContent=total;
+    document.getElementById("nationalCount").textContent=national;
+    document.getElementById("provincialCount").textContent=provincial;
+    document.getElementById("localCount").textContent=local;
+    document.getElementById("heroPeriod").textContent=weekLabels[week].period;
+    document.getElementById("heroStatus").textContent=weekLabels[week].status;
+    empty.style.display=total?"none":"block";
+    document.getElementById("emptyTitle").textContent=week==="2026-09-14"?"Edición en preparación":"Sin menciones verificadas";
+    document.getElementById("emptyText").textContent=week==="2026-09-14"
+      ?"Esta edición reunirá exclusivamente las menciones publicadas entre el lunes 14 y el viernes 18 de septiembre."
+      :"No hay menciones verificadas para esta combinación de semana y alcance.";
+  }
+
   buttons.forEach(button=>button.addEventListener("click",()=>{
     buttons.forEach(item=>item.classList.remove("active"));
     button.classList.add("active");
-    const value=button.dataset.filter;
-    let visible=0;
-    cards.forEach(card=>{const show=value==="todos"||card.dataset.scope===value;card.style.display=show?"grid":"none";if(show)visible++;});
-    document.getElementById("totalCount").textContent=visible;
-    empty.style.display=visible?"none":"block";
+    activeScope=button.dataset.filter;
+    render();
   }));
+  selector.addEventListener("change",render);
+  render();
 </script>
 </body>
 </html>
