@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Relevamiento verificable de menciones a UIPBA en medios nacionales, provinciales y locales.">
+  <title>UIPBA en los medios | Radar de menciones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#0d315f;--blue:#087dc1;--aqua:#27b8a2;--paper:#f7f3eb;--ink:#172434;--muted:#637080;--line:#ded8cc;--white:#fff;--amber:#d78f2b;--red:#a64b4b}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif}
+    a{color:inherit}.wrap{width:min(1180px,calc(100% - 36px));margin:auto}
+    header{background:var(--navy);color:#fff}
+    .topbar{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:14px}.mark{font-size:27px;font-weight:800;letter-spacing:-1px}
+    .brand-copy{border-left:1px solid rgba(255,255,255,.3);padding-left:14px;font-size:12px;line-height:1.3;color:#d9e7f5}
+    .period{font-size:12px;padding:10px 14px;border:1px solid rgba(255,255,255,.24);border-radius:999px;background:rgba(255,255,255,.08)}
+    .hero{position:relative;overflow:hidden;padding:72px 0 64px;background:linear-gradient(125deg,var(--navy),#174f82)}
+    .hero:after{content:"";position:absolute;width:440px;height:440px;border-radius:50%;right:-120px;top:-250px;border:80px solid rgba(39,184,162,.16)}
+    .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.55fr .85fr;gap:58px;align-items:end}
+    .eyebrow{display:flex;gap:9px;align-items:center;color:#83e1d3;font-size:12px;font-weight:700;letter-spacing:.13em;text-transform:uppercase}
+    .eyebrow:before{content:"";width:28px;height:2px;background:#83e1d3}
+    h1{font-family:Lora,serif;font-size:clamp(42px,6vw,72px);line-height:.98;letter-spacing:-2.5px;margin:16px 0 20px;max-width:760px}
+    .hero p{max-width:680px;margin:0;color:#dce9f5;font-size:17px;line-height:1.65}
+    .edition{border-left:2px solid var(--aqua);padding-left:20px}.edition small{display:block;color:#a9c9e6;text-transform:uppercase;letter-spacing:.12em;font-weight:700}
+    .edition strong{display:block;margin-top:8px;font-family:Lora,serif;font-size:23px}.edition span{display:block;margin-top:8px;color:#dce9f5;font-size:13px}
+    main{padding:44px 0 72px}
+    .rule{display:grid;grid-template-columns:auto 1fr;gap:18px;padding:22px 24px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 8px 28px rgba(13,49,95,.05)}
+    .rule-icon{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#e9f8f5;color:#087766;font-weight:800}
+    .rule strong{display:block;font-size:14px}.rule p{margin:5px 0 0;color:var(--muted);font-size:13px;line-height:1.55}
+    .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:22px 0 34px}
+    .metric{padding:20px;background:transparent;border-bottom:3px solid var(--line)}
+    .metric b{display:block;font-family:Lora,serif;font-size:32px;color:var(--navy)}.metric span{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:700}
+    .toolbar{display:flex;align-items:center;justify-content:space-between;gap:20px;margin:28px 0}
+    .toolbar h2{margin:0;font-family:Lora,serif;font-size:30px}.filters{display:flex;gap:8px;flex-wrap:wrap}
+    .filter{appearance:none;border:1px solid #cfc8bc;background:transparent;color:#4d5965;padding:9px 14px;border-radius:999px;font:700 12px "DM Sans";cursor:pointer}
+    .filter.active,.filter:hover{background:var(--navy);border-color:var(--navy);color:#fff}
+    .list{display:grid;gap:18px}
+    .mention{display:grid;grid-template-columns:170px 1fr 230px;gap:26px;padding:27px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 5px 20px rgba(13,49,95,.045);transition:.2s}
+    .mention:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(13,49,95,.08)}
+    .media{border-right:1px solid var(--line);padding-right:22px}.scope{display:inline-block;padding:5px 8px;border-radius:5px;background:#eef4f8;color:var(--navy);font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+    .media h3{margin:14px 0 5px;font-size:17px;color:var(--navy)}.media time{font-size:12px;color:var(--muted)}
+    .content h4{font-family:Lora,serif;font-size:21px;line-height:1.3;margin:0 0 14px}
+    .who{font-size:12px;color:var(--muted);margin-bottom:13px}.who b{color:var(--ink)}
+    .quote{margin:0;padding:13px 16px;border-left:3px solid var(--amber);background:#fbf8f1;color:#4e5964;font-size:13px;line-height:1.55}
+    .context{border-left:1px solid var(--line);padding-left:22px;display:flex;flex-direction:column;justify-content:space-between;gap:18px}
+    .context small{display:block;color:var(--red);font-weight:800;letter-spacing:.09em;text-transform:uppercase;margin-bottom:7px}.context p{margin:0;font-size:13px;color:var(--muted);line-height:1.5}
+    .source{display:flex;align-items:center;justify-content:space-between;gap:10px;text-decoration:none;border-radius:10px;padding:11px 13px;background:var(--navy);color:#fff;font-size:12px;font-weight:700;transition:.2s}
+    .source:hover{background:var(--blue)}.source span:last-child{font-size:18px}
+    .empty{display:none;text-align:center;padding:45px;border:1px dashed #bbb2a5;border-radius:16px;color:var(--muted)}
+    footer{padding:28px 0;background:#102a48;color:#c6d6e5;font-size:12px}
+    .footer-row{display:flex;justify-content:space-between;gap:28px;align-items:center}.note{max-width:720px;line-height:1.55}
+    @media(max-width:880px){.hero-grid{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}.mention{grid-template-columns:135px 1fr}.context{grid-column:1/-1;border-left:0;border-top:1px solid var(--line);padding:18px 0 0}.source{width:max-content}.toolbar{align-items:flex-start;flex-direction:column}}
+    @media(max-width:580px){.brand-copy{display:none}.hero{padding:52px 0}.topbar{min-height:68px}.period{display:none}.metrics{grid-template-columns:1fr 1fr}.metric{padding:15px 8px}.mention{grid-template-columns:1fr;padding:22px}.media{border-right:0;border-bottom:1px solid var(--line);padding:0 0 16px}.source{width:100%}.footer-row{align-items:flex-start;flex-direction:column}}
+    @media print{.filters,.source{display:none}.hero{padding:30px 0}.mention{break-inside:avoid}.mention:hover{transform:none}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap topbar">
+    <div class="brand"><div class="mark">UIPBA</div><div class="brand-copy">UNIÓN INDUSTRIAL DE LA<br>PROVINCIA DE BUENOS AIRES</div></div>
+    <div class="period">Radar institucional de presencia pública</div>
+  </div>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Seguimiento editorial verificable</div>
+        <h1>UIPBA en los medios</h1>
+        <p>Dónde aparece la entidad, quién la menciona y en qué contexto. Cada registro fue comprobado en la fuente original y permite acceder directamente a la publicación.</p>
+      </div>
+      <div class="edition"><small>Edición inicial</small><strong>Junio—septiembre 2026</strong><span>Actualizado el 14 de septiembre de 2026</span></div>
+    </div>
+  </section>
+</header>
+
+<main class="wrap">
+  <section class="rule">
+    <div class="rule-icon">✓</div>
+    <div><strong>Criterio estricto de inclusión</strong><p>Solo se publican contenidos donde figure expresamente “UIPBA”, “Uipba” o “Unión Industrial de la Provincia de Buenos Aires”. No se incluyen noticias vinculadas por tema si la institución no es nombrada.</p></div>
+  </section>
+
+  <section class="metrics" aria-label="Resumen de menciones">
+    <div class="metric"><b id="totalCount">7</b><span>Menciones verificadas</span></div>
+    <div class="metric"><b>4</b><span>Medios nacionales</span></div>
+    <div class="metric"><b>1</b><span>Medio provincial</span></div>
+    <div class="metric"><b>2</b><span>Medios locales</span></div>
+  </section>
+
+  <div class="toolbar">
+    <h2>Registro de menciones</h2>
+    <div class="filters" role="group" aria-label="Filtrar por alcance">
+      <button class="filter active" data-filter="todos">Todas</button>
+      <button class="filter" data-filter="nacional">Nacionales</button>
+      <button class="filter" data-filter="provincial">Provinciales</button>
+      <button class="filter" data-filter="local">Locales</button>
+    </div>
+  </div>
+
+  <section class="list" id="mentionList">
+    <article class="mention" data-scope="nacional">
+      <div class="media"><span class="scope">Nacional</span><h3>LA NACION</h3><time datetime="2026-08-26">26 ago 2026</time></div>
+      <div class="content"><h4>Reclamo por una reducción de Ingresos Brutos</h4><div class="who"><b>Quién menciona a UIPBA:</b> Agustín Maza; incluye declaraciones de Alejandro Gentile y Eugenia Ctibor.</div><blockquote class="quote">“La Unión Industrial de la Provincia de Buenos Aires (Uipba) describió el impacto de la crisis...”</blockquote></div>
+      <div class="context"><div><small>Contexto</small><p>Presenta a UIPBA como autora de una propuesta tributaria para aliviar a la industria bonaerense y desarrollar proveedores para energía y minería.</p></div><a class="source" target="_blank" rel="noopener noreferrer" href="https://www.lanacion.com.ar/economia/los-industriales-bonaerenses-reclamaron-a-kicillof-una-baja-de-impuestos-para-enfrentar-la-crisis-nid26082026/"><span>Ver fuente original</span><span>↗</span></a></div>
+    </article>
+
+    <article class="mention" data-scope="nacional">
+      <div class="media"><span class="scope">Nacional</span><h3>TN</h3><time datetime="2026-08-26">26 ago 2026</time></div>
+      <div class="content"><h4>Plan industrial para producción y empleo</h4><div class="who"><b>Quién menciona a UIPBA:</b> Redacción de TN; cita a Alejandro Gentile y Eugenia Ctibor.</div><blockquote class="quote">“La Unión Industrial de la Provincia de Buenos Aires (UIPBA) presentó un estudio...”</blockquote></div>
+      <div class="context"><div><small>Contexto</small><p>La entidad aparece como fuente técnica de un estudio sobre presión tributaria y como impulsora de medidas dirigidas al Gobierno bonaerense.</p></div><a class="source" target="_blank" rel="noopener noreferrer" href="https://tn.com.ar/politica/2026/08/26/industriales-bonaerenses-reclaman-bajar-ingresos-brutos-y-le-proponen-un-plan-a-kicillof-para-mejorar-la-produccion-y-el-empleo/"><span>Ver fuente original</span><span>↗</span></a></div>
+    </article>
+
+    <article class="mention" data-scope="nacional">
+      <div class="media"><span class="scope">Nacional</span><h3>Bloomberg Línea</h3><time datetime="2026-08-27">27 ago 2026</time></div>
+      <div class="content"><h4>Eliminación de Ingresos Brutos para PyMEs</h4><div class="who"><b>Quién menciona a UIPBA:</b> Belén Escobar; recoge declaraciones de Alejandro Gentile.</div><blockquote class="quote">“La Unión Industrial de la Provincia de Buenos Aires (UIPBA) presentó una propuesta...”</blockquote></div>
+      <div class="context"><div><small>Contexto</small><p>UIPBA es presentada como la entidad que propone el alivio fiscal y aporta cifras de empleo y cierres de establecimientos industriales.</p></div><a class="source" target="_blank" rel="noopener noreferrer" href="https://www.bloomberglinea.com/latinoamerica/argentina/por-la-crisis-en-el-sector-industriales-bonaerenses-piden-eliminar-ingresos-brutos-para-pymes/"><span>Ver fuente original</span><span>↗</span></a></div>
+    </article>
+
+    <article class="mention" data-scope="nacional">
+      <div class="media"><span class="scope">Nacional</span><h3>Noticias Argentinas</h3><time datetime="2026-06-25">25 jun 2026</time></div>
+      <div class="content"><h4>Alejandro Gentile, nuevo presidente de UIPBA</h4><div class="who"><b>Quién menciona a UIPBA:</b> Agencia Noticias Argentinas.</div><blockquote class="quote">“Alejandro Gentile fue elegido como nuevo presidente de la Unión Industrial...”</blockquote></div>
+      <div class="context"><div><small>Contexto</small><p>Informa la renovación de autoridades y ubica a UIPBA como la representación institucional de la industria bonaerense.</p></div><a class="source" target="_blank" rel="noopener noreferrer" href="https://noticiasargentinas.com/economia/alejandro-gentile-es-el-nuevo-presidente-de-uipba_a6a3dc14dfd88dacfc57b510b"><span>Ver fuente original</span><span>↗</span></a></div>
+    </article>
+
+    <article class="mention" data-scope="provincial">
+      <div class="media"><span class="scope">Provincial</span><h3>Buenos Aires/12</h3><time datetime="2026-08-26">26 ago 2026</time></div>
+      <div class="content"><h4>Coparticipación e Ingresos Brutos en la agenda industrial</h4><div class="who"><b>Quién menciona a UIPBA:</b> María Belén Robledo; entrevista a Alejandro Gentile.</div><blockquote class="quote">“Las autoridades de la UIPBA presentaron una propuesta al gobierno bonaerense...”</blockquote></div>
+      <div class="context"><div><small>Contexto</small><p>Analiza los planteos que UIPBA busca incorporar a la Ley Fiscal Impositiva y describe el posicionamiento de su nueva conducción.</p></div><a class="source" target="_blank" rel="noopener noreferrer" href="https://www.pagina12.com.ar/2026/08/26/coparticipacion-e-ingresos-brutos-en-el-centro-de-los-reclamos-de-los-industriales-conducidos-por-techint/"><span>Ver fuente original</span><span>↗</span></a></div>
+    </article>
+
+    <article class="mention" data-scope="local">
+      <div class="media"><span class="scope">Local · Tandil</span><h3>LU22 Radio Tandil</h3><time datetime="2026-08-27">27 ago 2026</time></div>
+      <div class="content"><h4>Presión tributaria y cierre de fábricas</h4><div class="who"><b>Quién menciona a UIPBA:</b> Redacción de LU22; identifica a Gentile y Ctibor.</div><blockquote class="quote">“La Unión Industrial de la Provincia de Buenos Aires (UIPBA) presentó una serie de propuestas...”</blockquote></div>
+      <div class="context"><div><small>Contexto</small><p>Reproduce el diagnóstico de UIPBA sobre carga fiscal, pérdida de empleo y cierre de unidades productivas en la Provincia.</p></div><a class="source" target="_blank" rel="noopener noreferrer" href="https://www.lu22.com.ar/2026/08/27/industriales-bonaerenses-piden-bajar-ingresos-brutos-y-advierten-por-el-cierre-de-fabricas"><span>Ver fuente original</span><span>↗</span></a></div>
+    </article>
+
+    <article class="mention" data-scope="local">
+      <div class="media"><span class="scope">Local · Rivera</span><h3>Diario de Rivera</h3><time datetime="2026-07-01">1 jul 2026</time></div>
+      <div class="content"><h4>Concurso para escuelas técnicas bonaerenses</h4><div class="who"><b>Quién menciona a UIPBA:</b> Redacción de Diario de Rivera.</div><blockquote class="quote">“La Unión Industrial de la Provincia de Buenos Aires (UIPBA) lanzó una nueva edición del concurso...”</blockquote></div>
+      <div class="context"><div><small>Contexto</small><p>UIPBA aparece como organizadora de una iniciativa de innovación tecnológica y sustentable para estudiantes de escuelas técnicas.</p></div><a class="source" target="_blank" rel="noopener noreferrer" href="https://www.diarioderivera.com.ar/2026/07/01/la-union-industrial-lanzo-un-concurso-para-que-estudiantes-bonaerenses-desarrollen-proyectos-tecnologicos-e-innovadores/"><span>Ver fuente original</span><span>↗</span></a></div>
+    </article>
+  </section>
+  <div class="empty" id="emptyState">No hay menciones verificadas para este filtro.</div>
+</main>
+
+<footer><div class="wrap footer-row"><div class="mark">UIPBA</div><div class="note">Documento de seguimiento institucional. La clasificación por alcance describe la cobertura del medio. Los fragmentos se incluyen únicamente para identificar y verificar la mención.</div><div>uipba.org.ar</div></div></footer>
+
+<script>
+  const buttons=[...document.querySelectorAll(".filter")];
+  const cards=[...document.querySelectorAll(".mention")];
+  const empty=document.getElementById("emptyState");
+  buttons.forEach(button=>button.addEventListener("click",()=>{
+    buttons.forEach(item=>item.classList.remove("active"));
+    button.classList.add("active");
+    const value=button.dataset.filter;
+    let visible=0;
+    cards.forEach(card=>{const show=value==="todos"||card.dataset.scope===value;card.style.display=show?"grid":"none";if(show)visible++;});
+    document.getElementById("totalCount").textContent=visible;
+    empty.style.display=visible?"none":"block";
+  }));
+</script>
+</body>
+</html>
