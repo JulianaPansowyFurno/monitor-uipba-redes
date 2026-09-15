@@ -163,7 +163,7 @@
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
                     <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <span id="current-date-badge">14/09/2026</span>
+                    <span id="current-date-badge">15/09/2026</span>
                 </div>
             </div>
         </div>
@@ -186,7 +186,8 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-09-14" selected>14/09/2026 (Hoy)</option>
+                        <option value="2026-09-15" selected>15/09/2026 (Hoy)</option>
+                        <option value="2026-09-14">14/09/2026</option>
                         <option value="2026-09-13">13/09/2026</option>
                         <option value="2026-09-12">12/09/2026</option>
                         <option value="2026-09-11">11/09/2026</option>
@@ -338,6 +339,216 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+        "2026-09-15": {
+            "sector": [
+                {
+                    "id": "sec-93",
+                    "network": "X",
+                    "networkBadge": "bg-slate-900 text-white",
+                    "hashtag": "#Puertos #Logística #Producción #Trabajo",
+                    "title": "La coordinación portuaria sigue ligada a producción, logística y empleo",
+                    "quote": "El Consejo Portuario Bonaerense mantiene abierta la conversación sobre infraestructura, operación y trabajo como condiciones para sostener el comercio exterior provincial.",
+                    "action": "Reunir demandas de conectividad, costos y servicios de los socios para fortalecer su representación en la agenda portuaria.",
+                    "source": {
+                        "name": "Ministerio de Trabajo PBA (@TrabajoPBA) — X",
+                        "link": "https://x.com/TrabajoPBA/status/2097651582896656573",
+                        "date": "9 Sep 2026 · publicación más reciente verificable"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Medio-Alto",
+                        "variation": "Excepción: no se halló post verificable del 14 Sep"
+                    }
+                },
+                {
+                    "id": "sec-94",
+                    "network": "LinkedIn",
+                    "networkBadge": "bg-uipba-navy text-white",
+                    "hashtag": "#Nanotecnología #Industria #Sostenibilidad #Regulación",
+                    "title": "La nanotecnología argentina combina escala industrial con desafíos ambientales",
+                    "quote": "La conversación señala más de cien empresas vinculadas con nanomateriales y plantea brechas en huella de carbono, uso de agua, ecotoxicología y gestión de residuos.",
+                    "action": "Mapear firmas y capacidades bonaerenses para vincular innovación, proveedores y estándares de sostenibilidad desde etapas tempranas.",
+                    "source": {
+                        "name": "Escuela de Hábitat y Sostenibilidad (EHyS) de la UNSAM — LinkedIn",
+                        "link": "https://es.linkedin.com/posts/instituto-de-arquitectura-y-urbanismo-unsam_nuevo-ciclo-de-conferencias-nanotecnolog%C3%ADa-activity-7501297376595451904-5JkV",
+                        "date": "3 Sep 2026 · publicación más reciente verificable"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Medio-Alto",
+                        "variation": "Excepción: no se halló post verificable del 14 Sep"
+                    }
+                },
+                {
+                    "id": "sec-95",
+                    "network": "Instagram",
+                    "networkBadge": "bg-pink-600 text-white",
+                    "hashtag": "#Software #Talento #Universidad #InteligenciaArtificial",
+                    "title": "La articulación universidad-software busca acercar formación y demanda productiva",
+                    "quote": "La jornada por el Día del Programador vinculó a la UNSE con la Cámara de la Industria Argentina del Software y puso en debate el impacto de la inteligencia artificial en el sector.",
+                    "action": "Conectar empresas bonaerenses de software con universidades y centros de formación para anticipar perfiles y capacidades requeridas.",
+                    "source": {
+                        "name": "FCEyT de la UNSE — Instagram",
+                        "link": "https://www.instagram.com/reel/DdSRd1bjL7y/",
+                        "date": "14 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Medio-Alto",
+                        "variation": "Publicación verificada dentro del período"
+                    }
+                },
+                {
+                    "id": "sec-96",
+                    "network": "Facebook",
+                    "networkBadge": "bg-blue-700 text-white",
+                    "hashtag": "#Industria #Empleo #PyMEs #TrabajoArgentino",
+                    "title": "El empleo fabril permanece en el centro del reclamo sindical",
+                    "quote": "La conversación advierte sobre pérdida de puestos de trabajo y establecimientos industriales si no se recuperan la demanda y el nivel de producción.",
+                    "action": "Contrastar el planteo con cámaras y sindicatos territoriales para identificar cadenas y municipios con mayor exposición.",
+                    "source": {
+                        "name": "Camioneros BA — Facebook",
+                        "link": "https://www.facebook.com/CamionerosBA/posts/la-industria-argentina-en-ca%C3%ADda-estiman-que-se-perder%C3%A1n-105000-empleos-en-2026-e/1541185658049629/",
+                        "date": "Fecha no expuesta por el índice público · relevada el 15 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Post individual verificable; fecha pública no acreditable"
+                    }
+                }
+            ],
+            "calle": [
+                {
+                    "id": "calle-72",
+                    "region": "conurbano-sur",
+                    "riskLevel": "Empleo",
+                    "badgeClass": "badge-alert-high",
+                    "topicNumber": "Tema #1 en Agenda PBA",
+                    "title": "1. Más de 1.500 personas hicieron fila por 14 empleos en Berazategui",
+                    "streetTalk": "Cinco cuadras de aspirantes y varias horas de espera marcaron una convocatoria laboral para un nuevo restaurante sobre la avenida Eva Perón, una postal directa de la presión sobre el empleo en el Conurbano Sur.",
+                    "connection": [
+                        "La desproporción entre vacantes y postulantes muestra la urgencia de ingresos y la competencia por oportunidades laborales formales."
+                    ],
+                    "uipbaPosition": "Impulsar herramientas locales de intermediación laboral y formación vinculadas con demanda efectiva de empresas y comercios.",
+                    "source": {
+                        "name": "Infobae — 14 Sep 2026",
+                        "link": "https://www.infobae.com/economia/2026/09/14/mas-de-1500-personas-cinco-cuadras-de-fila-y-horas-de-espera-para-postularse-a-14-puestos-de-trabajo-en-berazategui/"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Muy Alto",
+                        "variation": "Más de 1.500 postulantes para 14 vacantes"
+                    }
+                },
+                {
+                    "id": "calle-73",
+                    "region": "la-plata",
+                    "riskLevel": "Clima y Prevención",
+                    "badgeClass": "badge-alert-info",
+                    "topicNumber": "Tema #2 en Agenda PBA",
+                    "title": "2. La Plata crea una unidad de riesgo ante la llegada de El Niño",
+                    "streetTalk": "La Municipalidad anunció una estructura específica para coordinar prevención y respuesta frente a lluvias intensas y otras emergencias asociadas al escenario climático esperado.",
+                    "connection": [
+                        "La preparación importa para barrios inundables, movilidad, servicios públicos y continuidad de actividades ante eventos meteorológicos severos."
+                    ],
+                    "uipbaPosition": "Promover protocolos de contingencia compartidos entre municipio, prestadores, parques industriales y comunidades expuestas.",
+                    "source": {
+                        "name": "0221 — 14 Sep 2026",
+                        "link": "https://www.0221.com.ar/la-plata/la-plata-se-prepara-el-super-nino-y-crea-una-nueva-unidad-gestion-del-riesgo-n134156"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Alto",
+                        "variation": "Nueva Unidad de Gestión del Riesgo municipal"
+                    }
+                },
+                {
+                    "id": "calle-74",
+                    "region": "la-plata",
+                    "riskLevel": "Empleo Local",
+                    "badgeClass": "badge-alert-high",
+                    "topicNumber": "Tema #3 en Agenda PBA",
+                    "title": "3. Punta Indio alerta por el traslado de su Base Aeronaval",
+                    "streetTalk": "El intendente David Angueira y jefes comunales de la Región Capital reclamaron frenar el traslado y advirtieron que la base es la principal fuente de trabajo del distrito.",
+                    "connection": [
+                        "La eventual mudanza afectaría a cientos de familias, la economía cotidiana y una institución central para la identidad local."
+                    ],
+                    "uipbaPosition": "Solicitar una evaluación pública del impacto laboral, territorial y productivo antes de adoptar decisiones sobre la relocalización.",
+                    "source": {
+                        "name": "El Día — 14 Sep 2026, 20:53",
+                        "link": "https://www.eldia.com/politica-y-economia/el-alerta-del-intendente-david-angueira-ante-el-traslado-de-la-base-de-punta-indio-es-la-principal-fuente-de-trabajo-politica-y-economia_1789428720/amp"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "La base es señalada como principal fuente laboral local"
+                    }
+                }
+            ],
+            "clipping": [
+                {
+                    "id": "clip-96",
+                    "category": "regional",
+                    "scopeTag": "Regional PBA • PyMEs Industriales",
+                    "badgeClass": "badge-alert-high",
+                    "badgeText": "COMPETITIVIDAD",
+                    "title": "Las PyMEs bonaerenses reclaman alivio ante ventas débiles y costos altos",
+                    "summary": "Patricia Malnati, directiva de UIPBA, describió dificultades para pagar salarios, impuestos, créditos y proveedores, y planteó una reducción gradual de Ingresos Brutos.",
+                    "impact": "La combinación de menor demanda, presión tributaria y competencia importada condiciona empleo, inversión y continuidad de fábricas provinciales.",
+                    "source": {
+                        "name": "Infobae",
+                        "link": "https://www.infobae.com/economia/2026/09/14/necesitamos-lograr-competitividad-el-pedido-de-las-pymes-bonaerenses-ante-la-caida-de-ventas-y-los-altos-costos/",
+                        "date": "14 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Muy Alto",
+                        "variation": "Ingresos Brutos puede representar hasta 3% de la actividad"
+                    }
+                },
+                {
+                    "id": "clip-97",
+                    "category": "nacional",
+                    "scopeTag": "Nacional • Comercio Exterior",
+                    "badgeClass": "badge-alert-high",
+                    "badgeText": "ANTIDUMPING",
+                    "title": "El Gobierno reduce medidas antidumping que protegían a sectores locales",
+                    "summary": "Economía cerró sin derechos definitivos la investigación sobre lavarropas chinos y sumó el caso a revisiones previas de motores, tubos de aluminio y hornos eléctricos.",
+                    "impact": "El giro regulatorio modifica las condiciones de competencia, abastecimiento y costos para fabricantes y cadenas industriales que usan insumos importados.",
+                    "source": {
+                        "name": "LA NACION",
+                        "link": "https://www.lanacion.com.ar/economia/fuerte-apuesta-oficial-deja-caer-medidas-antidumping-que-protegian-a-la-industria-local-nid14092026/",
+                        "date": "14 Sep 2026 · 13:17"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Cierre sin derechos definitivos para lavarropas chinos"
+                    }
+                },
+                {
+                    "id": "clip-98",
+                    "category": "regional",
+                    "scopeTag": "Regional PBA • Construcción",
+                    "badgeClass": "badge-alert-info",
+                    "badgeText": "COSTOS DE OBRA",
+                    "title": "Construir una casa de 100 m² en la Provincia roza los $240 millones",
+                    "summary": "El índice de APYMECO ubicó el costo de referencia en $238,4 millones y estimó $2.383.862,97 por metro cuadrado, con la mano de obra como principal motor de la suba mensual.",
+                    "impact": "El aumento presiona presupuestos, plazos y factibilidad de nuevos desarrollos y obliga a revisar contratos y decisiones de inversión.",
+                    "source": {
+                        "name": "Ámbito",
+                        "link": "https://www.ambito.com/real-estate/el-costo-una-casa-100-m2-se-acerca-240-millones-y-suma-presion-los-desarrolladores-n6322024",
+                        "date": "14 Sep 2026 · 11:45"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Alto",
+                        "variation": "+4,27% mensual y +27,8% interanual"
+                    }
+                }
+            ]
+        },
         "2026-09-14": {
             "sector": [
                 {
