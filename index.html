@@ -163,7 +163,7 @@
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
                     <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <span id="current-date-badge">15/09/2026</span>
+                    <span id="current-date-badge">16/09/2026</span>
                 </div>
             </div>
         </div>
@@ -186,7 +186,8 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-09-15" selected>15/09/2026 (Hoy)</option>
+                        <option value="2026-09-16" selected>16/09/2026 (Hoy)</option>
+                        <option value="2026-09-15">15/09/2026</option>
                         <option value="2026-09-14">14/09/2026</option>
                         <option value="2026-09-13">13/09/2026</option>
                         <option value="2026-09-12">12/09/2026</option>
@@ -339,6 +340,216 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+        "2026-09-16": {
+            "sector": [
+                {
+                    "id": "sec-97",
+                    "network": "X",
+                    "networkBadge": "bg-slate-900 text-white",
+                    "hashtag": "#Puertos #Logística #Producción #Empleo",
+                    "title": "La agenda portuaria mantiene el foco en logística, producción y empleo",
+                    "quote": "La coordinación del sistema portuario bonaerense continúa ligada a infraestructura, conectividad y trabajo como condiciones para sostener la actividad productiva y el comercio exterior.",
+                    "action": "Relevar necesidades de acceso, servicios y costos logísticos de los socios para fortalecer su representación en la agenda portuaria provincial.",
+                    "source": {
+                        "name": "Ministerio de Trabajo PBA (@TrabajoPBA) — X",
+                        "link": "https://x.com/TrabajoPBA/status/2097651582896656573",
+                        "date": "9 Sep 2026 · publicación más reciente verificable"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Medio-Alto",
+                        "variation": "Excepción: no se halló post verificable del 15 Sep"
+                    }
+                },
+                {
+                    "id": "sec-98",
+                    "network": "LinkedIn",
+                    "networkBadge": "bg-uipba-navy text-white",
+                    "hashtag": "#Nanotecnología #Industria #Sostenibilidad #Regulación",
+                    "title": "La escala industrial de la nanotecnología abre desafíos ambientales y regulatorios",
+                    "quote": "Más de cien empresas argentinas trabajan con nanomateriales, mientras persisten brechas sobre huella de carbono, consumo de agua, ecotoxicología y gestión de residuos.",
+                    "action": "Identificar capacidades bonaerenses y promover estándares tempranos que vinculen innovación, proveedores industriales y sostenibilidad.",
+                    "source": {
+                        "name": "Escuela de Hábitat y Sostenibilidad (EHyS) de la UNSAM — LinkedIn",
+                        "link": "https://es.linkedin.com/posts/instituto-de-arquitectura-y-urbanismo-unsam_nuevo-ciclo-de-conferencias-nanotecnolog%C3%ADa-activity-7501297376595451904-5JkV",
+                        "date": "3 Sep 2026 · publicación más reciente verificable"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Medio-Alto",
+                        "variation": "Excepción: no se halló post verificable del 15 Sep"
+                    }
+                },
+                {
+                    "id": "sec-99",
+                    "network": "Instagram",
+                    "networkBadge": "bg-pink-600 text-white",
+                    "hashtag": "#Software #Talento #Universidad #InteligenciaArtificial",
+                    "title": "La formación tecnológica busca anticipar el impacto de la inteligencia artificial",
+                    "quote": "La articulación entre universidad e industria del software puso en conversación los perfiles profesionales y las capacidades que demanda un sector atravesado por la inteligencia artificial.",
+                    "action": "Vincular empresas tecnológicas bonaerenses con universidades para actualizar formación, detectar talento y anticipar nuevas demandas productivas.",
+                    "source": {
+                        "name": "FCEyT de la UNSE — Instagram",
+                        "link": "https://www.instagram.com/reel/DdSRd1bjL7y/",
+                        "date": "14 Sep 2026 · publicación más reciente verificable"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Medio-Alto",
+                        "variation": "Excepción: no se halló post verificable del 15 Sep"
+                    }
+                },
+                {
+                    "id": "sec-100",
+                    "network": "Facebook",
+                    "networkBadge": "bg-blue-700 text-white",
+                    "hashtag": "#Industria #Empleo #PyMEs #TrabajoArgentino",
+                    "title": "La pérdida de empleo fabril sostiene la preocupación sindical",
+                    "quote": "La conversación vincula la caída industrial con el riesgo de nuevos cierres y pérdida de puestos de trabajo, y reclama recuperar producción y demanda interna.",
+                    "action": "Contrastar el planteo con cámaras y sindicatos territoriales para identificar cadenas, empresas y municipios con mayor exposición.",
+                    "source": {
+                        "name": "Camioneros BA — Facebook",
+                        "link": "https://www.facebook.com/CamionerosBA/posts/la-industria-argentina-en-ca%C3%ADda-estiman-que-se-perder%C3%A1n-105000-empleos-en-2026-e/1541185658049629/",
+                        "date": "Fecha no expuesta por el índice público · relevada el 16 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Post individual verificable; fecha pública no acreditable"
+                    }
+                }
+            ],
+            "calle": [
+                {
+                    "id": "calle-75",
+                    "region": "la-plata",
+                    "riskLevel": "Seguridad Vial",
+                    "badgeClass": "badge-alert-high",
+                    "topicNumber": "Tema #1 en Agenda PBA",
+                    "title": "1. Un conductor repitió la maniobra que ya había causado una muerte en Ensenada",
+                    "streetTalk": "Vecinos registraron al mismo conductor realizando otra vez un giro a la izquierda prohibido sobre la avenida Horacio Cestino, pocos días después del choque en el que murió Erica Laura Garro.",
+                    "connection": [
+                        "El episodio reavivó el reclamo por controles efectivos y una respuesta rápida ante conductas de alto riesgo en una arteria central de Ensenada."
+                    ],
+                    "uipbaPosition": "Promover controles viales sostenidos y coordinación entre municipio, Provincia y autoridades de licencias para prevenir nuevas tragedias.",
+                    "source": {
+                        "name": "0221 — 15 Sep 2026",
+                        "link": "https://www.0221.com.ar/ensenada/a-dias-un-choque-fatal-ensenada-denuncian-que-el-conductor-repitio-la-maniobra-que-causo-la-tragedia-n134208"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Reiteración de una maniobra vial prohibida"
+                    }
+                },
+                {
+                    "id": "calle-76",
+                    "region": "general",
+                    "riskLevel": "Costo de Vida",
+                    "badgeClass": "badge-alert-high",
+                    "topicNumber": "Tema #2 en Agenda PBA",
+                    "title": "2. Luz, gas y transporte subieron más de 50% en el Gran Buenos Aires",
+                    "streetTalk": "Los aumentos interanuales de electricidad y gas llegaron al 55,4%, el transporte público al 52,1% y los combustibles al 50%, por encima de la inflación general del 33,7%.",
+                    "connection": [
+                        "La brecha reduce el ingreso disponible de los hogares y aumenta la presión sobre movilidad, consumo y pago de servicios esenciales."
+                    ],
+                    "uipbaPosition": "Seguir el impacto de tarifas y transporte sobre hogares y trabajadores para aportar evidencia a la discusión de costos y accesibilidad.",
+                    "source": {
+                        "name": "0221 — 15 Sep 2026",
+                        "link": "https://www.0221.com.ar/nacional/los-servicios-aumentaron-50-y-quedaron-muy-encima-la-inflacion-n134242"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Muy Alto",
+                        "variation": "Servicios esenciales por encima de la inflación"
+                    }
+                },
+                {
+                    "id": "calle-77",
+                    "region": "conurbano-sur",
+                    "riskLevel": "Seguridad Vial",
+                    "badgeClass": "badge-alert-high",
+                    "topicNumber": "Tema #3 en Agenda PBA",
+                    "title": "3. Un piedrazo destrozó un parabrisas en la Autopista Buenos Aires–La Plata",
+                    "streetTalk": "Un joven de Florencio Varela denunció que un objeto impactó contra su auto cerca del kilómetro 14, a la altura de Wilde, durante la madrugada y rompió el parabrisas del lado del conductor.",
+                    "connection": [
+                        "El ataque expuso riesgos de seguridad en una vía clave y la falta de asistencia inmediata que el conductor señaló en el peaje de Berazategui."
+                    ],
+                    "uipbaPosition": "Solicitar mayor vigilancia, iluminación y capacidad de respuesta en corredores metropolitanos críticos para trabajadores y transporte de cargas.",
+                    "source": {
+                        "name": "0221 — 15 Sep 2026",
+                        "link": "https://www.0221.com.ar/policiales/un-joven-denuncio-un-violento-ataque-piedrazos-la-autopista-la-plata-buenos-aires-n134257"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Alto",
+                        "variation": "Ataque nocturno cerca del kilómetro 14"
+                    }
+                }
+            ],
+            "clipping": [
+                {
+                    "id": "clip-99",
+                    "category": "nacional",
+                    "scopeTag": "Nacional • Actividad Industrial",
+                    "badgeClass": "badge-alert-high",
+                    "badgeText": "CAPACIDAD OCIOSA",
+                    "title": "La industria utilizó 58,2% de su capacidad instalada en julio",
+                    "summary": "El indicador cayó 0,9 puntos frente al mes anterior y seis sectores trabajaron por debajo del 50%; la metalmecánica excluida la industria automotriz registró 38,3%.",
+                    "impact": "La elevada capacidad ociosa refleja debilidad de la demanda y condiciona inversión, empleo y proveedores en cadenas con fuerte presencia bonaerense.",
+                    "source": {
+                        "name": "Infobae",
+                        "link": "https://www.infobae.com/economia/2026/09/15/industria-cayo-el-uso-de-la-capacidad-instalada-en-julio-y-seis-sectores-trabajaron-por-debajo-del-50/",
+                        "date": "15 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Muy Alto",
+                        "variation": "41,8% de capacidad industrial sin utilizar"
+                    }
+                },
+                {
+                    "id": "clip-100",
+                    "category": "regional",
+                    "scopeTag": "Regional PBA • Industria Avícola",
+                    "badgeClass": "badge-alert-high",
+                    "badgeText": "CRISIS EMPRESARIA",
+                    "title": "Granja Tres Arroyos se presentó en concurso preventivo de acreedores",
+                    "summary": "La mayor avícola del país inició el proceso ante el Juzgado Comercial 21, en un contexto de reestructuración, cierres y despidos reportados por el sindicato.",
+                    "impact": "La situación alcanza plantas de Ezeiza, Esteban Echeverría y Capitán Sarmiento y compromete empleo, proveedores y actividad en distintos puntos bonaerenses.",
+                    "source": {
+                        "name": "LA NACION",
+                        "link": "https://www.lanacion.com.ar/economia/campo/crisis-en-la-mayor-avicola-granja-tres-arroyos-se-presento-en-concurso-de-acreedores-ante-la-nid15092026/",
+                        "date": "15 Sep 2026 · 20:57"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Muy Alto",
+                        "variation": "Concurso preventivo y reestructuración operativa"
+                    }
+                },
+                {
+                    "id": "clip-101",
+                    "category": "regional",
+                    "scopeTag": "Regional PBA • Economía Circular",
+                    "badgeClass": "badge-alert-info",
+                    "badgeText": "INNOVACIÓN PYME",
+                    "title": "Una PyME convierte residuos plásticos en bloques para construcción en seco",
+                    "summary": "Blockplas desarrolló un sistema de bloques sustentables que reduce costos y tiempos de obra; un caso en Campana utilizó 18.000 unidades fabricadas con plástico recuperado.",
+                    "impact": "La tecnología abre oportunidades para economía circular, construcción y gestión de residuos, aunque la firma señala barreras de demanda, regulación y acceso a ensayos.",
+                    "source": {
+                        "name": "iProfesional",
+                        "link": "https://www.iprofesional.com/negocios/464399-esta-es-la-pyme-que-convierte-basura-plastica-en-ladrillos-sustentables",
+                        "date": "15 Sep 2026 · 07:52"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Medio-Alto",
+                        "variation": "Capacidad escalable de 9 a 30–40 toneladas mensuales"
+                    }
+                }
+            ]
+        },
         "2026-09-15": {
             "sector": [
                 {
