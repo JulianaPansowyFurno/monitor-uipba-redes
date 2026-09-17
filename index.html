@@ -163,7 +163,7 @@
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
                     <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <span id="current-date-badge">16/09/2026</span>
+                    <span id="current-date-badge">17/09/2026</span>
                 </div>
             </div>
         </div>
@@ -186,7 +186,8 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-09-16" selected>16/09/2026 (Hoy)</option>
+                        <option value="2026-09-17" selected>17/09/2026 (Hoy)</option>
+                        <option value="2026-09-16">16/09/2026</option>
                         <option value="2026-09-15">15/09/2026</option>
                         <option value="2026-09-14">14/09/2026</option>
                         <option value="2026-09-13">13/09/2026</option>
@@ -340,6 +341,216 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+            "2026-09-17": {
+            "sector": [
+                {
+                    "id": "sector-x-20260917",
+                    "network": "X",
+                    "networkBadge": "bg-black text-white",
+                    "hashtag": "#PreciosMayoristas #INDEC #Costos #Industria",
+                    "title": "Los precios mayoristas vuelven al centro de la conversación productiva",
+                    "quote": "Los precios mayoristas aumentaron 2,1% en agosto, acumularon 19,1% en ocho meses y quedaron 29,8% por encima de un año atrás.",
+                    "action": "Seguir el traslado de costos de insumos nacionales e importados sobre márgenes, listas de precios y capital de trabajo industrial.",
+                    "source": {
+                        "name": "INDEC Argentina (@INDECArgentina) — X",
+                        "link": "https://x.com/INDECArgentina/status/2100298748635107383",
+                        "date": "16 Sep 2026 · publicación oficial"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Dato oficial difundido y citado por medios",
+                        "variation": "Tema destacado en X · fecha verificada"
+                    }
+                },
+                {
+                    "id": "sector-linkedin-20260917",
+                    "network": "LinkedIn",
+                    "networkBadge": "bg-blue-100 text-blue-800",
+                    "hashtag": "#Fintech #PyMEs #Financiamiento #Capital",
+                    "title": "El financiamiento alternativo aparece como opción para ampliar capital PyME",
+                    "quote": "La conversación plantea esquemas de financiamiento digital para negocios con flujo de caja que no acceden al crédito bancario tradicional.",
+                    "action": "Observar instrumentos alternativos y sus riesgos regulatorios como posible complemento del crédito productivo para socios.",
+                    "source": {
+                        "name": "Luis Oria Seidel — LinkedIn",
+                        "link": "https://es.linkedin.com/posts/luis-oria-seidel-%F0%9F%87%BB%F0%9F%87%AA-301a758a_fintech-pymes-financiamiento-activity-7503414849952047104-D6SO",
+                        "date": "Fecha no expuesta por el índice público · relevada el 17 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 2,
+                        "volume": "Interacción pública no cuantificable",
+                        "variation": "Sin tendencia nueva verificable · tema reciente no repetido"
+                    }
+                },
+                {
+                    "id": "sector-instagram-20260917",
+                    "network": "Instagram",
+                    "networkBadge": "bg-pink-100 text-pink-800",
+                    "hashtag": "#TecnoFidta2026 #IndustriaAlimentaria #Automatización #Tecnología",
+                    "title": "La industria alimentaria muestra tecnología, automatización y nuevos procesos en La Rural",
+                    "quote": "La segunda jornada de Tecno Fidta reunió maquinaria, ingredientes y soluciones para mejorar eficiencia, calidad y control en plantas alimentarias.",
+                    "action": "Detectar proveedores, soluciones de automatización y contactos aplicables a empresas alimentarias bonaerenses.",
+                    "source": {
+                        "name": "Tecno Fidta (@tecnofidta) — Instagram",
+                        "link": "https://www.instagram.com/reel/DdXa8y2NWEM/",
+                        "date": "16 Sep 2026 · fecha verificada por el índice público"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Varias cuentas y expositores publicaron sobre la feria",
+                        "variation": "Conversación corroborada en múltiples cuentas"
+                    }
+                },
+                {
+                    "id": "sector-facebook-20260917",
+                    "network": "Facebook",
+                    "networkBadge": "bg-indigo-100 text-indigo-800",
+                    "hashtag": "#IndustrialesPyME #CAME #Capacitación #Representación",
+                    "title": "Las industriales PyME refuerzan capacitación y representación federal",
+                    "quote": "Más de 170 representantes participaron de una jornada orientada a fortalecer gestión, articulación empresaria y agenda gremial del sector.",
+                    "action": "Relevar demandas y herramientas surgidas del encuentro para identificar coincidencias con la agenda de las PyMEs bonaerenses.",
+                    "source": {
+                        "name": "CAME | Pymes Argentinas — Facebook",
+                        "link": "https://www.facebook.com/redcame/posts/-d%C3%ADa-de-la-industria-en-came-m%C3%A1s-de-170-industriales-pymes-de-todo-el-pa%C3%ADs-parti/1521546450003291/",
+                        "date": "15 Sep 2026 · publicación reciente fuera del período"
+                    },
+                    "metrics": {
+                        "temp": 2,
+                        "volume": "Más de 170 participantes informados por la cuenta",
+                        "variation": "Sin tendencia nueva verificable del 16/09"
+                    }
+                }
+            ],
+            "calle": [
+                {
+                    "id": "calle-20260917-1",
+                    "region": "la-plata",
+                    "riskLevel": "MOVILIZACIÓN",
+                    "badgeClass": "badge-alert-medium",
+                    "topicNumber": "Tema 1",
+                    "title": "1. Miles de estudiantes marcharon en La Plata a 50 años de la Noche de los Lápices",
+                    "streetTalk": "Una columna de estudiantes secundarios y universitarios recorrió el centro platense y cerró frente al Ministerio de Infraestructura. La jornada combinó memoria con reclamos actuales por boleto estudiantil, alimentación, salud mental y condiciones edilicias.",
+                    "connection": [],
+                    "uipbaPosition": "Seguir el impacto sobre movilidad y actividad del centro platense.",
+                    "source": {
+                        "name": "0221 — 16 Sep 2026",
+                        "link": "https://www.0221.com.ar/la-plata/el-legado-los-desaparecidos-la-noche-los-lapices-se-hizo-sentir-las-calles-la-plata-n134317",
+                        "date": "16 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Movilización multitudinaria",
+                        "variation": "Hecho del día en La Plata"
+                    }
+                },
+                {
+                    "id": "calle-20260917-2",
+                    "region": "centro",
+                    "riskLevel": "SEGURIDAD VIAL",
+                    "badgeClass": "badge-alert-high",
+                    "topicNumber": "Tema 2",
+                    "title": "2. Un choque de cuatro camiones cortó durante 15 horas la Ruta 51",
+                    "streetTalk": "El siniestro ocurrió sobre el puente del Arroyo Saladillo, entre Saladillo y 25 de Mayo: murió un conductor y otros tres fueron hospitalizados. La carga quedó sobre la calzada y la traza permaneció totalmente interrumpida hasta la mañana.",
+                    "connection": [
+                        "Afectación directa de una ruta productiva y del transporte de cereal, pintura y urea.",
+                        "Necesidad de monitorear desvíos, tiempos logísticos y condiciones de seguridad vial."
+                    ],
+                    "uipbaPosition": "Advertir a empresas de la zona sobre contingencias logísticas.",
+                    "source": {
+                        "name": "La Noticia 1 — 16 Sep 2026, 15:38",
+                        "link": "https://www.lanoticia1.com/noticia/tragedia-en-la-ruta-51-se-conocio-la-identidad-del-chofer-fallecido-tras-el-choque-en-cadena-de-cuatro-camiones-sobre-arroyo-saladillo",
+                        "date": "16 Sep 2026 · 15:38"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Corte total durante 15 horas",
+                        "variation": "Un fallecido y tres heridos"
+                    }
+                },
+                {
+                    "id": "calle-20260917-3",
+                    "region": "conurbano-oeste",
+                    "riskLevel": "SEGURIDAD ESCOLAR",
+                    "badgeClass": "badge-alert-high",
+                    "topicNumber": "Tema 3",
+                    "title": "3. Un alumno llevó un revólver a una escuela de La Matanza y se disparó dentro del aula",
+                    "streetTalk": "El adolescente ingresó al Instituto Jesús María Plaza, en Villa Dorrego, con un arma calibre .32 en la mochila. El disparo no hirió a nadie; la Policía secuestró el revólver y seis municiones y se investiga cómo accedió a él.",
+                    "connection": [],
+                    "uipbaPosition": "Tema social crítico para comunidades educativas y laborales del distrito.",
+                    "source": {
+                        "name": "La Noticia 1 — 16 Sep 2026, 13:12",
+                        "link": "https://www.lanoticia1.com/noticia/un-alumno-llevo-un-revolver-al-colegio-en-la-matanza-y-el-arma-se-disparo-dentro-del-aula",
+                        "date": "16 Sep 2026 · 13:12"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Protocolo escolar y actuación policial",
+                        "variation": "Sin personas heridas"
+                    }
+                }
+            ],
+            "clipping": [
+                {
+                    "id": "clip-20260917-1",
+                    "category": "nacional",
+                    "scopeTag": "Nacional • Política Argentina",
+                    "badgeClass": "badge-alert-high",
+                    "badgeText": "CRISIS PYME",
+                    "title": "La UIA pidió suspender embargos y bajar costos fiscales, energéticos y financieros",
+                    "summary": "La entidad advirtió por la caída de actividad y empleo y presentó propuestas que incluyen 180 días sin embargos, cambios en planes de pago, diferimientos impositivos y menor carga sobre el crédito productivo.",
+                    "impact": "La agenda puede incidir directamente en liquidez, costo financiero y continuidad operativa de las PyMEs industriales.",
+                    "source": {
+                        "name": "Política Argentina",
+                        "link": "https://www.politicargentina.com/notas/202609/76342-la-uia-le-pidio-al-gobierno-de-milei-medidas-para-aliviar-la-crisis-de-las-pymes.html",
+                        "date": "16 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Agenda nacional industrial",
+                        "variation": "Propuesta técnica de la UIA"
+                    }
+                },
+                {
+                    "id": "clip-20260917-2",
+                    "category": "nacional",
+                    "scopeTag": "Nacional • TodoAgro",
+                    "badgeClass": "badge-alert-info",
+                    "badgeText": "EXPORTACIONES",
+                    "title": "Las declaraciones de exportación agroindustrial marcaron un récord para agosto",
+                    "summary": "Las DJVE alcanzaron 13,1 millones de toneladas: 121% más que en agosto de 2025, 85% por encima del promedio de cinco años y 42% sobre el récord previo del mes.",
+                    "impact": "El volumen anticipa actividad para cadenas agroindustriales, logística, puertos y proveedores de la Provincia.",
+                    "source": {
+                        "name": "TodoAgro",
+                        "link": "https://www.todoagro.com.ar/el-aporte-del-campo-que-marco-nuevo-record-en-agosto/",
+                        "date": "16 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "13,1 millones de toneladas",
+                        "variation": "+121% interanual"
+                    }
+                },
+                {
+                    "id": "clip-20260917-3",
+                    "category": "nacional",
+                    "scopeTag": "Nacional • Política Argentina",
+                    "badgeClass": "badge-alert-medium",
+                    "badgeText": "INFRAESTRUCTURA",
+                    "title": "La Base Naval de Ushuaia comenzaría en enero con una inversión de USD 450 millones",
+                    "summary": "El proyecto prevé cuatro años de obra, un muelle de 580 metros, edificios, servicios marítimos, obradores y caminos de acceso para reforzar capacidades en el Atlántico Sur.",
+                    "impact": "La escala de la inversión abre oportunidades para construcción, metalmecánica, logística y proveedores industriales nacionales.",
+                    "source": {
+                        "name": "Política Argentina",
+                        "link": "https://www.politicargentina.com/notas/202609/76335-el-gobierno-pone-fecha-al-inicio-de-la-base-naval-de-ushuaia-y-preve-invertir-usd-450-millones.html",
+                        "date": "16 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "USD 450 millones previstos",
+                        "variation": "Obra anunciada para enero"
+                    }
+                }
+            ]
+        },
         "2026-09-16": {
             "sector": [
                 {
