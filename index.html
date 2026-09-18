@@ -163,7 +163,7 @@
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
                     <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <span id="current-date-badge">17/09/2026</span>
+                    <span id="current-date-badge" class="date-badge">18/09/2026</span>
                 </div>
             </div>
         </div>
@@ -186,7 +186,8 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-09-17" selected>17/09/2026 (Hoy)</option>
+                        <option value="2026-09-18" selected>18/09/2026 (Hoy)</option>
+                    <option value="2026-09-17">17/09/2026</option>
                         <option value="2026-09-16">16/09/2026</option>
                         <option value="2026-09-15">15/09/2026</option>
                         <option value="2026-09-14">14/09/2026</option>
@@ -341,6 +342,222 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+            "2026-09-18": {
+    "sector": [
+        {
+            "id": "sector-x-20260918",
+            "network": "X",
+            "networkBadge": "bg-black text-white",
+            "hashtag": "#Industria #EstrategiaProductiva #Competitividad #Empleo",
+            "title": "La estrategia industrial sigue sin una tendencia nueva verificable en X",
+            "quote": "El relevamiento público no mostró una conversación industrial dominante del 17/09 con múltiples cuentas y métricas comparables; se conserva un post reciente y distinto que plantea la ausencia de una estrategia industrial.",
+            "action": "No tomar esta tarjeta como trending topic: usarla como señal cualitativa y reforzar el monitoreo con acceso directo a la plataforma.",
+            "source": {
+                "name": "Fernando A. Iglesias (@FerIglesias) — X",
+                "link": "https://x.com/i/status/2096525246610251835",
+                "date": "6 Sep 2026 · publicación reciente fuera del período"
+            },
+            "metrics": {
+                "temp": 1,
+                "volume": "Sin métricas públicas suficientes para acreditar tendencia",
+                "variation": "Sin tendencia nueva verificable · relevada el 18 Sep 2026"
+            }
+        },
+        {
+            "id": "sector-linkedin-20260918",
+            "network": "LinkedIn",
+            "networkBadge": "bg-blue-100 text-blue-800",
+            "hashtag": "#IndustriaArgentina #Empleo #Innovación #Desarrollo",
+            "title": "El valor de producir y generar empleo permanece como tema destacado en LinkedIn",
+            "quote": "La publicación vincula industria argentina con trabajo, innovación y desarrollo, pero el índice público no permite demostrar una tendencia del 17/09 ni comparar interacciones entre varias cuentas.",
+            "action": "Mantener el foco en capacidades productivas y empleo sin presentar la publicación como tendencia del día.",
+            "source": {
+                "name": "Hormetal — LinkedIn",
+                "link": "https://es.linkedin.com/posts/hormetal_hormetal-industriaargentina-diadelaindustria-activity-7500870188834369536-Xf_3",
+                "date": "2 Sep 2026 · publicación reciente fuera del período"
+            },
+            "metrics": {
+                "temp": 2,
+                "volume": "Interacción pública no cuantificable desde el índice abierto",
+                "variation": "Tema destacado en LinkedIn · no es trending topic verificado"
+            }
+        },
+        {
+            "id": "sector-instagram-20260918",
+            "network": "Instagram",
+            "networkBadge": "bg-pink-100 text-pink-800",
+            "hashtag": "#Minería #Proveedores #Infraestructura #CadenaDeValor",
+            "title": "La infraestructura para minería aparece como tema destacado en Instagram",
+            "quote": "La publicación pone el foco en la escala de la actividad minera y en las oportunidades para infraestructura y proveedores, sin evidencia pública suficiente para afirmar que lideró la conversación del 17/09.",
+            "action": "Relevar oportunidades para metalmecánica, logística y servicios industriales, diferenciando interés sectorial de tendencia comprobada.",
+            "source": {
+                "name": "Antofagasta Terminal Internacional — Instagram",
+                "link": "https://www.instagram.com/p/Dc3lM4Fkcbu/",
+                "date": "4 Sep 2026 · publicación reciente fuera del período"
+            },
+            "metrics": {
+                "temp": 2,
+                "volume": "Métricas del post no expuestas por el índice público",
+                "variation": "Tema destacado en Instagram · relevada el 18 Sep 2026"
+            }
+        },
+        {
+            "id": "sector-facebook-20260918",
+            "network": "Facebook",
+            "networkBadge": "bg-indigo-100 text-indigo-800",
+            "hashtag": "#PyMEs #Transformación #Negocios #Mercado",
+            "title": "La adaptación del modelo de negocio queda como tema destacado en Facebook",
+            "quote": "La conversación propone reinventar procesos y propuestas comerciales para que las PyMEs sigan creciendo, pero no hay señales públicas suficientes para acreditar una tendencia industrial nueva del 17/09.",
+            "action": "Tomar la publicación como referencia de gestión y no como medición de tendencia; contrastar con demandas concretas de socios.",
+            "source": {
+                "name": "Cámara Argentina de Comercio y Servicios — Facebook",
+                "link": "https://www.facebook.com/CACteinforma/posts/c%C3%B3mo-reinventar-tu-negocio-para-seguir-creciendoen-el-encuentro-pymes-2026-organ/1560067709494858/",
+                "date": "Fecha no expuesta por el índice público · relevada el 18 Sep 2026"
+            },
+            "metrics": {
+                "temp": 1,
+                "volume": "Sin métricas públicas verificables en el índice abierto",
+                "variation": "Sin tendencia nueva verificable · publicación distinta a los últimos 7 días"
+            }
+        }
+    ],
+    "calle": [
+        {
+            "id": "calle-20260918-1",
+            "region": "florencio-varela",
+            "riskLevel": "EDUCACIÓN Y SALUD",
+            "badgeClass": "badge-alert-info",
+            "topicNumber": "Tema 1",
+            "title": "1. Ingeniero Allan sumó un polo educativo, un CAPS y dos ambulancias",
+            "streetTalk": "La Provincia inauguró en Florencio Varela dos edificios escolares con 720 vacantes y una inversión de $9.079 millones. En la misma jornada abrió un centro de atención primaria para San Jorge, Villa Argentina y Barrio Nuevo y entregó dos ambulancias de alta complejidad.",
+            "connection": [
+                "La obra amplía servicios públicos y genera demanda local de mantenimiento, insumos y proveedores.",
+                "El acceso cercano a educación y salud incide en la calidad de vida de trabajadores y familias de la zona."
+            ],
+            "uipbaPosition": "Registrar oportunidades para proveedores locales y el impacto de la nueva infraestructura social.",
+            "source": {
+                "name": "Provincia de Buenos Aires — Comunicación Pública",
+                "link": "https://www.gba.gob.ar/comunicacion_publica/gacetillas/kicillof_inaugur%C3%B3_un_nuevo_polo_educativo_en_ingeniero_allan",
+                "date": "17 Sep 2026"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "720 nuevas vacantes y $9.079 millones de inversión",
+                "variation": "Nuevo CAPS y dos ambulancias"
+            }
+        },
+        {
+            "id": "calle-20260918-2",
+            "region": "la-plata",
+            "riskLevel": "PARO UNIVERSITARIO",
+            "badgeClass": "badge-alert-medium",
+            "topicNumber": "Tema 2",
+            "title": "2. El paro docente afectó facultades y colegios de la UNLP",
+            "streetTalk": "ADULP realizó una huelga de 24 horas y movilizó al Palacio Pizzurno en reclamo de recomposición salarial y aplicación de la Ley de Financiamiento Universitario. La medida impactó en la actividad académica de La Plata.",
+            "connection": [
+                "La interrupción alcanzó facultades y colegios universitarios.",
+                "El conflicto presupuestario mantiene abierta una agenda de nuevas medidas gremiales."
+            ],
+            "uipbaPosition": "Monitorear continuidad del conflicto y efectos sobre movilidad y actividad en el área universitaria.",
+            "source": {
+                "name": "Info Blanco Sobre Negro",
+                "link": "https://www.infoblancosobrenegro.com/nota/114650/los-docentes-universitarios-de-la-plata-realizan-un-paro-de-24-horas-este-jueves/",
+                "date": "17 Sep 2026"
+            },
+            "metrics": {
+                "temp": 5,
+                "volume": "Paro de 24 horas en la UNLP",
+                "variation": "Movilización al Palacio Pizzurno"
+            }
+        },
+        {
+            "id": "calle-20260918-3",
+            "region": "la-plata",
+            "riskLevel": "ENERGÍA Y CIENCIA",
+            "badgeClass": "badge-alert-medium",
+            "topicNumber": "Tema 3",
+            "title": "3. El sector nuclear debatió desinversión, empleo científico y soberanía energética",
+            "streetTalk": "Técnicos, científicos, sindicatos y trabajadores se reunieron en la Casa de Gobierno bonaerense para analizar la situación de Nucleoeléctrica, la paralización del CAREM y el ajuste en la CNEA.",
+            "connection": [
+                "La agenda involucra capacidades tecnológicas, empleo calificado y proveedores metalúrgicos.",
+                "La continuidad de proyectos nucleares impacta sobre una cadena industrial de alto valor agregado."
+            ],
+            "uipbaPosition": "Seguir definiciones sobre CAREM, CNEA y Nucleoeléctrica por su efecto en proveedores y capacidades industriales.",
+            "source": {
+                "name": "Provincia de Buenos Aires — Comunicación Pública",
+                "link": "https://www.gba.gob.ar/comunicacion_publica/gacetillas/kicillof_encabez%C3%B3_el_2%C2%B0_encuentro_de_pol%C3%ADtica_nuclear_y_soberan%C3%ADa",
+                "date": "17 Sep 2026"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "Participación de técnicos, científicos y trabajadores",
+                "variation": "Debate sobre tres componentes del sistema nuclear"
+            }
+        }
+    ],
+    "clipping": [
+        {
+            "id": "clip-20260918-1",
+            "category": "nacional",
+            "scopeTag": "Nacional • Infobae",
+            "badgeClass": "badge-alert-medium",
+            "badgeText": "FINANCIAMIENTO PYME",
+            "title": "El costo bursátil para PyMEs subió y los plazos se extendieron",
+            "summary": "La tasa promedio ponderada llegó a 27,76% en agosto, 2,16 puntos por encima de julio, mientras el plazo medio avanzó a 69 días. El segmento operó $609.000 millones en 32.128 operaciones.",
+            "impact": "El encarecimiento presiona el capital de trabajo; los avales SGR redujeron costos y permitieron plazos más largos.",
+            "source": {
+                "name": "Infobae Economía",
+                "link": "https://www.infobae.com/economia/2026/09/17/cual-es-la-tasa-promedio-que-pagan-las-pymes-para-financiarse-en-el-mercado-de-capitales/",
+                "date": "17 Sep 2026 · 09:15"
+            },
+            "metrics": {
+                "temp": 5,
+                "volume": "$609.000 millones en 32.128 operaciones",
+                "variation": "Tasa +2,16 puntos; volumen -11,2% mensual"
+            }
+        },
+        {
+            "id": "clip-20260918-2",
+            "category": "nacional",
+            "scopeTag": "Nacional • Clarín",
+            "badgeClass": "badge-alert-high",
+            "badgeText": "ACTIVIDAD E INVERSIÓN",
+            "title": "El PBI cayó 0,6% trimestral y la inversión acumuló cinco trimestres de baja",
+            "summary": "La economía creció 2% interanual en el segundo trimestre, pero retrocedió frente al primero. La inversión bajó 11,1% interanual y la industria manufacturera cayó 2,1%.",
+            "impact": "La composición del crecimiento muestra debilidad en demanda interna, inversión y manufactura, variables centrales para la actividad industrial bonaerense.",
+            "source": {
+                "name": "Clarín Economía",
+                "link": "https://www.clarin.com/economia/economia-cayo-06-segundo-trimestre-achica-crecimiento-ano_0_W9SNmteEZH.html",
+                "date": "17 Sep 2026"
+            },
+            "metrics": {
+                "temp": 5,
+                "volume": "PBI -0,6% trimestral; +2% interanual",
+                "variation": "Inversión -11,1% e industria -2,1% interanual"
+            }
+        },
+        {
+            "id": "clip-20260918-3",
+            "category": "nacional",
+            "scopeTag": "Nacional • Ámbito",
+            "badgeClass": "badge-alert-info",
+            "badgeText": "INFRAESTRUCTURA ENERGÉTICA",
+            "title": "TGN proyectó un gasoducto de USD 2.200 millones para ampliar oferta y exportaciones",
+            "summary": "El Gasoducto Manuel Belgrano tendría 753 kilómetros, capacidad inicial de 13 millones de m³ diarios y obras complementarias para abastecer industrias del centro y norte del país.",
+            "impact": "El proyecto prevé hasta 2.000 empleos en obra y abre demanda potencial para caños, ingeniería, construcción y proveedores metalmecánicos.",
+            "source": {
+                "name": "Ámbito Energía",
+                "link": "https://www.ambito.com/energia/tgn-invertira-us2200-millones-construir-un-mega-gasoducto-que-llevara-mas-gas-vaca-muerta-al-centro-y-norte-del-pais-n6323429",
+                "date": "17 Sep 2026 · 10:28"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "USD 2.200 millones y 753 km",
+                "variation": "Hasta 2.000 empleos previstos"
+            }
+        }
+    ]
+},
             "2026-09-17": {
             "sector": [
                 {
