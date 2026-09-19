@@ -163,7 +163,7 @@
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
                     <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <span id="current-date-badge" class="date-badge">18/09/2026</span>
+                    <span id="current-date-badge" class="date-badge">19/09/2026</span>
                 </div>
             </div>
         </div>
@@ -186,7 +186,8 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-09-18" selected>18/09/2026 (Hoy)</option>
+                        <option value="2026-09-19" selected>19/09/2026 (Hoy)</option>
+                        <option value="2026-09-18">18/09/2026</option>
                     <option value="2026-09-17">17/09/2026</option>
                         <option value="2026-09-16">16/09/2026</option>
                         <option value="2026-09-15">15/09/2026</option>
@@ -342,6 +343,222 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+            "2026-09-19": {
+    "sector": [
+        {
+            "id": "sector-x-20260919",
+            "network": "X",
+            "networkBadge": "bg-black text-white",
+            "hashtag": "#ServiciosPúblicos #Infraestructura #Berisso",
+            "title": "La reparación de la red de agua en Berisso fue el tema industrial destacado en X",
+            "quote": "ABSA informó trabajos sobre una cañería en 9 y 147 y baja presión entre calles 145 y 150 y de 8 a 9. Es un post verificable del 18/09, pero no hay evidencia pública suficiente para considerarlo trending topic.",
+            "action": "Seguir la normalización del servicio por su impacto operativo en comercios, talleres y establecimientos del sector afectado.",
+            "source": {
+                "name": "Aguas Bonaerenses (@ABSAOficial) — X",
+                "link": "https://x.com/ABSAOficial/status/2100941666014130402",
+                "date": "18 Sep 2026"
+            },
+            "metrics": {
+                "temp": 2,
+                "volume": "1 publicación específica; sin métricas públicas comparables",
+                "variation": "Tema destacado en X · no es tendencia verificada"
+            }
+        },
+        {
+            "id": "sector-linkedin-20260919",
+            "network": "LinkedIn",
+            "networkBadge": "bg-blue-100 text-blue-800",
+            "hashtag": "#PyMEs #Internacionalización #CooperaciónIndustrial",
+            "title": "La internacionalización PyME queda como tema destacado en LinkedIn",
+            "quote": "El X Foro PyMEs Italia–América Latina reunió a más de 800 industriales y representantes y generó más de 300 reuniones B2B. El índice abierto no mostró una conversación industrial dominante del 18/09.",
+            "action": "Usar el antecedente para mapear oportunidades de cooperación y negocios internacionales, sin presentarlo como tendencia del día.",
+            "source": {
+                "name": "UIA — LinkedIn",
+                "link": "https://es.linkedin.com/posts/union-industrial-argentina_industria-pymes-uia-activity-7503104096665505792-vylO",
+                "date": "8 Sep 2026 · publicación reciente fuera del período"
+            },
+            "metrics": {
+                "temp": 2,
+                "volume": "Más de 800 participantes y 300 reuniones B2B informadas",
+                "variation": "Sin tendencia nueva verificable · relevada el 19 Sep 2026"
+            }
+        },
+        {
+            "id": "sector-instagram-20260919",
+            "network": "Instagram",
+            "networkBadge": "bg-pink-100 text-pink-800",
+            "hashtag": "#IndustriaFederal #Innovación #Competitividad",
+            "title": "La agenda productiva federal queda como tema destacado en Instagram",
+            "quote": "La pieza convoca al ecosistema industrial a debatir competitividad, innovación y desarrollo productivo desde una mirada federal. El índice público no expone fecha ni métricas suficientes para acreditar una tendencia del 18/09.",
+            "action": "Tomar el contenido como referencia sectorial y mantenerlo diferenciado de una medición de tendencia.",
+            "source": {
+                "name": "Federación Industrial de Santa Fe — Instagram",
+                "link": "https://www.instagram.com/reel/DXFnwRzj9Ep/",
+                "date": "Fecha no expuesta por el índice público · relevada el 19 Sep 2026"
+            },
+            "metrics": {
+                "temp": 1,
+                "volume": "Sin métricas públicas verificables en el índice abierto",
+                "variation": "Sin tendencia nueva verificable · cuenta no usada en los últimos 7 días"
+            }
+        },
+        {
+            "id": "sector-facebook-20260919",
+            "network": "Facebook",
+            "networkBadge": "bg-indigo-100 text-indigo-800",
+            "hashtag": "#IndustriaLocal #Empleo #Producción",
+            "title": "La identidad industrial local queda como tema destacado en Facebook",
+            "quote": "La pieza vincula la identidad productiva de Avellaneda con industria, trabajo y producción nacional. La búsqueda abierta no permitió comprobar una conversación industrial nueva ni una fecha pública del post para el 18/09.",
+            "action": "Conservar la señal como referencia territorial y no como trending topic; contrastarla con demandas actuales de empresas locales.",
+            "source": {
+                "name": "Municipalidad de Avellaneda — Facebook",
+                "link": "https://www.facebook.com/municipalidad.avellaneda/videos/-avellaneda-es-industria-avellaneda-es-trabajo-avellaneda-es-producci%C3%B3ntenemos-u/2311898692998187/",
+                "date": "Fecha no expuesta por el índice público · relevada el 19 Sep 2026"
+            },
+            "metrics": {
+                "temp": 1,
+                "volume": "Sin métricas públicas verificables en el índice abierto",
+                "variation": "Sin tendencia nueva verificable · cuenta no usada en los últimos 7 días"
+            }
+        }
+    ],
+    "calle": [
+        {
+            "id": "calle-20260919-1",
+            "region": "conurbano-sur",
+            "riskLevel": "SALARIOS MUNICIPALES",
+            "badgeClass": "badge-alert-medium",
+            "topicNumber": "Tema 1",
+            "title": "1. Avellaneda concentró el reclamo por una paritaria municipal bonaerense",
+            "streetTalk": "Sindicatos municipales de distintos distritos y funcionarios provinciales se reunieron en Avellaneda para avanzar en un ámbito específico de negociación colectiva salarial y en la conformación de un Consejo Paritario bonaerense.",
+            "connection": [
+                "La discusión puede modificar costos salariales y presupuestos en los municipios.",
+                "Participaron referentes de Avellaneda, Lanús, Berazategui, Tres de Febrero, La Plata, Luján, Quilmes y Bragado."
+            ],
+            "uipbaPosition": "Monitorear la evolución de la negociación y sus efectos sobre servicios y finanzas municipales.",
+            "source": {
+                "name": "Info Blanco Sobre Negro",
+                "link": "https://www.infoblancosobrenegro.com/nota/114680/avanza-el-proyecto-de-negociacion-colectiva-salarial-para-trabajadores-municipales/",
+                "date": "18 Sep 2026"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "Representación de ocho distritos bonaerenses",
+                "variation": "Proyecto de Consejo Paritario en discusión"
+            }
+        },
+        {
+            "id": "calle-20260919-2",
+            "region": "general",
+            "riskLevel": "SEGURIDAD DIGITAL",
+            "badgeClass": "badge-alert-high",
+            "topicNumber": "Tema 2",
+            "title": "2. IOMA e IPS alertaron por una estafa dirigida a jubilados bonaerenses",
+            "streetTalk": "Los organismos detectaron mensajes de WhatsApp que simulan un trámite de “Fe de vida” y luego exigen un pago. Recomendaron no compartir datos, claves ni códigos y verificar toda gestión por canales oficiales.",
+            "connection": [
+                "La advertencia alcanza a jubilados y pensionados de toda la Provincia.",
+                "El fraude combina suplantación institucional, pedido de datos y transferencias indebidas."
+            ],
+            "uipbaPosition": "Difundir la alerta en comunidades laborales y familiares para reducir riesgos de fraude digital.",
+            "source": {
+                "name": "Info Blanco Sobre Negro",
+                "link": "https://www.infoblancosobrenegro.com/nota/114690/advirtieron-sobre-una-estafa-por-whatsapp-dirigida-a-jubilados-bonaerenses/",
+                "date": "18 Sep 2026"
+            },
+            "metrics": {
+                "temp": 5,
+                "volume": "Alerta provincial de IOMA e IPS",
+                "variation": "Nueva modalidad por WhatsApp"
+            }
+        },
+        {
+            "id": "calle-20260919-3",
+            "region": "la-plata",
+            "riskLevel": "SALUD BARRIAL",
+            "badgeClass": "badge-alert-info",
+            "topicNumber": "Tema 3",
+            "title": "3. La Plata desplegó controles y vacunación en barrios y clubes",
+            "streetTalk": "El municipio realizó controles integrales a deportistas de 6 a 18 años, vacunación, testeos, salud sexual y talleres de salud mental en localidades del partido y en los CAPS.",
+            "connection": [
+                "Las acciones alcanzaron Villa Elvira, Ringuelet, San Carlos, Arturo Seguí, City Bell, Villa Elisa, Tolosa, Altos de San Lorenzo y Villa Castells.",
+                "La prevención y vacunación fortalecen el acceso territorial a la salud."
+            ],
+            "uipbaPosition": "Registrar la cobertura territorial y los canales disponibles para trabajadores y familias.",
+            "source": {
+                "name": "Info Blanco Sobre Negro",
+                "link": "https://www.infoblancosobrenegro.com/nota/114683/la-municipalidad-de-la-plata-realizo-jornadas-de-salud-en-barrios-y-continua-con-vacunas/",
+                "date": "18 Sep 2026"
+            },
+            "metrics": {
+                "temp": 3,
+                "volume": "Nueve localidades y el casco urbano",
+                "variation": "Controles, vacunas y talleres preventivos"
+            }
+        }
+    ],
+    "clipping": [
+        {
+            "id": "clip-20260919-1",
+            "category": "regional",
+            "scopeTag": "Regional • Infobae",
+            "badgeClass": "badge-alert-high",
+            "badgeText": "EMPLEO",
+            "title": "El desempleo llegó a 8,8% en los partidos del GBA y a 8,7% en Gran La Plata",
+            "summary": "El mapa del Indec ubicó la desocupación nacional en 7,9% durante el segundo trimestre, equivalente a 1,73 millones de personas. Mar del Plata marcó 9,9% y Bahía Blanca-Cerri 9,7%.",
+            "impact": "La concentración del desempleo en grandes aglomerados bonaerenses anticipa presión sobre consumo, demanda laboral y tejido productivo.",
+            "source": {
+                "name": "Infobae Economía",
+                "link": "https://www.infobae.com/economia/2026/09/18/el-nuevo-mapa-de-la-desocupacion-cuales-son-las-ciudades-con-mas-personas-sin-trabajo/",
+                "date": "18 Sep 2026"
+            },
+            "metrics": {
+                "temp": 5,
+                "volume": "1,73 millones de desocupados a nivel nacional",
+                "variation": "GBA 8,8%; Gran La Plata 8,7%"
+            }
+        },
+        {
+            "id": "clip-20260919-2",
+            "category": "regional",
+            "scopeTag": "Regional • A24",
+            "badgeClass": "badge-alert-high",
+            "badgeText": "CONFLICTO INDUSTRIAL",
+            "title": "La Justicia ordenó devolver a Fate la planta ocupada en Virreyes",
+            "summary": "La Cámara de Apelaciones de San Isidro consideró agotadas las instancias de conciliación y dispuso la restitución del predio. SUTNA rechazó la decisión y convocó a sostener la protesta.",
+            "impact": "El fallo abre una nueva etapa en un conflicto que comenzó con el cierre de la fábrica y el despido de unos 920 trabajadores.",
+            "source": {
+                "name": "A24",
+                "link": "https://www.a24.com/politica/la-justicia-ordeno-desalojar-la-planta-fate-ocupada-trabajadores-y-devolver-el-predio-n1597922",
+                "date": "18 Sep 2026 · 11:44"
+            },
+            "metrics": {
+                "temp": 5,
+                "volume": "920 trabajadores alcanzados por el cierre original",
+                "variation": "24 personas imputadas por la ocupación"
+            }
+        },
+        {
+            "id": "clip-20260919-3",
+            "category": "regional",
+            "scopeTag": "Provincia • Infobae",
+            "badgeClass": "badge-alert-info",
+            "badgeText": "SIMPLIFICACIÓN TRIBUTARIA",
+            "title": "ARBA y Banco Provincia crearon cuentas sin retenciones para inmobiliarias",
+            "summary": "La exclusión alcanza cuentas especiales destinadas a administrar fondos de clientes en compraventas, alquileres y otros servicios, para evitar que dinero de terceros genere saldos fiscales a favor.",
+            "impact": "El mecanismo reduce una distorsión financiera y administrativa y puede funcionar como antecedente para otros sectores que operan fondos de terceros.",
+            "source": {
+                "name": "Infobae Economía",
+                "link": "https://www.infobae.com/economia/2026/09/18/arba-y-banco-provincia-lanzan-cuentas-sin-retenciones-para-inmobiliarias/",
+                "date": "18 Sep 2026"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "Exclusión sobre cuentas especiales autorizadas",
+                "variation": "Medida conjunta ARBA–Banco Provincia"
+            }
+        }
+    ]
+},
             "2026-09-18": {
     "sector": [
         {
