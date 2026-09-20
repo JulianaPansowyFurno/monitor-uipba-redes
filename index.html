@@ -163,7 +163,7 @@
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
                     <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <span id="current-date-badge" class="date-badge">19/09/2026</span>
+                    <span id="current-date-badge" class="date-badge">20/09/2026</span>
                 </div>
             </div>
         </div>
@@ -186,7 +186,8 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-09-19" selected>19/09/2026 (Hoy)</option>
+                        <option value="2026-09-20" selected>20/09/2026 (Hoy)</option>
+                        <option value="2026-09-19">19/09/2026</option>
                         <option value="2026-09-18">18/09/2026</option>
                     <option value="2026-09-17">17/09/2026</option>
                         <option value="2026-09-16">16/09/2026</option>
@@ -343,6 +344,222 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+            "2026-09-20": {
+    "sector": [
+        {
+            "id": "sector-x-20260920",
+            "network": "X",
+            "networkBadge": "bg-black text-white",
+            "hashtag": "#IndustriaRegional #Empleo #FederalismoProductivo",
+            "title": "La articulación industrial regional queda como tema destacado en X",
+            "quote": "La apertura de la Casa de la Industria en Salta vinculó producción local, empleo y coordinación entre provincias, empresas y cámaras. La búsqueda pública no mostró una conversación industrial dominante del 19/09.",
+            "action": "Usar el antecedente para comparar agendas productivas regionales, sin presentarlo como tendencia del día.",
+            "source": {
+                "name": "Gustavo Sáenz (@GustavoSaenzOK) — X",
+                "link": "https://x.com/GustavoSaenzOK/status/2097279303503266057",
+                "date": "8 Sep 2026 · publicación reciente fuera del período"
+            },
+            "metrics": {
+                "temp": 1,
+                "volume": "1,3 mil visualizaciones registradas en el relevamiento original",
+                "variation": "Sin tendencia nueva verificable · cuenta no usada en los últimos 7 días"
+            }
+        },
+        {
+            "id": "sector-linkedin-20260920",
+            "network": "LinkedIn",
+            "networkBadge": "bg-blue-100 text-blue-800",
+            "hashtag": "#Energía #ProveedoresIndustriales #Inversión",
+            "title": "La integración de proveedores a proyectos energéticos queda como tema destacado en LinkedIn",
+            "quote": "La Comisión de Energía de ADIMRA reunió a empresas con Pampa Energía para anticipar necesidades de abastecimiento, estándares y capacidades. El índice abierto no mostró una conversación industrial verificable del 19/09.",
+            "action": "Mapear proveedores bonaerenses con capacidad de integrarse a la cadena energética y diferenciar esta referencia de una medición de tendencia.",
+            "source": {
+                "name": "ADIMRA — LinkedIn",
+                "link": "https://es.linkedin.com/posts/adimra_la-comisi%C3%B3n-de-energ%C3%ADa-de-adimra-organiz%C3%B3-activity-7496883912045101056-zCJC",
+                "date": "22 Ago 2026 · publicación reciente fuera del período"
+            },
+            "metrics": {
+                "temp": 1,
+                "volume": "Interacción pública no cuantificable desde el índice abierto",
+                "variation": "Sin tendencia nueva verificable · cuenta no usada en los últimos 7 días"
+            }
+        },
+        {
+            "id": "sector-instagram-20260920",
+            "network": "Instagram",
+            "networkBadge": "bg-pink-100 text-pink-800",
+            "hashtag": "#Transporte #Conectividad #NoroesteBonaerense",
+            "title": "La nueva conexión La Plata–Junín fue el tema empresarial destacado en Instagram",
+            "quote": "Plusmar anunció un servicio que comenzará en octubre y enlazará La Plata con diez localidades del centro y noroeste bonaerense. El post es específico y reciente, pero el índice público no permite acreditar una tendencia de plataforma.",
+            "action": "Seguir el impacto de la nueva conectividad sobre movilidad laboral, turismo y actividad comercial en los municipios del recorrido.",
+            "source": {
+                "name": "Plusmar (@plusmarok) — Instagram",
+                "link": "https://www.instagram.com/reel/Ddc2-ayxb05/",
+                "date": "Fecha exacta no expuesta por el índice público · relevada el 20 Sep 2026"
+            },
+            "metrics": {
+                "temp": 2,
+                "volume": "Post empresarial específico; sin métricas públicas comparables",
+                "variation": "Tema destacado en Instagram · no es trending topic verificado"
+            }
+        },
+        {
+            "id": "sector-facebook-20260920",
+            "network": "Facebook",
+            "networkBadge": "bg-indigo-100 text-indigo-800",
+            "hashtag": "#Competitividad #Impuestos #CostosIndustriales",
+            "title": "Los costos sistémicos quedan como tema industrial destacado en Facebook",
+            "quote": "La conversación asocia competitividad con presión tributaria, logística, financiamiento y condiciones para sostener producción y empleo. No se encontraron señales públicas suficientes para afirmar una tendencia industrial nueva del 19/09.",
+            "action": "Contrastar los costos señalados con la situación actual de socios bonaerenses y no usar la publicación como indicador de tendencia.",
+            "source": {
+                "name": "Día de la Industria Argentina — Facebook",
+                "link": "https://www.facebook.com/100063493153665/posts/d%C3%ADa-de-la-industria-argentina-habl%C3%B3-el-vicepresidente-de-la-uia/1721123703347385/",
+                "date": "Fecha no expuesta por el índice público · relevada el 20 Sep 2026"
+            },
+            "metrics": {
+                "temp": 1,
+                "volume": "Sin métricas públicas verificables en el índice abierto",
+                "variation": "Sin tendencia nueva verificable · cuenta no usada en los últimos 7 días"
+            }
+        }
+    ],
+    "calle": [
+        {
+            "id": "calle-20260920-1",
+            "region": "la-plata",
+            "riskLevel": "ALERTA METEOROLÓGICA",
+            "badgeClass": "badge-alert-high",
+            "topicNumber": "Tema 1",
+            "title": "1. La Plata quedó bajo alerta por tormentas fuertes y ráfagas",
+            "streetTalk": "La Municipalidad informó alerta amarilla ante tormentas previstas para el domingo, con chaparrones intensos, posible granizo y ráfagas del sudoeste de entre 51 y 59 km/h.",
+            "connection": [
+                "La probabilidad de tormentas fuertes alcanzaba el 70% durante la tarde.",
+                "El aviso requiere prever traslados, actividades al aire libre y posibles interrupciones de servicios."
+            ],
+            "uipbaPosition": "Difundir medidas preventivas y monitorear afectaciones sobre movilidad y servicios en la región.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/la-plata/continua-el-alerta-amarillo-la-plata-para-que-hora-se-esperan-las-lluvias-n134473",
+                "date": "19 Sep 2026"
+            },
+            "metrics": {
+                "temp": 5,
+                "volume": "Alerta amarilla municipal y del SMN",
+                "variation": "Ráfagas previstas de 51 a 59 km/h"
+            }
+        },
+        {
+            "id": "calle-20260920-2",
+            "region": "la-plata",
+            "riskLevel": "SEGURIDAD",
+            "badgeClass": "badge-alert-high",
+            "topicNumber": "Tema 2",
+            "title": "2. Un homicidio en San Carlos terminó con un detenido",
+            "streetTalk": "Una discusión ocurrida el sábado por la mañana terminó con un hombre herido de un disparo en el pecho. Murió tras ser trasladado al Hospital Italiano y la Policía aprehendió al presunto autor.",
+            "connection": [
+                "La causa fue caratulada como homicidio y la investigación continúa.",
+                "El hecho ocurrió en San Carlos, partido de La Plata."
+            ],
+            "uipbaPosition": "Registrar el episodio como señal de seguridad barrial, sin forzar una relación con la actividad industrial.",
+            "source": {
+                "name": "Info Blanco Sobre Negro",
+                "link": "https://www.infoblancosobrenegro.com/nota/114699/un-hombre-murio-de-un-disparo-en-san-carlos-y-la-policia-detuvo-al-presunto-autor/",
+                "date": "19 Sep 2026"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "Un detenido y una víctima fatal",
+                "variation": "Investigación penal en curso"
+            }
+        },
+        {
+            "id": "calle-20260920-3",
+            "region": "la-plata",
+            "riskLevel": "SERVICIO DE AGUA",
+            "badgeClass": "badge-alert-medium",
+            "topicNumber": "Tema 3",
+            "title": "3. ABSA advirtió posible turbiedad en el área de Parque Saavedra",
+            "streetTalk": "La prestataria informó que trabajos de mejora en la Estación Elevadora de Agua Saavedra podían generar turbiedad pasajera en la zona de influencia y recomendó dejar correr el agua hasta recuperar su aspecto habitual.",
+            "connection": [
+                "El aviso afecta a usuarios del área de influencia del establecimiento.",
+                "ABSA habilitó su línea de asistencia técnica y canales digitales para reportes."
+            ],
+            "uipbaPosition": "Dar seguimiento a la normalización y comunicar los canales de reclamo ante problemas persistentes.",
+            "source": {
+                "name": "Info Blanco Sobre Negro",
+                "link": "https://www.infoblancosobrenegro.com/nota/114700/posible-turbiedad-tras-tareas-de-mejora-en-la-estacion-elevadora-de-agua-saavedra/",
+                "date": "19 Sep 2026"
+            },
+            "metrics": {
+                "temp": 3,
+                "volume": "Aviso preventivo para la zona de influencia",
+                "variation": "Situación informada como pasajera"
+            }
+        }
+    ],
+    "clipping": [
+        {
+            "id": "clip-20260920-1",
+            "category": "regional",
+            "scopeTag": "Provincia • Info Blanco Sobre Negro",
+            "badgeClass": "badge-alert-high",
+            "badgeText": "TARIFAS ELÉCTRICAS",
+            "title": "La Justicia frenó el último aumento eléctrico bonaerense",
+            "summary": "Una cautelar del Juzgado Contencioso Administrativo N° 1 de Bahía Blanca suspendió el cuadro autorizado desde agosto y ordenó reimputar como crédito los importes cobrados de más.",
+            "impact": "La medida alcanza a Edelap, EDEA, EDEN y EDES y puede modificar costos energéticos y facturación de usuarios residenciales y productivos.",
+            "source": {
+                "name": "Info Blanco Sobre Negro",
+                "link": "https://www.infoblancosobrenegro.com/nota/114695/la-justicia-freno-el-ultimo-aumento-de-tarifas-de-luz-aprobado-por-la-provincia/",
+                "date": "19 Sep 2026"
+            },
+            "metrics": {
+                "temp": 5,
+                "volume": "Cuatro distribuidoras alcanzadas",
+                "variation": "Cuadro tarifario suspendido cautelarmente"
+            }
+        },
+        {
+            "id": "clip-20260920-2",
+            "category": "local",
+            "scopeTag": "La Plata • Info Blanco Sobre Negro",
+            "badgeClass": "badge-alert-info",
+            "badgeText": "OBRAS VIALES",
+            "title": "La Plata reparó más de 50 cuadras en una semana",
+            "summary": "Los trabajos alcanzaron San Carlos, Villa Elisa, Lisandro Olmos, Arturo Seguí, Los Hornos y el casco urbano, con renovación de carpeta asfáltica y mejoras de transitabilidad.",
+            "impact": "La intervención mejora accesos barriales, seguridad vial y circulación de trabajadores, proveedores y transporte urbano.",
+            "source": {
+                "name": "Info Blanco Sobre Negro",
+                "link": "https://www.infoblancosobrenegro.com/nota/114701/la-municipalidad-reparo-el-asfalto-de-mas-de-50-cuadras-durante-la-ultima-semana/",
+                "date": "19 Sep 2026"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "Más de 50 cuadras intervenidas",
+                "variation": "Seis zonas alcanzadas"
+            }
+        },
+        {
+            "id": "clip-20260920-3",
+            "category": "local",
+            "scopeTag": "La Plata • Info Blanco Sobre Negro",
+            "badgeClass": "badge-alert-medium",
+            "badgeText": "EDUCACIÓN Y EMPLEO",
+            "title": "Avanza en City Bell el proyecto de una Universidad del Deporte",
+            "summary": "La iniciativa impulsada por Estudiantes prevé dos licenciaturas y dos tecnicaturas orientadas a gestión, alto rendimiento y políticas deportivas, con evaluación educativa y de CONEAU en marcha.",
+            "impact": "El proyecto amplía la oferta formativa y puede generar capacidades profesionales y empleo en una actividad vinculada al entretenimiento, la salud y la gestión.",
+            "source": {
+                "name": "Info Blanco Sobre Negro",
+                "link": "https://www.infoblancosobrenegro.com/nota/114703/la-plata-avanza-con-la-universidad-del-deporte-dos-licenciaturas-y-tecnicaturas-nuevas/",
+                "date": "19 Sep 2026"
+            },
+            "metrics": {
+                "temp": 3,
+                "volume": "Dos licenciaturas y dos tecnicaturas proyectadas",
+                "variation": "Evaluación institucional en curso"
+            }
+        }
+    ]
+},
             "2026-09-19": {
     "sector": [
         {
