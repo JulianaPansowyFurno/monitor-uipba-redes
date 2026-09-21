@@ -163,7 +163,7 @@
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
                     <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <span id="current-date-badge" class="date-badge">20/09/2026</span>
+                    <span id="current-date-badge" class="date-badge">21/09/2026</span>
                 </div>
             </div>
         </div>
@@ -186,7 +186,8 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-09-20" selected>20/09/2026 (Hoy)</option>
+                        <option value="2026-09-21" selected>21/09/2026 (Hoy)</option>
+                        <option value="2026-09-20">20/09/2026</option>
                         <option value="2026-09-19">19/09/2026</option>
                         <option value="2026-09-18">18/09/2026</option>
                     <option value="2026-09-17">17/09/2026</option>
@@ -344,6 +345,222 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+            "2026-09-21": {
+    "sector": [
+        {
+            "id": "sector-x-20260921",
+            "network": "X",
+            "networkBadge": "bg-black text-white",
+            "hashtag": "#Minería #TalentoTécnico #Proveedores",
+            "title": "Capacidades técnicas para la minería: sin tendencia nueva verificable en X",
+            "quote": "La participación de profesionales mendocinos en Argentina Mining puso en valor el talento regional y las capacidades que demanda la cadena minera. La búsqueda pública no permitió acreditar una conversación industrial dominante en X durante el 20/09.",
+            "action": "Tomar la referencia para mapear proveedores y perfiles técnicos bonaerenses, sin presentarla como tendencia del día.",
+            "source": {
+                "name": "Hebe Casado (@hebesil) — X",
+                "link": "https://x.com/hebesil/status/2095471673126302072",
+                "date": "3 Sep 2026 · publicación fuera del período"
+            },
+            "metrics": {
+                "temp": 1,
+                "volume": "Interacción pública no cuantificable desde el índice abierto",
+                "variation": "Sin tendencia nueva verificable · cuenta no usada en los últimos 7 días"
+            }
+        },
+        {
+            "id": "sector-linkedin-20260921",
+            "network": "LinkedIn",
+            "networkBadge": "bg-blue-100 text-blue-800",
+            "hashtag": "#ComercioExterior #Internacionalización #PyMEs",
+            "title": "La apertura de mercados externos: tema destacado reciente en LinkedIn",
+            "quote": "Una empresa argentina describió al Business Forum 2026 como una vía para generar reuniones con potenciales socios y ampliar negocios industriales. No surgió evidencia pública suficiente para afirmar que el asunto fue tendencia el 20/09.",
+            "action": "Relevar oportunidades de internacionalización y rondas de negocios para PyMEs bonaerenses, diferenciando esta referencia de una tendencia de plataforma.",
+            "source": {
+                "name": "GEMPLAST ARGENTINA — LinkedIn",
+                "link": "https://es.linkedin.com/posts/geminelli-s-a-_business-forum-2026-una-puerta-que-nos-activity-7501276628124176384-6pC9",
+                "date": "4 Sep 2026 · publicación fuera del período"
+            },
+            "metrics": {
+                "temp": 1,
+                "volume": "Interacción pública no cuantificable desde el índice abierto",
+                "variation": "Tema destacado reciente · cuenta no usada en los últimos 7 días"
+            }
+        },
+        {
+            "id": "sector-instagram-20260921",
+            "network": "Instagram",
+            "networkBadge": "bg-pink-100 text-pink-800",
+            "hashtag": "#CapacidadInstalada #Producción #ActividadIndustrial",
+            "title": "La menor utilización fabril: tema destacado reciente en Instagram",
+            "quote": "El reel advierte sobre el deterioro de la utilización de la capacidad industrial y sus efectos sobre fábricas, producción y empleo. El índice abierto no mostró señales comparables para considerarlo tendencia del 20/09.",
+            "action": "Seguir los indicadores oficiales de capacidad instalada y contrastarlos con testimonios sectoriales bonaerenses.",
+            "source": {
+                "name": "DejaVu San Martín (@dejavusanmar) — Instagram",
+                "link": "https://www.instagram.com/reel/DczlJXbgqaj/",
+                "date": "3 Sep 2026 · publicación fuera del período"
+            },
+            "metrics": {
+                "temp": 1,
+                "volume": "Reel específico; sin métricas públicas comparables",
+                "variation": "Tema destacado reciente · cuenta no usada en los últimos 7 días"
+            }
+        },
+        {
+            "id": "sector-facebook-20260921",
+            "network": "Facebook",
+            "networkBadge": "bg-indigo-100 text-indigo-800",
+            "hashtag": "#RondaDeNegocios #Avellaneda #VinculaciónPyME",
+            "title": "La vinculación comercial entre PyMEs: sin tendencia nueva verificable en Facebook",
+            "quote": "La convocatoria a una ronda de negocios en Avellaneda puso el foco en generar contactos, oportunidades comerciales y encadenamientos locales. No se hallaron señales públicas suficientes de una tendencia industrial nueva en Facebook durante el 20/09.",
+            "action": "Relevar resultados y contactos surgidos de este tipo de rondas, sin reciclar la publicación como tendencia actual.",
+            "source": {
+                "name": "Unión Industrial de Avellaneda — Facebook",
+                "link": "https://www.facebook.com/union.industrial.avellaneda/posts/-se-viene-la-ronda-de-negocios-avellaneda-2026el-pr%C3%B3ximo-jueves-3-de-septiembre-/1480860987417406/",
+                "date": "Publicación previa · actividad del 3 Sep 2026 · fuera del período"
+            },
+            "metrics": {
+                "temp": 1,
+                "volume": "Sin métricas públicas verificables en el índice abierto",
+                "variation": "Sin tendencia nueva verificable · cuenta no usada en los últimos 7 días"
+            }
+        }
+    ],
+    "calle": [
+        {
+            "id": "calle-20260921-1",
+            "region": "la-plata",
+            "riskLevel": "SERVICIOS FINANCIEROS",
+            "badgeClass": "badge-alert-high",
+            "topicNumber": "Tema 1",
+            "title": "1. Una falla de Red Link afectó pagos y cajeros en La Plata",
+            "streetTalk": "Desde la mañana del domingo, usuarios y comercios reportaron rechazos en tarjetas, billeteras y extracciones vinculadas con Banco Provincia, Banco Nación y otras entidades. El servicio se normalizó alrededor de las 16.10.",
+            "connection": [
+                "La interrupción complicó compras, cobros y acceso a efectivo durante varias horas.",
+                "El episodio impactó directamente sobre consumidores y comercios de la región."
+            ],
+            "uipbaPosition": "Registrar el impacto operativo y promover alternativas de cobro ante interrupciones de redes bancarias.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/la-plata/una-falla-afecto-banco-provincia-y-genero-problemas-tarjetas-pagos-y-cajeros-la-plata-n134505",
+                "date": "20 Sep 2026"
+            },
+            "metrics": {
+                "temp": 5,
+                "volume": "Usuarios y comercios afectados durante la mañana y la tarde",
+                "variation": "Operaciones normalizadas cerca de las 16.10"
+            }
+        },
+        {
+            "id": "calle-20260921-2",
+            "region": "ruta-11",
+            "riskLevel": "SEGURIDAD VIAL",
+            "badgeClass": "badge-alert-high",
+            "topicNumber": "Tema 2",
+            "title": "2. Una camioneta militar volcó sobre la Ruta 11",
+            "streetTalk": "Un vehículo del Batallón de Comunicaciones Satelital 601 despistó y volcó a la altura del kilómetro 32 cuando regresaba desde Magdalena hacia La Plata. Bomberos Voluntarios trabajaron en el lugar.",
+            "connection": [
+                "El rodado terminó fuera de la calzada con daños importantes.",
+                "El hecho volvió a poner el foco sobre la seguridad del corredor entre Magdalena y La Plata."
+            ],
+            "uipbaPosition": "Seguir las condiciones de circulación y reforzar la prevención vial para traslados por el corredor.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/policiales/una-camioneta-militar-volco-ruta-11-cuando-regresaba-la-plata-n134484",
+                "date": "20 Sep 2026"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "Un vehículo involucrado; operativo de Bomberos",
+                "variation": "Causas y estado de los ocupantes sin precisiones públicas"
+            }
+        },
+        {
+            "id": "calle-20260921-3",
+            "region": "la-plata",
+            "riskLevel": "INSEGURIDAD COMERCIAL",
+            "badgeClass": "badge-alert-medium",
+            "topicNumber": "Tema 3",
+            "title": "3. El robo a una parrilla obligó a suspender la atención",
+            "streetTalk": "Un comercio gastronómico de 25 y 40, en La Plata, sufrió el robo de mercadería y otros elementos y no pudo abrir durante el domingo. Sus responsables anunciaron que retomarán la actividad el miércoles.",
+            "connection": [
+                "La pérdida de materia prima tuvo un efecto inmediato sobre ventas y continuidad operativa.",
+                "El caso muestra el costo directo de la inseguridad para un comercio local."
+            ],
+            "uipbaPosition": "Incorporar el impacto sobre pequeños comercios al seguimiento de seguridad urbana y actividad económica.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/policiales/robaron-una-parrilla-la-plata-y-el-local-no-pudo-abrir-el-faltante-mercaderia-n134492",
+                "date": "20 Sep 2026"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "Un comercio cerrado durante la jornada",
+                "variation": "Reapertura anunciada para el miércoles"
+            }
+        }
+    ],
+    "clipping": [
+        {
+            "id": "clip-20260921-1",
+            "category": "nacional",
+            "scopeTag": "Economía • 0221",
+            "badgeClass": "badge-alert-high",
+            "badgeText": "ENDEUDAMIENTO",
+            "title": "La mora alcanza a casi cuatro de cada diez deudores menores de 24 años",
+            "summary": "Un análisis de datos del BCRA registró 5,52 millones de personas con deuda irregular por $17,98 billones; entre los menores de 24 años, el 38,8% de los deudores presenta incumplimientos.",
+            "impact": "El deterioro del crédito y los ingresos condiciona consumo, financiamiento de hogares y demanda de bienes y servicios.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/nacional/casi-el-40-los-jovenes-menores-24-anos-registra-deudas-situacion-irregular-n134493",
+                "date": "20 Sep 2026"
+            },
+            "metrics": {
+                "temp": 5,
+                "volume": "5,52 millones de personas; $17,98 billones en mora",
+                "variation": "38,8% de irregularidad entre deudores menores de 24 años"
+            }
+        },
+        {
+            "id": "clip-20260921-2",
+            "category": "local",
+            "scopeTag": "La Plata • 0221",
+            "badgeClass": "badge-alert-info",
+            "badgeText": "HÁBITAT Y DATOS",
+            "title": "Un estudio estimó un fuerte subregistro en barrios populares de La Plata",
+            "summary": "Una investigación con imágenes satelitales e inteligencia artificial detectó unas 72.000 huellas de edificación en barrios populares del distrito frente a 34.000 familias registradas oficialmente.",
+            "impact": "La brecha altera la planificación de infraestructura, servicios, prevención de inundaciones y políticas públicas en zonas vulnerables.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/la-plata/un-estudio-ia-y-fotos-satelitales-detecto-la-plata-un-subregistro-habitantes-barrios-populares-n134417",
+                "date": "20 Sep 2026"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "72.000 construcciones detectadas frente a 34.000 familias registradas",
+                "variation": "Subregistro estimado de 154.000 habitantes en el distrito"
+            }
+        },
+        {
+            "id": "clip-20260921-3",
+            "category": "regional",
+            "scopeTag": "Provincia • 0221",
+            "badgeClass": "badge-alert-medium",
+            "badgeText": "REGULACIÓN COMERCIAL",
+            "title": "Un proyecto propone liberar los horarios de venta de alcohol en la Provincia",
+            "summary": "La iniciativa presentada en la Legislatura busca permitir la venta durante todo el horario habilitado de cada comercio, manteniendo la prohibición a menores y las reglas de Alcohol Cero al Volante.",
+            "impact": "El cambio alcanzaría a bares, restaurantes, supermercados y locales bailables y modificaría su marco operativo y de fiscalización.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/provincia/proponen-eliminar-las-restricciones-horarias-la-venta-alcohol-la-provincia-n134495",
+                "date": "20 Sep 2026"
+            },
+            "metrics": {
+                "temp": 3,
+                "volume": "Proyecto de alcance provincial",
+                "variation": "Propone derogar la restricción horaria adicional"
+            }
+        }
+    ]
+},
             "2026-09-20": {
     "sector": [
         {
