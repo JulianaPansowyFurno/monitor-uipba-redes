@@ -163,7 +163,7 @@
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
                     <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <span id="current-date-badge" class="date-badge">21/09/2026</span>
+                    <span id="current-date-badge" class="date-badge">22/09/2026</span>
                 </div>
             </div>
         </div>
@@ -186,7 +186,8 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-09-21" selected>21/09/2026 (Hoy)</option>
+                        <option value="2026-09-22" selected>22/09/2026 (Hoy)</option>
+                        <option value="2026-09-21">21/09/2026</option>
                         <option value="2026-09-20">20/09/2026</option>
                         <option value="2026-09-19">19/09/2026</option>
                         <option value="2026-09-18">18/09/2026</option>
@@ -345,6 +346,222 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+            "2026-09-22": {
+    "sector": [
+        {
+            "id": "sector-x-20260922",
+            "network": "X",
+            "networkBadge": "bg-black text-white",
+            "hashtag": "#IndustriaFueguina #Regulación #Empleo",
+            "title": "El marco productivo fueguino: sin tendencia nueva verificable en X",
+            "quote": "La publicación cuestiona cambios en el proceso productivo de aires acondicionados y advierte que, junto con la apertura importadora, pueden afectar fabricación nacional y trabajo industrial. La búsqueda abierta no acreditó una conversación dominante en X durante el 21/09.",
+            "action": "Seguir el impacto regulatorio sobre proveedores y empleo en Tierra del Fuego, sin presentar esta referencia como tendencia del día.",
+            "source": {
+                "name": "Martín Perez (@MartinPerezTDF) — X",
+                "link": "https://x.com/MartinPerezTDF/status/2095881312091451706",
+                "date": "4 Sep 2026 · publicación fuera del período"
+            },
+            "metrics": {
+                "temp": 1,
+                "volume": "Interacción pública no cuantificable desde el índice abierto",
+                "variation": "Sin tendencia nueva verificable · cuenta no usada en los últimos 7 días"
+            }
+        },
+        {
+            "id": "sector-linkedin-20260922",
+            "network": "LinkedIn",
+            "networkBadge": "bg-blue-100 text-blue-800",
+            "hashtag": "#Energía #Electrificación #ProveedoresTecnológicos",
+            "title": "La modernización de operaciones energéticas: tema destacado reciente en LinkedIn",
+            "quote": "YPF informó la electrificación de equipos de fractura como parte de su modernización operativa, con efectos potenciales sobre eficiencia y demanda de capacidades proveedoras. No hubo señales públicas suficientes para considerarlo tendencia del 21/09.",
+            "action": "Mapear oportunidades para proveedores bonaerenses de tecnología, energía y mantenimiento, diferenciando el antecedente de una tendencia de plataforma.",
+            "source": {
+                "name": "YPF — LinkedIn",
+                "link": "https://es.linkedin.com/posts/ypf-s-a-_un-nuevo-paso-concretado-para-la-modernizaci%C3%B3n-activity-7503168975028289536-9YX_",
+                "date": "8 Sep 2026 · publicación fuera del período"
+            },
+            "metrics": {
+                "temp": 1,
+                "volume": "Interacción pública no cuantificable desde el índice abierto",
+                "variation": "Tema destacado reciente · cuenta no usada en los últimos 7 días"
+            }
+        },
+        {
+            "id": "sector-instagram-20260922",
+            "network": "Instagram",
+            "networkBadge": "bg-pink-100 text-pink-800",
+            "hashtag": "#Industria #CapacidadProductiva #Empleo",
+            "title": "El cierre de una planta industrial: tema destacado reciente en Instagram",
+            "quote": "El reel retomó el cierre de la planta de FATE y su impacto sobre empleo y capacidad productiva. El índice público no expuso publicaciones comparables del 21/09 ni métricas suficientes para afirmar una tendencia.",
+            "action": "Contrastar el caso con datos sectoriales y seguimiento territorial de empleo, sin reciclarlo como novedad del período analizado.",
+            "source": {
+                "name": "Carlos Heller (@heller_carlos) — Instagram",
+                "link": "https://www.instagram.com/reel/DdHpgn1SKce/",
+                "date": "10 Sep 2026 · publicación fuera del período"
+            },
+            "metrics": {
+                "temp": 1,
+                "volume": "Reel específico; sin métricas públicas comparables",
+                "variation": "Tema destacado reciente · cuenta no usada en los últimos 7 días"
+            }
+        },
+        {
+            "id": "sector-facebook-20260922",
+            "network": "Facebook",
+            "networkBadge": "bg-indigo-100 text-indigo-800",
+            "hashtag": "#IndicadoresIndustriales #Competitividad #Costos",
+            "title": "El seguimiento de variables económicas: sin tendencia nueva verificable en Facebook",
+            "quote": "Una cámara industrial difundió un panorama de tasas, tipo de cambio, costos y señales de actividad como insumos para la toma de decisiones empresarias. Es una referencia regional y no una tendencia argentina del 21/09.",
+            "action": "Comparar esas variables con los indicadores que condicionan a la industria bonaerense y mantener explícito su carácter de referencia externa.",
+            "source": {
+                "name": "CANACINTRA — Facebook",
+                "link": "https://www.facebook.com/CANACINTRAMexico/posts/%E2%84%B9%EF%B8%8F-infoindustria-viernes-4-de-septiembre-de-2026-te-presentamos-el-panorama-econ/1484242230396440/",
+                "date": "4 Sep 2026 · referencia regional fuera del período"
+            },
+            "metrics": {
+                "temp": 1,
+                "volume": "Sin métricas públicas verificables en el índice abierto",
+                "variation": "Sin tendencia nueva verificable · cuenta no usada en los últimos 7 días"
+            }
+        }
+    ],
+    "calle": [
+        {
+            "id": "calle-20260922-1",
+            "region": "la-plata",
+            "riskLevel": "ALERTA POR VIENTOS",
+            "badgeClass": "badge-alert-high",
+            "topicNumber": "Tema 1",
+            "title": "1. Ráfagas fuertes activaron el alerta amarillo en La Plata",
+            "streetTalk": "La Municipalidad mantuvo el nivel amarillo por vientos del sudoeste, con ráfagas previstas de entre 60 y 70 km/h durante la mañana y las primeras horas de la tarde.",
+            "connection": [
+                "El aviso recomendó reducir la circulación y mantenerse lejos de árboles y postes.",
+                "Las áreas operativas municipales realizaron tareas de prevención y monitoreo."
+            ],
+            "uipbaPosition": "Difundir medidas preventivas y monitorear afectaciones sobre movilidad, energía y actividad al aire libre.",
+            "source": {
+                "name": "Info Blanco Sobre Negro",
+                "link": "https://www.infoblancosobrenegro.com/nota/114714/esta-vigente-el-nivel-de-alerta-039-amarillo-039-por-vientos-en-la-plata-este-lunes/",
+                "date": "21 Sep 2026"
+            },
+            "metrics": {
+                "temp": 5,
+                "volume": "Nivel de alerta amarillo",
+                "variation": "Ráfagas previstas de 60 a 70 km/h"
+            }
+        },
+        {
+            "id": "calle-20260922-2",
+            "region": "berisso",
+            "riskLevel": "EMERGENCIA",
+            "badgeClass": "badge-alert-medium",
+            "topicNumber": "Tema 2",
+            "title": "2. Bomberos rescataron a un hombre atrapado en un canal de Berisso",
+            "streetTalk": "El hombre cayó de espaldas en un canal de la calle Carlos Gardel a la altura de 157 y quedó inmovilizado con barro hasta el cuello. Trabajadores municipales alertaron a Bomberos, que lo extrajeron con cuerdas.",
+            "connection": [
+                "El nivel del agua y el fondo barroso dificultaron la salida por sus propios medios.",
+                "La rápida intervención de trabajadores municipales y bomberos evitó consecuencias mayores."
+            ],
+            "uipbaPosition": "Registrar el episodio como señal de seguridad urbana y reforzar la prevención en canales y cursos de agua.",
+            "source": {
+                "name": "Info Blanco Sobre Negro",
+                "link": "https://www.infoblancosobrenegro.com/nota/114722/rescataron-a-un-hombre-que-cayo-a-un-canal-de-berisso-y-quedo-atrapado-en-el-barro/",
+                "date": "21 Sep 2026"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "Operativo conjunto municipal y de Bomberos",
+                "variation": "Rescate realizado con cuerdas"
+            }
+        },
+        {
+            "id": "calle-20260922-3",
+            "region": "la-plata",
+            "riskLevel": "SEGURIDAD VIAL",
+            "badgeClass": "badge-alert-high",
+            "topicNumber": "Tema 3",
+            "title": "3. Un adolescente provocó choques y daños en Lisandro Olmos",
+            "streetTalk": "Un joven de 16 años tomó sin autorización el auto de su padre, chocó contra dos vehículos, casi atropelló a un peatón y causó destrozos en un almacén antes de ser detenido por vecinos.",
+            "connection": [
+                "La secuencia se extendió por varias cuadras y puso en riesgo a peatones y clientes de un comercio.",
+                "El padre asumió la responsabilidad por los daños materiales ocasionados."
+            ],
+            "uipbaPosition": "Incorporar el caso al seguimiento de seguridad vial y prevención de incidentes en zonas comerciales y residenciales.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/la-plata/un-adolescente-la-plata-le-robo-el-auto-su-papa-choco-contra-dos-autos-y-causo-destrozos-un-almacen-n134524",
+                "date": "21 Sep 2026"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "Dos vehículos y un comercio dañados",
+                "variation": "No se informaron víctimas graves"
+            }
+        }
+    ],
+    "clipping": [
+        {
+            "id": "clip-20260922-1",
+            "category": "nacional",
+            "scopeTag": "PyMEs y consumo • 0221",
+            "badgeClass": "badge-alert-high",
+            "badgeText": "EMERGENCIA LIBRERA",
+            "title": "Las librerías reclaman medidas ante una caída real de facturación del 41,5%",
+            "summary": "La Federación Argentina de Librerías, Papelerías y Afines pidió declarar la emergencia del sector tras relevar 1.200 comercios y registrar además una baja del 25% en ventas frente a 2023.",
+            "impact": "El sector solicita devolución de crédito fiscal de IVA, financiamiento blando y una tarifa federal reducida para envíos, medidas relevantes para pequeñas empresas y empleo comercial.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/nacional/las-librerias-reclaman-la-emergencia-el-sector-la-fuerte-caida-las-ventas-n134559",
+                "date": "21 Sep 2026"
+            },
+            "metrics": {
+                "temp": 5,
+                "volume": "1.200 comercios relevados",
+                "variation": "Facturación real -41,5%; ventas -25% frente a 2023"
+            }
+        },
+        {
+            "id": "clip-20260922-2",
+            "category": "regional",
+            "scopeTag": "Provincia • 0221",
+            "badgeClass": "badge-alert-info",
+            "badgeText": "CONSUMO Y FINANCIACIÓN",
+            "title": "Provincia Compras lanzó hasta 18 cuotas sin interés por Banks Week",
+            "summary": "La plataforma de Banco Provincia habilitó financiación extendida hasta el 29 de septiembre para tecnología, electrodomésticos, hogar, moda, deportes, salud y belleza.",
+            "impact": "La promoción puede estimular consumo y ventas de comercios adheridos, aunque requiere tarjetas Visa o Mastercard emitidas por Banco Provincia.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/provincia/provincia-compras-ofrece-18-cuotas-interes-el-banks-week-2026-n134554",
+                "date": "21 Sep 2026"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "Hasta 18 cuotas sin interés",
+                "variation": "Beneficio vigente durante nueve días"
+            }
+        },
+        {
+            "id": "clip-20260922-3",
+            "category": "local",
+            "scopeTag": "La Plata • Info Blanco Sobre Negro",
+            "badgeClass": "badge-alert-medium",
+            "badgeText": "SERVICIOS PÚBLICOS",
+            "title": "El Consejo Consultivo reclamó mayor control sobre OCEBA y las concesiones",
+            "summary": "El organismo regional cuestionó la respuesta frente a apagones y pidió exigir el cumplimiento de los pliegos de concesión, además de mayor independencia y profesionalización de los entes de control.",
+            "impact": "El reclamo involucra calidad del servicio eléctrico, construcción, conectividad vial y trazabilidad de la producción florifrutihortícola.",
+            "source": {
+                "name": "Info Blanco Sobre Negro",
+                "link": "https://www.infoblancosobrenegro.com/nota/114731/en-la-plata-el-consejo-consultivo-pidio-mayor-control-sobre-oceba-y-las-concesiones/",
+                "date": "21 Sep 2026"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "Reclamo institucional sobre control de concesiones",
+                "variation": "Incluye energía, construcción y cadenas productivas locales"
+            }
+        }
+    ]
+},
             "2026-09-21": {
     "sector": [
         {
