@@ -163,7 +163,7 @@
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
                     <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <span id="current-date-badge" class="date-badge">22/09/2026</span>
+                    <span id="current-date-badge" class="date-badge">23/09/2026</span>
                 </div>
             </div>
         </div>
@@ -186,7 +186,8 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-09-22" selected>22/09/2026 (Hoy)</option>
+                        <option value="2026-09-23" selected>23/09/2026 (Hoy)</option>
+                        <option value="2026-09-22">22/09/2026</option>
                         <option value="2026-09-21">21/09/2026</option>
                         <option value="2026-09-20">20/09/2026</option>
                         <option value="2026-09-19">19/09/2026</option>
@@ -346,6 +347,222 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+            "2026-09-23": {
+    "sector": [
+        {
+            "id": "sector-x-20260923",
+            "network": "X",
+            "networkBadge": "bg-black text-white",
+            "hashtag": "#IngresosBrutos #Costos #CadenaProductiva",
+            "title": "El efecto cascada de Ingresos Brutos: sin tendencia nueva verificable en X",
+            "quote": "La publicación explica cómo Ingresos Brutos se acumula en cada eslabón y puede sumar entre 8% y 9% al precio final. Es un antecedente de 2025: el relevamiento abierto del 22/09 no mostró varias voces independientes ni métricas comparables para acreditar una tendencia industrial en X.",
+            "action": "Mantener el costo tributario en seguimiento técnico, sin presentar esta referencia antigua como tendencia ni novedad del período.",
+            "source": {
+                "name": "Impuestos y Economía (@ImpuestosyE) — X",
+                "link": "https://x.com/ImpuestosyE/status/1947504090835042651",
+                "date": "21 Jul 2025 · publicación fuera del período"
+            },
+            "metrics": {
+                "temp": 1,
+                "volume": "Interacción pública no cuantificable desde el índice abierto",
+                "variation": "Sin tendencia nueva verificable · cuenta no usada en los últimos 7 días"
+            }
+        },
+        {
+            "id": "sector-linkedin-20260923",
+            "network": "LinkedIn",
+            "networkBadge": "bg-blue-100 text-blue-800",
+            "hashtag": "#InteligenciaArtificial #Procesos #TransformaciónDigital",
+            "title": "La IA aplicada a operaciones empresariales: tema destacado reciente en LinkedIn",
+            "quote": "La conversación alrededor de SAP NOW reunió casos y especialistas sobre inteligencia artificial, procesos y generación de valor en empresas. La publicación es anterior al período y no existen señales abiertas suficientes para considerarla tendencia del 22/09.",
+            "action": "Seguir casos concretos de automatización y mejora de procesos útiles para PyMEs industriales, diferenciando el antecedente tecnológico de una tendencia diaria.",
+            "source": {
+                "name": "Accenture Argentina — LinkedIn",
+                "link": "https://es.linkedin.com/posts/accenturear_sap-now-ai-tour-argentina-2026-activity-7500287818284474368-Dkb2",
+                "date": "31 Ago 2026 · publicación fuera del período"
+            },
+            "metrics": {
+                "temp": 1,
+                "volume": "595.836 seguidores visibles; métricas del post no expuestas de forma comparable",
+                "variation": "Tema destacado reciente · cuenta no usada en los últimos 7 días"
+            }
+        },
+        {
+            "id": "sector-instagram-20260923",
+            "network": "Instagram",
+            "networkBadge": "bg-pink-100 text-pink-800",
+            "hashtag": "#ActividadIndustrial #PyMEs #ProducciónNacional",
+            "title": "La contracción de la actividad industrial: sin tendencia nueva verificable en Instagram",
+            "quote": "El reel describe cómo la caída del consumo, la apertura importadora y la menor actividad afectan a PyMEs y producción nacional. Es una publicación del 03/09 y la búsqueda abierta no acreditó una conversación industrial dominante en Instagram durante el 22/09.",
+            "action": "Usar el planteo como contexto sectorial y contrastarlo con indicadores actuales, sin presentarlo como novedad ni tendencia del período.",
+            "source": {
+                "name": "En Agenda (@enagenda_) — Instagram",
+                "link": "https://www.instagram.com/reel/Dc0ppmORNRf/",
+                "date": "3 Sep 2026 · publicación fuera del período"
+            },
+            "metrics": {
+                "temp": 1,
+                "volume": "Reel específico; sin métricas públicas comparables",
+                "variation": "Sin tendencia nueva verificable · cuenta no usada en los últimos 7 días"
+            }
+        },
+        {
+            "id": "sector-facebook-20260923",
+            "network": "Facebook",
+            "networkBadge": "bg-indigo-100 text-indigo-800",
+            "hashtag": "#PyMEs #DesarrolloLocal #Empleo",
+            "title": "El impacto local del cierre de PyMEs: sin tendencia nueva verificable en Facebook",
+            "quote": "La publicación relaciona cierres de pequeñas empresas con pérdida de empleo, producción y perspectivas para las familias. Es un antecedente antiguo y el índice público no expuso una alternativa industrial distinta y verificable del 22/09.",
+            "action": "Mantener el problema en seguimiento territorial, aclarando que esta referencia no representa una tendencia ni una publicación reciente.",
+            "source": {
+                "name": "Fernando Gray — Facebook",
+                "link": "https://www.facebook.com/fernandograyok/videos/el-cierre-de-m%C3%A1s-de-45000-pymes-en-la-argentina-significa-p%C3%A9rdida-de-empleo-de-p/706078912461630/",
+                "date": "10 Sep 2025 · publicación fuera del período"
+            },
+            "metrics": {
+                "temp": 1,
+                "volume": "Sin métricas públicas verificables en el índice abierto",
+                "variation": "Sin tendencia nueva verificable · cuenta no usada en los últimos 7 días"
+            }
+        }
+    ],
+    "calle": [
+        {
+            "id": "calle-20260923-1",
+            "region": "la-plata",
+            "riskLevel": "SEGURIDAD LABORAL",
+            "badgeClass": "badge-alert-high",
+            "topicNumber": "Tema 1",
+            "title": "1. La explosión de una caldera hirió a un trabajador en una hormigonera",
+            "streetTalk": "Una caldera explotó en la empresa Ticel, ubicada en Ruta 36 y 515 de La Plata. Un empleado de 57 años sufrió quemaduras en el rostro y un brazo, además de un golpe en la rodilla; fue trasladado al Hospital Alejandro Korn y quedó fuera de peligro.",
+            "connection": [
+                "El episodio ocurrió dentro de una instalación productiva y quedó investigado como lesiones por accidente.",
+                "La emergencia movilizó al SAME y expuso la importancia de protocolos de mantenimiento y respuesta."
+            ],
+            "uipbaPosition": "Reforzar la prevención, el mantenimiento de equipos térmicos y los protocolos de emergencia en establecimientos industriales.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/la-plata/un-trabajador-la-plata-sufrio-quemaduras-la-explosion-una-caldera-una-hormigonera-n134625",
+                "date": "22 Sep 2026"
+            },
+            "metrics": {
+                "temp": 5,
+                "volume": "Un trabajador trasladado al Hospital Alejandro Korn",
+                "variation": "Lesiones informadas como no graves"
+            }
+        },
+        {
+            "id": "calle-20260923-2",
+            "region": "la-plata",
+            "riskLevel": "EDUCACIÓN",
+            "badgeClass": "badge-alert-medium",
+            "topicNumber": "Tema 2",
+            "title": "2. La UNLP paró mientras la Justicia exigió cumplir la ley de financiamiento",
+            "streetTalk": "Docentes universitarios realizaron una medida de fuerza en la UNLP el 22/09. Ese mismo día, la Justicia dio al Gobierno cinco días para cumplir artículos de la Ley de Financiamiento Universitario vinculados con salarios y becas.",
+            "connection": [
+                "Los gremios estiman un atraso salarial del 31,2% frente a una oferta oficial del 3%.",
+                "El conflicto afecta clases, investigación y formación de capacidades profesionales en la región."
+            ],
+            "uipbaPosition": "Monitorear la continuidad académica y el impacto del conflicto sobre formación técnica, investigación y vinculación universidad-empresa.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/nacional/la-justicia-intimo-al-gobierno-cumplir-la-ley-financiamiento-universitario-un-plazo-cinco-dias-n134614",
+                "date": "22 Sep 2026"
+            },
+            "metrics": {
+                "temp": 5,
+                "volume": "Plazo judicial de 5 días",
+                "variation": "Paro docente realizado el 22/09"
+            }
+        },
+        {
+            "id": "calle-20260923-3",
+            "region": "la-plata",
+            "riskLevel": "SERVICIO DE AGUA",
+            "badgeClass": "badge-alert-info",
+            "topicNumber": "Tema 3",
+            "title": "3. Trabajos de ABSA afectaron el agua en Ensenada y Berisso",
+            "streetTalk": "ABSA programó para la madrugada del 22/09 una reparación sobre la cañería principal de la Estación Elevadora de Ensenada, con baja presión o falta de agua en Ensenada y Berisso entre las 00:00 y las 04:00.",
+            "connection": [
+                "La prestadora pidió reservar agua para hidratación y tareas indispensables.",
+                "La intervención afectó hogares y actividades que dependen de continuidad del suministro."
+            ],
+            "uipbaPosition": "Difundir avisos operativos y promover reservas y contingencias en establecimientos alcanzados por cortes programados.",
+            "source": {
+                "name": "Info Blanco Sobre Negro",
+                "link": "https://www.infoblancosobrenegro.com/nota/114726/habra-baja-presion-y-posible-falta-de-agua-en-ensenada-y-berisso-por-trabajos-de-absa/",
+                "date": "21 Sep 2026 · servicio afectado el 22/09"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "Dos municipios alcanzados",
+                "variation": "Ventana informada: 00:00 a 04:00"
+            }
+        }
+    ],
+    "clipping": [
+        {
+            "id": "clip-20260923-1",
+            "category": "local",
+            "scopeTag": "La Plata • 0221",
+            "badgeClass": "badge-alert-high",
+            "badgeText": "ENDEUDAMIENTO PRODUCTIVO",
+            "title": "Más del 90% de los productores frutihortícolas se endeudó para sostenerse",
+            "summary": "Un relevamiento de UTT y CET sobre 340 familias del cordón platense encontró que el 92,3% mantiene deudas o créditos pendientes; el 58,5% destinó fondos a producción y el 49,6% también a gastos del hogar.",
+            "impact": "El deterioro financiero de un eslabón central de la producción de alimentos amenaza continuidad, inversión e ingresos familiares en la región.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/la-plata/mas-del-90-los-productores-del-cordon-frutihorticola-la-plata-se-endeudo-sostenerse-n134617",
+                "date": "22 Sep 2026"
+            },
+            "metrics": {
+                "temp": 5,
+                "volume": "340 familias relevadas",
+                "variation": "92,3% con deuda; 65,9% tomó nueva deuda para pagar otra"
+            }
+        },
+        {
+            "id": "clip-20260923-2",
+            "category": "local",
+            "scopeTag": "La Plata • 0221",
+            "badgeClass": "badge-alert-medium",
+            "badgeText": "LOTEOS ILEGALES",
+            "title": "La Justicia ordenó censar las viviendas de los loteos investigados",
+            "summary": "La DDI deberá relevar casa por casa los desarrollos vinculados al Grupo Delsud, identificar familias, condiciones de acceso a las parcelas y características de las construcciones.",
+            "impact": "La medida busca dimensionar el impacto habitacional y ordenar evidencia sobre urbanizaciones que no habrían reunido condiciones legales para subdividir, escriturar o urbanizar.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/la-plata/la-justicia-ordeno-un-censo-casa-casa-la-causa-loteos-ilegales-la-plata-n134571",
+                "date": "22 Sep 2026"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "Censo casa por casa ordenado",
+                "variation": "Incluye Sophenia y Garden"
+            }
+        },
+        {
+            "id": "clip-20260923-3",
+            "category": "regional",
+            "scopeTag": "Provincia • 0221",
+            "badgeClass": "badge-alert-info",
+            "badgeText": "INVERSIÓN",
+            "title": "Kicillof abrió una agenda con más de 20 empresas e inversores en Nueva York",
+            "summary": "El gobernador inició una gira con reuniones previstas junto a fondos institucionales y compañías estadounidenses de energía, petróleo y gas, minería, granos, biotecnología y servicios tecnológicos.",
+            "impact": "La agenda puede abrir canales de inversión y cooperación para cadenas productivas bonaerenses y proveedores vinculados con sectores estratégicos.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/provincia/axel-kicillof-inicio-su-gira-nueva-york-criticas-javier-milei-y-reuniones-inversores-n134608",
+                "date": "22 Sep 2026"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "Más de 20 empresas convocadas",
+                "variation": "Sectores: energía, minería, agro, biotecnología y tecnología"
+            }
+        }
+    ]
+},
             "2026-09-22": {
     "sector": [
         {
