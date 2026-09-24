@@ -163,7 +163,7 @@
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
                     <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <span id="current-date-badge" class="date-badge">23/09/2026</span>
+                    <span id="current-date-badge" class="date-badge">24/09/2026</span>
                 </div>
             </div>
         </div>
@@ -186,7 +186,8 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-09-23" selected>23/09/2026 (Hoy)</option>
+                        <option value="2026-09-24" selected>24/09/2026 (Hoy)</option>
+                        <option value="2026-09-23">23/09/2026</option>
                         <option value="2026-09-22">22/09/2026</option>
                         <option value="2026-09-21">21/09/2026</option>
                         <option value="2026-09-20">20/09/2026</option>
@@ -347,6 +348,222 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+            "2026-09-24": {
+    "sector": [
+        {
+            "id": "sector-x-20260924",
+            "network": "X",
+            "networkBadge": "bg-black text-white",
+            "hashtag": "#FinanciamientoPyME #MercadoDeCapitales #Tasas",
+            "title": "El costo del financiamiento PyME: sin tendencia nueva verificable en X",
+            "quote": "El Índice de Financiamiento PyME reúne la tasa promedio ponderada de instrumentos del mercado de capitales. La búsqueda pública del 23/09 no mostró varias voces independientes ni métricas comparables que permitieran acreditar una tendencia industrial en X; esta referencia es anterior al período.",
+            "action": "Contrastar el financiamiento bursátil con el crédito bancario disponible para PyMEs bonaerenses, sin presentar este antecedente como tendencia del día.",
+            "source": {
+                "name": "Argentina en Datos (@arg_endatos) — X",
+                "link": "https://x.com/arg_endatos/status/2072053546577506592",
+                "date": "30 Jun 2026 · publicación fuera del período"
+            },
+            "metrics": {
+                "temp": 1,
+                "volume": "Interacción pública no cuantificable desde el índice abierto",
+                "variation": "Sin tendencia nueva verificable · cuenta no usada en las últimas 7 ediciones"
+            }
+        },
+        {
+            "id": "sector-linkedin-20260924",
+            "network": "LinkedIn",
+            "networkBadge": "bg-blue-100 text-blue-800",
+            "hashtag": "#Competitividad #IndustriaArgentina #CostosProductivos",
+            "title": "Los costos sistémicos que limitan la competitividad: tema destacado reciente en LinkedIn",
+            "quote": "El análisis vincula competitividad industrial con impuestos, financiamiento, infraestructura, energía, logística, formación técnica, inteligencia artificial, exportaciones y reglas estables. La publicación es del 02/09 y no hay señales abiertas suficientes para considerarla tendencia del 23/09.",
+            "action": "Ordenar una agenda de competitividad que separe costos internos, infraestructura y capacidades tecnológicas, identificando prioridades para las PyMEs industriales bonaerenses.",
+            "source": {
+                "name": "Gabriel Ortiz — LinkedIn",
+                "link": "https://es.linkedin.com/posts/gabriel-ortiz-355830176_d%C3%ADa-de-la-industria-sin-industria-un-pa%C3%ADs-activity-7500880278945587202-nA9W",
+                "date": "2 Sep 2026 · publicación fuera del período"
+            },
+            "metrics": {
+                "temp": 2,
+                "volume": "Post específico verificable; métricas no expuestas de forma comparable",
+                "variation": "Tema destacado reciente · cuenta no usada en las últimas 7 ediciones"
+            }
+        },
+        {
+            "id": "sector-instagram-20260924",
+            "network": "Instagram",
+            "networkBadge": "bg-pink-600 text-white",
+            "hashtag": "#Software #Talento #Universidad #InteligenciaArtificial",
+            "title": "La formación tecnológica frente al cambio productivo: sin tendencia nueva verificable en Instagram",
+            "quote": "La articulación entre universidad e industria del software puso en foco los perfiles profesionales y las capacidades que demanda un sector atravesado por la inteligencia artificial. El reel es del 14/09 y no prueba una conversación dominante en Instagram durante el 23/09.",
+            "action": "Promover vínculos entre universidades y empresas para anticipar perfiles digitales, dejando claro que esta referencia es un antecedente y no una tendencia del período.",
+            "source": {
+                "name": "FCEyT de la UNSE — Instagram",
+                "link": "https://www.instagram.com/reel/DdSRd1bjL7y/",
+                "date": "14 Sep 2026 · publicación fuera del período"
+            },
+            "metrics": {
+                "temp": 1,
+                "volume": "Reel específico; sin métricas públicas comparables",
+                "variation": "Sin tendencia nueva verificable · cuenta no usada en las últimas 7 ediciones"
+            }
+        },
+        {
+            "id": "sector-facebook-20260924",
+            "network": "Facebook",
+            "networkBadge": "bg-blue-700 text-white",
+            "hashtag": "#Industria #Empleo #PyMEs #TrabajoArgentino",
+            "title": "La pérdida de empleo fabril: sin tendencia nueva verificable en Facebook",
+            "quote": "La publicación sindical relaciona la caída de la actividad industrial con cierres y pérdida de puestos de trabajo. El índice público no expone su fecha ni métricas comparables, y la revisión del 23/09 no permitió comprobar que el tema fuera tendencia en Facebook.",
+            "action": "Contrastar el planteo con datos sectoriales, cámaras y sindicatos territoriales, sin presentar una publicación sin fecha pública como novedad del día.",
+            "source": {
+                "name": "Camioneros BA — Facebook",
+                "link": "https://www.facebook.com/CamionerosBA/posts/la-industria-argentina-en-ca%C3%ADda-estiman-que-se-perder%C3%A1n-105000-empleos-en-2026-e/1541185658049629/",
+                "date": "Fecha no expuesta por el índice público · relevada el 24 Sep 2026"
+            },
+            "metrics": {
+                "temp": 1,
+                "volume": "Sin métricas públicas verificables en el índice abierto",
+                "variation": "Sin tendencia nueva verificable · cuenta no usada en las últimas 7 ediciones"
+            }
+        }
+    ],
+    "calle": [
+        {
+            "id": "calle-20260924-1",
+            "region": "la-plata",
+            "riskLevel": "TRANSPORTE Y TRABAJO",
+            "badgeClass": "badge-alert-medium",
+            "topicNumber": "Tema 1",
+            "title": "1. Taxistas se movilizaron contra las aplicaciones y reclamaron controles",
+            "streetTalk": "Taxistas de La Plata realizaron el 23/09 un cese momentáneo en paradas y una caravana al Palacio Municipal para exigir controles sobre Uber, DiDi y Cabify, en defensa del trabajo habilitado.",
+            "connection": [
+                "El reclamo alcanzó puntos sensibles como la Terminal de Ómnibus, la estación del Tren Roca y plazas céntricas.",
+                "La protesta volvió a poner en discusión regulación, competencia, seguridad y costos del transporte urbano."
+            ],
+            "uipbaPosition": "Seguir el impacto sobre movilidad laboral y logística urbana, promoviendo reglas previsibles y controles que reduzcan conflicto e informalidad.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/la-plata/taxistas-la-plata-convocan-una-nueva-caravana-contra-el-transporte-ilegal-n134596",
+                "date": "22 Sep 2026 · movilización realizada el 23/09"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "Cese en paradas y caravana al Palacio Municipal",
+                "variation": "Protesta realizada el 23/09"
+            }
+        },
+        {
+            "id": "calle-20260924-2",
+            "region": "chascomus",
+            "riskLevel": "SEGURIDAD VIAL",
+            "badgeClass": "badge-alert-high",
+            "topicNumber": "Tema 2",
+            "title": "2. El vuelco en Ruta 2 dejó dos fallecidos y dos heridos",
+            "streetTalk": "El 23/09 se confirmó una segunda víctima fatal por el vuelco de una Ford Ranger a la altura de Chascomús. Los ocupantes regresaban de inspeccionar una obra en Mar del Plata; otras dos personas quedaron fuera de peligro.",
+            "connection": [
+                "El siniestro ocurrió en uno de los corredores viales centrales de la provincia.",
+                "Las víctimas trabajaban en la Dirección de Infraestructura del Ministerio de Justicia bonaerense."
+            ],
+            "uipbaPosition": "Reforzar prevención y protocolos de traslado laboral en rutas, especialmente para equipos que recorren obras e instalaciones.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/policiales/confirman-dos-fallecidos-el-tragico-accidente-ruta-2-quienes-eran-n134681",
+                "date": "23 Sep 2026"
+            },
+            "metrics": {
+                "temp": 5,
+                "volume": "Dos fallecidos y dos heridos fuera de peligro",
+                "variation": "Segunda muerte confirmada el 23/09"
+            }
+        },
+        {
+            "id": "calle-20260924-3",
+            "region": "la-plata",
+            "riskLevel": "EDUCACIÓN",
+            "badgeClass": "badge-alert-medium",
+            "topicNumber": "Tema 3",
+            "title": "3. Los nodocentes de la UNLP anunciaron un nuevo paro",
+            "streetTalk": "ATULP convocó el 23/09 a un paro sin concurrencia para el 7 de octubre por el incumplimiento de la Ley de Financiamiento Universitario, el deterioro salarial y la falta de avances paritarios.",
+            "connection": [
+                "La medida continúa un plan de lucha de alcance federal y siguió a un paro con alta adhesión.",
+                "El conflicto puede afectar servicios universitarios, formación e investigación en el Gran La Plata."
+            ],
+            "uipbaPosition": "Monitorear la continuidad académica y la vinculación universidad-empresa, preservando capacidades técnicas y científicas relevantes para la producción.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/universidad/los-trabajadores-nodocentes-la-unlp-anunciaron-un-nuevo-paro-medio-del-conflicto-el-financiamiento-n134675",
+                "date": "23 Sep 2026"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "Paro sin concurrencia convocado para el 7/10",
+                "variation": "Anuncio realizado el 23/09"
+            }
+        }
+    ],
+    "clipping": [
+        {
+            "id": "clip-20260924-1",
+            "category": "local",
+            "scopeTag": "La Plata • 0221",
+            "badgeClass": "badge-alert-high",
+            "badgeText": "ACTIVIDAD ECONÓMICA",
+            "title": "La actividad platense cayó 1,2% y acumuló tres trimestres de retroceso",
+            "summary": "El indicador de la Facultad de Ciencias Económicas de la UNLP marcó una baja interanual del 1,2% en el segundo trimestre, con caídas en comercio, construcción, inmobiliarias, hoteles y restaurantes; la industria manufacturera creció 3,3%.",
+            "impact": "La divergencia sectorial muestra presión sobre consumo, empleo y servicios, aunque la manufactura y el consumo eléctrico industrial aportaron señales positivas.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/la-plata/la-actividad-economica-la-plata-cayo-12-y-acumula-tres-trimestres-retroceso-n134651",
+                "date": "23 Sep 2026"
+            },
+            "metrics": {
+                "temp": 5,
+                "volume": "Actividad -1,2% interanual; industria +3,3%",
+                "variation": "Tres trimestres consecutivos de caída"
+            }
+        },
+        {
+            "id": "clip-20260924-2",
+            "category": "nacional",
+            "scopeTag": "Argentina • 0221",
+            "badgeClass": "badge-alert-info",
+            "badgeText": "INFRAESTRUCTURA",
+            "title": "Argentina y Estados Unidos acordaron inversiones por hasta USD 7.000 millones",
+            "summary": "El Corredor Andes-Atlántico prevé proyectos durante 2027 en energía, minería, transporte y telecomunicaciones para conectar Vaca Muerta y el noroeste argentino con los puertos atlánticos.",
+            "impact": "La iniciativa puede ampliar demanda para proveedores industriales, logística e infraestructura, aunque su efecto dependerá de la ejecución y del acceso de empresas locales a los proyectos.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/nacional/argentina-y-estados-unidos-acordaron-inversiones-usd-7000-millones-infraestructura-n134702",
+                "date": "23 Sep 2026"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "Hasta USD 7.000 millones previstos para 2027",
+                "variation": "Energía, minería, transporte y telecomunicaciones"
+            }
+        },
+        {
+            "id": "clip-20260924-3",
+            "category": "local",
+            "scopeTag": "La Plata • 0221",
+            "badgeClass": "badge-alert-info",
+            "badgeText": "INVERSIÓN PRODUCTIVA",
+            "title": "La Plata firmó en Shanghái un acuerdo para atraer inversiones",
+            "summary": "Julio Alak suscribió un memorándum con la Federación de Industria y Comercio de China junto con la UIGLP y la FELP, y presentó proyectos vinculados con el aeropuerto y el cordón hortícola.",
+            "impact": "El acuerdo abre una vía de cooperación para producción, trabajo e infraestructura local, con participación directa de entidades empresarias de la región.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/la-plata/julio-alak-firmo-shanghai-un-acuerdo-atraer-inversiones-y-presento-proyectos-la-plata-n134653",
+                "date": "23 Sep 2026"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "Memorándum con ACFIC, UIGLP y FELP",
+                "variation": "Aeropuerto y cordón hortícola entre los proyectos"
+            }
+        }
+    ]
+},
             "2026-09-23": {
     "sector": [
         {
