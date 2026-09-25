@@ -163,7 +163,7 @@
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
                     <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <span id="current-date-badge" class="date-badge">24/09/2026</span>
+                    <span id="current-date-badge" class="date-badge">25/09/2026</span>
                 </div>
             </div>
         </div>
@@ -186,7 +186,8 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-09-24" selected>24/09/2026 (Hoy)</option>
+                        <option value="2026-09-25" selected>25/09/2026 (Hoy)</option>
+                        <option value="2026-09-24">24/09/2026</option>
                         <option value="2026-09-23">23/09/2026</option>
                         <option value="2026-09-22">22/09/2026</option>
                         <option value="2026-09-21">21/09/2026</option>
@@ -348,6 +349,222 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+"2026-09-25": {
+    "sector": [
+        {
+            "id": "sector-x-20260925",
+            "network": "X",
+            "networkBadge": "bg-black text-white",
+            "hashtag": "#MercadoLaboral #Empleo #Producción",
+            "title": "Empleo y desempleo del segundo trimestre: tema destacado reciente en X",
+            "quote": "La medición oficial informó para el segundo trimestre de 2026 tasas de actividad de 48,9%, empleo de 45,0% y desocupación de 7,9%. La publicación es del 17/09 y la revisión del 24/09 no encontró varias voces independientes ni señales comparables para acreditarla como tendencia industrial del día.",
+            "action": "Cruzar los indicadores laborales con la evolución del empleo industrial bonaerense y las necesidades de contratación sectorial, sin presentar este antecedente como tendencia del 24/09.",
+            "source": {
+                "name": "INDEC Argentina (@INDECArgentina) — X",
+                "link": "https://x.com/INDECArgentina/status/2100661169019138459",
+                "date": "17 Sep 2026 · publicación fuera del período"
+            },
+            "metrics": {
+                "temp": 2,
+                "volume": "Post específico verificable; el índice abierto no expone métricas comparables",
+                "variation": "Tema destacado reciente · cuenta no usada en las últimas 7 ediciones"
+            }
+        },
+        {
+            "id": "sector-linkedin-20260925",
+            "network": "LinkedIn",
+            "networkBadge": "bg-blue-100 text-blue-800",
+            "hashtag": "#IndustriaYAgro #Acero #EconomíaCircular #Diversidad",
+            "title": "La articulación entre acero y agro: sin tendencia nueva verificable en LinkedIn",
+            "quote": "La publicación sobre Expoagro vincula innovación, sustentabilidad, economía circular y participación de mujeres en la cadena del acero. El índice público no expone la fecha exacta y la búsqueda del 24/09 no mostró conversación suficiente para considerarla tendencia en LinkedIn.",
+            "action": "Explorar oportunidades de integración entre metalurgia, maquinaria agrícola y proveedores bonaerenses, diferenciando este antecedente de una tendencia diaria comprobada.",
+            "source": {
+                "name": "ArcelorMittal Acindar — LinkedIn",
+                "link": "https://es.linkedin.com/posts/arcelormittalacindar_expoagro2026-arcelormittalacindar-industriayagro-activity-7443011181780303872-TvGM",
+                "date": "Fecha exacta no expuesta por el índice público · publicación indexada hace 5 meses; relevada el 25 Sep 2026"
+            },
+            "metrics": {
+                "temp": 1,
+                "volume": "Post específico con conversación visible; sin métricas comparables en el índice abierto",
+                "variation": "Sin tendencia nueva verificable · cuenta no usada en las últimas 7 ediciones"
+            }
+        },
+        {
+            "id": "sector-instagram-20260925",
+            "network": "Instagram",
+            "networkBadge": "bg-pink-600 text-white",
+            "hashtag": "#IndustriaAlimentaria #Automatización #Envases #Calidad",
+            "title": "Automatización y calidad en alimentos: tema destacado reciente en Instagram",
+            "quote": "Un reel de Tecno Fidta mostró soluciones para procesamiento, control de calidad, envases y automatización aplicadas a la industria alimentaria. Es del 16/09 y no existe evidencia pública suficiente para presentarlo como tendencia de Instagram durante el 24/09.",
+            "action": "Identificar tecnologías de proceso y envasado con impacto directo en productividad, trazabilidad y calidad para empresas alimentarias bonaerenses.",
+            "source": {
+                "name": "Tecno Fidta — Instagram",
+                "link": "https://www.instagram.com/reel/DdXa8y2NWEM/",
+                "date": "16 Sep 2026 · publicación fuera del período"
+            },
+            "metrics": {
+                "temp": 2,
+                "volume": "Reel específico verificable; sin métricas públicas comparables",
+                "variation": "Tema destacado reciente · cuenta no usada en las últimas 7 ediciones"
+            }
+        },
+        {
+            "id": "sector-facebook-20260925",
+            "network": "Facebook",
+            "networkBadge": "bg-blue-700 text-white",
+            "hashtag": "#MercadoInterno #ProducciónNacional #CompetenciaImportada",
+            "title": "La defensa del mercado interno industrial: sin tendencia nueva verificable en Facebook",
+            "quote": "El planteo de FISFE advirtió sobre el efecto de la apertura y la competencia importada en producción y empleo. La publicación es del 06/09 y el relevamiento del 24/09 no encontró señales abiertas suficientes para sostener que lideró la conversación en Facebook.",
+            "action": "Monitorear importaciones, utilización de capacidad y empleo en ramas bonaerenses sensibles, sin atribuir carácter de tendencia diaria a una publicación anterior.",
+            "source": {
+                "name": "Canal Somos Rosario — Facebook",
+                "link": "https://www.facebook.com/CanalSomosRosario/videos/-duro-reclamo-de-fisfe-argentina-no-puede-rifar-su-mercado-interno-ni-su-producc/27046530555033272/",
+                "date": "6 Sep 2026 · publicación fuera del período"
+            },
+            "metrics": {
+                "temp": 1,
+                "volume": "Video específico verificable; métricas no expuestas por el índice abierto",
+                "variation": "Sin tendencia nueva verificable · cuenta no usada en las últimas 7 ediciones"
+            }
+        }
+    ],
+    "calle": [
+        {
+            "id": "calle-20260925-1",
+            "region": "la-plata",
+            "riskLevel": "DERECHOS Y TRÁNSITO",
+            "badgeClass": "badge-alert-medium",
+            "topicNumber": "Tema 1",
+            "title": "1. Una protesta trans-travesti cortó el centro platense y reclamó asistencia",
+            "streetTalk": "Organizaciones trans-travestis se manifestaron el 24/09 en calle 7 entre 48 y 49 para pedir Tarjetas Alimentar, asistencia social y cumplimiento del cupo laboral; el corte generó demoras hasta cerca de las 19:30.",
+            "connection": [
+                "La protesta afectó la circulación en pleno centro de La Plata.",
+                "El Municipio informó que atiende casos individuales y asumió el compromiso de avanzar con el cupo laboral."
+            ],
+            "uipbaPosition": "Seguir el impacto en movilidad urbana y promover canales institucionales que articulen inclusión laboral, asistencia y continuidad de la actividad.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/la-plata/tarjetas-alimentar-asistencia-y-cupo-laboral-la-municipalidad-la-plata-respondio-al-pedido-trans-travesti-n134774",
+                "date": "24 Sep 2026"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "Corte de calle 7 y reclamo ante el Palacio Municipal",
+                "variation": "Manifestación realizada el 24/09"
+            }
+        },
+        {
+            "id": "calle-20260925-2",
+            "region": "ensenada",
+            "riskLevel": "EDUCACIÓN Y SEGURIDAD",
+            "badgeClass": "badge-alert-high",
+            "topicNumber": "Tema 2",
+            "title": "2. El conflicto en una escuela de Ensenada derivó en un paro docente de 36 horas",
+            "streetTalk": "SUTEBA Ensenada convocó el 24/09 a un paro inmediato de 36 horas después de incidentes en la Escuela Primaria N.º 13, donde una denuncia contra un docente terminó con agresiones a integrantes del equipo directivo.",
+            "connection": [
+                "La medida afectó la actividad educativa del distrito.",
+                "El episodio combinó denuncias de maltrato infantil, violencia contra trabajadores y reclamos de resguardo institucional."
+            ],
+            "uipbaPosition": "Acompañar la necesidad de ámbitos seguros, investigación institucional y protocolos de prevención de violencia que protejan a estudiantes y trabajadores.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/ensenada/convocan-un-paro-docente-36-horas-ensenada-los-incidentes-la-escuela-mosconi-n134724",
+                "date": "24 Sep 2026"
+            },
+            "metrics": {
+                "temp": 5,
+                "volume": "Paro docente de 36 horas en Ensenada",
+                "variation": "Medida dispuesta el 24/09"
+            }
+        },
+        {
+            "id": "calle-20260925-3",
+            "region": "la-plata",
+            "riskLevel": "POBREZA Y CONSUMO",
+            "badgeClass": "badge-alert-high",
+            "topicNumber": "Tema 3",
+            "title": "3. La pobreza alcanzó al 37,8% de las personas en el Gran La Plata",
+            "streetTalk": "Los datos del primer semestre difundidos el 24/09 ubicaron a 359.000 personas bajo la línea de pobreza en el Gran La Plata y a 87.000 en la indigencia; la pobreza en hogares subió al 28%.",
+            "connection": [
+                "La pérdida de ingresos afecta consumo, demanda local y capacidad de pago de servicios.",
+                "El deterioro social aumenta la presión sobre políticas alimentarias, empleo y asistencia municipal."
+            ],
+            "uipbaPosition": "Incorporar la evolución del consumo y los ingresos al análisis productivo regional, priorizando empleo formal y articulación público-privada.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/la-plata/la-pobreza-subio-gran-la-plata-y-alcanzo-al-378-las-personas-el-primer-semestre-2026-n134753",
+                "date": "24 Sep 2026"
+            },
+            "metrics": {
+                "temp": 5,
+                "volume": "359.000 personas pobres y 87.000 indigentes",
+                "variation": "37,8% de las personas · 28% de los hogares"
+            }
+        }
+    ],
+    "clipping": [
+        {
+            "id": "clip-20260925-1",
+            "category": "Economía e industria",
+            "scopeTag": "Nacional",
+            "badgeClass": "bg-red-100 text-red-800",
+            "badgeText": "ACTIVIDAD",
+            "title": "La actividad económica cayó 2,9% mensual en julio y la industria estuvo entre los sectores más afectados",
+            "summary": "El EMAE de julio retrocedió 1,4% interanual y 2,9% frente a junio en la serie desestacionalizada. Comercio e industria encabezaron las bajas, aunque el acumulado de los primeros siete meses conservó una mejora de 1,7%.",
+            "impact": "La caída refuerza señales de enfriamiento para ventas, producción y empleo industrial, con impacto directo en decisiones de stock e inversión.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/nacional/la-actividad-economica-cayo-fuerza-julio-el-comercio-y-la-industria-estuvieron-los-mas-afectados-n134755",
+                "date": "24 Sep 2026"
+            },
+            "metrics": {
+                "temp": 5,
+                "volume": "EMAE: -2,9% mensual y -1,4% interanual",
+                "variation": "+1,7% acumulado enero-julio"
+            }
+        },
+        {
+            "id": "clip-20260925-2",
+            "category": "Energía y tarifas",
+            "scopeTag": "Nacional",
+            "badgeClass": "bg-amber-100 text-amber-800",
+            "badgeText": "TARIFAS",
+            "title": "El Senado convirtió en ley la reducción de las zonas frías y más de tres millones perderán el subsidio",
+            "summary": "La reforma restringe el beneficio tarifario de gas a la Patagonia, Malargüe y la Puna. Más de tres millones de usuarios de otras regiones dejarán de recibir el descuento.",
+            "impact": "El cambio puede elevar costos energéticos de hogares y comercios, afectar consumo disponible y reabrir reclamos territoriales por tarifas.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/nacional/el-senado-convirtio-ley-el-proyecto-zonas-frias-y-el-gobierno-sumo-nueva-victoria-el-congreso-n134779",
+                "date": "24 Sep 2026"
+            },
+            "metrics": {
+                "temp": 4,
+                "volume": "Más de 3 millones de usuarios pierden el beneficio",
+                "variation": "Ley sancionada el 24/09"
+            }
+        },
+        {
+            "id": "clip-20260925-3",
+            "category": "Comercio y empleo",
+            "scopeTag": "Berisso",
+            "badgeClass": "bg-blue-100 text-blue-800",
+            "badgeText": "CIERRE",
+            "title": "Una zapatería histórica de Berisso cerró después de 32 años",
+            "summary": "Patora Calzados anunció el cierre definitivo y una liquidación total tras más de tres décadas de actividad. Sus responsables explicaron que la decisión culmina un proceso personal y comercial iniciado hace tres años.",
+            "impact": "El cierre refleja la fragilidad del comercio de cercanía y su vínculo con consumo, empleo y circulación económica en el corredor La Plata–Berisso–Ensenada.",
+            "source": {
+                "name": "0221",
+                "link": "https://www.0221.com.ar/berisso/un-tradicional-local-calzados-berisso-baja-la-persiana-despues-mas-30-anos-fue-un-honor-n134699",
+                "date": "24 Sep 2026"
+            },
+            "metrics": {
+                "temp": 3,
+                "volume": "32 años de actividad",
+                "variation": "Cierre definitivo anunciado el 24/09"
+            }
+        }
+    ]
+},
             "2026-09-24": {
     "sector": [
         {
