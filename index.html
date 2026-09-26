@@ -163,7 +163,7 @@
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
                     <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <span id="current-date-badge" class="date-badge">25/09/2026</span>
+                    <span id="current-date-badge" class="date-badge">26/09/2026</span>
                 </div>
             </div>
         </div>
@@ -186,7 +186,8 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-09-25" selected>25/09/2026 (Hoy)</option>
+                        <option value="2026-09-26" selected>26/09/2026 (Hoy)</option>
+                        <option value="2026-09-25">25/09/2026</option>
                         <option value="2026-09-24">24/09/2026</option>
                         <option value="2026-09-23">23/09/2026</option>
                         <option value="2026-09-22">22/09/2026</option>
@@ -349,6 +350,222 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+            "2026-09-26": {
+            "sector": [
+                {
+                    "id": "sector-x-20260926",
+                    "network": "X",
+                    "networkBadge": "bg-slate-900 text-white",
+                    "hashtag": "#PolíticaIndustrial",
+                    "title": "La necesidad de una estrategia industrial: sin tendencia nueva verificable en X",
+                    "quote": "El post plantea que la Argentina necesita una estrategia industrial consistente. La revisión pública del 25/09 no permitió comprobar una conversación dominante ni múltiples cuentas convergentes sobre un mismo tema industrial en X.",
+                    "action": "Tomarlo como señal cualitativa, no como tendencia: la definición de una política industrial estable sigue siendo un eje relevante para la competitividad y la inversión.",
+                    "source": {
+                        "name": "Fernando A. Iglesias — X",
+                        "link": "https://x.com/i/status/2096525246610251835",
+                        "date": "Publicado el 06 Sep 2026 · relevado el 26 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 2,
+                        "volume": "Sin tendencia verificable",
+                        "variation": "Post anterior con fecha real"
+                    }
+                },
+                {
+                    "id": "sector-linkedin-20260926",
+                    "network": "LinkedIn",
+                    "networkBadge": "bg-blue-700 text-white",
+                    "hashtag": "#IngenieríaIndustrial",
+                    "title": "Datos y mejora continua en la formación industrial: tema destacado reciente en LinkedIn",
+                    "quote": "En el marco de CAEII 2026, la conversación destacó que la industria necesita criterio, lectura de datos y mejora continua además del dominio técnico. No hubo evidencia pública suficiente para presentarlo como tendencia del 25/09.",
+                    "action": "Reforzar la articulación con universidades y empresas para formar perfiles que combinen capacidades técnicas, análisis de datos y gestión de procesos.",
+                    "source": {
+                        "name": "Grupo Arcor — LinkedIn",
+                        "link": "https://es.linkedin.com/posts/grupo-arcor_rondas-de-impacto-industrial-caeii-2026-activity-7501703469653712896-ML3n",
+                        "date": "Fecha exacta no expuesta por el índice público; indexado 3 semanas antes · relevado el 26 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 3,
+                        "volume": "Tema destacado; sin tendencia probada",
+                        "variation": "Fecha declarada por el índice"
+                    }
+                },
+                {
+                    "id": "sector-instagram-20260926",
+                    "network": "Instagram",
+                    "networkBadge": "bg-gradient-to-r from-purple-600 to-pink-500 text-white",
+                    "hashtag": "#Logística",
+                    "title": "La logística como cadena integrada: sin tendencia nueva verificable en Instagram",
+                    "quote": "La publicación explica la logística como la coordinación de transporte, inventarios, depósitos y tecnología desde la fábrica hasta el consumidor. Registraba 177 Me gusta y 22 comentarios al relevamiento, pero fue publicada el 11/05 y no representa una tendencia del 25/09.",
+                    "action": "Usar el enfoque integral para comunicar cómo la eficiencia logística afecta costos, tiempos de entrega y competitividad de las PyMEs industriales.",
+                    "source": {
+                        "name": "Gente de Business y Paul Machuca — Instagram",
+                        "link": "https://www.instagram.com/reel/DYM1gvVucTv/",
+                        "date": "Publicado el 11 May 2026 · relevado el 26 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 2,
+                        "volume": "177 Me gusta · 22 comentarios",
+                        "variation": "Post anterior con fecha real"
+                    }
+                },
+                {
+                    "id": "sector-facebook-20260926",
+                    "network": "Facebook",
+                    "networkBadge": "bg-blue-600 text-white",
+                    "hashtag": "#PyMEs",
+                    "title": "La reinvención del modelo de negocio PyME: sin tendencia nueva verificable en Facebook",
+                    "quote": "El contenido propone revisar procesos y ofertas comerciales para que las PyMEs puedan sostener el crecimiento. El índice público no expone la fecha ni métricas suficientes para considerarlo tendencia del 25/09.",
+                    "action": "Promover herramientas de diagnóstico comercial y transformación de procesos para empresas que necesitan adaptarse sin perder capacidad productiva.",
+                    "source": {
+                        "name": "Cámara Argentina de Comercio y Servicios — Facebook",
+                        "link": "https://www.facebook.com/CACteinforma/posts/c%C3%B3mo-reinventar-tu-negocio-para-seguir-creciendoen-el-encuentro-pymes-2026-organ/1560067709494858/",
+                        "date": "Fecha no expuesta por el índice público · relevada el 26 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 2,
+                        "volume": "Sin métricas públicas verificables",
+                        "variation": "Sin tendencia nueva verificable"
+                    }
+                }
+            ],
+            "calle": [
+                {
+                    "id": "calle-paritarias-docentes-20260926",
+                    "region": "general",
+                    "riskLevel": "ALERTA EDUCATIVA",
+                    "badgeClass": "badge-alert-medium",
+                    "topicNumber": "Tema 01",
+                    "title": "Los docentes bonaerenses reclamaron reabrir la discusión salarial y laboral",
+                    "streetTalk": "El Frente de Unidad Docente Bonaerense pidió el 25/09 la continuidad de las paritarias tras participar de la Comisión Técnica Salarial. El reclamo incluye salarios y condiciones de trabajo en toda la Provincia.",
+                    "connection": [
+                        "Puede modificar la conflictividad social y el funcionamiento de servicios educativos.",
+                        "Es un dato de contexto para empresas con trabajadores y familias en los 135 municipios."
+                    ],
+                    "uipbaPosition": "Seguir la mesa paritaria y sus efectos territoriales",
+                    "source": {
+                        "name": "0221 — Paritarias docentes bonaerenses",
+                        "link": "https://www.0221.com.ar/provincia/los-docentes-bonaerenses-piden-continuar-las-paritarias-discutir-salarios-y-condiciones-laborales-n134830",
+                        "date": "Publicado el 25 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Alcance provincial",
+                        "variation": "Reclamo formal del 25/09"
+                    }
+                },
+                {
+                    "id": "calle-ensenada-licencia-20260926",
+                    "region": "la-plata",
+                    "riskLevel": "SEGURIDAD VIAL",
+                    "badgeClass": "badge-alert-high",
+                    "topicNumber": "Tema 02",
+                    "title": "Ensenada suspendió preventivamente la licencia de un conductor tras una reincidencia",
+                    "streetTalk": "La Justicia de Faltas inhabilitó al conductor investigado por el choque del 29/08 en el que murió Erica Laura Garro. La medida llegó después de que repitiera el giro prohibido vinculado con el siniestro y seguirá hasta el cierre de la causa y un nuevo examen psicofísico.",
+                    "connection": [
+                        "Eleva la atención sobre controles y conductas de riesgo en la circulación urbana.",
+                        "Importa para la prevención vial de personal, proveedores y transporte de cargas en la región."
+                    ],
+                    "uipbaPosition": "Reforzar prevención y protocolos de movilidad segura",
+                    "source": {
+                        "name": "0221 — Seguridad vial en Ensenada",
+                        "link": "https://www.0221.com.ar/ensenada/le-quitaron-la-licencia-al-conductor-ensenada-que-repitio-la-infraccion-la-que-causo-un-accidente-fatal-n134805",
+                        "date": "Publicado el 25 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Impacto regional",
+                        "variation": "Resolución preventiva"
+                    }
+                },
+                {
+                    "id": "calle-ciclogenesis-20260926",
+                    "region": "general",
+                    "riskLevel": "ALERTA CLIMÁTICA",
+                    "badgeClass": "badge-alert-high",
+                    "topicNumber": "Tema 03",
+                    "title": "Una ciclogénesis podía dejar entre 50 y 100 milímetros en zonas bonaerenses",
+                    "streetTalk": "El pronóstico difundido el 25/09 anticipó un proceso lento entre domingo y martes, con hasta 72 horas de inestabilidad, lluvias, viento y descenso térmico. Buenos Aires estaba entre las áreas con acumulados posibles de 50 a 100 milímetros.",
+                    "connection": [
+                        "Puede afectar accesos, rutas, logística y continuidad operativa en zonas vulnerables.",
+                        "Conviene revisar drenajes, traslados y planes de contingencia ante lluvias intensas."
+                    ],
+                    "uipbaPosition": "Activar seguimiento meteorológico y prevención operativa",
+                    "source": {
+                        "name": "0221 / Meteored — Pronóstico de ciclogénesis",
+                        "link": "https://www.0221.com.ar/nacional/advierten-que-una-nueva-ciclogenesis-traera-tormentas-y-100-mm-lluvia-gran-parte-argentina-n134831",
+                        "date": "Publicado el 25 Sep 2026"
+                    },
+                    "metrics": {
+                        "temp": 4,
+                        "volume": "Riesgo provincial",
+                        "variation": "Pronóstico sujeto a evolución"
+                    }
+                }
+            ],
+            "clipping": [
+                {
+                    "id": "clip-tasas-municipales-20260926",
+                    "category": "regional",
+                    "scopeTag": "Provincia de Buenos Aires",
+                    "badgeClass": "badge-alert-high",
+                    "badgeText": "TASAS MUNICIPALES",
+                    "title": "Impulsan límites al cobro de tasas municipales en los 135 distritos bonaerenses",
+                    "summary": "Los proyectos difundidos el 25/09 buscan acotar tasas sin contraprestación efectiva. En el primer semestre se registraron 123 pedidos para eliminar gravámenes y 114 continuaban pendientes en comisiones de los concejos deliberantes.",
+                    "impact": "El debate puede modificar costos locales y la previsibilidad tributaria de industrias y comercios radicados en la Provincia.",
+                    "source": {
+                        "name": "El Día — Tasas municipales",
+                        "link": "https://www.eldia.com/politica-y-economia/impulsa-proyectos-para-limitar-el-cobro-de-tasas-municipales-en-los-135-municipios-bonaerenses-politica-y-economia_1790367840/amp",
+                        "date": "Publicado el 25 Sep 2026, 17:27"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "123 pedidos · 114 pendientes",
+                        "variation": "Debate legislativo"
+                    }
+                },
+                {
+                    "id": "clip-ypf-combustibles-20260926",
+                    "category": "nacional",
+                    "scopeTag": "Nacional",
+                    "badgeClass": "badge-alert-high",
+                    "badgeText": "COSTOS ENERGÉTICOS",
+                    "title": "YPF anunció una nueva suba del precio de los combustibles",
+                    "summary": "La petrolera confirmó el 25/09 un ajuste bajo el esquema de amortiguación de precios aplicado desde abril, en un contexto de conflicto en Medio Oriente e impacto sobre el crudo internacional.",
+                    "impact": "El combustible incide de forma directa en fletes, distribución, movilidad laboral y costos operativos de toda la cadena productiva.",
+                    "source": {
+                        "name": "El Día — Aumento de combustibles de YPF",
+                        "link": "https://www.eldia.com/la-ciudad/ypf-anuncio-que-tambien-aumenta-el-precio-de-los-combustibles-la-ciudad_1790364600/amp",
+                        "date": "Publicado el 25 Sep 2026, 16:37"
+                    },
+                    "metrics": {
+                        "temp": 5,
+                        "volume": "Impacto nacional",
+                        "variation": "Nuevo ajuste anunciado"
+                    }
+                },
+                {
+                    "id": "clip-cuenta-dni-20260926",
+                    "category": "regional",
+                    "scopeTag": "Provincia de Buenos Aires",
+                    "badgeClass": "badge-alert-info",
+                    "badgeText": "CONSUMO",
+                    "title": "Cuenta DNI concentró descuentos del viernes para sostener el consumo bonaerense",
+                    "summary": "La billetera del Banco Provincia, con más de 10 millones de usuarios, mantuvo promociones de septiembre e incorporó beneficios como 30% en veterinarias y pet shops los sábados, además de topes semanales en gastronomía y locales YPF Full.",
+                    "impact": "Las promociones movilizan demanda en comercios y servicios y aportan una señal diaria sobre consumo, medios de pago y actividad local.",
+                    "source": {
+                        "name": "El Día — Beneficios de Cuenta DNI",
+                        "link": "https://www.eldia.com/la-ciudad/cuenta-dni-del-banco-provincia-los-descuentos-de-hoy-viernes-25-de-septiembre-2026-la-ciudad_1790332140",
+                        "date": "Publicado el 25 Sep 2026, 07:32"
+                    },
+                    "metrics": {
+                        "temp": 3,
+                        "volume": "Más de 10 millones de usuarios",
+                        "variation": "Promociones de septiembre"
+                    }
+                }
+            ]
+        },
 "2026-09-25": {
     "sector": [
         {
