@@ -163,7 +163,7 @@
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
                     <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <span id="current-date-badge" class="date-badge">26/09/2026</span>
+                    <span id="current-date-badge" class="date-badge">27/09/2026</span>
                 </div>
             </div>
         </div>
@@ -186,7 +186,8 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-09-26" selected>26/09/2026 (Hoy)</option>
+                        <option value="2026-09-27" selected>27/09/2026 (Hoy)</option>
+                        <option value="2026-09-26">26/09/2026</option>
                         <option value="2026-09-25">25/09/2026</option>
                         <option value="2026-09-24">24/09/2026</option>
                         <option value="2026-09-23">23/09/2026</option>
@@ -350,6 +351,222 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+            "2026-09-27": {
+                      "sector": [
+                                {
+                                          "id": "sector-x-20260927",
+                                          "network": "X",
+                                          "networkBadge": "bg-slate-900 text-white",
+                                          "hashtag": "#Infraestructura",
+                                          "title": "La infraestructura de agua en Berisso: sin tendencia nueva verificable en X",
+                                          "quote": "Una intervención sobre la red de agua en 9 y 147 afectó la presión entre las calles 145 y 150 y entre 8 y 9. La revisión pública del 26/09 no encontró varias cuentas ni señales comparables que permitieran presentarlo como tendencia industrial de ese día.",
+                                          "action": "Tomarlo como señal cualitativa sobre infraestructura crítica: la continuidad de agua y servicios básicos condiciona hogares, comercios y operación productiva local.",
+                                          "source": {
+                                                    "name": "ABSA — X",
+                                                    "link": "https://x.com/ABSAOficial/status/2100941666014130402",
+                                                    "date": "Publicado el 18 Sep 2026 · relevado el 27 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 2,
+                                                    "volume": "Sin tendencia verificable",
+                                                    "variation": "Post anterior con fecha real"
+                                          }
+                                },
+                                {
+                                          "id": "sector-linkedin-20260927",
+                                          "network": "LinkedIn",
+                                          "networkBadge": "bg-blue-700 text-white",
+                                          "hashtag": "#IndustriaArgentina",
+                                          "title": "Trabajo, innovación y producción: sin tendencia nueva verificable en LinkedIn",
+                                          "quote": "La publicación vincula la industria argentina con empleo, innovación y construcción de largo plazo. Es una referencia verificable, pero la revisión pública del 26/09 no mostró una conversación dominante ni múltiples voces convergentes en LinkedIn.",
+                                          "action": "Usar el eje como marco institucional para comunicar inversión productiva, formación de capacidades y mejora sostenida, sin atribuirle condición de tendencia.",
+                                          "source": {
+                                                    "name": "Hormetal — LinkedIn",
+                                                    "link": "https://es.linkedin.com/posts/hormetal_hormetal-industriaargentina-diadelaindustria-activity-7500870188834369536-Xf_3",
+                                                    "date": "Publicado el 02 Sep 2026 · relevado el 27 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 2,
+                                                    "volume": "Sin tendencia verificable",
+                                                    "variation": "Post anterior con fecha real"
+                                          }
+                                },
+                                {
+                                          "id": "sector-instagram-20260927",
+                                          "network": "Instagram",
+                                          "networkBadge": "bg-gradient-to-r from-purple-600 to-pink-500 text-white",
+                                          "hashtag": "#ProducciónNacional",
+                                          "title": "Producción nacional e inversión: sin tendencia nueva verificable en Instagram",
+                                          "quote": "El contenido destaca la producción nacional como base de inversión, empleo y futuro. No se hallaron publicaciones suficientes del 26/09, de cuentas distintas y con métricas públicas comparables, para sostener que el asunto fuera tendencia en Instagram.",
+                                          "action": "Mantener el tema como referencia institucional y separar con claridad la defensa de la producción nacional de una medición real de conversación diaria.",
+                                          "source": {
+                                                    "name": "Unión Industrial Argentina (@uiaoficial) — Instagram",
+                                                    "link": "https://www.instagram.com/reel/DcyFEscAJN8/",
+                                                    "date": "Publicado el 02 Sep 2026 · relevado el 27 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 2,
+                                                    "volume": "Sin tendencia verificable",
+                                                    "variation": "Post anterior con fecha real"
+                                          }
+                                },
+                                {
+                                          "id": "sector-facebook-20260927",
+                                          "network": "Facebook",
+                                          "networkBadge": "bg-blue-600 text-white",
+                                          "hashtag": "#PyMEsIndustriales",
+                                          "title": "Capacitación y representación industrial PyME: sin tendencia nueva verificable en Facebook",
+                                          "quote": "Más de 170 industriales PyME participaron de una jornada federal con capacitación, intercambio y representación sectorial. El post es verificable, aunque no hubo evidencia pública suficiente para considerarlo tendencia del 26/09 en Facebook.",
+                                          "action": "Tomar la convocatoria como antecedente para fortalecer redes federales de asistencia, formación y vinculación empresarial, sin presentarla como conversación del día.",
+                                          "source": {
+                                                    "name": "Confederación Argentina de la Mediana Empresa (CAME) — Facebook",
+                                                    "link": "https://www.facebook.com/redcame/posts/-d%C3%ADa-de-la-industria-en-came-m%C3%A1s-de-170-industriales-pymes-de-todo-el-pa%C3%ADs-parti/1521546450003291/",
+                                                    "date": "Publicado el 15 Sep 2026 · relevado el 27 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 2,
+                                                    "volume": "Más de 170 industriales PyME en la actividad",
+                                                    "variation": "Post anterior con fecha real"
+                                          }
+                                }
+                      ],
+                      "calle": [
+                                {
+                                          "id": "calle-modelo-onu-20260927",
+                                          "region": "la-plata",
+                                          "riskLevel": "EDUCACIÓN Y PARTICIPACIÓN",
+                                          "badgeClass": "badge-alert-info",
+                                          "topicNumber": "Tema 01",
+                                          "title": "Más de 2.200 estudiantes debatieron agenda global en la República de los Niños",
+                                          "streetTalk": "El Modelo de Naciones Unidas reunió el 26/09 a estudiantes de 130 escuelas secundarias y sumó por primera vez una delegación internacional de Paraguay. Los debates incluyeron inteligencia artificial, cambio climático, política comercial, seguridad y conflictos armados.",
+                                          "connection": [
+                                                    "Refuerza capacidades de argumentación, negociación y ciudadanía en jóvenes de la región.",
+                                                    "La participación masiva muestra una demanda educativa vinculada con temas tecnológicos, productivos y sociales."
+                                          ],
+                                          "uipbaPosition": "Acompañar iniciativas que acerquen educación, ciudadanía y futuro del trabajo",
+                                          "source": {
+                                                    "name": "0221 — Modelo ONU en La Plata",
+                                                    "link": "https://www.0221.com.ar/la-plata/el-modelo-onu-reunio-mas-2200-estudiantes-y-cerro-la-republica-los-ninos-n134861",
+                                                    "date": "Publicado el 26 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 3,
+                                                    "volume": "Más de 2.200 estudiantes · 130 escuelas",
+                                                    "variation": "Primera delegación internacional"
+                                          }
+                                },
+                                {
+                                          "id": "calle-city-bell-seguridad-20260927",
+                                          "region": "la-plata",
+                                          "riskLevel": "ALERTA DE SEGURIDAD",
+                                          "badgeClass": "badge-alert-high",
+                                          "topicNumber": "Tema 02",
+                                          "title": "Vecinos de Savoia volvieron a marchar en City Bell por una sucesión de robos",
+                                          "streetTalk": "Fue la segunda movilización en una semana: los vecinos caminaron desde la estación hasta la comisaría 10ª y reclamaron mayor presencia y prevención tras distintos asaltos, algunos con personas mayores como víctimas.",
+                                          "connection": [
+                                                    "La inseguridad afecta traslados, horarios comerciales y percepción de riesgo en City Bell.",
+                                                    "La reiteración del reclamo exige seguimiento de respuestas policiales y municipales."
+                                          ],
+                                          "uipbaPosition": "Seguir la respuesta operativa y promover corredores seguros",
+                                          "source": {
+                                                    "name": "0221 — Marcha por seguridad en City Bell",
+                                                    "link": "https://www.0221.com.ar/la-plata/vecinos-savoia-volvieron-marchar-city-bell-reclamar-seguridad-n134871",
+                                                    "date": "Publicado el 26 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 4,
+                                                    "volume": "Segunda marcha en una semana",
+                                                    "variation": "Reclamo vecinal sostenido"
+                                          }
+                                },
+                                {
+                                          "id": "calle-candombe-ensenada-20260927",
+                                          "region": "la-plata",
+                                          "riskLevel": "VIOLENCIA EN EL ESPACIO PÚBLICO",
+                                          "badgeClass": "badge-alert-high",
+                                          "topicNumber": "Tema 03",
+                                          "title": "Una comparsa de Ensenada denunció un ataque durante un ensayo callejero",
+                                          "streetTalk": "La Placita Candombe informó que 14 integrantes, entre ellos un niño de 10 años, fueron atacados durante un ensayo cerca de la Zona Franca. Hubo personas lesionadas, una atención en el Hospital Cestino y una denuncia ante la UFI 11.",
+                                          "connection": [
+                                                    "El episodio tensiona el uso cultural y comunitario del espacio público en Ensenada.",
+                                                    "Requiere atención sobre prevención, convivencia y protección de niños y organizaciones barriales."
+                                          ],
+                                          "uipbaPosition": "Solicitar esclarecimiento y condiciones seguras para actividades comunitarias",
+                                          "source": {
+                                                    "name": "0221 — Ataque a comparsa en Ensenada",
+                                                    "link": "https://www.0221.com.ar/ensenada/una-comparsa-candombe-ensenada-denuncio-un-violento-ataque-un-ensayo-callejero-n134823",
+                                                    "date": "Publicado el 26 Sep 2026 · hecho denunciado del 22 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 5,
+                                                    "volume": "14 personas afectadas",
+                                                    "variation": "Denuncia presentada ante la UFI 11"
+                                          }
+                                }
+                      ],
+                      "clipping": [
+                                {
+                                          "id": "clip-siniestralidad-gran-la-plata-20260927",
+                                          "category": "regional",
+                                          "scopeTag": "Gran La Plata",
+                                          "badgeClass": "badge-alert-high",
+                                          "badgeText": "SEGURIDAD VIAL",
+                                          "title": "La Plata, Berisso y Ensenada acumularon 50 muertes viales en 2026",
+                                          "summary": "El balance publicado el 26/09 registró 50 fallecimientos en el año; 31 eran motociclistas, equivalentes al 62%. Septiembre sumaba ocho víctimas y el Camino General Belgrano encabezaba los corredores con más hechos fatales.",
+                                          "impact": "La siniestralidad incide sobre trabajadores, transporte, logística y costos sociales, y refuerza la necesidad de prevención en corredores productivos.",
+                                          "source": {
+                                                    "name": "0221 — Siniestralidad vial en el Gran La Plata",
+                                                    "link": "https://www.0221.com.ar/provincia/ya-son-50-los-fallecidos-accidentes-transito-la-plata-berisso-y-ensenada-lo-que-va-del-ano-n134838",
+                                                    "date": "Publicado el 26 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 5,
+                                                    "volume": "50 fallecidos · 31 motociclistas",
+                                                    "variation": "8 muertes en septiembre"
+                                          }
+                                },
+                                {
+                                          "id": "clip-cadevi-empleo-capacitacion-20260927",
+                                          "category": "nacional",
+                                          "scopeTag": "Empleo y capacitación",
+                                          "badgeClass": "badge-alert-info",
+                                          "badgeText": "INCLUSIÓN PRODUCTIVA",
+                                          "title": "CADEVI presentó un esquema de capacitación, vivienda y vinculación laboral",
+                                          "summary": "El proyecto articula formación emprendedora y en oficios, educación financiera, marketing y liderazgo con una bolsa de empleo, asistencia profesional gratuita y un programa habitacional orientado a madres solteras.",
+                                          "impact": "La conexión entre capacitación y demanda laboral puede ampliar la inclusión productiva y acercar perfiles formados a empresas y actividades locales.",
+                                          "source": {
+                                                    "name": "0221 — Lanzamiento de CADEVI",
+                                                    "link": "https://www.0221.com.ar/nacional/la-empresaria-viviana-yacoub-lanza-cadevi-un-proyecto-capacitacion-viviendas-y-empleo-n134837",
+                                                    "date": "Publicado el 26 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 3,
+                                                    "volume": "Cuatro ejes de intervención",
+                                                    "variation": "Capacitación conectada con empleo"
+                                          }
+                                },
+                                {
+                                          "id": "clip-unlp-sostenibilidad-20260927",
+                                          "category": "regional",
+                                          "scopeTag": "La Plata / Universidad",
+                                          "badgeClass": "badge-alert-info",
+                                          "badgeText": "SOSTENIBILIDAD",
+                                          "title": "La UNLP escaló 213 posiciones en el ranking mundial de sostenibilidad",
+                                          "summary": "La universidad avanzó en UI GreenMetric 2026, que evaluó 2.016 instituciones de 110 países, y quedó como la segunda universidad nacional argentina. Energía y clima y transporte fueron dos de sus dimensiones de mejor desempeño.",
+                                          "impact": "El progreso en energías renovables, movilidad eléctrica y gestión ambiental abre oportunidades de cooperación tecnológica con empresas e instituciones bonaerenses.",
+                                          "source": {
+                                                    "name": "0221 — UNLP en UI GreenMetric",
+                                                    "link": "https://www.0221.com.ar/universidad/la-unlp-escalo-213-posiciones-el-ranking-mundial-sostenibilidad-n134846",
+                                                    "date": "Publicado el 26 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 3,
+                                                    "volume": "Subió 213 posiciones · 2.016 instituciones",
+                                                    "variation": "Segunda universidad nacional argentina"
+                                          }
+                                }
+                      ]
+            },
             "2026-09-26": {
             "sector": [
                 {
