@@ -163,7 +163,7 @@
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
                     <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <span id="current-date-badge" class="date-badge">27/09/2026</span>
+                    <span id="current-date-badge" class="date-badge">28/09/2026</span>
                 </div>
             </div>
         </div>
@@ -186,7 +186,8 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-09-27" selected>27/09/2026 (Hoy)</option>
+                        <option value="2026-09-28" selected>28/09/2026 (Hoy)</option>
+                        <option value="2026-09-27">27/09/2026</option>
                         <option value="2026-09-26">26/09/2026</option>
                         <option value="2026-09-25">25/09/2026</option>
                         <option value="2026-09-24">24/09/2026</option>
@@ -351,6 +352,222 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+            "2026-09-28": {
+                      "sector": [
+                                {
+                                          "id": "sector-x-20260928",
+                                          "network": "X",
+                                          "networkBadge": "bg-slate-900 text-white",
+                                          "hashtag": "#InnovaciónFarmacéutica",
+                                          "title": "Patentes e innovación en salud: sin tendencia nueva verificable en X",
+                                          "quote": "La publicación relaciona la eliminación de restricciones a patentes farmacéuticas con innovación y desarrollo del sector salud. Aunque registró interacción pública, no corresponde al 27/09 ni hubo varias cuentas convergentes que permitieran considerarlo tendencia industrial de ese día.",
+                                          "action": "Tomarlo como referencia cualitativa sobre propiedad intelectual e inversión farmacéutica, sin presentarlo como una conversación actual de la plataforma.",
+                                          "source": {
+                                                    "name": "AmCham Argentina — X",
+                                                    "link": "https://x.com/AmChamArgentina/status/2034322899612356760",
+                                                    "date": "Publicado el 18 Mar 2026 · relevado el 28 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 2,
+                                                    "volume": "22,7 mil visualizaciones · 28 Me gusta · 17 republicaciones",
+                                                    "variation": "Post anterior; sin tendencia del 27/09"
+                                          }
+                                },
+                                {
+                                          "id": "sector-linkedin-20260928",
+                                          "network": "LinkedIn",
+                                          "networkBadge": "bg-blue-700 text-white",
+                                          "hashtag": "#Ecommerce",
+                                          "title": "El crecimiento del comercio electrónico presiona sobre la operación logística",
+                                          "quote": "Una publicación del 27/09 señaló que las compras online crecieron 36,9% interanual en agosto y que el circuito logístico procesa cerca de un millón de pedidos diarios. Es una señal actual y verificable, pero una sola voz no alcanza para demostrar una tendencia de LinkedIn.",
+                                          "action": "Seguir el impacto del canal digital sobre preparación, embalaje, transporte, última milla y capacidad operativa de proveedores PyME.",
+                                          "source": {
+                                                    "name": "Movant Connection — LinkedIn",
+                                                    "link": "https://es.linkedin.com/pulse/ecommerce-en-argentina-c%C3%B3mo-impacta-su-avance-la-log%C3%ADstica-qrrhf",
+                                                    "date": "Publicado el 27 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 3,
+                                                    "volume": "Compras online +36,9% interanual en agosto · cerca de 1 millón de entregas diarias",
+                                                    "variation": "Tema destacado en LinkedIn; tendencia no probada"
+                                          }
+                                },
+                                {
+                                          "id": "sector-instagram-20260928",
+                                          "network": "Instagram",
+                                          "networkBadge": "bg-gradient-to-r from-purple-600 to-pink-500 text-white",
+                                          "hashtag": "#DesarrolloProductivo",
+                                          "title": "Competitividad e innovación federal: sin tendencia nueva verificable en Instagram",
+                                          "quote": "La pieza convoca al ecosistema industrial a debatir competitividad, innovación y desarrollo productivo desde una mirada federal. El índice público no expone la fecha ni métricas suficientes, y la revisión del 27/09 no permitió acreditar una conversación dominante.",
+                                          "action": "Conservarla como referencia institucional para una agenda federal de productividad, explicitando que no mide la conversación diaria de Instagram.",
+                                          "source": {
+                                                    "name": "Federación Industrial de Santa Fe — Instagram",
+                                                    "link": "https://www.instagram.com/reel/DXFnwRzj9Ep/",
+                                                    "date": "Fecha no expuesta por el índice público · relevada el 28 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 1,
+                                                    "volume": "Sin métricas públicas verificables",
+                                                    "variation": "Sin tendencia nueva verificable"
+                                          }
+                                },
+                                {
+                                          "id": "sector-facebook-20260928",
+                                          "network": "Facebook",
+                                          "networkBadge": "bg-blue-600 text-white",
+                                          "hashtag": "#ComercioPyME",
+                                          "title": "Gestión técnica y abastecimiento en ferreterías: sin tendencia nueva verificable en Facebook",
+                                          "quote": "El contenido describe el rol técnico del comercio ferretero: asesoramiento, gestión de inventario, compra a proveedores y resolución de necesidades de clientes. Es una publicación específica, pero no hay señales públicas que la conviertan en tendencia industrial del 27/09.",
+                                          "action": "Tomar el tema como señal sobre profesionalización comercial y vínculo con proveedores, sin atribuirle representatividad sobre toda la plataforma.",
+                                          "source": {
+                                                    "name": "La página de Diana — Facebook",
+                                                    "link": "https://www.facebook.com/LaPaginaDeDiana/posts/3-de-septiembre-d%C3%ADa-del-ferretero-en-la-rep%C3%BAblica-argentina-cada-3-de-septiembre/1297759432365017/",
+                                                    "date": "Publicado el 02 Sep; año no expuesto por el índice público · relevado el 28 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 1,
+                                                    "volume": "Sin métricas públicas comparables",
+                                                    "variation": "Sin tendencia nueva verificable"
+                                          }
+                                }
+                      ],
+                      "calle": [
+                                {
+                                          "id": "calle-paro-unlp-20260928",
+                                          "region": "la-plata",
+                                          "riskLevel": "ALERTA EDUCATIVA",
+                                          "badgeClass": "badge-alert-high",
+                                          "topicNumber": "Tema 01",
+                                          "title": "Los docentes de la UNLP anunciaron un paro de 72 horas",
+                                          "streetTalk": "ADULP y Conadu convocaron a una huelga para el 30 de septiembre, 1 y 2 de octubre. Reclaman una recomposición salarial del 33,4%, reapertura de paritarias y aplicación de la Ley de Financiamiento Universitario.",
+                                          "connection": [
+                                                    "La medida afectará actividades académicas y servicios universitarios en La Plata.",
+                                                    "El conflicto también alcanza la agenda de ciencia, tecnología y formación de talento para el sector productivo."
+                                          ],
+                                          "uipbaPosition": "Seguir la respuesta oficial y el alcance operativo de la medida",
+                                          "source": {
+                                                    "name": "0221 — Paro docente en la UNLP",
+                                                    "link": "https://www.0221.com.ar/universidad/los-docentes-la-unlp-profundizan-su-plan-lucha-y-convocan-un-paro-72-horas-los-proximos-dias-n134888",
+                                                    "date": "Publicado el 27 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 5,
+                                                    "volume": "Paro de 72 horas · recomposición reclamada del 33,4%",
+                                                    "variation": "Medida prevista para el 30/09, 01/10 y 02/10"
+                                          }
+                                },
+                                {
+                                          "id": "calle-robo-canos-tolosa-20260928",
+                                          "region": "la-plata",
+                                          "riskLevel": "SEGURIDAD Y SERVICIOS",
+                                          "badgeClass": "badge-alert-high",
+                                          "topicNumber": "Tema 02",
+                                          "title": "El robo de caños de gas volvió a generar alarma en Tolosa",
+                                          "streetTalk": "Tres personas fueron filmadas cerca de las 4.45 en 16 entre 528 y 529, donde vecinos denunciaron la sustracción de caños de una instalación de gas. La modalidad puede provocar fugas y dejar viviendas sin suministro.",
+                                          "connection": [
+                                                    "El daño combina inseguridad con riesgo sobre un servicio domiciliario crítico.",
+                                                    "La reiteración de casos exige prevención y respuesta rápida para evitar fugas y accidentes."
+                                          ],
+                                          "uipbaPosition": "Reforzar vigilancia y protocolos de emergencia ante daños en redes",
+                                          "source": {
+                                                    "name": "0221 — Robo de caños de gas en Tolosa",
+                                                    "link": "https://www.0221.com.ar/policiales/video-robaron-canos-gas-tolosa-la-madrugada-y-quedaron-filmados-n134863",
+                                                    "date": "Publicado el 27 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 5,
+                                                    "volume": "Tres personas registradas por cámaras",
+                                                    "variation": "Modalidad reiterada en Tolosa"
+                                          }
+                                },
+                                {
+                                          "id": "calle-familia-accidente-20260928",
+                                          "region": "la-plata",
+                                          "riskLevel": "EMPLEO Y VULNERABILIDAD",
+                                          "badgeClass": "badge-alert-medium",
+                                          "topicNumber": "Tema 03",
+                                          "title": "Una familia platense pidió ayuda tras quedar sin posibilidad de trabajar",
+                                          "streetTalk": "Una trabajadora sufrió múltiples fracturas en un accidente frente al Hospital San Martín y continúa con muletas. Su marido tampoco puede trabajar porque debe asistirla; la moto que usaban para Rappi y PedidosYa quedó destruida.",
+                                          "connection": [
+                                                    "El caso muestra la fragilidad económica de hogares que dependen del trabajo mediante aplicaciones.",
+                                                    "La falta de ingresos y movilidad impacta en alimentos, alquiler, traslados y recuperación sanitaria."
+                                          ],
+                                          "uipbaPosition": "Visibilizar redes de asistencia y protección para trabajadores vulnerables",
+                                          "source": {
+                                                    "name": "0221 — Pedido de ayuda de una familia platense",
+                                                    "link": "https://www.0221.com.ar/la-plata/una-mujer-sufrio-una-lesion-un-accidente-la-plata-no-puede-trabajar-y-pide-ayuda-subsistir-n134882",
+                                                    "date": "Publicado el 27 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 4,
+                                                    "volume": "Dos adultos sin actividad laboral",
+                                                    "variation": "Necesidad de alimentos, traslados y asistencia"
+                                          }
+                                }
+                      ],
+                      "clipping": [
+                                {
+                                          "id": "clip-bomberos-ensenada-20260928",
+                                          "category": "regional",
+                                          "scopeTag": "Ensenada",
+                                          "badgeClass": "badge-alert-high",
+                                          "badgeText": "SERVICIOS DE EMERGENCIA",
+                                          "title": "Ensenada reclamó $94 millones adeudados a sus Bomberos Voluntarios",
+                                          "summary": "El Concejo Deliberante pidió a la Nación el envío de fondos previstos por las leyes 25.054 y 27.629. El reclamo local forma parte de una deuda que, según lo expuesto, supera los $59.000 millones para asociaciones de todo el país.",
+                                          "impact": "La falta de recursos compromete equipamiento, mantenimiento y capacidad de respuesta ante incendios y emergencias urbanas e industriales.",
+                                          "source": {
+                                                    "name": "0221 — Fondos para Bomberos Voluntarios de Ensenada",
+                                                    "link": "https://www.0221.com.ar/ensenada/ensenada-reclama-nacion-el-pago-94-millones-adeudados-los-bomberos-voluntarios-n134900",
+                                                    "date": "Publicado el 27 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 5,
+                                                    "volume": "$94 millones reclamados para Ensenada",
+                                                    "variation": "Deuda nacional informada superior a $59.000 millones"
+                                          }
+                                },
+                                {
+                                          "id": "clip-inflacion-alimentos-20260928",
+                                          "category": "nacional",
+                                          "scopeTag": "Economía y consumo",
+                                          "badgeClass": "badge-alert-high",
+                                          "badgeText": "INFLACIÓN",
+                                          "title": "Los alimentos llevaron la proyección de inflación de septiembre a un piso del 1,7%",
+                                          "summary": "Consultoras estimaron un IPC entre 1,7% y 1,8%, con presión de frutas y verduras. La carne subió 43% interanual y los combustibles aumentaron entre 2% y 5%, con mayor impacto esperado en octubre.",
+                                          "impact": "La evolución de alimentos, energía y precios mayoristas afecta consumo, salarios, costos logísticos y formación de precios en las PyMEs.",
+                                          "source": {
+                                                    "name": "0221 — Proyección de inflación de septiembre",
+                                                    "link": "https://www.0221.com.ar/nacional/los-alimentos-presionan-los-precios-y-la-inflacion-septiembre-tendria-un-piso-17-n134911",
+                                                    "date": "Publicado el 27 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 5,
+                                                    "volume": "IPC estimado 1,7%-1,8% · carne +43% interanual",
+                                                    "variation": "Combustibles +2% a +5%"
+                                          }
+                                },
+                                {
+                                          "id": "clip-incendio-la-loma-20260928",
+                                          "category": "regional",
+                                          "scopeTag": "La Plata",
+                                          "badgeClass": "badge-alert-high",
+                                          "badgeText": "EMERGENCIA",
+                                          "title": "Un incendio destruyó un chalet de La Loma y reactivó focos durante la mañana",
+                                          "summary": "El fuego comenzó en las habitaciones del fondo de una vivienda de 43 entre 27 y 28. El techo cedió, las pérdidas fueron totales y los bomberos debieron regresar por focos dispersos; el ocupante salió ileso.",
+                                          "impact": "El episodio refuerza la importancia de prevención, detección temprana y capacidad de respuesta frente a incendios en zonas residenciales y productivas.",
+                                          "source": {
+                                                    "name": "0221 — Incendio en La Loma",
+                                                    "link": "https://www.0221.com.ar/la-plata/un-incendio-destruyo-un-chalet-la-plata-y-obligo-los-bomberos-regresar-reactivarse-el-foco-n134889",
+                                                    "date": "Publicado el 27 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 4,
+                                                    "volume": "Daños totales · sin personas heridas",
+                                                    "variation": "Reactivación de focos durante la mañana"
+                                          }
+                                }
+                      ]
+            },
             "2026-09-27": {
                       "sector": [
                                 {
