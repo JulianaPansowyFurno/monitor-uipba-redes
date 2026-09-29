@@ -163,7 +163,7 @@
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
                     <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <span id="current-date-badge" class="date-badge">28/09/2026</span>
+                    <span id="current-date-badge" class="date-badge">29/09/2026</span>
                 </div>
             </div>
         </div>
@@ -186,7 +186,8 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-09-28" selected>28/09/2026 (Hoy)</option>
+                        <option value="2026-09-29" selected>29/09/2026 (Hoy)</option>
+                        <option value="2026-09-28">28/09/2026</option>
                         <option value="2026-09-27">27/09/2026</option>
                         <option value="2026-09-26">26/09/2026</option>
                         <option value="2026-09-25">25/09/2026</option>
@@ -352,6 +353,222 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+            "2026-09-29": {
+                      "sector": [
+                                {
+                                          "id": "sector-x-20260929",
+                                          "network": "X",
+                                          "networkBadge": "bg-slate-900 text-white",
+                                          "hashtag": "#IndustriaTextil",
+                                          "title": "La industria textil opera con capacidad ociosa: sin tendencia nueva verificable en X",
+                                          "quote": "La publicación retoma el dato sectorial de FITA sobre una utilización del 24% de la capacidad instalada textil. Es una referencia industrial específica y diferente de las usadas en la última semana, pero fue publicada meses antes y no prueba una conversación dominante el 28/09.",
+                                          "action": "Usar el dato como alerta estructural sobre actividad, empleo y competencia importada, sin presentarlo como tendencia actual de la plataforma.",
+                                          "source": {
+                                                    "name": "Política Argentina — X",
+                                                    "link": "https://x.com/Pol_Arg/status/2042324166825689126",
+                                                    "date": "Publicado el 09 Abr 2026 · relevado el 29 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 2,
+                                                    "volume": "Capacidad instalada textil informada: 24%",
+                                                    "variation": "Post anterior; sin tendencia del 28/09"
+                                          }
+                                },
+                                {
+                                          "id": "sector-linkedin-20260929",
+                                          "network": "LinkedIn",
+                                          "networkBadge": "bg-blue-700 text-white",
+                                          "hashtag": "#IndustriaAutomotriz",
+                                          "title": "La reconversión automotriz abre debate sobre producción, importaciones y electrificación",
+                                          "quote": "El análisis describe una baja del 19,3% en la producción automotriz de enero a mayo, una mayor competencia de vehículos chinos y la búsqueda de integración regional de insumos y baterías. En LinkedIn aparecen otras voces recientes sobre el mismo cambio sectorial, aunque ninguna corresponde al 28/09.",
+                                          "action": "Seguir inversiones, localización de autopartes, exportaciones y empleo calificado ante la transición hacia vehículos eléctricos.",
+                                          "source": {
+                                                    "name": "Marcelo Mijlin — LinkedIn",
+                                                    "link": "https://es.linkedin.com/posts/marcelo-mijlin_industriaautomotriz-argentina-autos-activity-7502839851780780032-DAcV",
+                                                    "date": "Publicado el 07 Sep 2026 · relevado el 29 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 3,
+                                                    "volume": "Producción ene-may: 167.629 unidades · -19,3% interanual · exportación: 70%",
+                                                    "variation": "Tema destacado en LinkedIn; sin tendencia comprobada del 28/09"
+                                          }
+                                },
+                                {
+                                          "id": "sector-instagram-20260929",
+                                          "network": "Instagram",
+                                          "networkBadge": "bg-gradient-to-r from-purple-600 to-pink-500 text-white",
+                                          "hashtag": "#HerramientasArgentinas",
+                                          "title": "Fabricación nacional de herramientas: sin tendencia nueva verificable en Instagram",
+                                          "quote": "La pieza pone en primer plano herramientas manuales de industria argentina y el valor de la fabricación local. Es una cuenta y un contenido distintos de los usados en las últimas siete ediciones, pero la publicación es anterior y el índice público no ofrece señales suficientes para considerarla tendencia del 28/09.",
+                                          "action": "Tomarla como referencia de manufactura de nicho y proveedores locales, dejando explícita su antigüedad y la ausencia de métricas comparables.",
+                                          "source": {
+                                                    "name": "TS Wood Tools — Instagram",
+                                                    "link": "https://www.instagram.com/p/DGJqeImAE-Z/",
+                                                    "date": "Publicado el 16 Feb 2025 · relevado el 29 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 1,
+                                                    "volume": "Sin métricas públicas verificables",
+                                                    "variation": "Sin tendencia nueva verificable"
+                                          }
+                                },
+                                {
+                                          "id": "sector-facebook-20260929",
+                                          "network": "Facebook",
+                                          "networkBadge": "bg-blue-600 text-white",
+                                          "hashtag": "#IndustriaAvellaneda",
+                                          "title": "Identidad industrial y empleo local: sin tendencia nueva verificable en Facebook",
+                                          "quote": "El video vincula a Avellaneda con su entramado de industria, trabajo y producción. La búsqueda pública no expone la fecha ni métricas comparables y no permitió acreditar que el tema haya liderado la conversación del 28/09.",
+                                          "action": "Mantenerlo solo como referencia territorial sobre identidad productiva, sin atribuirle representatividad sobre toda la red.",
+                                          "source": {
+                                                    "name": "Municipalidad de Avellaneda — Facebook",
+                                                    "link": "https://www.facebook.com/municipalidad.avellaneda/videos/-avellaneda-es-industria-avellaneda-es-trabajo-avellaneda-es-producci%C3%B3ntenemos-u/2311898692998187/",
+                                                    "date": "Fecha no expuesta por el índice público · relevado el 29 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 1,
+                                                    "volume": "Sin métricas públicas comparables",
+                                                    "variation": "Sin tendencia nueva verificable"
+                                          }
+                                }
+                      ],
+                      "calle": [
+                                {
+                                          "id": "calle-leasing-municipios-20260929",
+                                          "region": "provincia",
+                                          "riskLevel": "EQUIPAMIENTO MUNICIPAL",
+                                          "badgeClass": "badge-alert-medium",
+                                          "topicNumber": "Tema 01",
+                                          "title": "Municipios bonaerenses accedieron a $7.855 millones para bienes de capital",
+                                          "streetTalk": "El Gobierno provincial y Banco Provincia firmaron convenios de leasing con intendentes para financiar maquinaria, equipamiento de salud y seguridad, vehículos y bienes destinados a obra pública y servicios urbanos.",
+                                          "connection": [
+                                                    "La inversión puede mejorar la prestación cotidiana de servicios y la capacidad operativa municipal.",
+                                                    "La compra de bienes de capital también abre demanda para proveedores y talleres del entramado productivo bonaerense."
+                                          ],
+                                          "uipbaPosition": "Seguir adjudicaciones, proveedores locales y plazos de incorporación del equipamiento",
+                                          "source": {
+                                                    "name": "Provincia de Buenos Aires — Convenios de leasing municipal",
+                                                    "link": "https://www.gba.gob.ar/comunicacion_publica/gacetillas/kicillof_y_cuattromo_firmaron_convenios_con_municipios_para_la_7",
+                                                    "date": "Publicado el 28 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 4,
+                                                    "volume": "$7.855 millones para bienes de capital",
+                                                    "variation": "Maquinaria, salud, seguridad, vehículos y obra pública"
+                                          }
+                                },
+                                {
+                                          "id": "calle-salud-aborto-20260929",
+                                          "region": "provincia",
+                                          "riskLevel": "ACCESO A LA SALUD",
+                                          "badgeClass": "badge-alert-medium",
+                                          "topicNumber": "Tema 02",
+                                          "title": "La red bonaerense de acceso al aborto legal alcanzó 593 establecimientos",
+                                          "streetTalk": "El Ministerio de Salud provincial informó que la red pasó de 196 a 593 efectores y reafirmó la cobertura territorial en los 135 municipios, con provisión gratuita de medicamentos y producción pública de mifepristona.",
+                                          "connection": [
+                                                    "La ampliación reduce barreras territoriales para acceder a una prestación sanitaria legal.",
+                                                    "La cobertura y el abastecimiento sostenido son claves para evitar derivaciones, demoras y desigualdades entre municipios."
+                                          ],
+                                          "uipbaPosition": "Monitorear cobertura territorial, disponibilidad de insumos y capacidad de atención",
+                                          "source": {
+                                                    "name": "Ministerio de Salud PBA — Red de acceso al aborto legal",
+                                                    "link": "https://gba.gob.ar/saludprovincia/noticias/la_provincia_fortalece_una_pol%C3%ADtica_integral_para_garantizar_el_aborto_legal",
+                                                    "date": "Publicado el 28 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 4,
+                                                    "volume": "593 establecimientos · cobertura en 135 municipios",
+                                                    "variation": "La red creció desde 196 efectores"
+                                          }
+                                },
+                                {
+                                          "id": "calle-viviendas-matanza-20260929",
+                                          "region": "la-matanza",
+                                          "riskLevel": "VIVIENDA Y URBANIZACIÓN",
+                                          "badgeClass": "badge-alert-medium",
+                                          "topicNumber": "Tema 03",
+                                          "title": "Avanza León Gallo II con 199 viviendas y 40 locales en La Matanza",
+                                          "streetTalk": "OPISU informó la continuidad del complejo habitacional en Puerta de Hierro, San Justo. La intervención combina nuevas viviendas, locales comerciales e infraestructura urbana para mejorar condiciones habitacionales y servicios del barrio.",
+                                          "connection": [
+                                                    "La obra atiende una demanda habitacional histórica y transforma el entorno urbano del barrio.",
+                                                    "Los locales comerciales y la infraestructura pueden fortalecer actividad económica y empleo de cercanía."
+                                          ],
+                                          "uipbaPosition": "Seguir avance físico, empleo local e integración de servicios y comercios",
+                                          "source": {
+                                                    "name": "OPISU — Complejo habitacional León Gallo II",
+                                                    "link": "https://gba.gob.ar/opisu/noticias/contin%C3%BAa_la_construcci%C3%B3n_del_complejo_habitacional_le%C3%B3n_gallo_ii_en_la_matanza",
+                                                    "date": "Publicado el 28 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 4,
+                                                    "volume": "199 viviendas · 40 locales comerciales",
+                                                    "variation": "Obra en Puerta de Hierro, San Justo"
+                                          }
+                                }
+                      ],
+                      "clipping": [
+                                {
+                                          "id": "clip-produccion-industrial-20260929",
+                                          "category": "nacional",
+                                          "scopeTag": "Industria",
+                                          "badgeClass": "badge-alert-medium",
+                                          "badgeText": "ACTIVIDAD INDUSTRIAL",
+                                          "title": "La producción industrial subió 0,3% interanual en agosto, con desempeño desigual",
+                                          "summary": "El índice privado IPI-OJF registró además una mejora mensual desestacionalizada del 1,4%, pero el acumulado de enero a agosto todavía cayó 2,2%. Refinerías y químicos crecieron, mientras plásticos, textiles y maquinaria siguieron en baja.",
+                                          "impact": "La heterogeneidad sectorial exige leer el repunte con cautela: la recuperación no alcanza por igual a cadenas intensivas en empleo, inversión y proveedores PyME.",
+                                          "source": {
+                                                    "name": "Noticias Argentinas — Producción industrial de agosto",
+                                                    "link": "https://noticiasargentinas.com/economia/la-produccion-industrial-registro-una-suba-de-0-3--en-agosto-y-corto-la-caida-previa_a6aba5069b62936833e626f54",
+                                                    "date": "Publicado el 28 Sep 2026, 08:46"
+                                          },
+                                          "metrics": {
+                                                    "temp": 4,
+                                                    "volume": "+0,3% interanual · +1,4% mensual",
+                                                    "variation": "Acumulado ene-ago: -2,2%"
+                                          }
+                                },
+                                {
+                                          "id": "clip-energia-pymes-20260929",
+                                          "category": "regional",
+                                          "scopeTag": "Berazategui",
+                                          "badgeClass": "badge-alert-high",
+                                          "badgeText": "COSTO ENERGÉTICO",
+                                          "title": "Industriales PyME cuestionaron el nuevo esquema de contratación eléctrica",
+                                          "summary": "Daniel Rosato, referente de Industriales Pymes Argentinos, advirtió que el cambio regulatorio elevó fuertemente las facturas y redujo previsibilidad para fábricas bonaerenses, en un contexto de menor actividad y competencia importada.",
+                                          "impact": "La energía incide directamente en costos, continuidad de turnos, precios y decisiones de inversión de las PyMEs manufactureras.",
+                                          "source": {
+                                                    "name": "Página/12 — Reclamo de las PyMEs por la energía",
+                                                    "link": "https://www.pagina12.com.ar/2026/09/28/las-pymes-se-sienten-estafadas-por-milei/",
+                                                    "date": "Publicado el 28 Sep 2026, 23:16"
+                                          },
+                                          "metrics": {
+                                                    "temp": 5,
+                                                    "volume": "Facturas señaladas como hasta cuatro veces mayores",
+                                                    "variation": "Reclamo por previsibilidad y competitividad"
+                                          }
+                                },
+                                {
+                                          "id": "clip-empleo-pyme-20260929",
+                                          "category": "nacional",
+                                          "scopeTag": "PyMEs manufactureras",
+                                          "badgeClass": "badge-alert-high",
+                                          "badgeText": "EMPLEO INDUSTRIAL",
+                                          "title": "Advierten una caída sostenida del empleo manufacturero PyME",
+                                          "summary": "El economista Federico Poli describió restricciones de financiamiento, competencia importada y pérdida de rentabilidad. Señaló que algunas empresas reconvierten producción hacia importación y que el empleo funciona como variable de ajuste.",
+                                          "impact": "La continuidad de la baja amenaza capacidades productivas, conocimiento acumulado y puestos de trabajo de calidad en cadenas donde las PyMEs son proveedoras centrales.",
+                                          "source": {
+                                                    "name": "Fuente Nacional — Empleo manufacturero PyME",
+                                                    "link": "https://fuentenacional.com/2026/09/28/federico-poli-empleo-manufacturero-pyme-caida-sostenida/",
+                                                    "date": "Publicado el 28 Sep 2026"
+                                          },
+                                          "metrics": {
+                                                    "temp": 5,
+                                                    "volume": "Caída señalada como la más prolongada desde 2002",
+                                                    "variation": "Financiamiento, importaciones y reconversión defensiva"
+                                          }
+                                }
+                      ]
+            },
             "2026-09-28": {
                       "sector": [
                                 {
