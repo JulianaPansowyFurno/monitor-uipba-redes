@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Monitor diario de agenda industrial, social bonaerense y medios elaborado por UIPBA para sus socios.">
-    <title>Monitor diario UIPBA | Agenda industrial y bonaerense</title>
+    <meta name="description" content="Monitor diario de conversación en redes, agenda bonaerense y medios, con una lectura de relevancia para UIPBA.">
+    <title>Monitor diario UIPBA | Redes, agenda bonaerense y medios</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
@@ -150,7 +150,7 @@
                     <span class="text-[9px] sm:text-[10px] font-normal text-uipba-navy tracking-wide leading-tight uppercase">PROVINCIA DE BUENOS AIRES</span>
                 </div>
                 <div class="hidden lg:block border-l border-slate-300 pl-3.5">
-                    <span class="text-xs font-bold text-slate-700 block leading-none">Monitor diario de agenda industrial y bonaerense</span>
+                    <span class="text-xs font-bold text-slate-700 block leading-none">Monitor diario de inteligencia social y medios</span>
                     <span class="text-[9px] text-uipba-blue font-semibold uppercase tracking-wider">Síntesis informativa para socios</span>
                 </div>
             </div>
@@ -172,7 +172,7 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between py-2 overflow-x-auto custom-scrollbar">
                 <div class="flex space-x-2">
                     <button onclick="switchTab('tab-sector')" id="btn-tab-sector" class="tab-btn active px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider flex items-center whitespace-nowrap">
-                        <span>Sector industrial</span>
+                        <span>Conversación en redes</span>
                     </button>
                     <button onclick="switchTab('tab-calle')" id="btn-tab-calle" class="tab-btn text-slate-600 hover:bg-slate-200 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider flex items-center whitespace-nowrap">
                         <span>Agenda bonaerense</span>
@@ -239,17 +239,17 @@
             <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5">
                 <div class="max-w-3xl">
                     <span class="report-kicker">Informe diario para socios</span>
-                    <h1 class="text-2xl sm:text-3xl font-bold mt-2 leading-tight">La agenda industrial y bonaerense, en un solo lugar</h1>
-                    <p class="text-sm text-blue-100 mt-2 leading-relaxed">Una síntesis clara de las conversaciones del sector, los temas sociales de la Provincia y las noticias que pueden incidir en la actividad productiva.</p>
+                    <h1 class="text-2xl sm:text-3xl font-bold mt-2 leading-tight">Qué se conversa en redes y qué pasa en la Provincia</h1>
+                    <p class="text-sm text-blue-100 mt-2 leading-relaxed">Las conversaciones destacadas de cada red, sin limitar la escucha a industria o territorio, junto con la agenda bonaerense y los medios. Cada tema incluye una lectura de su relevancia para UIPBA.</p>
                 </div>
                 <div class="report-date-card" aria-label="Fecha del informe">
                     <span class="report-date-label">Informe del</span>
                     <span id="analyzed-date" class="report-date-value">—</span>
-                    <span class="report-date-note">El informe publicado a las 10:00 releva el día calendario anterior.</span>
+                    <span id="period-note" class="report-date-note">Cada edición releva el día calendario anterior. Las excepciones sociales muestran su fecha real.</span>
                 </div>
             </div>
             <div class="section-guide" aria-label="Contenido del monitor">
-                <div class="section-guide-item"><strong>Sector industrial</strong><span>Voces y publicaciones verificadas de empresas, cámaras y referentes.</span></div>
+                <div class="section-guide-item"><strong>Conversación en redes</strong><span>Un tema por red, con evidencia pública y una lectura de relevancia para UIPBA.</span></div>
                 <div class="section-guide-item"><strong>Agenda bonaerense</strong><span>Temas sociales relevantes para comprender el contexto provincial.</span></div>
                 <div class="section-guide-item"><strong>Clipping de medios</strong><span>Noticias seleccionadas con acceso directo a la fuente original.</span></div>
             </div>
@@ -262,8 +262,8 @@
         <section id="tab-sector" class="space-y-6">
             <div class="max-w-3xl">
                 <span class="text-xs font-bold text-uipba-navy uppercase tracking-widest bg-blue-50 px-2.5 py-1 rounded-md border border-blue-200">Voces verificadas</span>
-                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2">Qué está diciendo el sector industrial</h2>
-                <p class="text-slate-600 text-sm mt-1 leading-relaxed">Publicaciones y opiniones de actores reales del entramado productivo. Cada tarjeta identifica la red, la fecha y la fuente original para facilitar su verificación.</p>
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2">Qué está generando conversación en cada red</h2>
+                <p class="text-slate-600 text-sm mt-1 leading-relaxed">X, LinkedIn, Instagram y Facebook: temas generales, publicaciones específicas y señales comprobables. La selección distingue tendencias respaldadas, temas destacados y redes sin novedades verificables. Las ediciones anteriores conservan su enfoque original.</p>
             </div>
 
             <div id="container-sector" class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -7807,8 +7807,8 @@
                         <h3 class="text-lg font-bold text-slate-900 mb-2">${item.title}</h3>
                         
                         <div class="bg-amber-50/80 border-l-4 border-amber-500 p-3.5 rounded-r-xl mb-4 text-xs text-amber-950 italic">
-                            <span class="card-eyebrow">Qué se dijo</span>
-                            “${item.quote}”
+                            <span class="card-eyebrow">De qué se habla · síntesis</span>
+                            ${escapeHtml(item.quote)}
                         </div>
                     </div>
 
@@ -7816,7 +7816,9 @@
                         <!-- Acción Sugerida UIPBA -->
                         <div class="pt-3 border-t border-slate-100 mb-3">
                             <span class="text-[9px] font-bold uppercase text-uipba-blue tracking-wider">Por qué importa para UIPBA</span>
-                            <p class="text-xs text-slate-800 font-semibold mt-0.5">${item.action}</p>
+                            <p class="text-xs text-slate-800 font-semibold mt-0.5">${escapeHtml(item.action)}</p>
+                            ${item.watch ? `<p class="text-xs text-slate-600 mt-2"><strong>Qué observar:</strong> ${escapeHtml(item.watch)}</p>` : ''}
+                            ${item.evidence ? `<p class="text-xs text-slate-600 mt-2"><strong>Evidencia pública:</strong> ${escapeHtml(item.evidence)}</p>` : ''}
                         </div>
 
                         <!-- Fuente Obligatoria (Claude Suggestion) -->
@@ -7972,6 +7974,9 @@
             const formatted = formatDate(dateVal);
             document.getElementById('current-date-badge').innerText = formatted;
             document.getElementById('analyzed-date').innerText = formatted;
+            const analyzedDay = new Date(dateVal + 'T12:00:00Z');
+            analyzedDay.setUTCDate(analyzedDay.getUTCDate() - 1);
+            document.getElementById('period-note').innerText = `Período analizado: ${formatDate(analyzedDay.toISOString().slice(0, 10))}, de 00:00 a 23:59 (Argentina). Las excepciones sociales indican su fecha real.`;
             renderDashboard(dateVal);
         }
 
