@@ -163,7 +163,7 @@
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
                     <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <span id="current-date-badge" class="date-badge">29/09/2026</span>
+                    <span id="current-date-badge" class="date-badge">08/10/2026</span>
                 </div>
             </div>
         </div>
@@ -186,7 +186,8 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-09-29" selected>29/09/2026 (Hoy)</option>
+                        <option value="2026-10-08" selected>08/10/2026 (Hoy)</option>
+                        <option value="2026-09-29">29/09/2026</option>
                         <option value="2026-09-28">28/09/2026</option>
                         <option value="2026-09-27">27/09/2026</option>
                         <option value="2026-09-26">26/09/2026</option>
@@ -353,6 +354,529 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+            "2026-10-08": {
+          "sector": [
+                    {
+                              "id": "sector-x-20261008",
+                              "network": "X",
+                              "networkBadge": "bg-slate-900 text-white",
+                              "hashtag": "Relevamiento limitado",
+                              "title": "Sin tendencia nueva verificable en X",
+                              "quote": "La búsqueda pública no permitió reunir publicaciones específicas de cuentas distintas con fecha y conversación verificables del 07/10. No se selecciona un tema ni se reutilizan publicaciones históricas.",
+                              "action": "No hay evidencia suficiente para interpretar la conversación de esta red ni derivar una lectura institucional.",
+                              "watch": "Recuperar publicaciones del período y contrastar voces independientes antes de identificar un tema dominante.",
+                              "evidence": "No se alcanzó el mínimo de cinco candidatos verificables. Los resultados genéricos, perfiles y noticias externas fueron descartados.",
+                              "source": {
+                                        "name": "Sin publicación verificable",
+                                        "link": "",
+                                        "date": "Relevamiento: 08/10/2026 · período: 07/10/2026"
+                              },
+                              "metrics": {
+                                        "temp": 0,
+                                        "volume": "Sin métricas verificables",
+                                        "variation": "Sin tendencia nueva verificable"
+                              }
+                    },
+                    {
+                              "id": "sector-linkedin-20261008",
+                              "network": "LinkedIn",
+                              "networkBadge": "bg-blue-700 text-white",
+                              "hashtag": "#Hospitalidad",
+                              "title": "La transformación de la hotelería: tema destacado reciente en LinkedIn",
+                              "quote": "Una convocatoria profesional propone conversar sobre liderazgo, sostenibilidad y futuro de la hospitalidad en Guadalajara. Es un antecedente reciente: la publicación precede al 07/10 y no acredita que la conversación haya dominado LinkedIn ese día.",
+                              "action": "Sirve como contexto de una audiencia profesional de servicios y turismo. No demuestra impactos sobre la industria bonaerense.",
+                              "watch": "Observar si aparecen balances del encuentro y experiencias concretas de sus participantes.",
+                              "evidence": "Post específico de CIDH accesible. La página muestra «3 días», sin fecha absoluta ni métricas del post; la fecha 07/10 corresponde al evento. No hay dos contrastes del mismo día que prueben tendencia.",
+                              "source": {
+                                        "name": "CIDH — LinkedIn",
+                                        "link": "https://es.linkedin.com/posts/cidhglobal_el-futuro-de-la-hoteler%C3%ADa-no-se-espera-este-activity-7512542572070805504-nzjC",
+                                        "date": "Fecha no expuesta por el índice público · página: 3 días · relevado 08/10/2026"
+                              },
+                              "metrics": {
+                                        "temp": 0,
+                                        "volume": "Sin métricas públicas del post",
+                                        "variation": "Excepción: publicación anterior al período"
+                              }
+                    },
+                    {
+                              "id": "sector-instagram-20261008",
+                              "network": "Instagram",
+                              "networkBadge": "bg-gradient-to-r from-purple-600 to-pink-500 text-white",
+                              "hashtag": "#Videojuegos",
+                              "title": "Comunidad gamer: señal destacada en Instagram, con verificación limitada",
+                              "quote": "El índice público identifica un reel de World of Warcraft fechado el 07/10 y registra interacción. El acceso directo fue limitado; no se pudo comprobar el contenido audiovisual ni reunir otras dos voces sobre el mismo asunto. No se afirma una tendencia de la plataforma.",
+                              "action": "Es contexto de audiencia y consumo de entretenimiento digital, sin vínculo industrial directo demostrado.",
+                              "watch": "Verificar el contenido del reel y si la conversación se extiende a otras cuentas antes de interpretar el tema.",
+                              "evidence": "El índice expone @warcraft, fecha y 54 mil Me gusta y 675 comentarios. La apertura directa devolvió limitación de acceso. No se alcanzaron cinco candidatos verificables.",
+                              "source": {
+                                        "name": "World of Warcraft (@warcraft) — Instagram",
+                                        "link": "https://www.instagram.com/reel/DeNFEOHMVDY/",
+                                        "date": "07/10/2026 según índice público · hora y zona no expuestas · relevado 08/10/2026"
+                              },
+                              "metrics": {
+                                        "temp": 0,
+                                        "volume": "Índice: 54 mil Me gusta · 675 comentarios",
+                                        "variation": "Señal del índice; tendencia no comprobada"
+                              }
+                    },
+                    {
+                              "id": "sector-facebook-20261008",
+                              "network": "Facebook",
+                              "networkBadge": "bg-blue-600 text-white",
+                              "hashtag": "#ReflexiónCotidiana",
+                              "title": "Reflexión religiosa cotidiana: tema destacado en Facebook, con evidencia limitada",
+                              "quote": "El índice muestra una invitación de TeleVID a reflexionar sobre el Evangelio del miércoles 07/10 con Fray Carlos Villa. Es una expresión de comunidad y hábitos cotidianos; no hay señales suficientes para atribuirle alcance dominante en Facebook.",
+                              "action": "Sirve únicamente como contexto de audiencia. No tiene un vínculo directo comprobado con UIPBA ni implica una posición institucional.",
+                              "watch": "Observar participación pública y otras voces de la comunidad antes de atribuir representatividad.",
+                              "evidence": "Post específico y autor identificados en el índice; la fecha aparece en el texto del contenido. La fecha técnica de publicación no está expuesta y la apertura directa estuvo limitada. No se alcanzaron cinco candidatos verificables.",
+                              "source": {
+                                        "name": "TeleVID — Facebook",
+                                        "link": "https://www.facebook.com/televid.tv/posts/evangelio-de-hoy-mi%C3%A9rcoles-7-octubre-2026-con-fray-carlos-villamomento-para-refl/1563450965813140/",
+                                        "date": "Contenido referido al 07/10/2026 · fecha de publicación no expuesta por el índice público · relevado 08/10/2026"
+                              },
+                              "metrics": {
+                                        "temp": 0,
+                                        "volume": "Sin métricas públicas verificables",
+                                        "variation": "Tema destacado; tendencia no comprobada"
+                              }
+                    }
+          ],
+          "calle": [
+                    {
+                              "id": "calle-1-20261008",
+                              "title": "Bragado: queda firme la orden de mejorar la calidad del agua",
+                              "streetTalk": "La Corte Suprema rechazó el recurso de ABSA y dejó firme la decisión que exige obras para asegurar la potabilidad del agua domiciliaria en Bragado. La noticia del 07/10 retoma un reclamo vecinal por arsénico; importa por el acceso a un servicio básico.",
+                              "region": "interior",
+                              "riskLevel": "AGENDA SOCIAL",
+                              "badgeClass": "badge-alert-medium",
+                              "topicNumber": "Tema 1",
+                              "connection": [],
+                              "uipbaPosition": "Seguir el cumplimiento de las obras y la información a los vecinos.",
+                              "source": {
+                                        "name": "LA NACION",
+                                        "link": "https://www.lanacion.com.ar/politica/la-corte-suprema-dejo-firme-un-fallo-que-obliga-a-la-provincia-de-buenos-aires-a-garantizar-el-nid07102026/",
+                                        "date": "07/10/2026 · 15:24"
+                              },
+                              "metrics": {
+                                        "temp": 0,
+                                        "volume": "Fuente periodística",
+                                        "variation": "Publicado durante el período"
+                              }
+                    },
+                    {
+                              "id": "calle-2-20261008",
+                              "title": "AMBA: alerta naranja por tormentas durante el miércoles",
+                              "streetTalk": "El 07/10 se informó una alerta naranja por tormentas para sectores bonaerenses y el AMBA, con lluvias intensas, descargas eléctricas y ráfagas. El pronóstico afectó la planificación de traslados y actividades cotidianas; no se presentan daños como hechos confirmados.",
+                              "region": "general",
+                              "riskLevel": "AGENDA SOCIAL",
+                              "badgeClass": "badge-alert-medium",
+                              "topicNumber": "Tema 2",
+                              "connection": [],
+                              "uipbaPosition": "Observar avisos locales y consecuencias verificadas sobre servicios y movilidad.",
+                              "source": {
+                                        "name": "El Cronista",
+                                        "link": "https://www.cronista.com/informacion-gral/alerta-naranja-en-el-amba-por-lluvias-se-avecinan-tormentas-durante-el-miercoles-7-de-octubre-y-este-sera-el-peor-momento-del-dia/",
+                                        "date": "07/10/2026 · 13:10"
+                              },
+                              "metrics": {
+                                        "temp": 0,
+                                        "volume": "Fuente periodística",
+                                        "variation": "Publicado durante el período"
+                              }
+                    },
+                    {
+                              "id": "calle-3-20261008",
+                              "title": "Mitre: anuncian suspensión de los ramales Suárez y Mitre",
+                              "streetTalk": "La noticia publicada el 07/10 informó que los ramales José León Suárez y Bartolomé Mitre no circularán del 09 al 12/10 por obras de infraestructura. El ramal Tigre conserva el servicio previsto. El anuncio importa a pasajeros del conurbano norte que deberán planificar alternativas.",
+                              "region": "conurbano-norte",
+                              "riskLevel": "AGENDA SOCIAL",
+                              "badgeClass": "badge-alert-medium",
+                              "topicNumber": "Tema 3",
+                              "connection": [],
+                              "uipbaPosition": "Seguir alternativas de viaje y avisos de reanudación.",
+                              "source": {
+                                        "name": "Agencia Noticias Argentinas",
+                                        "link": "https://noticiasargentinas.com/sociedad/tren-mitre--los-motivos-por-los-cuales-los-ramales-suarez-y-mitre-estaran-suspendidos-el-fin-de-semana-largo-de-octubre_a6ac651d825d386c881489acb?output=amp",
+                                        "date": "07/10/2026 · 11:11 · editado 11:13"
+                              },
+                              "metrics": {
+                                        "temp": 0,
+                                        "volume": "Fuente periodística",
+                                        "variation": "Publicado durante el período"
+                              }
+                    }
+          ],
+          "clipping": [
+                    {
+                              "id": "clip-1-20261008",
+                              "category": "regional",
+                              "scopeTag": "Regional · Actividad",
+                              "badgeClass": "badge-alert-medium",
+                              "badgeText": "INDUSTRIA",
+                              "title": "Industria y construcción: caídas interanuales en agosto",
+                              "summary": "La nota del 07/10 informó una baja interanual del 3,2% en manufactura y del 4,4% en construcción, junto con mejoras mensuales desestacionalizadas. Son datos de agosto difundidos durante el período, no actividad medida el 07/10.",
+                              "impact": "Distinguir variaciones mensuales y anuales para interpretar demanda y actividad de los socios.",
+                              "source": {
+                                        "name": "Agencia DIB",
+                                        "link": "https://dib.com.ar/economia/indec-agosto-la-construccion-cayo-44-y-la-industria-manufacturera-32-n56321",
+                                        "date": "07/10/2026 · 17:38"
+                              },
+                              "metrics": {
+                                        "temp": 0,
+                                        "volume": "Datos atribuidos al INDEC",
+                                        "variation": "Publicación del período"
+                              }
+                    },
+                    {
+                              "id": "clip-2-20261008",
+                              "category": "nacional",
+                              "scopeTag": "Nacional · Inversión",
+                              "badgeClass": "badge-alert-info",
+                              "badgeText": "BIOCOMBUSTIBLES",
+                              "title": "Acuerdo de venta futura para la biorrefinería de San Lorenzo",
+                              "summary": "Santa Fe Bio, integrada por YPF y Essential Energy, acordó con TOTSA TotalEnergies la venta futura de combustibles renovables de la planta proyectada en San Lorenzo, Santa Fe. La iniciativa contempla más de US$400 millones de inversión; no se trata de producción ya iniciada.",
+                              "impact": "Observar avances del proyecto y oportunidades de provisión técnica, sin dar por confirmada participación de empresas bonaerenses.",
+                              "source": {
+                                        "name": "LA NACION",
+                                        "link": "https://www.lanacion.com.ar/economia/campo/inversion-de-us400-millones-una-sociedad-que-integra-ypf-le-vendera-un-combustible-sostenible-para-nid07102026/",
+                                        "date": "07/10/2026 · 19:31"
+                              },
+                              "metrics": {
+                                        "temp": 0,
+                                        "volume": "Proyecto informado",
+                                        "variation": "Publicación del período"
+                              }
+                    },
+                    {
+                              "id": "clip-3-20261008",
+                              "category": "regional",
+                              "scopeTag": "Regional · Legislatura",
+                              "badgeClass": "badge-alert-medium",
+                              "badgeText": "VIOLENCIA DIGITAL",
+                              "title": "El Senado bonaerense avanzó con un proyecto contra la violencia digital",
+                              "summary": "Página/12 informó el 07/10 que el Senado provincial dio otro paso en el tratamiento de una iniciativa contra la violencia digital. La nota refiere a la sesión del martes 06/10; se incluye por su fecha de publicación, sin presentarla como una ley ya vigente.",
+                              "impact": "Seguir el trámite y su alcance para comprender la agenda de comunicación y protección de personas en entornos digitales.",
+                              "source": {
+                                        "name": "Página/12",
+                                        "link": "https://www.pagina12.com.ar/2026/10/07/la-ley-contra-la-violencia-digital-dio-otro-paso-en-el-senado-mientras-avanza-la-discusion-por-los-proyectos-de-salud/",
+                                        "date": "07/10/2026 · 00:27"
+                              },
+                              "metrics": {
+                                        "temp": 0,
+                                        "volume": "Título y bajada públicos; cuerpo no accesible",
+                                        "variation": "Publicación del período"
+                              }
+                    }
+          ],
+          "audit": {
+                    "executionDate": "2026-10-08",
+                    "period": {
+                              "date": "2026-10-07",
+                              "from": "00:00",
+                              "to": "23:59",
+                              "timezone": "America/Argentina/Buenos_Aires"
+                    },
+                    "reviewedEditions": [
+                              "2026-09-29",
+                              "2026-09-28",
+                              "2026-09-27",
+                              "2026-09-26",
+                              "2026-09-25",
+                              "2026-09-24",
+                              "2026-09-23"
+                    ],
+                    "exclusions": [
+                              {
+                                        "date": "2026-09-29",
+                                        "account": "Política Argentina — X",
+                                        "link": "https://x.com/Pol_Arg/status/2042324166825689126",
+                                        "title": "La industria textil opera con capacidad ociosa: sin tendencia nueva verificable en X",
+                                        "topic": "#IndustriaTextil"
+                              },
+                              {
+                                        "date": "2026-09-29",
+                                        "account": "Marcelo Mijlin — LinkedIn",
+                                        "link": "https://es.linkedin.com/posts/marcelo-mijlin_industriaautomotriz-argentina-autos-activity-7502839851780780032-DAcV",
+                                        "title": "La reconversión automotriz abre debate sobre producción, importaciones y electrificación",
+                                        "topic": "#IndustriaAutomotriz"
+                              },
+                              {
+                                        "date": "2026-09-29",
+                                        "account": "TS Wood Tools — Instagram",
+                                        "link": "https://www.instagram.com/p/DGJqeImAE-Z/",
+                                        "title": "Fabricación nacional de herramientas: sin tendencia nueva verificable en Instagram",
+                                        "topic": "#HerramientasArgentinas"
+                              },
+                              {
+                                        "date": "2026-09-29",
+                                        "account": "Municipalidad de Avellaneda — Facebook",
+                                        "link": "https://www.facebook.com/municipalidad.avellaneda/videos/-avellaneda-es-industria-avellaneda-es-trabajo-avellaneda-es-producci%C3%B3ntenemos-u/2311898692998187/",
+                                        "title": "Identidad industrial y empleo local: sin tendencia nueva verificable en Facebook",
+                                        "topic": "#IndustriaAvellaneda"
+                              },
+                              {
+                                        "date": "2026-09-28",
+                                        "account": "AmCham Argentina — X",
+                                        "link": "https://x.com/AmChamArgentina/status/2034322899612356760",
+                                        "title": "Patentes e innovación en salud: sin tendencia nueva verificable en X",
+                                        "topic": "#InnovaciónFarmacéutica"
+                              },
+                              {
+                                        "date": "2026-09-28",
+                                        "account": "Movant Connection — LinkedIn",
+                                        "link": "https://es.linkedin.com/pulse/ecommerce-en-argentina-c%C3%B3mo-impacta-su-avance-la-log%C3%ADstica-qrrhf",
+                                        "title": "El crecimiento del comercio electrónico presiona sobre la operación logística",
+                                        "topic": "#Ecommerce"
+                              },
+                              {
+                                        "date": "2026-09-28",
+                                        "account": "Federación Industrial de Santa Fe — Instagram",
+                                        "link": "https://www.instagram.com/reel/DXFnwRzj9Ep/",
+                                        "title": "Competitividad e innovación federal: sin tendencia nueva verificable en Instagram",
+                                        "topic": "#DesarrolloProductivo"
+                              },
+                              {
+                                        "date": "2026-09-28",
+                                        "account": "La página de Diana — Facebook",
+                                        "link": "https://www.facebook.com/LaPaginaDeDiana/posts/3-de-septiembre-d%C3%ADa-del-ferretero-en-la-rep%C3%BAblica-argentina-cada-3-de-septiembre/1297759432365017/",
+                                        "title": "Gestión técnica y abastecimiento en ferreterías: sin tendencia nueva verificable en Facebook",
+                                        "topic": "#ComercioPyME"
+                              },
+                              {
+                                        "date": "2026-09-27",
+                                        "account": "ABSA — X",
+                                        "link": "https://x.com/ABSAOficial/status/2100941666014130402",
+                                        "title": "La infraestructura de agua en Berisso: sin tendencia nueva verificable en X",
+                                        "topic": "#Infraestructura"
+                              },
+                              {
+                                        "date": "2026-09-27",
+                                        "account": "Hormetal — LinkedIn",
+                                        "link": "https://es.linkedin.com/posts/hormetal_hormetal-industriaargentina-diadelaindustria-activity-7500870188834369536-Xf_3",
+                                        "title": "Trabajo, innovación y producción: sin tendencia nueva verificable en LinkedIn",
+                                        "topic": "#IndustriaArgentina"
+                              },
+                              {
+                                        "date": "2026-09-27",
+                                        "account": "Unión Industrial Argentina (@uiaoficial) — Instagram",
+                                        "link": "https://www.instagram.com/reel/DcyFEscAJN8/",
+                                        "title": "Producción nacional e inversión: sin tendencia nueva verificable en Instagram",
+                                        "topic": "#ProducciónNacional"
+                              },
+                              {
+                                        "date": "2026-09-27",
+                                        "account": "Confederación Argentina de la Mediana Empresa (CAME) — Facebook",
+                                        "link": "https://www.facebook.com/redcame/posts/-d%C3%ADa-de-la-industria-en-came-m%C3%A1s-de-170-industriales-pymes-de-todo-el-pa%C3%ADs-parti/1521546450003291/",
+                                        "title": "Capacitación y representación industrial PyME: sin tendencia nueva verificable en Facebook",
+                                        "topic": "#PyMEsIndustriales"
+                              },
+                              {
+                                        "date": "2026-09-26",
+                                        "account": "Fernando A. Iglesias — X",
+                                        "link": "https://x.com/i/status/2096525246610251835",
+                                        "title": "La necesidad de una estrategia industrial: sin tendencia nueva verificable en X",
+                                        "topic": "#PolíticaIndustrial"
+                              },
+                              {
+                                        "date": "2026-09-26",
+                                        "account": "Grupo Arcor — LinkedIn",
+                                        "link": "https://es.linkedin.com/posts/grupo-arcor_rondas-de-impacto-industrial-caeii-2026-activity-7501703469653712896-ML3n",
+                                        "title": "Datos y mejora continua en la formación industrial: tema destacado reciente en LinkedIn",
+                                        "topic": "#IngenieríaIndustrial"
+                              },
+                              {
+                                        "date": "2026-09-26",
+                                        "account": "Gente de Business y Paul Machuca — Instagram",
+                                        "link": "https://www.instagram.com/reel/DYM1gvVucTv/",
+                                        "title": "La logística como cadena integrada: sin tendencia nueva verificable en Instagram",
+                                        "topic": "#Logística"
+                              },
+                              {
+                                        "date": "2026-09-26",
+                                        "account": "Cámara Argentina de Comercio y Servicios — Facebook",
+                                        "link": "https://www.facebook.com/CACteinforma/posts/c%C3%B3mo-reinventar-tu-negocio-para-seguir-creciendoen-el-encuentro-pymes-2026-organ/1560067709494858/",
+                                        "title": "La reinvención del modelo de negocio PyME: sin tendencia nueva verificable en Facebook",
+                                        "topic": "#PyMEs"
+                              },
+                              {
+                                        "date": "2026-09-25",
+                                        "account": "INDEC Argentina (@INDECArgentina) — X",
+                                        "link": "https://x.com/INDECArgentina/status/2100661169019138459",
+                                        "title": "Empleo y desempleo del segundo trimestre: tema destacado reciente en X",
+                                        "topic": "#MercadoLaboral #Empleo #Producción"
+                              },
+                              {
+                                        "date": "2026-09-25",
+                                        "account": "ArcelorMittal Acindar — LinkedIn",
+                                        "link": "https://es.linkedin.com/posts/arcelormittalacindar_expoagro2026-arcelormittalacindar-industriayagro-activity-7443011181780303872-TvGM",
+                                        "title": "La articulación entre acero y agro: sin tendencia nueva verificable en LinkedIn",
+                                        "topic": "#IndustriaYAgro #Acero #EconomíaCircular #Diversidad"
+                              },
+                              {
+                                        "date": "2026-09-25",
+                                        "account": "Tecno Fidta — Instagram",
+                                        "link": "https://www.instagram.com/reel/DdXa8y2NWEM/",
+                                        "title": "Automatización y calidad en alimentos: tema destacado reciente en Instagram",
+                                        "topic": "#IndustriaAlimentaria #Automatización #Envases #Calidad"
+                              },
+                              {
+                                        "date": "2026-09-25",
+                                        "account": "Canal Somos Rosario — Facebook",
+                                        "link": "https://www.facebook.com/CanalSomosRosario/videos/-duro-reclamo-de-fisfe-argentina-no-puede-rifar-su-mercado-interno-ni-su-producc/27046530555033272/",
+                                        "title": "La defensa del mercado interno industrial: sin tendencia nueva verificable en Facebook",
+                                        "topic": "#MercadoInterno #ProducciónNacional #CompetenciaImportada"
+                              },
+                              {
+                                        "date": "2026-09-24",
+                                        "account": "Argentina en Datos (@arg_endatos) — X",
+                                        "link": "https://x.com/arg_endatos/status/2072053546577506592",
+                                        "title": "El costo del financiamiento PyME: sin tendencia nueva verificable en X",
+                                        "topic": "#FinanciamientoPyME #MercadoDeCapitales #Tasas"
+                              },
+                              {
+                                        "date": "2026-09-24",
+                                        "account": "Gabriel Ortiz — LinkedIn",
+                                        "link": "https://es.linkedin.com/posts/gabriel-ortiz-355830176_d%C3%ADa-de-la-industria-sin-industria-un-pa%C3%ADs-activity-7500880278945587202-nA9W",
+                                        "title": "Los costos sistémicos que limitan la competitividad: tema destacado reciente en LinkedIn",
+                                        "topic": "#Competitividad #IndustriaArgentina #CostosProductivos"
+                              },
+                              {
+                                        "date": "2026-09-24",
+                                        "account": "FCEyT de la UNSE — Instagram",
+                                        "link": "https://www.instagram.com/reel/DdSRd1bjL7y/",
+                                        "title": "La formación tecnológica frente al cambio productivo: sin tendencia nueva verificable en Instagram",
+                                        "topic": "#Software #Talento #Universidad #InteligenciaArtificial"
+                              },
+                              {
+                                        "date": "2026-09-24",
+                                        "account": "Camioneros BA — Facebook",
+                                        "link": "https://www.facebook.com/CamionerosBA/posts/la-industria-argentina-en-ca%C3%ADda-estiman-que-se-perder%C3%A1n-105000-empleos-en-2026-e/1541185658049629/",
+                                        "title": "La pérdida de empleo fabril: sin tendencia nueva verificable en Facebook",
+                                        "topic": "#Industria #Empleo #PyMEs #TrabajoArgentino"
+                              },
+                              {
+                                        "date": "2026-09-23",
+                                        "account": "Impuestos y Economía (@ImpuestosyE) — X",
+                                        "link": "https://x.com/ImpuestosyE/status/1947504090835042651",
+                                        "title": "El efecto cascada de Ingresos Brutos: sin tendencia nueva verificable en X",
+                                        "topic": "#IngresosBrutos #Costos #CadenaProductiva"
+                              },
+                              {
+                                        "date": "2026-09-23",
+                                        "account": "Accenture Argentina — LinkedIn",
+                                        "link": "https://es.linkedin.com/posts/accenturear_sap-now-ai-tour-argentina-2026-activity-7500287818284474368-Dkb2",
+                                        "title": "La IA aplicada a operaciones empresariales: tema destacado reciente en LinkedIn",
+                                        "topic": "#InteligenciaArtificial #Procesos #TransformaciónDigital"
+                              },
+                              {
+                                        "date": "2026-09-23",
+                                        "account": "En Agenda (@enagenda_) — Instagram",
+                                        "link": "https://www.instagram.com/reel/Dc0ppmORNRf/",
+                                        "title": "La contracción de la actividad industrial: sin tendencia nueva verificable en Instagram",
+                                        "topic": "#ActividadIndustrial #PyMEs #ProducciónNacional"
+                              },
+                              {
+                                        "date": "2026-09-23",
+                                        "account": "Fernando Gray — Facebook",
+                                        "link": "https://www.facebook.com/fernandograyok/videos/el-cierre-de-m%C3%A1s-de-45000-pymes-en-la-argentina-significa-p%C3%A9rdida-de-empleo-de-p/706078912461630/",
+                                        "title": "El impacto local del cierre de PyMEs: sin tendencia nueva verificable en Facebook",
+                                        "topic": "#PyMEs #DesarrolloLocal #Empleo"
+                              }
+                    ],
+                    "limitations": "No se alcanzó el mínimo de cinco candidatos verificables por red salvo cinco publicaciones candidatas en LinkedIn. No se acreditó una tendencia dominante en ninguna red. X sin post seleccionado. Instagram y Facebook solo verificación parcial en índice público; aperturas limitadas por throttling. Los contenidos sociales con fechas no expuestas no se atribuyen al período.",
+                    "candidates": {
+                              "X": [
+                                        {
+                                                  "account": "Heidi Bachram",
+                                                  "status": "Descartado: mención embebida en noticia externa; no se obtuvo post específico verificable."
+                                        }
+                              ],
+                              "LinkedIn": [
+                                        {
+                                                  "account": "CIDH",
+                                                  "link": "https://es.linkedin.com/posts/cidhglobal_el-futuro-de-la-hoteler%C3%ADa-no-se-espera-este-activity-7512542572070805504-nzjC",
+                                                  "decision": "Seleccionado por actualidad relativa de la página y tema de hospitalidad distinto; excepción fuera del período, sin tendencia."
+                                        },
+                                        {
+                                                  "account": "Víctor Herrero Martín",
+                                                  "link": "https://es.linkedin.com/posts/victorherreromartin_vuelvo-de-las-vacaciones-de-verano-con-felices-activity-7506264111572246528-z0W5",
+                                                  "decision": "Descartado: convocatoria de hace tres semanas; People Analytics e IA ya aparecen entre temas recientes."
+                                        },
+                                        {
+                                                  "account": "Patricia Terrero Rodríguez",
+                                                  "link": "https://es.linkedin.com/posts/patricia-terrero-rodriguez_nos-vemos-el-pr%C3%B3ximo-7-de-octubre-en-la-jornada-activity-7510700664415629315-ttpj",
+                                                  "decision": "Descartado: convocatoria anterior; infraestructura coincide con asunto de ediciones anteriores."
+                                        },
+                                        {
+                                                  "account": "Sandra Mercé Ferrer",
+                                                  "link": "https://es.linkedin.com/posts/sandramerceferrer_el-packaging-cosm%C3%A9tico-est%C3%A1-cambiando-y-activity-7509224526577070082-ftHM",
+                                                  "decision": "Descartado: convocatoria anterior; envases e innovación próximos a temas de la última semana."
+                                        },
+                                        {
+                                                  "account": "SGAE",
+                                                  "link": "https://es.linkedin.com/posts/sgae_%F0%9D%97%A6%F0%9D%97%9A%F0%9D%97%94%F0%9D%97%98-%F0%9D%97%BD%F0%9D%97%AE%F0%9D%97%BF%F0%9D%98%81%F0%9D%97%B6%F0%9D%97%B0%F0%9D%97%B6%F0%9D%97%BD%F0%9D%97%AE-%F0%9D%97%B2%F0%9D%97%BB-%F0%9D%97%A7%F0%9D%97%B5%F0%9D%97%B2-activity-7513183373113094145-OQS7",
+                                                  "decision": "Descartado: el texto anuncia mañana 07/10; publicación previa. Sin contrastes del día."
+                                        }
+                              ],
+                              "Instagram": [
+                                        {
+                                                  "account": "World of Warcraft",
+                                                  "link": "https://www.instagram.com/reel/DeNFEOHMVDY/",
+                                                  "decision": "Señal seleccionada con reserva: fecha e interacciones en índice; contenido audiovisual no verificado."
+                                        },
+                                        {
+                                                  "link": "https://www.instagram.com/p/DeNtQETmEJ2/",
+                                                  "decision": "Descartado: resumen de noticias, no voz social."
+                                        },
+                                        {
+                                                  "account": "Chacabuco en Red",
+                                                  "link": "https://www.instagram.com/p/DeNgdjlF4BI/",
+                                                  "decision": "Descartado: resumen periodístico."
+                                        },
+                                        {
+                                                  "link": "https://www.instagram.com/p/DeNfS1BEUuK/",
+                                                  "decision": "Descartado: misa aislada sin autor y señales de conversación comprobados."
+                                        }
+                              ],
+                              "Facebook": [
+                                        {
+                                                  "account": "TeleVID",
+                                                  "link": "https://www.facebook.com/televid.tv/posts/evangelio-de-hoy-mi%C3%A9rcoles-7-octubre-2026-con-fray-carlos-villamomento-para-refl/1563450965813140/",
+                                                  "decision": "Seleccionado como referencia de comunidad con verificación parcial; sin métricas ni tendencia."
+                                        },
+                                        {
+                                                  "account": "Diario El 9 de Julio",
+                                                  "link": "https://www.facebook.com/DiarioEl9deJulio/posts/-la-tapa-mi%C3%A9rcoles-7-de-octubre-de-2026las-noticias-de-la-ciudad/1769473378518128/",
+                                                  "decision": "Descartado: tapa periodística."
+                                        },
+                                        {
+                                                  "account": "Chacabuco en Red",
+                                                  "link": "https://www.facebook.com/chacabucoenred/posts/las-noticias-de-chacabuco-del-d%C3%ADa-en-60-segundos-mi%C3%A9rcoles-7-de-octubre-de-2026/1699681782162334/",
+                                                  "decision": "Descartado: resumen periodístico."
+                                        },
+                                        {
+                                                  "account": "Gobierno de Campeche",
+                                                  "link": "https://www.facebook.com/GobiernoDeCampeche/videos/rueda-de-prensa-7-octubre-2026/2326996208072667/",
+                                                  "decision": "Descartado: rueda de prensa sin asunto y conversación contrastados."
+                                        }
+                              ]
+                    },
+                    "discardedMedia": [
+                              {
+                                        "url": "https://dib.com.ar/economia/granja-tres-arroyos-conciliacion-quedaron-firmes-los-1250-despidos-n56275",
+                                        "reason": "Publicado 06/10, fuera del período."
+                              },
+                              {
+                                        "url": "https://eleconomista.com.ar/economia/la-ia-ya-factura-argentina-pero-deja-afuera-45-trabajadores-informales-n98664",
+                                        "reason": "Publicado 06/10, fuera del período."
+                              },
+                              {
+                                        "url": "https://dib.com.ar/sociedad/suben-los-peajes-las-rutas-la-costa-atlantica-cuanto-costara-viajar-n56330",
+                                        "reason": "Publicado 08/10, fuera del período."
+                              }
+                    ]
+          }
+},
             "2026-09-29": {
                       "sector": [
                                 {
