@@ -163,7 +163,7 @@
                 </button>
                 <div class="flex items-center space-x-2 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-bold text-slate-700">
                     <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
-                    <span id="current-date-badge" class="date-badge">08/10/2026</span>
+                    <span id="current-date-badge" class="date-badge">10/10/2026</span>
                 </div>
             </div>
         </div>
@@ -186,7 +186,9 @@
                 <div class="hidden md:flex items-center space-x-2 text-xs text-slate-500 font-medium pl-4">
                     <span>Fecha:</span>
                     <select id="date-selector" onchange="loadDataForDate(this.value)" class="bg-white border border-slate-300 rounded-lg text-xs font-bold text-slate-700 px-2 py-1 focus:outline-none focus:border-uipba-navy">
-                        <option value="2026-10-08" selected>08/10/2026 (Hoy)</option>
+                        <option value="2026-10-10" selected>10/10/2026 (Último informe)</option>
+                        <option value="2026-10-09">09/10/2026</option>
+                        <option value="2026-10-08">08/10/2026</option>
                         <option value="2026-09-29">29/09/2026</option>
                         <option value="2026-09-28">28/09/2026</option>
                         <option value="2026-09-27">27/09/2026</option>
@@ -241,7 +243,7 @@
                 <div class="max-w-3xl">
                     <span class="report-kicker">Informe diario para socios</span>
                     <h1 class="text-2xl sm:text-3xl font-bold mt-2 leading-tight">Qué se conversa en redes y qué pasa en la Provincia</h1>
-                    <p class="text-sm text-blue-100 mt-2 leading-relaxed">Las conversaciones destacadas de cada red, sin limitar la escucha a industria o territorio, junto con la agenda bonaerense y los medios. Cada tema incluye una lectura de su relevancia para UIPBA.</p>
+                    <p class="text-sm text-blue-100 mt-2 leading-relaxed">Conversaciones vinculadas directamente con la industria en cada red, junto con la agenda social bonaerense y noticias del sector productivo. Cada tema incluye fuentes y una lectura de su relevancia para UIPBA.</p>
                 </div>
                 <div class="report-date-card" aria-label="Fecha del informe">
                     <span class="report-date-label">Informe del</span>
@@ -250,9 +252,9 @@
                 </div>
             </div>
             <div class="section-guide" aria-label="Contenido del monitor">
-                <div class="section-guide-item"><strong>Conversación en redes</strong><span>Un tema por red, con evidencia pública y una lectura de relevancia para UIPBA.</span></div>
+                <div class="section-guide-item"><strong>Conversación en redes</strong><span>Un tema industrial por red, con evidencia pública y relevancia para UIPBA; las limitaciones se explicitan.</span></div>
                 <div class="section-guide-item"><strong>Agenda bonaerense</strong><span>Temas sociales relevantes para comprender el contexto provincial.</span></div>
-                <div class="section-guide-item"><strong>Clipping de medios</strong><span>Noticias seleccionadas con acceso directo a la fuente original.</span></div>
+                <div class="section-guide-item"><strong>Clipping de medios</strong><span>Noticias industriales del día analizado, con acceso directo a la fuente original.</span></div>
             </div>
         </div>
     </section>
@@ -264,7 +266,7 @@
             <div class="max-w-3xl">
                 <span class="text-xs font-bold text-uipba-navy uppercase tracking-widest bg-blue-50 px-2.5 py-1 rounded-md border border-blue-200">Voces verificadas</span>
                 <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2">Qué está generando conversación en cada red</h2>
-                <p class="text-slate-600 text-sm mt-1 leading-relaxed">X, LinkedIn, Instagram y Facebook: temas generales, publicaciones específicas y señales comprobables. La selección distingue tendencias respaldadas, temas destacados y redes sin novedades verificables. Las ediciones anteriores conservan su enfoque original.</p>
+                <p class="text-slate-600 text-sm mt-1 leading-relaxed">X, LinkedIn, Instagram y Facebook: temas industriales, publicaciones específicas y señales comprobables. La selección distingue tendencias respaldadas, temas destacados y redes sin novedades verificables. Las ediciones anteriores conservan su enfoque original.</p>
             </div>
 
             <div id="container-sector" class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -346,7 +348,7 @@
 
             <!-- Nota Metodológica Obligatoria -->
             <div class="pt-3 border-t border-slate-100 text-[10px] text-slate-400 leading-relaxed text-center italic">
-                <strong>Nota metodológica:</strong> Relevamiento asistido por Inteligencia Artificial sobre fuentes públicas. Conversación en redes escucha temas generales de X, LinkedIn, Instagram y Facebook, sin restricción industrial o territorial; Agenda bonaerense y Clipping conservan sus alcances propios. Cada selección debe identificar la publicación, fecha real y evidencia disponible, distinguiendo una tendencia respaldada de un tema destacado o de la ausencia de novedades verificables. Las síntesis y la lectura para UIPBA son análisis editoriales, no citas textuales ni posiciones oficiales. Las excepciones temporales se señalan expresamente. Las ediciones históricas conservan su enfoque y contenido originales. La cobertura pública es parcial y no constituye una medición exhaustiva de tendencias.
+                <strong>Nota metodológica:</strong> Relevamiento asistido por Inteligencia Artificial sobre fuentes públicas. Conversación en redes selecciona temas con vínculo industrial directo en X, LinkedIn, Instagram y Facebook; Clipping reúne noticias industriales del día analizado y Agenda bonaerense mantiene su alcance social provincial. Cada selección debe identificar la publicación, fecha real y evidencia disponible, distinguiendo una tendencia respaldada de un tema destacado o de la ausencia de novedades verificables. Las síntesis y la lectura para UIPBA son análisis editoriales, no citas textuales ni posiciones oficiales. Las excepciones temporales se señalan expresamente. Las ediciones históricas conservan su enfoque y contenido originales. La cobertura pública es parcial y no constituye una medición exhaustiva de tendencias.
             </div>
         </div>
     </footer>
@@ -354,6 +356,350 @@
     <script>
         // DATASET DIARIO: Permite actualizar los contenidos de forma limpia en el futuro
         const DASHBOARD_DATA = {
+"2026-10-10": {
+  "analysisPeriod": {
+    "date": "2026-10-09",
+    "start": "2026-10-09T00:00:00-03:00",
+    "end": "2026-10-09T23:59:59-03:00",
+    "timezone": "America/Argentina/Buenos_Aires"
+  },
+  "sector": [
+    {
+      "id": "red-x",
+      "network": "X",
+      "networkBadge": "bg-slate-900 text-white",
+      "hashtag": "Evidencia insuficiente",
+      "title": "Sin tendencia nueva verificable en X",
+      "quote": "No se verificó una publicación industrial del 09/10/2026 ni una alternativa reciente y distinta con evidencia suficiente en esta red.",
+      "action": "La falta de evidencia pública impide identificar un tema industrial destacado para UIPBA y sus socios. No permite concluir que no hubo conversación industrial.",
+      "watch": "Producción, empleo industrial, inversión, energía para empresas y proveedores bonaerenses; requiere publicaciones específicas con fecha comprobable.",
+      "evidence": "No se alcanzaron cinco candidatos industriales recientes verificables de cuentas distintas. Se descartaron resultados antiguos, perfiles y contenido sin vínculo industrial directo. No hay métricas ni contraste suficientes para afirmar tendencia.",
+      "source": {
+        "name": "Sin publicación industrial reciente verificable",
+        "link": "",
+        "date": "Relevado: 10/10/2026 · período: 09/10/2026"
+      },
+      "metrics": {
+        "temp": 0,
+        "volume": "Sin tendencia acreditada",
+        "variation": "Falta de evidencia"
+      }
+    },
+    {
+      "id": "red-linkedin",
+      "network": "LinkedIn",
+      "networkBadge": "bg-blue-100 text-blue-800",
+      "hashtag": "Tema destacado · excepción temporal",
+      "title": "Seguridad y continuidad de procesos en la industria química: tema destacado reciente en LinkedIn",
+      "quote": "Una publicación propia de Responsabilidad Integral Colombia conecta prevención de accidentes, regulación y continuidad operativa en la cadena química. Fue publicada el 06/10, fuera del período; no acredita una tendencia del 09/10.",
+      "action": "La gestión de sustancias y riesgos de proceso afecta de forma directa a fabricantes y usuarios industriales. Para los socios de UIPBA, el contenido aporta una referencia regional sobre continuidad operativa; no se presume que la normativa colombiana rija en Argentina.",
+      "watch": "Prácticas de prevención y continuidad aplicables a plantas químicas, plásticas y de insumos; verificar por separado las obligaciones locales.",
+      "evidence": "Fecha absoluta visible: 06/10/2026. Artículo original de una organización industrial, no una nota de medios presentada como voz social. Se observa un comentario del Consejo Colombiano de Seguridad; no se verificaron dos posts adicionales ni métricas de alcance del 09/10. No se alcanzó el mínimo de cinco candidatos recientes con fecha comprobable.",
+      "source": {
+        "name": "Responsabilidad Integral | Colombia — LinkedIn",
+        "link": "https://es.linkedin.com/pulse/summit-industria-qu%C3%ADmica-2026-una-nueva-4vkoe",
+        "date": "06/10/2026 · excepción fuera del período · relevado 10/10/2026"
+      },
+      "metrics": {
+        "temp": 0,
+        "volume": "Sin tendencia acreditada",
+        "variation": "Excepción: 06/10"
+      }
+    },
+    {
+      "id": "red-instagram",
+      "network": "Instagram",
+      "networkBadge": "bg-pink-100 text-pink-800",
+      "hashtag": "Evidencia insuficiente",
+      "title": "Sin tendencia nueva verificable en Instagram",
+      "quote": "No se verificó una publicación industrial del 09/10/2026 ni una alternativa reciente y distinta con evidencia suficiente en esta red.",
+      "action": "La falta de evidencia pública impide identificar un tema industrial destacado para UIPBA y sus socios. No permite concluir que no hubo conversación industrial.",
+      "watch": "Producción, empleo industrial, inversión, energía para empresas y proveedores bonaerenses; requiere publicaciones específicas con fecha comprobable.",
+      "evidence": "No se alcanzaron cinco candidatos industriales recientes verificables de cuentas distintas. Se descartaron resultados antiguos, perfiles y contenido sin vínculo industrial directo. No hay métricas ni contraste suficientes para afirmar tendencia.",
+      "source": {
+        "name": "Sin publicación industrial reciente verificable",
+        "link": "",
+        "date": "Relevado: 10/10/2026 · período: 09/10/2026"
+      },
+      "metrics": {
+        "temp": 0,
+        "volume": "Sin tendencia acreditada",
+        "variation": "Falta de evidencia"
+      }
+    },
+    {
+      "id": "red-facebook",
+      "network": "Facebook",
+      "networkBadge": "bg-blue-100 text-blue-800",
+      "hashtag": "Evidencia insuficiente",
+      "title": "Sin tendencia nueva verificable en Facebook",
+      "quote": "No se verificó una publicación industrial del 09/10/2026 ni una alternativa reciente y distinta con evidencia suficiente en esta red.",
+      "action": "La falta de evidencia pública impide identificar un tema industrial destacado para UIPBA y sus socios. No permite concluir que no hubo conversación industrial.",
+      "watch": "Producción, empleo industrial, inversión, energía para empresas y proveedores bonaerenses; requiere publicaciones específicas con fecha comprobable.",
+      "evidence": "No se alcanzaron cinco candidatos industriales recientes verificables de cuentas distintas. Se descartaron resultados antiguos, perfiles y contenido sin vínculo industrial directo. No hay métricas ni contraste suficientes para afirmar tendencia.",
+      "source": {
+        "name": "Sin publicación industrial reciente verificable",
+        "link": "",
+        "date": "Relevado: 10/10/2026 · período: 09/10/2026"
+      },
+      "metrics": {
+        "temp": 0,
+        "volume": "Sin tendencia acreditada",
+        "variation": "Falta de evidencia"
+      }
+    }
+  ],
+  "calle": [
+    {
+      "id": "calle-1",
+      "region": "general",
+      "riskLevel": "Agenda social",
+      "badgeClass": "badge-alert-info",
+      "topicNumber": "Tema 1",
+      "title": "Rutas bonaerenses: restricción de camiones durante el fin de semana largo",
+      "streetTalk": "Vialidad informó el 09/10 restricciones para vehículos de más de siete toneladas: el viernes de 18:00 a 23:59 hacia la Costa, el sábado de 06:00 a 14:00 y el lunes de 14:00 a 23:59 hacia CABA. Alcanzan la Autovía 2, seis rutas provinciales y la autopista Buenos Aires–La Plata, para ordenar el tránsito turístico; hay excepciones detalladas en la fuente.",
+      "connection": [],
+      "uipbaPosition": "Información de contexto provincial; sin posición institucional atribuida.",
+      "source": {
+        "name": "Zona Norte Visión",
+        "link": "https://zonanortevision.com.ar/433363/restriccion-de-transito-pesado-por-el-dia-de-la-diversidad-culturalrestriccion-transito-pesado-dia-de-la-diversidad-cultural/",
+        "date": "09/10/2026"
+      },
+      "metrics": {
+        "temp": 0,
+        "volume": "Sin métricas sociales",
+        "variation": "Publicado 09/10"
+      }
+    },
+    {
+      "id": "calle-2",
+      "region": "interior",
+      "riskLevel": "Agenda social",
+      "badgeClass": "badge-alert-info",
+      "topicNumber": "Tema 2",
+      "title": "General Pueyrredon: guardias y servicios para el feriado",
+      "streetTalk": "El 09/10 se informó que la recolección de residuos funcionará normalmente y se mantendrán guardias de salud, seguridad, desarrollo social y Obras Sanitarias en Mar del Plata y Batán. La publicación identifica centros de salud y canales de atención para que los vecinos sepan dónde acudir durante el feriado.",
+      "connection": [],
+      "uipbaPosition": "Información de contexto provincial; sin posición institucional atribuida.",
+      "source": {
+        "name": "El Atlántico",
+        "link": "https://diarioelatlantico.com.ar/2026/10/09/guardias-para-este-fin-de-semana-largo-2/",
+        "date": "09/10/2026"
+      },
+      "metrics": {
+        "temp": 0,
+        "volume": "Sin métricas sociales",
+        "variation": "Publicado 09/10"
+      }
+    },
+    {
+      "id": "calle-3",
+      "region": "general",
+      "riskLevel": "Agenda social",
+      "badgeClass": "badge-alert-info",
+      "topicNumber": "Tema 3",
+      "title": "Provincia: bienestar adolescente y recursos de acompañamiento",
+      "streetTalk": "La Defensoría bonaerense difundió el 09/10 una guía sobre escucha, prevención y acceso a recursos para adolescentes. Vincula la agenda con iniciativas provinciales de cuidado y participación juvenil; ofrece orientación para familias, escuelas y espacios comunitarios. Es una publicación institucional, sin señales públicas suficientes para medir su repercusión.",
+      "connection": [],
+      "uipbaPosition": "Información de contexto provincial; sin posición institucional atribuida.",
+      "source": {
+        "name": "Defensoría del Pueblo PBA",
+        "link": "https://www.defensorba.org.ar/contenido/adolescencias-y-bienestar-emocional-la-importancia-de-escuchar-acompanar-y-const",
+        "date": "09/10/2026"
+      },
+      "metrics": {
+        "temp": 0,
+        "volume": "Sin métricas sociales",
+        "variation": "Publicado 09/10"
+      }
+    }
+  ],
+  "clipping": [
+    {
+      "id": "clip-1",
+      "category": "nacional",
+      "scopeTag": "Nacional · Quilmes",
+      "badgeClass": "badge-alert-info",
+      "badgeText": "INDUSTRIA",
+      "title": "Quilmes: las PyMEs buscan entrar en las cadenas de energía y minería",
+      "summary": "La crónica del 09/10 del encuentro de UIPBA Joven explica las exigencias de productividad, innovación y calidad para convertirse en proveedores de energía y minería. También recoge el reclamo de reducir la carga tributaria sobre la producción bonaerense. El vínculo industrial es explícito en el contenido.",
+      "impact": "La nota permite identificar requisitos concretos de acceso a compradores industriales y seguir el debate tributario planteado por la entidad, sin agregar una postura nueva.",
+      "source": {
+        "name": "LA NACION — Agustín Maza",
+        "link": "https://www.lanacion.com.ar/economia/una-noche-de-futbol-bajo-la-lluvia-en-el-corazon-de-la-bronca-industrial-nid09102026/",
+        "date": "09/10/2026 · 11:25"
+      },
+      "metrics": {
+        "temp": 0,
+        "volume": "Sin métricas sociales",
+        "variation": "Publicado 09/10"
+      },
+      "industrialVerified": true
+    },
+    {
+      "id": "clip-2",
+      "category": "regional",
+      "scopeTag": "Provincial · Gonnet",
+      "badgeClass": "badge-alert-info",
+      "badgeText": "INDUSTRIA",
+      "title": "Gonnet: industria naval y capacitación en el Consejo Portuario",
+      "summary": "DataPortuaria publicó el 09/10 la segunda reunión del Consejo Portuario Bonaerense. El encuentro trató construcción naval, formación de oficios, flota nacional y modernización tecnológica; la nota informa que la provincia reúne 262 empresas y 6.085 empleos del sector.",
+      "impact": "Es información directa sobre una cadena manufacturera bonaerense y sus necesidades de formación y tecnología. Conviene observar iniciativas concretas para astilleros y proveedores, diferenciando propuestas de medidas implementadas.",
+      "source": {
+        "name": "DataPortuaria",
+        "link": "https://dataportuaria.com/es/argentina/puertos/marina-mercante-industria-naval-y-cabotaje-nacional-ejes-de-la-2da-reunion-del-consejo-portuario-bonaerense",
+        "date": "09/10/2026"
+      },
+      "metrics": {
+        "temp": 0,
+        "volume": "Sin métricas sociales",
+        "variation": "Publicado 09/10"
+      },
+      "industrialVerified": true
+    },
+    {
+      "id": "clip-3",
+      "category": "nacional",
+      "scopeTag": "Nacional · Industria alimentaria",
+      "badgeClass": "badge-alert-info",
+      "badgeText": "INDUSTRIA",
+      "title": "Ovoproductos: exportaciones por US$20,23 millones entre enero y agosto",
+      "summary": "Ecos Diarios informó el 09/10 que las ventas externas de ovoproductos alcanzaron US$20,23 millones y 2.580 toneladas entre enero y agosto. La cobertura identifica productos procesados como yema y albúmina en polvo, utilizados por fabricantes de pastas, panificados y helados.",
+      "impact": "El dato corresponde a una cadena de transformación alimentaria y de insumos industriales. Aporta información para fabricantes y proveedores sobre mercados de destino y evolución del valor exportado; no describe un aumento de producción del día.",
+      "source": {
+        "name": "Ecos Diarios — Necochea",
+        "link": "https://elecos.com.ar/las-exportaciones-de-huevos-alcanzaron-el-mayor-valor-de-la-decada-en-2026",
+        "date": "09/10/2026 · 12:23"
+      },
+      "metrics": {
+        "temp": 0,
+        "volume": "Sin métricas sociales",
+        "variation": "Publicado 09/10"
+      },
+      "industrialVerified": true
+    }
+  ],
+  "audit": {
+    "reviewedEditions": [
+      "2026-10-09",
+      "2026-10-08",
+      "2026-09-29",
+      "2026-09-28",
+      "2026-09-27",
+      "2026-09-26",
+      "2026-09-25"
+    ],
+    "rule": "Se revisaron siete ediciones disponibles, además del intervalo calendario 03–09/10. No se reutilizó ninguna cuenta ni enlace social. Se conservaron todos los registros anteriores.",
+    "minimumCandidatesMet": false,
+    "limitations": {
+      "X": "Cero candidatos industriales recientes y verificables. Resultados indexados de febrero–junio descartados.",
+      "LinkedIn": "Una publicación original industrial reciente con fecha absoluta verificada; otras candidatas con fecha relativa o antiguas, y una no accesible. No se acreditan cinco elegibles ni tendencia del 09/10.",
+      "Instagram": "Búsquedas separadas sin posts industriales recientes verificables; resultados genéricos y páginas de acceso excluidos.",
+      "Facebook": "Resultados del período atribuibles a medios, promociones con fecha de evento o notas sin contenido industrial; no se verificó alternativa propia reciente."
+    },
+    "candidates": [
+      {
+        "network": "LinkedIn",
+        "author": "Responsabilidad Integral | Colombia",
+        "url": "https://es.linkedin.com/pulse/summit-industria-qu%C3%ADmica-2026-una-nueva-4vkoe",
+        "date": "2026-10-06",
+        "decision": "Seleccionado como excepción temporal. Contenido original industrial, fecha absoluta, cuenta y tema distintos. No tendencia del 09/10."
+      },
+      {
+        "network": "LinkedIn",
+        "author": "Unión Industrial de Zárate",
+        "url": "https://es.linkedin.com/posts/uni%C3%B3n-industrial-de-z%C3%A1rate-uiz-278a7986_uiz-unionindustrialzarate-desarrolloindustrial-activity-7513195365475647488-ZO7g",
+        "date": "Contenido rotulado 06/10/2026; página: 4 días",
+        "decision": "Descartado. Compilación de noticias y tema automotor presente en las siete ediciones; priorizar una voz industrial original."
+      },
+      {
+        "network": "LinkedIn",
+        "author": "Dragan Zdravkovic",
+        "url": "https://es.linkedin.com/posts/draganz_madurezdigitalb2b-comerciob2b-transformaci%C3%B3ndigital-activity-7510377017075224576-mhWu",
+        "date": "Fecha absoluta no expuesta; página: 1 semana",
+        "decision": "Descartado. El 09/10 es cierre de encuesta, no fecha de publicación; no prueba conversación del período."
+      },
+      {
+        "network": "LinkedIn",
+        "author": "Cristina Fernández Barranco / SUITELEC",
+        "url": "https://es.linkedin.com/posts/cristina-fern%C3%A1ndez-barranco-02a49755_indudef2026-activity-7511019569927368706-I90l",
+        "date": "Fecha absoluta no expuesta; evento 07–09/10",
+        "decision": "Descartado. Fecha de evento no equivale a publicación; sin contraste del 09/10."
+      },
+      {
+        "network": "LinkedIn",
+        "author": "Guillermo Laine Cuervo",
+        "url": "https://es.linkedin.com/posts/guillermo-laine-cuervo-72b97a1b_este-pr%C3%B3ximo-viernes-d%C3%ADa-9-de-octubre-estar%C3%A9-activity-7512838470755737601-_4Do",
+        "date": "Fecha absoluta no expuesta; índice: 2 días",
+        "decision": "Descartado. Invitación a sesión previa; vínculo local menos directo y fecha relativa."
+      },
+      {
+        "network": "LinkedIn",
+        "author": "IndesIA (enlace encontrado en perfil de Francisco Martín Rubio)",
+        "url": "https://www.linkedin.com/posts/barometro-indesia-2026-uso-de-la-ia-en-ugcPost-7513155611056955392-HSmW/",
+        "date": "No verificada",
+        "decision": "Descartado. Apertura deshabilitada; no verificar autor y fecha mediante el perfil que compartió."
+      },
+      {
+        "network": "X",
+        "author": "Política Argentina",
+        "url": "https://x.com/Pol_Arg/status/2042324166825689126",
+        "date": "2026-04-09",
+        "decision": "Descartado: antiguo y ya usado el 29/09."
+      },
+      {
+        "network": "X",
+        "author": "Juan Bosch",
+        "url": "https://x.com/juanboschss/status/2042672979335618605",
+        "date": "2026-04-10",
+        "decision": "Descartado: antiguo, no alternativa reciente."
+      },
+      {
+        "network": "X",
+        "author": "TraductorTeAma",
+        "url": "https://x.com/TraductorTeAma/status/2021193933557006477",
+        "date": "2026-02-10",
+        "decision": "Descartado: antiguo y sin novedad del 09/10."
+      },
+      {
+        "network": "X",
+        "author": "Alerta140",
+        "url": "https://x.com/Alerta140/status/2063352217885696428",
+        "date": "2026-06-06",
+        "decision": "Descartado: antiguo; no usar promesas previas como novedad."
+      },
+      {
+        "network": "X",
+        "author": "Transponder1200",
+        "url": "https://x.com/Transponder1200/status/2042292303558066446",
+        "date": "2026-04-09",
+        "decision": "Descartado: antiguo y voz periodística, no conversación industrial reciente."
+      },
+      {
+        "network": "Facebook",
+        "author": "Periódico El Sol PR",
+        "url": "https://www.facebook.com/periodicoelsolpr/posts/%F0%9D%90%80%F0%9D%90%AC%F0%9D%90%A8%F0%9D%90%9C%F0%9D%90%A2%F0%9D%90%9A%F0%9D%90%9C%F0%9D%90%A2%F0%9D%90%A8%CC%81%F0%9D%90%A7-%F0%9D%90%9D%F0%9D%90%9E-%F0%9D%90%88%F0%9D%90%A7%F0%9D%90%9D%F0%9D%90%AE%F0%9D%90%AC%F0%9D%90%AD%F0%9D%90%AB%F0%9D%90%A2%F0%9D%90%9A%F0%9D%90%A5%F0%9D%90%9E%F0%9D%90%AC-%F0%9D%90%9C%F0%9D%90%A8%F0%9D%90%A7%F0%9D%90%AF%F0%9D%90%A8%F0%9D%90%9C%F0%9D%90%9A-%F0%9D%90%9A-%F0%9D%90%8F%F0%9D%90%AE%F0%9D%90%9E%F0%9D%90%AB%F0%9D%90%AD%F0%9D%90%A8-%F0%9D%90%91%F0%9D%90%A2%F0%9D%90%9C%F0%9D%90%A8-%F0%9D%90%9A-%F0%9D%90%9C%F0%9D%90%A8%F0%9D%90%A7%F0%9D%90%AC%F0%9D%90%AD%F0%9D%90%AB%F0%9D%90%AE%F0%9D%90%A2%F0%9D%90%AB-%F0%9D%90%A5%F0%9D%90%9A-%F0%9D%90%A9%F0%9D%90%AB%F0%9D%90%A8%CC%81%F0%9D%90%AD%F0%9D%90%A2%F0%9D%90%9C%F0%9D%90%A2%F0%9D%90%9A-%F0%9D%90%9D%F0%9D%90%9E%CC%81%F0%9D%90%9C%F0%9D%90%9A%F0%9D%90%9D/1624308809707126/",
+        "date": "Contenido referido 09/10/2026",
+        "decision": "Descartado: medio periodístico extranjero; no voz industrial propia ni impacto local demostrado."
+      },
+      {
+        "network": "Facebook",
+        "author": "Revista Actualidad Avipecuaria",
+        "url": "https://www.facebook.com/RevistaActualidadAvipecuaria/posts/-spi-miami-2026-la-industria-av%C3%ADcola-y-porcina-se-encuentran-en-miami-para-compa/1569937575148002/",
+        "date": "Fecha no expuesta; evento 08–09/10/2026",
+        "decision": "Descartado: promoción de evento, fecha de post no comprobada, cuenta periodística."
+      }
+    ],
+    "searches": [
+      "X: industria 2026-10-09; Argentina recency 2; manufactura octubre 2026; since:2026-10-09 until:2026-10-10; búsqueda dominio recency 7",
+      "Instagram: industria 9 de octubre 2026; October 9, 2026; Argentina recency 2; industria octubre 2026; industria 2026; búsqueda dominio recency 7",
+      "Facebook: industria 9 de octubre 2026; Argentina recency 2; manufactura octubre; industria nacional octubre 2026; búsqueda dominio recency 7",
+      "LinkedIn: industria Argentina recency 2; industrial 9 de octubre; industria octubre 2026; búsqueda dominio recency 7"
+    ],
+    "editorialCheck": "Cuatro tarjetas obligatorias. Tres explicitan falta de evidencia; LinkedIn usa excepción fechada 06/10. Clipping: tres fuentes industriales específicas del 09/10. Calle: tres asuntos provinciales, sin forzar conexión industrial. Ningún hecho se usa en dos secciones."
+  }
+},
+
 
           "2026-10-09": {
                     "sector": [
