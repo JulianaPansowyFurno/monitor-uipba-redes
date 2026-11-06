@@ -71,7 +71,7 @@
         <h1>UIPBA en los medios</h1>
         <p>Dónde aparece la entidad, quién la menciona y en qué contexto. Cada registro fue comprobado en la fuente original y permite acceder directamente a la publicación.</p>
       </div>
-      <div class="edition"><small>Edición semanal</small><strong id="heroPeriod">26—30 de octubre de 2026</strong><span id="heroStatus">Edición publicada · 5 menciones verificadas</span></div>
+      <div class="edition"><small>Edición semanal</small><strong id="heroPeriod">2—6 de noviembre de 2026</strong><span id="heroStatus">Edición publicada · 1 mención verificada</span></div>
     </div>
   </section>
 </header>
@@ -83,10 +83,10 @@
   </section>
 
   <section class="metrics" aria-label="Resumen de menciones">
-    <div class="metric"><b id="totalCount">5</b><span>Menciones verificadas</span></div>
-    <div class="metric"><b id="nationalCount">2</b><span>Medios nacionales</span></div>
-    <div class="metric"><b id="provincialCount">1</b><span>Medios provinciales</span></div>
-    <div class="metric"><b id="localCount">2</b><span>Medios locales</span></div>
+    <div class="metric"><b id="totalCount">1</b><span>Menciones verificadas</span></div>
+    <div class="metric"><b id="nationalCount">0</b><span>Medios nacionales</span></div>
+    <div class="metric"><b id="provincialCount">0</b><span>Medios provinciales</span></div>
+    <div class="metric"><b id="localCount">1</b><span>Medios locales</span></div>
   </section>
 
   <div class="toolbar">
@@ -94,7 +94,8 @@
       <h2>Registro de menciones</h2>
       <label for="weekSelector" style="display:block;margin-top:12px;font-size:12px;font-weight:800;color:var(--navy);text-transform:uppercase;letter-spacing:.09em">Historial de ediciones semanales</label>
       <select id="weekSelector" style="margin-top:7px;min-width:250px;padding:10px 12px;border:1px solid #cfc8bc;border-radius:10px;background:#fff;color:var(--navy);font:700 13px 'DM Sans'">
-        <option value="2026-10-26" selected>26 al 30 de octubre de 2026</option>
+        <option value="2026-11-02" selected>2 al 6 de noviembre de 2026</option>
+        <option value="2026-10-26">26 al 30 de octubre de 2026</option>
         <option value="2026-10-19">19 al 23 de octubre de 2026</option>
         <option value="2026-10-12">12 al 16 de octubre de 2026</option>
         <option value="2026-10-05">5 al 9 de octubre de 2026</option>
@@ -117,6 +118,12 @@
   </div>
 
   <section class="list" id="mentionList">
+    <article class="mention" data-scope="local">
+      <div class="media"><span class="scope">Local · Morón</span><h3>Las Bases de Morón</h3><time datetime="2026-11-03">3 nov 2026</time></div>
+      <div class="content"><h4>Hasta diciembre de 2025 la industria bonaerense perdió más de 30.000 empleos desde que asumió Milei según UIPBA</h4><div class="who"><b>Autoría / responsable:</b> Redacción Las Bases de Morón.</div><div class="who"><b>Quién menciona a UIPBA:</b> La redacción del medio, al atribuir a un informe de la entidad los datos sobre empleo y actividad industrial.</div><blockquote class="quote">“La Unión Industrial de la Provincia de Buenos Aires (UIPBA) expuso una caída de la actividad industrial...”</blockquote></div>
+      <div class="context"><div><small>Contexto</small><p>La nota local reseña indicadores atribuidos a UIPBA sobre la pérdida de empleo industrial registrado en la Provincia entre el cuarto trimestre de 2023 y el cuarto trimestre de 2025, y describe diferencias entre ramas manufactureras.</p></div><a class="source" target="_blank" rel="noopener noreferrer" href="https://lasbasesdemoron.com.ar/hasta-diciembre-de-2025-la-industria-bonaerense-perdio-mas-de-30-000-empleos-desde-que-asumio-milei-segun-uipba/"><span>Ver fuente original</span><span>↗</span></a></div>
+    </article>
+
     <article class="mention" data-scope="local">
       <div class="media"><span class="scope">Local · Puerto Madryn</span><h3>LU17</h3><time datetime="2026-10-30">30 oct 2026</time></div>
       <div class="content"><h4>UIPBA: carga impositiva argentina es 2,6 veces la de México</h4><div class="who"><b>Quién menciona a UIPBA:</b> Redacción de LU17, al presentar las conclusiones de un informe institucional.</div><blockquote class="quote">“...según un informe de la Unión Industrial de la Provincia de Buenos Aires (UIPBA).”</blockquote></div>
@@ -419,6 +426,7 @@
   let activeScope="todos";
 
   const weekLabels={
+    "2026-11-02":{period:"2—6 de noviembre de 2026",status:"Edición publicada · 1 mención verificada"},
     "2026-10-26":{period:"26—30 de octubre de 2026",status:"Edición publicada · 5 menciones verificadas"},
     "2026-10-19":{period:"19—23 de octubre de 2026",status:"Edición publicada · 5 menciones verificadas"},
     "2026-10-12":{period:"12—16 de octubre de 2026",status:"Edición publicada · 6 menciones verificadas"},
